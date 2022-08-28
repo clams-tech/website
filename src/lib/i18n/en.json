@@ -1,11 +1,11 @@
 {
 	"titles": {
 		"home": "Clams",
-		"guides": "Guides"
+		"docs": "Docs"
 	},
 	"navigation": {
 		"about": "About",
-		"guides": "Guides",
+		"docs": "Docs",
 		"app": "App"
 	},
 	"about": {

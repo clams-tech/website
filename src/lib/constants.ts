@@ -14,7 +14,7 @@ export const routes = [
 		text: 'about'
 	},
 	{
-		path: '/guides',
-		text: 'guides'
+		path: '/docs',
+		text: 'docs'
 	}
 ]
