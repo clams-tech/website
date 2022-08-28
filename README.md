@@ -8,7 +8,7 @@ Install the deps:
 Run the tests:
 `yarn test`
 
-Run dev environment:
+Start dev environment:
 `yarn dev`
 
 [Open in your browser](https://localhost:5173)
