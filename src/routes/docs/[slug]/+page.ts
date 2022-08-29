@@ -1,4 +1,3 @@
-// @TODO - find out why this only runs on page refresh
 export async function load({ params }) {
 	try {
 		const markdown = await import(`../../../lib/docs/en/${params.slug}.md`)
