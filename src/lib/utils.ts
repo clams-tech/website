@@ -10,11 +10,11 @@ export function getSettings(): Settings {
 }
 
 export const fetchMarkdownDocs = async () => {
-	// @TODO dir passed to meta.glob should be dependent on browser location for i18n
+	// @TODO language code dir passed to meta.glob should be dependent on browser location for i18n
 	const allDocFiles = import.meta.glob('$lib/docs/en/*.md')
 	const iterableDocFiles = Object.entries(allDocFiles)
 
-	const allPosts = await Promise.all(
+	const allDocs = await Promise.all(
 		iterableDocFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver()
 			const docPath = path.slice(16, -3)
@@ -26,5 +26,5 @@ export const fetchMarkdownDocs = async () => {
 		})
 	)
 
-	return allPosts
+	return allDocs
 }
