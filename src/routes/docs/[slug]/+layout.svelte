@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { t } from '$lib/i18n/translations'
+	import DocsList from '$lib/components/DocsList.svelte'
 	export let data: any
 </script>
 
@@ -7,22 +8,13 @@
 	<title>{$t('app.titles.docs')}</title>
 </svelte:head>
 
-<!-- @TODO Add list of docs to the burger menu -->
-<div class="flex prose dark:prose-invert max-w-5xl">
-	<section class="mr-8">
-		<h2 class="mb-2">{$t('app.titles.docs')}</h2>
-		<div class="flex flex-col">
-			{#each data.docs as doc}
-				<div
-					on:click={() => (window.location.href = `/docs${doc.path}`)}
-					class="mb-2 cursor-pointer"
-				>
-					{doc.meta.title}
-				</div>
-			{/each}
-		</div>
+<div class="flex mt-8">
+	<!-- <div class="hidden sm:block"></div> -->
+	<section class="mt-5 hidden sm:block">
+		<DocsList docs={data.docs} />
 	</section>
-	<article class="grow w-full max-w-5xl">
+
+	<article class="prose dark:prose-invert max-w-5xl mt-4">
 		<slot />
 	</article>
 </div>
