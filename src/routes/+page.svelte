@@ -35,7 +35,7 @@
 {/each}
 
 <div class="my-8 max-w-5xl m-auto">
-	<a href="/docs/get-started">
+	<a href="/docs/getting-started">
 		<Button text={$t('app.button.get_started')} />
 	</a>
 </div>

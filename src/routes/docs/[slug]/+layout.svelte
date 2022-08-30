@@ -9,7 +9,6 @@
 </svelte:head>
 
 <div class="flex mt-8">
-	<!-- <div class="hidden sm:block"></div> -->
 	<section class="mt-5 hidden sm:block">
 		<DocsList docs={data.docs} />
 	</section>
