@@ -1,23 +1,14 @@
 <script lang="ts">
-	import { onMount } from 'svelte'
-
 	// @TODO
 	// Types
 	export let docs
-
-	onMount(() => {
-		console.log({
-			docs,
-			path: window.location
-		})
-	})
 </script>
 
 <section class="flex flex-col mr-8 w-48">
 	{#each docs as doc}
 		<span
 			on:click={() => (window.location.href = `/docs${doc.path}`)}
-			class="text-2xl cursor-pointer underline-offset-2"
+			class="text-2xl font-bold cursor-pointer underline-offset-2"
 			class:underline={window.location.pathname.includes(doc.path)}
 		>
 			{doc.meta.title}
