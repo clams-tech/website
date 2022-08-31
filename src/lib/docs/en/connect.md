@@ -1,6 +1,7 @@
 ---
 title: Connect
 index: 1
+sections: ['second', 'third', 'fourth']
 ---
 
 # Connect
