@@ -13,14 +13,14 @@
 		>
 			{doc.meta.title}
 		</span>
-		<div class="mb-4 flex flex-col">
+		<div class="mt-2 mb-4 flex flex-col">
 			{#if doc.meta.sections}
 				{#each doc.meta?.sections as section}
 					<span
 						class="ml-4 cursor-pointer underline-offset-2"
 						on:click={() => (window.location.href = `/docs${doc.path}#${section}`)}
 					>
-						{section}
+						{section.replace(/-/g, ' ')}
 					</span>
 				{/each}
 			{/if}

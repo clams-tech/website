@@ -1,18 +1,23 @@
 ---
 title: Connect
 index: 1
-sections: []
+sections: ['how-it-works']
 ---
 
 # Connect
 
-To get started with [Clams App](https://app.clams.tech) you must first enter your [Core Lightning](https://github.com/elementsproject/lightning#getting-started) node address when [prompted](https://app.clams.tech/connect). Here is an example address:
+To get started with [Clams App](https://app.clams.tech) you must first enter your unique Lightning Address address when [prompted](https://app.clams.tech/connect). Your address will have two parts (seperated by the @ symbol):
+
+- Node ID
+- Host & Port
+
+Here is an example:
 
 ```
 02df5ffe895c778e10f7742a6c5b8a0cefbe9465df58b92fadeb883752c8107c8f@35.232.170.67:9735
 ```
 
-If you do not know the address of your node, you can find it by using the Core Lightning CLI with the [**getinfo**](https://lightning.readthedocs.io/lightning-getinfo.7.html?#synopsis) command. See the **address** field in this response example:
+If you do not know the Lightning address of your node, you can find it by running the [**getinfo**](https://lightning.readthedocs.io/lightning-getinfo.7.html?#synopsis) command via the Core Lightning CLI. See the **address** field in this response example:
 
 ```
 {
@@ -58,3 +63,7 @@ If you do not know the address of your node, you can find it by using the Core L
 ```
 
 **Note** - At this time the app only supports Core Lightning nodes that are running on clearnet. TOR support is on our roadmap.
+
+### How it works
+
+Under the hood, Clams App is ... @TODO
