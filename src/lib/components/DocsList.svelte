@@ -1,7 +1,7 @@
 <script lang="ts">
-	// @TODO
-	// Types
-	export let docs
+	import { docs$ } from '$lib/streams'
+
+	const docs = docs$.value
 </script>
 
 <section class="flex flex-col mr-8 w-48">

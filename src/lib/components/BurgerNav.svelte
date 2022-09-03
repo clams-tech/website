@@ -7,12 +7,15 @@
 	import Cross from '$lib/icons/Cross.svelte'
 	import ThemeToggle from './ThemeToggle.svelte'
 
-	let showMenu = false
+	let showMenu = true
 
 	function getInnerWidth() {
 		const { innerWidth } = window
 		return innerWidth > 500 ? 500 : innerWidth
 	}
+
+	// @TODO
+	// merge routes cont with docs/ routes and sections routes
 </script>
 
 <section>

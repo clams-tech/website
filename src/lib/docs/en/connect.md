@@ -66,4 +66,4 @@ If you do not know the Lightning address of your node, you can find it by runnin
 
 ### How it works
 
-Clams App is utilizing the [lnsocket](https://github.com/jb55/lnsocket) & [lnsocket-proxy](https://github.com/clams-tech/lnsocket-proxy) packages to send messages over the lightning network from the App to your node. Access to your node is made possible by a new addition to Core Lightning called [Commando](https://lightning.readthedocs.io/lightning-commando-rune.7.html) which will you learn more about in the next [section](/docs/runes).
+Clams App is utilizing the [lnsocket](https://github.com/jb55/lnsocket) library & a [lnsocket-proxy](https://github.com/clams-tech/lnsocket-proxy) server to send messages over the lightning network, from the App to your node. Access to your node is made possible by a new addition to Core Lightning called [Commando](https://lightning.readthedocs.io/lightning-commando-rune.7.html) which will you learn more about in the next [section](/docs/runes).

@@ -1,8 +1,9 @@
 import { BehaviorSubject, skip } from 'rxjs'
-import type { Settings } from './types'
+import type { Settings, Doc } from './types'
 import { getSettings, SETTINGS_STORAGE_KEY } from './utils'
 
 export const settings$ = new BehaviorSubject<Settings>(getSettings())
+export const docs$ = new BehaviorSubject<Doc[]>([])
 
 // update settings in storage
 settings$

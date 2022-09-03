@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { t } from '$lib/i18n/translations'
 	import DocsList from '$lib/components/DocsList.svelte'
-	export let data: any
 </script>
 
 <svelte:head>
@@ -10,10 +9,10 @@
 
 <div class="flex mt-8">
 	<section class="mt-5 hidden sm:block">
-		<DocsList docs={data.docs} />
+		<DocsList />
 	</section>
 
-	<article class="prose dark:prose-invert max-w-5xl mt-4">
+	<article class="prose dark:prose-invert block max-w-5xl mt-4">
 		<slot />
 	</article>
 </div>
