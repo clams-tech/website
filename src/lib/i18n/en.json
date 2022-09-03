@@ -11,7 +11,7 @@
 	"about": {
 		"0": {
 			"question": "Who is Clams currently built for?",
-			"answer": "Clams is (currently) built for a particularly niche crowd... You have a core lightning node running at home or in the cloud that is accesible on clearnet, that you would like to securely and privately connect to, to use for your daily Lightning payments."
+			"answer": "Clams is (currently) built for a particularly niche crowd... You have a Core Lightning node running at home or in the cloud that is accesible on clearnet, that you would like to securely and privately connect to, to use for your daily Lightning payments."
 		},
 		"1": {
 			"question": "Where is this project headed?",
