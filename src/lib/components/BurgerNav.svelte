@@ -8,11 +8,15 @@
 	import ThemeToggle from './ThemeToggle.svelte'
 	import DocsList from '$lib/components/DocsList.svelte'
 
-	let showMenu = true
+	let showMenu = false
 
 	function getInnerWidth() {
 		const { innerWidth } = window
 		return innerWidth > 500 ? 500 : innerWidth
+	}
+
+	const closeMenu = () => {
+		showMenu = false
 	}
 </script>
 
@@ -46,8 +50,7 @@
 					</li>
 				{/each}
 			</ul>
-			<!-- @TODO - close burger nav on click from mobile doclist variant -->
-			<DocsList variant={'mobile'} />
+			<DocsList variant={'mobile'} closeMenu={() => closeMenu()} />
 		</div>
 	{/if}
 </section>
