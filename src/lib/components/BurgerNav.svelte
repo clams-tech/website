@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte'
-	import { docs$ } from '$lib/streams'
 	import { fly } from 'svelte/transition'
 	import { page } from '$app/stores'
 	import { routes } from '$lib/constants'
@@ -8,6 +6,7 @@
 	import Burger from '$lib/icons/Burger.svelte'
 	import Cross from '$lib/icons/Cross.svelte'
 	import ThemeToggle from './ThemeToggle.svelte'
+	import DocsList from '$lib/components/DocsList.svelte'
 
 	let showMenu = true
 
@@ -15,13 +14,6 @@
 		const { innerWidth } = window
 		return innerWidth > 500 ? 500 : innerWidth
 	}
-
-	// onMount(() => {
-	// 	console.log({ routes })
-	// 	console.log('docs$ = ', docs$.value)
-	// })
-	// @TODO
-	// merge routes cont with docs/ routes and sections routes
 </script>
 
 <section>
@@ -43,12 +35,19 @@
 			<ul>
 				{#each routes as route}
 					<li on:click={() => (showMenu = false)} class="my-4">
-						<a class:underline={$page.url.pathname === route.path} href={route.path}>
+						<a
+							class:underline={$page.params.slug
+								? `${route.path}/${$page.params.slug}` === $page.url.pathname
+								: route.path === $page.url.pathname}
+							href={route.path}
+						>
 							{$t(`app.navigation.${route.text}`)}
 						</a>
 					</li>
 				{/each}
 			</ul>
+			<!-- @TODO - close burger nav on click from mobile doclist variant -->
+			<DocsList variant={'mobile'} />
 		</div>
 	{/if}
 </section>

@@ -9,7 +9,7 @@
 
 <div class="flex mt-8">
 	<section class="mt-5 hidden sm:block">
-		<DocsList />
+		<DocsList variant={'desktop'} />
 	</section>
 
 	<article class="prose dark:prose-invert block max-w-5xl mt-4">
