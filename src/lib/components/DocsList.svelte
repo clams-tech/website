@@ -15,7 +15,8 @@
 	{#each docs$.value as doc}
 		<a
 			on:click={() => {
-				closeMenu()((window.location.href = `/docs${doc.path}`))
+				window.location.href = `/docs${doc.path}`
+				closeMenu()
 			}}
 			href={`/docs${doc.path}`}
 			class="cursor-pointer underline-offset-2"
@@ -31,7 +32,8 @@
 				{#each doc.meta?.sections as section}
 					<a
 						on:click={() => {
-							closeMenu()((window.location.href = `/docs${doc.path}#${section}`))
+							window.location.href = `/docs${doc.path}#${section}`
+							closeMenu()
 						}}
 						href={`/docs${doc.path}#${section}`}
 						class="ml-4 cursor-pointer underline-offset-2"
