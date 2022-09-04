@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte'
+	import { docs$ } from '$lib/streams'
 	import { fly } from 'svelte/transition'
 	import { page } from '$app/stores'
 	import { routes } from '$lib/constants'
@@ -14,6 +16,10 @@
 		return innerWidth > 500 ? 500 : innerWidth
 	}
 
+	// onMount(() => {
+	// 	console.log({ routes })
+	// 	console.log('docs$ = ', docs$.value)
+	// })
 	// @TODO
 	// merge routes cont with docs/ routes and sections routes
 </script>
