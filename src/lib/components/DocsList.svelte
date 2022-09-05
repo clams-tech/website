@@ -4,19 +4,19 @@
 	import { onMount } from 'svelte'
 
 	export let variant: 'desktop' | 'mobile' = 'desktop'
-	export let closeMenu: any
-
-	onMount(() => {
-		console.log({ variant })
-	})
+	export let closeMenu: () => void
 </script>
 
 <section class="flex flex-col mr-8 w-48">
 	{#each docs$.value as doc}
 		<a
 			on:click={() => {
-				window.location.href = `/docs${doc.path}`
-				closeMenu()
+				if (variant === 'mobile') {
+					window.location.href = `/docs${doc.path}`
+					closeMenu()
+				} else {
+					window.location.href = `/docs${doc.path}`
+				}
 			}}
 			href={`/docs${doc.path}`}
 			class="cursor-pointer underline-offset-2"
@@ -32,8 +32,12 @@
 				{#each doc.meta?.sections as section}
 					<a
 						on:click={() => {
-							window.location.href = `/docs${doc.path}#${section}`
-							closeMenu()
+							if (variant === 'mobile') {
+								window.location.href = `/docs${doc.path}#${section}`
+								closeMenu()
+							} else {
+								window.location.href = `/docs${doc.path}#${section}`
+							}
 						}}
 						href={`/docs${doc.path}#${section}`}
 						class="ml-4 cursor-pointer underline-offset-2"

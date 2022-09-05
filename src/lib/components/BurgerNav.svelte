@@ -14,10 +14,6 @@
 		const { innerWidth } = window
 		return innerWidth > 500 ? 500 : innerWidth
 	}
-
-	const closeMenu = () => {
-		showMenu = false
-	}
 </script>
 
 <section>
@@ -50,7 +46,7 @@
 					</li>
 				{/each}
 			</ul>
-			<DocsList variant={'mobile'} closeMenu={() => closeMenu()} />
+			<DocsList variant={'mobile'} closeMenu={() => (showMenu = false)} />
 		</div>
 	{/if}
 </section>
