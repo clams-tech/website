@@ -17,14 +17,14 @@
 </script>
 
 <section>
-	<div class="w-12 cursor-pointer" on:click={() => (showMenu = true)}>
+	<div class="w-12 cursor-pointer fixed top-6 left-4" on:click={() => (showMenu = true)}>
 		<Burger />
 	</div>
 	{#if showMenu}
 		<div
 			in:fly={{ x: -getInnerWidth(), duration: 500 }}
 			out:fly={{ x: -getInnerWidth(), duration: 500 }}
-			class="w-full h-full fixed top-0 left-0 bg-white dark:bg-black p-6"
+			class="w-full h-full fixed top-0 left-0 bg-white dark:bg-black p-6 text-xl"
 		>
 			<div class="flex justify-between items-center">
 				<div class="w-12 cursor-pointer" on:click={() => (showMenu = false)}>
