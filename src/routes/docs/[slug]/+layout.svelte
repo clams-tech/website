@@ -12,7 +12,7 @@
 		<DocsList variant={'desktop'} />
 	</section>
 
-	<article class="prose dark:prose-invert block max-w-5xl mt-4">
+	<article class="prose dark:prose-invert mt-4 max-w-none text-clip overflow-hidden">
 		<slot />
 	</article>
 </div>

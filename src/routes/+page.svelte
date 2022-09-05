@@ -2,25 +2,15 @@
 	import ClamsLogo from '$lib/icons/ClamsLogo.svelte'
 	import { t } from '$lib/i18n/translations'
 	import Button from '$lib/elements/Button.svelte'
-	import { onMount } from 'svelte'
-	import { fly } from 'svelte/transition'
-
-	let visible = false
-
-	onMount(() => {
-		visible = true
-	})
 </script>
 
 <svelte:head>
 	<title>{$t('app.titles.home')}</title>
 </svelte:head>
 
-{#if visible}
-	<div in:fly={{ y: 200, duration: 1000 }} class="max-w-screen-sm m-auto">
-		<ClamsLogo />
-	</div>
-{/if}
+<div class="max-w-screen-sm m-auto">
+	<ClamsLogo />
+</div>
 
 <!-- 3 paragraphs in en.json for "about" -->
 {#each Array(3) as _, i}
