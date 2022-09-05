@@ -4,6 +4,7 @@ export async function load({ params }) {
 		const doc = markdown.default
 
 		return {
+			slug: params.slug,
 			doc
 		}
 	} catch (error) {

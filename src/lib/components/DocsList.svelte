@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { docs$ } from '$lib/streams'
 	import { page } from '$app/stores'
-	import { onMount } from 'svelte'
 
 	export let variant: 'desktop' | 'mobile' = 'desktop'
-	export let closeMenu: () => void
+	export let closeMenu: () => void = () => {}
 </script>
 
 <section class="flex flex-col mr-8 w-48">
@@ -12,10 +11,7 @@
 		<a
 			on:click={() => {
 				if (variant === 'mobile') {
-					window.location.href = `/docs${doc.path}`
 					closeMenu()
-				} else {
-					window.location.href = `/docs${doc.path}`
 				}
 			}}
 			href={`/docs${doc.path}`}
@@ -33,10 +29,7 @@
 					<a
 						on:click={() => {
 							if (variant === 'mobile') {
-								window.location.href = `/docs${doc.path}#${section}`
 								closeMenu()
-							} else {
-								window.location.href = `/docs${doc.path}#${section}`
 							}
 						}}
 						href={`/docs${doc.path}#${section}`}
