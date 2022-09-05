@@ -1,7 +1,16 @@
 export type Settings = {
-	language: Language;
-	darkmode: boolean;
-};
+	language: Language
+	darkmode: boolean
+}
+
+export type Doc = {
+	meta: {
+		title: string
+		index: number
+		sections: string[]
+	}
+	path: string
+}
 
 // locale => Display language
 export enum Language {

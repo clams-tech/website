@@ -6,6 +6,7 @@
 	import Burger from '$lib/icons/Burger.svelte'
 	import Cross from '$lib/icons/Cross.svelte'
 	import ThemeToggle from './ThemeToggle.svelte'
+	import DocsList from '$lib/components/DocsList.svelte'
 
 	let showMenu = false
 
@@ -34,12 +35,18 @@
 			<ul>
 				{#each routes as route}
 					<li on:click={() => (showMenu = false)} class="my-4">
-						<a class:underline={$page.url.pathname === route.path} href={route.path}>
+						<a
+							class:underline={$page.params.slug
+								? `${route.path}/${$page.params.slug}` === $page.url.pathname
+								: route.path === $page.url.pathname}
+							href={route.path}
+						>
 							{$t(`app.navigation.${route.text}`)}
 						</a>
 					</li>
 				{/each}
 			</ul>
+			<DocsList variant={'mobile'} closeMenu={() => (showMenu = false)} />
 		</div>
 	{/if}
 </section>

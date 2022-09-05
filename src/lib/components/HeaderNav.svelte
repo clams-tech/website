@@ -9,9 +9,12 @@
 <header>
 	<ul class="flex justify-end items-center">
 		{#each routes as route}
-			<li class="mr-4 cursor-pointer">
-				<a class:underline={$page.url.pathname === route.path} href={route.path}
-					>{$t(`app.navigation.${route.text}`)}</a
+			<li class="mr-4 cursor-pointer underline-offset-2">
+				<a
+					class:underline={$page.params.slug
+						? `${route.path}/${$page.params.slug}` === $page.url.pathname
+						: route.path === $page.url.pathname}
+					href={route.path}>{$t(`app.navigation.${route.text}`)}</a
 				>
 			</li>
 		{/each}

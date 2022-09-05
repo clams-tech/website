@@ -9,21 +9,22 @@ export function getSettings(): Settings {
 	return settingsInStorage || DEFAULT_SETTINGS
 }
 
-export const fetchMarkdownGuides = async () => {
-	const allGuideFiles = import.meta.glob('$lib/guides/en/*.md')
-	const iterableGuideFiles = Object.entries(allGuideFiles)
+export const fetchMarkdownDocs = async () => {
+	// @TODO language code dir passed to meta.glob should be dependent on browser location for i18n
+	const allDocFiles = import.meta.glob('$lib/docs/en/*.md')
+	const iterableDocFiles = Object.entries(allDocFiles)
 
-	const allPosts = await Promise.all(
-		iterableGuideFiles.map(async ([path, resolver]) => {
+	const allDocs = await Promise.all(
+		iterableDocFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver()
-			const postPath = path.slice(18, -3)
+			const docPath = path.slice(16, -3)
 
 			return {
 				meta: metadata,
-				path: postPath
+				path: docPath
 			}
 		})
 	)
 
-	return allPosts
+	return allDocs
 }

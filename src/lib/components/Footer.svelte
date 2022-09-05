@@ -10,7 +10,7 @@
 	]
 </script>
 
-<footer class="mt-8">
+<footer class="mt-16">
 	<div class="flex items-center justify-center">
 		{#each contacts as { href, icon }}
 			<a {href} target="_blank" rel="noopener noreferrer">
