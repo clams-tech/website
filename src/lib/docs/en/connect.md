@@ -20,6 +20,7 @@ Here is an example:
 If you do not know the Lightning address of your node, you can find it by running the [**getinfo**](https://lightning.readthedocs.io/lightning-getinfo.7.html?#synopsis) command via the Core Lightning CLI. See the **address** field in this response example:
 
 ```
+$ lightning-cli getinfo
 {
    "id": "02bf811f7571754f0b51e6d41a8885f5561041a7b14fac093e4cffb95749de1a8d",
    "alias": "SLICKERGOPHER",
