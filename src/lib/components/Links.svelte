@@ -4,22 +4,22 @@
 	import GithubIcon from '$lib/icons/Github.svelte'
 
 	let contacts = [
-		{ icon: DiscordIcon, href: '@TODO' },
+		{ icon: DiscordIcon, href: 'https://discord.gg/eWfHuJZVaB' },
 		{ icon: GithubIcon, href: 'https://github.com/clams-tech' },
 		{ icon: TwitterIcon, href: 'https://twitter.com/clamstech' }
 	]
 </script>
 
-<footer class="mt-16">
-	<div class="flex items-center justify-center">
+<div class="absolute bottom-3 left-2">
+	<div class="flex items-center py-4 px-2">
 		{#each contacts as { href, icon }}
 			<a {href} target="_blank" rel="noopener noreferrer">
 				{#if icon}
-					<div class="w-8 mr-6">
+					<div class="w-6 mx-2">
 						<svelte:component this={icon} />
 					</div>
 				{/if}
 			</a>
 		{/each}
 	</div>
-</footer>
+</div>

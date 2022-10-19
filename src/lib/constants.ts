@@ -11,7 +11,7 @@ export const DEFAULT_SETTINGS: Settings = {
 export const routes = [
 	{
 		path: '/',
-		text: 'about'
+		text: 'home'
 	},
 	{
 		path: '/docs',

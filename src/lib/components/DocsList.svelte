@@ -6,7 +6,7 @@
 	export let closeMenu: () => void = () => {}
 </script>
 
-<section class="flex flex-col mr-8 w-48">
+<section class="flex flex-col px-8">
 	{#each docs$.value as doc}
 		<a
 			on:click={() => {
@@ -15,7 +15,7 @@
 				}
 			}}
 			href={`/docs${doc.path}`}
-			class="cursor-pointer underline-offset-2"
+			class="cursor-pointer underline-offset-2 whitespace-nowrap"
 			class:underline={`/${$page.params.slug}` == doc.path}
 			class:text-2xl={variant === 'desktop'}
 			class:font-bold={variant === 'desktop'}

@@ -1,7 +1,8 @@
 import { locale, loadTranslations } from '$lib/i18n/translations'
 import { docs$ } from '$lib/streams'
+import type { LayoutLoad } from './$types'
 
-export async function load({ url }) {
+export const load: LayoutLoad = async ({ url, fetch }) => {
 	const { pathname } = url
 	// @TODO check with language settings
 	const defaultLocale = 'en'

@@ -12,5 +12,6 @@ settings$
 
 // handle dark mode toggle
 settings$.subscribe(({ darkmode }) => {
-	document.documentElement.classList[darkmode ? 'add' : 'remove']('dark')
+	typeof document !== 'undefined' &&
+		document.documentElement.classList[darkmode ? 'add' : 'remove']('dark')
 })

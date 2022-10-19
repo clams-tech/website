@@ -8,7 +8,11 @@
 <div class="cursor-pointer flex items-center">
 	{#if label}<span>{label}</span>{/if}
 
-	<label on:click|stopPropagation class="relative inline-block m-0 w-8 h-4">
+	<label
+		on:click|stopPropagation
+		on:keydown|stopPropagation
+		class="relative inline-block m-0 w-8 h-4"
+	>
 		<input
 			checked={toggled}
 			class="opacity-0 w-0 h-0 peer"

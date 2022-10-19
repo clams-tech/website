@@ -4,25 +4,15 @@
 		"docs": "Docs"
 	},
 	"navigation": {
-		"about": "About",
+		"home": "Home",
 		"docs": "Docs",
 		"app": "App"
 	},
-	"about": {
-		"0": {
-			"question": "Who is Clams currently built for?",
-			"answer": "Clams is (currently) built for a particularly niche crowd... You have a Core Lightning node running at home or in the cloud that is accesible on clearnet, that you would like to securely and privately connect to, to use for your daily Lightning payments."
-		},
-		"1": {
-			"question": "Where is this project headed?",
-			"answer": "Ultimately we want clams to be an intuitive, powerful and complete interface to your Core Lightning node. Channel management, onchain transactions, LNUrl support, Bookkeeper stats and exports, fee reports, plugin management. On mobile devices, Clams will be more like a payments app for use on the go. On desktop devices Clams will allow you fully manage your Core Lightning node."
-		},
-		"2": {
-			"question": "Will you support other Lightning implementations?",
-			"answer": "We are focused on Core Lightning for the moment, but at some point we might take a look at supporting other implementations. We are keeping our eye on Lightning Node Connect for LND, but we figured it was better to pick one implementation and do it really well to start with and then suss it out from there."
-		}
-	},
 	"button": {
-		"get_started": "Get Started"
-	}
+		"get_started": "Get Started",
+		"app": "Go to App",
+		"docs": "Documentation"
+	},
+	"summary": "Secure • Private • Fast",
+	"description": "Browser UI for Core Lightning nodes"
 }

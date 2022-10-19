@@ -2,20 +2,19 @@
 	import '../app.css'
 	import HeaderNav from '$lib/components/HeaderNav.svelte'
 	import BurgerNav from '$lib/components/BurgerNav.svelte'
-	import AppButton from '$lib/components/AppButton.svelte'
-	import Footer from '$lib/components/Footer.svelte'
+	import Links from '$lib/components/Links.svelte'
 </script>
 
-<div class="flex flex-col min-h-screen p-6 dark:text-white dark:bg-black">
-	<div class="sm:hidden flex justify-between">
+<div class="flex flex-col h-screen dark:text-white dark:bg-black relative">
+	<div class="sm:hidden flex justify-between z-10 fixed top-0 left-0">
 		<BurgerNav />
-		<AppButton />
 	</div>
-	<div class="hidden sm:block">
+	<div class="hidden sm:block fixed top-0 right-0 w-full">
 		<HeaderNav />
 	</div>
-	<main class="grow max-w-5xl w-full m-auto">
+	<main class="h-full w-full border-b-8 border-purple-500 overflow-hidden">
 		<slot />
 	</main>
-	<Footer />
+
+	<Links />
 </div>

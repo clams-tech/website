@@ -8,24 +8,22 @@
 	<title>{$t('app.titles.home')}</title>
 </svelte:head>
 
-<div class="max-w-screen-sm m-auto">
-	<ClamsLogo />
-</div>
+<div class="p-12 w-screen h-screen flex flex-col items-center justify-center">
+	<div class="w-full max-w-md mb-4">
+		<ClamsLogo />
+	</div>
 
-<!-- 3 paragraphs in en.json for "about" -->
-{#each Array(3) as _, i}
-	<section class="my-16 text-xl max-w-5xl m-auto">
-		<div class="flex-1 min-w-[300px]">
-			<h1 class="text-2xl font-bold mb-2">{$t(`app.about.${i}.question`)}</h1>
-			<p>
-				{$t(`app.about.${i}.answer`)}
-			</p>
-		</div>
-	</section>
-{/each}
+	<p class="mt-6 text-3xl text-center max-w-sm">{$t('app.summary')}</p>
+	<p class="mb-6 italic text-lg text-center text-neutral-700 dark:text-neutral-200">
+		{$t('app.description')}
+	</p>
 
-<div class="my-8 max-w-5xl m-auto">
-	<a href="/docs/getting-started">
-		<Button text={$t('app.button.get_started')} />
-	</a>
+	<div class="flex items-center">
+		<a href="/docs">
+			<Button text={$t('app.button.docs')} />
+		</a>
+		<a class="ml-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+			<Button text={$t('app.button.app')} primary />
+		</a>
+	</div>
 </div>
