@@ -33,9 +33,8 @@ module.exports = {
 			}
 		}
 	},
+	plugins: [],
 	variants: {
 		width: ['responsive', 'hover', 'focus']
-	},
-	plugins: [require('@tailwindcss/typography')],
-	darkMode: 'class'
+	}
 }

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-v-4fa90e7f=""
-	><rect width="18" height="1.5" x="3" y="7.001" rx=".75" /><rect
-		width="15"
-		height="1.5"
-		x="3"
-		y="11.251"
-		rx=".75"
-	/><rect width="18" height="1.5" x="3" y="15.499" rx=".75" /></svg
->
