@@ -6,24 +6,20 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.25.0",
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.46",
 		"@sveltejs/kit": "next",
-		"@tailwindcss/typography": "tailwindcss/typography",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"autoprefixer": "^10.4.8",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.16",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
@@ -36,10 +32,5 @@
 		"vite": "^3.0.4"
 	},
 	"type": "module",
-	"dependencies": {
-		"rehype-autolink-headings": "^6.1.1",
-		"rehype-slug": "^5.0.1",
-		"rxjs": "^7.5.6",
-		"sveltekit-i18n": "^2.2.2"
-	}
+	"dependencies": {}
 }

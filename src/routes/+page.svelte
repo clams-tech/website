@@ -1,31 +1,31 @@
 <script lang="ts">
 	import ClamsLogo from '$lib/icons/ClamsLogo.svelte'
-	import { t } from '$lib/i18n/translations'
 	import Button from '$lib/elements/Button.svelte'
+	import Links from '$lib/components/Links.svelte'
 </script>
 
 <svelte:head>
-	<title>{$t('app.titles.home')}</title>
+	<title>Clams</title>
 </svelte:head>
 
-<div class="max-w-screen-sm m-auto">
-	<ClamsLogo />
-</div>
+<div class="p-12 w-screen h-screen flex flex-col items-center justify-center relative">
+	<Links />
 
-<!-- 3 paragraphs in en.json for "about" -->
-{#each Array(3) as _, i}
-	<section class="my-16 text-xl max-w-5xl m-auto">
-		<div class="flex-1 min-w-[300px]">
-			<h1 class="text-2xl font-bold mb-2">{$t(`app.about.${i}.question`)}</h1>
-			<p>
-				{$t(`app.about.${i}.answer`)}
-			</p>
-		</div>
-	</section>
-{/each}
+	<div class="w-full max-w-md mb-4">
+		<ClamsLogo />
+	</div>
 
-<div class="my-8 max-w-5xl m-auto">
-	<a href="/docs/getting-started">
-		<Button text={$t('app.button.get_started')} />
-	</a>
+	<p class="mt-6 text-3xl text-center max-w-sm">Secure • Private • Fast</p>
+	<p class="mb-6 italic text-lg text-center text-neutral-500">
+		Browser UI for Core Lightning nodes
+	</p>
+
+	<div class="flex items-center">
+		<a href="https://docs.clams.tech" target="_blank" rel="noopener noreferrer">
+			<Button text="Documentation" />
+		</a>
+		<a class="ml-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+			<Button text="App" primary />
+		</a>
+	</div>
 </div>
