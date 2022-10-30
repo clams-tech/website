@@ -10,7 +10,7 @@
 	]
 </script>
 
-<div class="absolute bottom-3 left-2">
+<div class="absolute top-3 right-2">
 	<div class="flex items-center py-4 px-2">
 		{#each contacts as { href, icon }}
 			<a {href} target="_blank" rel="noopener noreferrer">
