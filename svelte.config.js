@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static'
 import preprocess from 'svelte-preprocess'
 
-const dev = import.meta.env.DEV
+const production = process.env.NODE_ENV === 'production'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,8 +9,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			// change below to your repo name
-			base: dev ? '' : '/website'
+			base: production ? '/website' : ''
 		},
 		csp: {
 			mode: 'hash',
