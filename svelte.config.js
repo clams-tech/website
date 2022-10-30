@@ -7,10 +7,10 @@ const production = process.env.NODE_ENV === 'production'
 const config = {
 	preprocess: preprocess(),
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: production ? '/website' : ''
-		}
+		adapter: adapter()
+		// paths: {
+		// 	base: production ? '/website' : ''
+		// }
 	}
 }
 
