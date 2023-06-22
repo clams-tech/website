@@ -7,7 +7,10 @@ const production = process.env.NODE_ENV === 'production'
 const config = {
 	preprocess: preprocess(),
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		serviceWorker: {
+			register: false
+		}
 		// paths: {
 		// 	base: production ? '/website' : ''
 		// }

@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 html {
-  font-family: Helvetica;
+  font-family: 'Cormorant Garamond', serif;
   box-sizing: border-box;
   height: -webkit-fill-available;
+  background-color: #000;
+  color: white;
 }
 
 body {
