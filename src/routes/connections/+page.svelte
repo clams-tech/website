@@ -28,7 +28,6 @@
 		<ul class="text-2xl list-disc list-inside grid gap-2">
 			Coming soon:
 			<li>WebLN connection support for Alby and other wallets.</li>
-			<li>Clams Lightning Addresses with fallback payments to any of your nodes.</li>
 			<li>Notifications via Nostr DM, text, or email when any of your nodes become unreachable.</li>
 		</ul>
 	</section>
