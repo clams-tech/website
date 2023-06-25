@@ -27,13 +27,15 @@
 		},
 		{
 			title: 'Offers',
-			description: '@TODO - talk about current support',
+			description:
+				'Utilize BOLT12 for generating reusable static invoices for payments and withdrawals.',
 			learnHref: '/offers',
 			imgSrc: key
 		},
 		{
 			title: 'LNURL',
-			description: '@TODO - full LNURL, pay and withdraw supported.',
+			description:
+				'Full range of LNURL pay and withdraw options. Seamless login to Bitcoin applications with LNURL Auth.',
 			learnHref: '/lnurl',
 			imgSrc: lightning
 		},
@@ -90,12 +92,16 @@
 <section
 	class="flex items-center justify-center w-full h-screen bg-[url('$lib/images/background6.png')] bg-cover"
 >
-	<div class="flex justify-between w-full max-w-4xl bg-black/[.6] p-10 rounded-lg gap-10">
+	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
 		<div class="flex flex-col max-w-md gap-10">
 			<h1 class="text-8xl">Unified Bitcoin.</h1>
 			<!-- TODO - add helvetica to subtitle copy -->
 			<h2 class="text-4xl">Track and manage your Bitcoin in one place.</h2>
-			<!-- @TODO - add summary of why would you use clams? privacy focused, local data, no logging, not tracking, all data stays on your device, bitcoin first, private, local -->
+			<ul class="text-2xl list-disc list-inside">
+				<li>Bitcoin focused.</li>
+				<li>No Tracking or Logging.</li>
+				<li>Localized Data Storage.</li>
+			</ul>
 			<div class="flex">
 				<a class="mr-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
 					<Button text="Start now" primary />
@@ -113,12 +119,12 @@
 </section>
 <!-- Features -->
 {#each features as { title, description, learnHref, imgSrc }, i}
-	<section class="flex items-center justify-center w-full h-screen">
-		<div class="flex justify-between w-full max-w-4xl bg-white/[.2] p-10 rounded-lg gap-10">
-			<div class="flex flex-col max-w-md gap-10">
+	<section class="flex items-center justify-center w-full h-screen border">
+		<div class="flex justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+			<div class="flex flex-col w-full max-w-md gap-10">
 				<div class="flex flex-col items-start max-w-md gap-10">
 					<a href={learnHref}>
-						<h1 class="text-8xl">{title}</h1>
+						<h1 class="text-6xl">{title}</h1>
 					</a>
 					<h2 class="text-2xl">{description}</h2>
 					<a href={learnHref}>
