@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Cormorant Garamond', serif;
   box-sizing: border-box;
   height: -webkit-fill-available;
   background-color: #000;
   color: white;
+  font-family: Helvetica;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
   min-height: -webkit-fill-available;
 }
 
-button {
-  font-family: Helvetica;
+
+h1 { 
+  font-family: 'Cormorant Garamond', serif;
 }

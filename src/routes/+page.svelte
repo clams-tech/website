@@ -93,9 +93,8 @@
 	class="flex items-center justify-center w-full h-screen bg-[url('$lib/images/background6.png')] bg-cover"
 >
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
-		<div class="flex flex-col max-w-md gap-10">
+		<div class="flex flex-col w-full gap-10">
 			<h1 class="text-8xl">Unified Bitcoin.</h1>
-			<!-- TODO - add helvetica to subtitle copy -->
 			<h2 class="text-4xl">Track and manage your Bitcoin in one place.</h2>
 			<ul class="text-2xl list-disc list-inside">
 				<li>Bitcoin focused.</li>
@@ -106,13 +105,12 @@
 				<a class="mr-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
 					<Button text="Start now" primary />
 				</a>
-				<!-- TODO - add helvetica to button copy -->
 				<a href="https://docs.clams.tech" target="_blank" rel="noopener noreferrer">
 					<Button text="Learn more" />
 				</a>
 			</div>
 		</div>
-		<div class="w-full max-w-sm invisible md:visible">
+		<div class="w-full max-w-sm hidden md:block">
 			<ClamsLogo />
 		</div>
 	</div>
@@ -132,7 +130,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w-full max-w-sm invisible md:visible">
+			<div class="w-full max-w-sm hidden md:block">
 				<img src={imgSrc} alt={`${title}`} />
 			</div>
 		</div>
