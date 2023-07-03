@@ -76,6 +76,37 @@
 		}
 	]
 
+	const whys = [
+		{
+			title: 'Reliable and Secure',
+			description: 'Enjoy a futuristic payment experience and keep full control of your sats.'
+		},
+		{
+			title: 'App Store Independence',
+			description: 'Rapid iteration and instant releases come via any browser o fyour choice.'
+		},
+		{
+			title: 'Clean and Intuitive UX',
+			description:
+				'Thoughtful design makes the app accessible to Bitcoin novices and experts alike.'
+		},
+		{
+			title: 'Privacy-Focused Approach',
+			description:
+				'Privacy is a priority, with no logging, tracking, or Google scripts utilized within the app.'
+		},
+		{
+			title: 'Device-Specific Functionality',
+			description:
+				'A mobile app optimized for payments and a desktop version offering more advanced features.'
+		},
+		{
+			title: 'Internationalization Support',
+			description:
+				'Multiple languages supported with plans for many more to cater to a global user base.'
+		}
+	]
+
 	let scroll = 0
 </script>
 
@@ -118,11 +149,11 @@
 <!-- Features -->
 {#each features as { title, description, learnHref, imgSrc }, i}
 	<section class="flex items-center justify-center w-full h-screen border">
-		<div class="flex justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
-			<div class="flex flex-col w-full max-w-md gap-10">
-				<div class="flex flex-col items-start max-w-md gap-10">
+		<div class="flex justify-between w-full max-w-4xl p-10 rounded-lg">
+			<div class="flex flex-col w-full max-w-md">
+				<div class="flex flex-col items-start max-w-md">
 					<a href={learnHref}>
-						<h1 class="text-6xl">{title}</h1>
+						<h1 class="text-8xl">{title}</h1>
 					</a>
 					<h2 class="text-2xl">{description}</h2>
 					<a href={learnHref}>
@@ -138,6 +169,18 @@
 {/each}
 
 <!-- Why? -->
-<!-- <section class="w-full max-w-4xl">
-	<h1>Why use Clams?</h1>
-</section> -->
+<section class="flex flex-col items-center justify-center w-full h-screen border">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+		<h1 class="text-6xl">Why use Clams?</h1>
+		<div class="flex gap-10 flex-wrap">
+			{#each whys as { title, description }}
+				<div class="grid gap-5 p-5 border rounded-lg max-w-sm">
+					<h2 class="text-2xl">
+						{title}
+					</h2>
+					<p class="">{description}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
