@@ -9,6 +9,7 @@
 	import tags from '$lib/images/tags.png'
 	import contacts from '$lib/images/contacts.png'
 	import backup from '$lib/images/backup.png'
+	import { t } from '$lib/i18n/translations'
 
 	const features = [
 		{
@@ -19,11 +20,32 @@
 			imgSrc: lightning
 		},
 		{
+			title: 'UTXOs',
+			description:
+				'Monitor and manage all of your UTXOs via a customizable and interactive dashboard.',
+			learnHref: '/utxos',
+			imgSrc: channels
+		},
+		{
+			title: 'Channels',
+			description:
+				'Visualize and monitor the status and balance of channels on your Lightning channels.',
+			learnHref: '/channels',
+			imgSrc: channels
+		},
+		{
 			title: 'Charts',
 			description:
 				'Interactive charts to visualize data over time. Everything from node uptime to income events.',
 			learnHref: '/charts',
 			imgSrc: accountancy
+		},
+		{
+			title: 'Tags',
+			description:
+				'Automatic data tagging with intelligent defaults. Enhance your data with custom tags to enable more comprehensive data analysis and insights.',
+			learnHref: '/tags',
+			imgSrc: tags
 		},
 		{
 			title: 'Offers',
@@ -45,20 +67,6 @@
 				'Export data with a single click for upload to tax services such as Koinly and Quickbooks.',
 			learnHref: '/exports',
 			imgSrc: accountancy
-		},
-		{
-			title: 'Channels',
-			description:
-				'Visualize and monitor the status and balance of channels on your Lightning channels.',
-			learnHref: '/channels',
-			imgSrc: channels
-		},
-		{
-			title: 'Tags',
-			description:
-				'Automatic data tagging with intelligent defaults. Enhance your data with custom tags to enable more comprehensive data analysis and insights.',
-			learnHref: '/tags',
-			imgSrc: tags
 		},
 		{
 			title: 'Contacts',
@@ -83,7 +91,7 @@
 		},
 		{
 			title: 'App Store Independence',
-			description: 'Rapid iteration and instant releases come via any browser o fyour choice.'
+			description: 'Rapid iteration and instant releases via any browser of your choice.'
 		},
 		{
 			title: 'Clean and Intuitive UX',
@@ -98,7 +106,7 @@
 		{
 			title: 'Device-Specific Functionality',
 			description:
-				'A mobile app optimized for payments and a desktop version offering more advanced features.'
+				'A mobile app optimized for payments and a desktop app with more advanced features.'
 		},
 		{
 			title: 'Internationalization Support',
@@ -126,9 +134,9 @@
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
 		<div class="flex flex-col w-full gap-10">
 			<h1 class="text-8xl">Unified Bitcoin.</h1>
-			<h2 class="text-4xl">Track and manage your Bitcoin in one place.</h2>
+			<h2 class="text-4xl">{$t('app.hero.tagline')}</h2>
 			<ul class="text-2xl list-disc list-inside">
-				<li>Bitcoin focused.</li>
+				<li>Bitcoin only.</li>
 				<li>No Tracking or Logging.</li>
 				<li>Localized Data Storage.</li>
 			</ul>
@@ -151,7 +159,7 @@
 	<section class="flex items-center justify-center w-full h-screen border">
 		<div class="flex justify-between w-full max-w-4xl p-10 rounded-lg">
 			<div class="flex flex-col w-full max-w-md">
-				<div class="flex flex-col items-start max-w-md">
+				<div class="flex flex-col gap-10 items-start max-w-md">
 					<a href={learnHref}>
 						<h1 class="text-8xl">{title}</h1>
 					</a>
