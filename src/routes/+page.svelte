@@ -10,6 +10,7 @@
 	import contacts from '$lib/images/contacts.png'
 	import backup from '$lib/images/backup.png'
 	import { t } from '$lib/i18n/translations'
+	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax'
 
 	const features = [
 		{

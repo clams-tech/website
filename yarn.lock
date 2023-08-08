@@ -864,6 +864,11 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+focus-options-polyfill@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/focus-options-polyfill/-/focus-options-polyfill-1.6.0.tgz#12ef3081dae9801d32dfcffd7b69259ca8f57198"
+  integrity sha512-uyrAmLZrPnUItQY5wTdg31TO9GGZRGsh/jmohUg9oLmLi/sw5y7LlTV/mwyd6rvbxIOGwmRiv6LcTS8w7Bk9NQ==
+
 fraction.js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
@@ -1551,6 +1556,13 @@ svelte-hmr@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.0.tgz#c8304b5dd33f006415329d91470761d19417a324"
   integrity sha512-Aw21SsyoohyVn4yiKXWPNCSW2DQNH/76kvUnE9kpt4h9hcg9tfyQc6xshx9hzgMfGF0kVx0EGD8oBMWSnATeOg==
+
+svelte-parallax@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/svelte-parallax/-/svelte-parallax-0.6.0.tgz#564b52152842c37652813115ac8054d3e75b4705"
+  integrity sha512-W2dGPNmK274AmL8Ibzr96luh24jr3u2MfAmAJTpnhAZwxkRws5MKgCxfxBBPvpRUc2GpGGIGanhTYXoHV6DcBw==
+  dependencies:
+    focus-options-polyfill "^1.6.0"
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.6:
   version "4.10.7"
