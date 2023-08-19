@@ -12,77 +12,103 @@
 	import { t } from '$lib/i18n/translations'
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax'
 
-	const features = [
+	let activeFeatureIndex = 0
+
+	let features = [
 		{
 			title: 'Conections',
 			description:
-				'Establish multiple connections to Xpubs and Lightning nodes to synchronize data and manage funds.',
+				'Establish connections to multiple Lightning nodes to synchronize data and manage funds.',
 			learnHref: '/connections',
-			imgSrc: lightning
+			imgSrc: lightning,
+			active: true
+		},
+		{
+			title: 'Transactions',
+			description: 'View a full history of updates to your unified on-chain and off-chain balance.',
+			learnHref: '/transactions',
+			imgSrc: channels,
+			active: false
 		},
 		{
 			title: 'UTXOs',
-			description:
-				'Monitor and manage all of your UTXOs via a customizable and interactive dashboard.',
+			description: 'Monitor and manage your UTXOs via a customizable and interactive dashboard.',
 			learnHref: '/utxos',
-			imgSrc: channels
+			imgSrc: channels,
+			active: false
 		},
 		{
 			title: 'Channels',
 			description:
-				'Visualize and monitor the status and balance of channels on your Lightning channels.',
+				'Monitor the status and liquidity profile of your lightning channels. Update fee settings to your needs.',
 			learnHref: '/channels',
-			imgSrc: channels
+			imgSrc: channels,
+			active: false
+		},
+		{
+			title: 'Offers',
+			description:
+				'Create and manage BOLT12 reusable static invoices for payments and withdrawals.',
+			learnHref: '/offers',
+			imgSrc: key,
+			active: false
+		},
+		{
+			title: 'LNURL',
+			description:
+				'Full range of LNURL pay and withdraw options. Login to Bitcoin applications via LNURL Auth.',
+			learnHref: '/lnurl',
+			imgSrc: lightning,
+			active: false
+		},
+		{
+			title: 'Accounting',
+			description:
+				'One-click exports of income event documents for tax services like Koinly and Quickbooks.',
+			learnHref: '/accounting',
+			imgSrc: accountancy,
+			active: false
 		},
 		{
 			title: 'Charts',
 			description:
 				'Interactive charts to visualize data over time. Everything from node uptime to income events.',
 			learnHref: '/charts',
-			imgSrc: accountancy
+			imgSrc: accountancy,
+			active: false
 		},
 		{
-			title: 'Tags',
+			title: 'Metadata',
 			description:
-				'Automatic data tagging with intelligent defaults. Enhance your data with custom tags to enable more comprehensive data analysis and insights.',
-			learnHref: '/tags',
-			imgSrc: tags
-		},
-		{
-			title: 'Offers',
-			description:
-				'Utilize BOLT12 for generating reusable static invoices for payments and withdrawals.',
-			learnHref: '/offers',
-			imgSrc: key
-		},
-		{
-			title: 'LNURL',
-			description:
-				'Full range of LNURL pay and withdraw options. Seamless login to Bitcoin applications with LNURL Auth.',
-			learnHref: '/lnurl',
-			imgSrc: lightning
-		},
-		{
-			title: 'Exports',
-			description:
-				'Export data with a single click for upload to tax services such as Koinly and Quickbooks.',
-			learnHref: '/exports',
-			imgSrc: accountancy
-		},
-		{
-			title: 'Contacts',
-			description:
-				'Address book for effortless management and execution of recurring transactions with friends, customers, or merchants.',
-			learnHref: '/contacts',
-			imgSrc: contacts
-		},
-		{
-			title: 'Backups',
-			description:
-				'Export password-encrypted data to device. Simple synchronization to multiple devices.',
-			learnHref: '/backups',
-			imgSrc: backup
+				'Transactions are tagged with intelligent defaults. Further enhance your dataset with custom tags.',
+			learnHref: '/metadata',
+			imgSrc: tags,
+			active: false
 		}
+		// {
+		// 	title: 'Exports',
+		// 	description:
+		// 		'Export data with a single click for upload to tax services such as Koinly and Quickbooks.',
+		// 	learnHref: '/exports',
+		// 	imgSrc: accountancy,
+		// 	active: false
+		// }
+		// {
+		// 	title: 'Contacts',
+		// 	description:
+		// 		'Address book for effortless management and execution of recurring transactions with friends, customers, or merchants.',
+		// 	learnHref: '/contacts',
+		// 	imgSrc: contacts,
+		// 	active: false
+		// },
+		// {
+		// 	title: 'Backups',
+		// 	description:
+		// 		'Export password-encrypted data to device. Simple synchronization to multiple devices.',
+		// 	learnHref: '/backups',
+		// 	imgSrc: backup,
+		// 	active: false
+		// }
 	]
 
 	const whys = [
@@ -116,17 +142,20 @@
 		}
 	]
 
-	let scroll = 0
+	$: {
+		features = features.map((feature, index) => {
+			return {
+				...feature,
+				active: index === activeFeatureIndex ? true : false
+			}
+		})
+	}
 </script>
-
-<!-- @TODO - parallax https://www.youtube.com/watch?v=K3CM7j9GIxk -->
-<svelte:window bind:scrollY={scroll} />
 
 <svelte:head>
 	<title>Clams</title>
 </svelte:head>
 
-<!-- <h1 class="fixed">{scroll}</h1> -->
 <Links />
 <!-- Hero -->
 <section
@@ -134,7 +163,7 @@
 >
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
 		<div class="flex flex-col w-full gap-10">
-			<h1 class="text-8xl">Unified Bitcoin.</h1>
+			<h1 class="text-6xl">Unify Your Bitcoin.</h1>
 			<h2 class="text-4xl">{$t('app.hero.tagline')}</h2>
 			<ul class="text-2xl list-disc list-inside">
 				<li>Bitcoin only.</li>
@@ -156,31 +185,47 @@
 	</div>
 </section>
 <!-- Features -->
-{#each features as { title, description, learnHref, imgSrc }, i}
-	<section class="flex items-center justify-center w-full h-screen border">
-		<div class="flex justify-between w-full max-w-4xl p-10 rounded-lg">
-			<div class="flex flex-col w-full max-w-md">
-				<div class="flex flex-col gap-10 items-start max-w-md">
-					<a href={learnHref}>
-						<h1 class="text-8xl">{title}</h1>
-					</a>
-					<h2 class="text-2xl">{description}</h2>
-					<a href={learnHref}>
-						<Button text="Learn more" />
-					</a>
-				</div>
+<section class="flex items-center justify-center w-full h-screen border">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+		<h1 class="text-6xl">Features</h1>
+		<div class="flex gap-8 flex-wrap">
+			<!-- Buttons -->
+			<div class="flex-1 flex flex-wrap gap-4 min-w-[300px] w-full">
+				{#each features as { title, active }, i}
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+					<div
+						class={`flex flex-col gap-4 border max-w-sm rounded-lg cursor-pointer p-2 ${
+							active ? 'bg-white text-black' : ''
+						}`}
+						on:click={() => {
+							activeFeatureIndex = i
+						}}
+					>
+						<h1 class="text-2xl">{title}</h1>
+					</div>
+				{/each}
 			</div>
-			<div class="w-full max-w-sm hidden md:block">
-				<img src={imgSrc} alt={`${title}`} />
+			<!-- Active feature -->
+			<div class="flex-1">
+				{#each features as { description, learnHref, active }, i}
+					{#if active}
+						<div class="flex flex-col gap-4 min-w-[300px] w-full">
+							<h2 class="text-2xl">{description}</h2>
+							<a href={learnHref}>
+								<Button text="Learn more" />
+							</a>
+						</div>
+					{/if}
+				{/each}
 			</div>
 		</div>
-	</section>
-{/each}
-
-<!-- Why? -->
+	</div>
+</section>
+<!-- Why -->
 <section class="flex flex-col items-center justify-center w-full h-screen border">
 	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
-		<h1 class="text-6xl">Why use Clams?</h1>
+		<h1 class="text-6xl">Benefits</h1>
 		<div class="flex gap-10 flex-wrap">
 			{#each whys as { title, description }}
 				<div class="grid gap-5 p-5 border rounded-lg max-w-sm">
@@ -191,5 +236,20 @@
 				</div>
 			{/each}
 		</div>
+	</div>
+</section>
+<!-- Connect -->
+<section class="flex flex-col items-center justify-center w-full h-screen border">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+		<h1 class="text-6xl">Get started</h1>
+		<p class="text-2xl">
+			Unleash the full potential of your Bitcoin holdings with Clams. Connect your wallets, embrace
+			the power of Lightning Network transactions, and simplify your Bitcoin management journey.
+			Experience the convenience of a single app that empowers you to take control of your financial
+			future. Get started with Clams today and discover a new era of Bitcoin management.
+		</p>
+		<p class="text-2xl">
+			Got ideas on how to improve Clams? Want to contribute? Join us in our Discord server.
+		</p>
 	</div>
 </section>
