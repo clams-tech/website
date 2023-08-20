@@ -158,9 +158,7 @@
 
 <Links />
 <!-- Hero -->
-<section
-	class="flex items-center justify-center w-full h-screen bg-[url('$lib/images/background6.png')] bg-cover"
->
+<section class="mt-40 flex items-center justify-center w-full bg-cover">
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
 		<div class="flex flex-col w-full gap-10">
 			<h1 class="text-6xl">Unify Your Bitcoin.</h1>
@@ -185,8 +183,8 @@
 	</div>
 </section>
 <!-- Features -->
-<section class="flex items-center justify-center w-full h-screen border">
-	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+<section class="mt-40 flex items-center justify-center w-full">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Features</h1>
 		<div class="flex gap-8 flex-wrap">
 			<!-- Buttons -->
@@ -223,8 +221,8 @@
 	</div>
 </section>
 <!-- Why -->
-<section class="flex flex-col items-center justify-center w-full h-screen border">
-	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+<section class="mt-40 flex flex-col items-center justify-center w-full">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Benefits</h1>
 		<div class="flex gap-10 flex-wrap">
 			{#each whys as { title, description }}
@@ -239,8 +237,8 @@
 	</div>
 </section>
 <!-- Connect -->
-<section class="flex flex-col items-center justify-center w-full h-screen border">
-	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10">
+<section class="mt-40 pb-40 flex flex-col items-center justify-center w-full">
+	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Get started</h1>
 		<p class="text-2xl">
 			Unleash the full potential of your Bitcoin holdings with Clams. Connect your wallets, embrace
