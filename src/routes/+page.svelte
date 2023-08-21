@@ -80,7 +80,7 @@
 		{
 			title: 'Metadata',
 			description:
-				'Transactions are tagged with intelligent defaults. Further enhance your dataset with custom tags.',
+				'Transactions are tagged with intelligent defaults. Further enhance your local dataset with custom tags.',
 			learnHref: '/metadata',
 			imgSrc: tags,
 			active: false
@@ -158,7 +158,7 @@
 
 <Links />
 <!-- Hero -->
-<section class="mt-40 flex items-center justify-center w-full bg-cover">
+<section class="mt-16 md:mt-28 flex items-center justify-center w-full bg-cover">
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">
 		<div class="flex flex-col w-full gap-10">
 			<h1 class="text-6xl">Unify Your Bitcoin.</h1>
@@ -183,7 +183,7 @@
 	</div>
 </section>
 <!-- Features -->
-<section class="mt-40 flex items-center justify-center w-full">
+<section class="mt-16 md:mt-28  flex items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Features</h1>
 		<div class="flex gap-8 flex-wrap">
@@ -221,7 +221,7 @@
 	</div>
 </section>
 <!-- Why -->
-<section class="mt-40 flex flex-col items-center justify-center w-full">
+<section class="mt-16 md:mt-28  flex flex-col items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Benefits</h1>
 		<div class="flex gap-10 flex-wrap">
@@ -237,14 +237,12 @@
 	</div>
 </section>
 <!-- Connect -->
-<section class="mt-40 pb-40 flex flex-col items-center justify-center w-full">
+<section class="mt-16 md:mt-28 pb-16 md:pb-20 flex flex-col items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl p-10 rounded-lg gap-10  bg-black/[.8]">
 		<h1 class="text-6xl">Get started</h1>
 		<p class="text-2xl">
-			Unleash the full potential of your Bitcoin holdings with Clams. Connect your wallets, embrace
-			the power of Lightning Network transactions, and simplify your Bitcoin management journey.
-			Experience the convenience of a single app that empowers you to take control of your financial
-			future. Get started with Clams today and discover a new era of Bitcoin management.
+			Unleash the full potential of your Bitcoin holdings with Clams. Experience the convenience of
+			a single app that does it all. Discover the new era of Bitcoin management.
 		</p>
 		<p class="text-2xl">
 			Got ideas on how to improve Clams? Want to contribute? Join us in our Discord server.

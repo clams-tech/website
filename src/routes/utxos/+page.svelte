@@ -3,11 +3,11 @@
 		<h1 class="text-6xl">UTXOs</h1>
 		<section class="mt-10">
 			<p class="text-2xl">
-				This dashboard comprehensive snapshot of your held Unspent Transaction Outputs (UTXOs),
-				encompassing those stored in cold storage as well as those residing in your lightning
-				wallet. The user-friendly interface facilitates comprehension of the count and size of the
-				UTXOs. Accompanying filters permit personalized sorting according to your preferences. For
-				instance, you might choose to exclusively display UTXOs stemming from your CLN node,
+				This dashboard provides a comprehensive snapshot of your held Unspent Transaction Outputs
+				(UTXOs), encompassing those stored in cold storage as well as those residing in your
+				lightning wallet. The user-friendly interface facilitates visualizes the count and size of
+				the UTXOs. Accompanying filters permit personalized sorting according to your preferences.
+				For example, you might choose to exclusively display UTXOs stemming from your CLN node,
 				confirmed within the previous quarter. Furthermore, akin to all data within Clams, you have
 				the ability to tag your UTXOs, thereby enhancing your accounting practices.
 			</p>

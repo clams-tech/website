@@ -12,7 +12,6 @@
 				However, as the adoption of BOLT12 gains momentum within the ecosystem, Clams eagerly
 				anticipates integrating support for a wider array of implementations.
 			</p>
-			<p class="text-2xl" />
 			<ul class="mt-10 text-2xl list-disc list-inside grid gap-2">
 				Features:
 				<li>Create static QR code offers for both payment and withdrawal flows.</li>

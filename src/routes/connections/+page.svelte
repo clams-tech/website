@@ -5,16 +5,13 @@
 			<p class="text-2xl">
 				The Connections page serves as the hub for establishing and overseeing connections to your
 				nodes. Once a connection is established, the process of data synchronization commences. This
-				functionality is especially beneficial for power users who manage multiple nodes, enabling
-				them to seamlessly synchronize data from various sources.
-			</p>
-			<p class="mt-10 text-2xl">
-				For instance, you might operate one node for personal matters and another for your business
-				dealings. Through Clams, you can derive insights and exercise control over both from a
-				unified interface once these nodes are connected. Node operators always have complete
-				control via fine-grained permissions that range from read-only to full full administrative
-				control. Access to nodes remains available for as long as you require, secured by a strong
-				password of your choosing.
+				feature is especially beneficial for power users who manage multiple nodes, enabling them to
+				seamlessly synchronize data from various sources. As an example, you might operate one node
+				for personal matters and another for your business dealings. With Clams, you can derive
+				insights and exercise control over both from a unified interface once both nodes are
+				connected. Node operators always have complete control via fine-grained permissions that
+				range from read-only to full full administrative control. Access to nodes remains available
+				for as long as you require, secured by a strong password of your choosing.
 			</p>
 			<!-- TODO - add all the logos for supported implementations -->
 			<p class="text-2xl" />

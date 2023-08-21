@@ -6,12 +6,9 @@
 				Whether it's Bitcoin stored in cold storage or liquidity secured within your lightning
 				channels, Clams aims to provide a comprehensive overview of your holdings. With an intuitive
 				dashboard featuring visualizations of your Bitcoin data over time, you can easily gain
-				valuable insights with just a few clicks.
-			</p>
-			<p class="text-2xl">
-				Want to know your grocery expenses over the past two weeks? Curious about the frequency of a
-				specific customer's coffee purchases in the last quarter? The dashboard has all the answers
-				to these types of questions.
+				valuable insights with just a few clicks. Want to know your grocery expenses over the past
+				two weeks? Curious about the frequency of a specific customer's coffee purchases in the last
+				quarter? The dashboard has all the answers to these types of questions.
 			</p>
 			<ul class="mt-10 text-2xl list-disc list-inside grid gap-2">
 				Features:
