@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ClamsAltLogo from '$lib/icons/ClamsAltLogo.svelte'
 	import DiscordIcon from '$lib/icons/Discord.svelte'
 	import TwitterIcon from '$lib/icons/Twitter.svelte'
 	import GithubIcon from '$lib/icons/Github.svelte'
@@ -10,6 +11,11 @@
 	]
 </script>
 
+<div class="fixed top-3 left-2 w-10 mx-2 py-4">
+	<a href="/">
+		<svelte:component this={ClamsAltLogo} />
+	</a>
+</div>
 <div class="fixed top-3 right-2">
 	<div class="flex items-center py-4 px-2">
 		{#each contacts as { href, icon }}

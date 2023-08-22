@@ -156,7 +156,6 @@
 	<title>Clams</title>
 </svelte:head>
 
-<Links />
 <!-- Hero -->
 <section class="mt-16 md:mt-28 flex items-center justify-center w-full bg-cover">
 	<div class="flex justify-between w-full max-w-4xl bg-black/[.8] p-10 rounded-lg gap-10">

@@ -20,12 +20,6 @@
 			<ul class="mt-10 text-2xl list-disc list-inside grid gap-2">
 				Coming soon:
 				<li>Additional visualizations, including capital gains metrics (long and short-term).</li>
-				<li>One-click generation of Profit and Loss Statements for any desired time period.</li>
-				<li>
-					Cost basis algorithms such as HIFO (Highest Cost Basis), LIFO (Last In First Out), FIFO
-					(First In First Out), and ACB (Average Cost Basis).
-				</li>
-				<li>Customizable professional invoices for your business.</li>
 				<li>Point-of-sale interface</li>
 			</ul>
 		</section>
