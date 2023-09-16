@@ -1,21 +1,10 @@
 <script lang="ts">
-	import ClamsLogo from '$lib/icons/ClamsLogo.svelte'
 	import Button from '$lib/elements/Button.svelte'
-	import lightning from '$lib/images/lightning.png'
-	import key from '$lib/images/key.png'
-	import accountancy from '$lib/images/accountancy.png'
-	import channels from '$lib/images/channels.png'
-	import tags from '$lib/images/tags.png'
-	import contacts from '$lib/images/contacts.png'
-	import book from '$lib/images/book.png'
-	import lock from '$lib/images/lock.png'
-	import chart from '$lib/images/chart.png'
-	import lightning2 from '$lib/images/lightning2.png'
-	import backup from '$lib/images/backup.png'
 	import { t } from '$lib/i18n/translations'
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax'
 	import FAQ from '$lib/components/FAQ.svelte'
 	import * as animateScroll from 'svelte-scrollto'
+	import { FEATURE_ICONS } from '$lib/constants'
 
 	let activeFeatureIndex = 0
 
@@ -24,104 +13,56 @@
 			title: 'Wallets',
 			description:
 				'Establish connections to multiple Lightning nodes to synchronize data and manage funds.',
-			learnHref: '/connections',
-			imgSrc: lightning,
+			route: '/wallets',
+			icon: FEATURE_ICONS['wallets'],
 			active: true
 		},
 		{
 			title: 'Transactions',
-			description: 'View a full history of updates to your unified on-chain and off-chain balance.',
-			learnHref: '/transactions',
-			imgSrc: contacts,
+			description:
+				'A comprehensive history of all updates to your combined on-chain and off-chain balance.',
+			route: '/transactions',
+			icon: FEATURE_ICONS['transactions'],
 			active: false
 		},
 		{
 			title: 'UTXOs',
-			description: 'Monitor and manage your UTXOs via a customizable and interactive dashboard.',
-			learnHref: '/utxos',
-			imgSrc: key,
+			description: 'Manage your UTXOs via a customizable and interactive dashboard.',
+			route: '/utxos',
+			icon: FEATURE_ICONS['utxos'],
 			active: false
 		},
 		{
 			title: 'Channels',
 			description:
-				'Monitor the status and liquidity profile of your lightning channels. Update fee settings to your needs.',
-			learnHref: '/channels',
-			imgSrc: channels,
+				'Track the status and liquidity profile of your lightning channels. Adjust fee settings to your needs.',
+			route: '/channels',
+			icon: FEATURE_ICONS['channels'],
 			active: false
 		},
 		{
 			title: 'Offers',
 			description:
 				'Create and manage BOLT12 reusable static invoices for payments and withdrawals.',
-			learnHref: '/offers',
-			imgSrc: key,
+			route: '/offers',
+			icon: FEATURE_ICONS['offers'],
 			active: false
 		},
 		{
 			title: 'Forwards',
-			description:
-				'Examine all of the income you have generated over time forwarding sats through your lightning nodes.',
-			learnHref: '/forwards',
-			imgSrc: key,
+			description: 'Analyze the cumulative income generated over time from routing payments.',
+			route: '/forwards',
+			icon: FEATURE_ICONS['forwards'],
 			active: false
 		},
 		{
 			title: 'Metadata',
 			description:
-				'Transactions are tagged with intelligent defaults. Further enhance your local dataset with custom tags.',
-			learnHref: '/metadata',
-			imgSrc: tags,
+				'Transactions get tagged with intelligent defaults. Enhance your local dataset with custom tags.',
+			route: '/metadata',
+			icon: FEATURE_ICONS['metadata'],
 			active: false
 		}
-		// {
-		// 	title: 'LNURL',
-		// 	description:
-		// 		'Full range of LNURL pay and withdraw options. Login to Bitcoin applications via LNURL Auth.',
-		// 	learnHref: '/lnurl',
-		// 	imgSrc: lightning,
-		// 	active: false
-		// },
-		// {
-		// 	title: 'Accounting',
-		// 	description:
-		// 		'One-click exports of income event documents for tax services like Koinly and Quickbooks.',
-		// 	learnHref: '/accounting',
-		// 	imgSrc: accountancy,
-		// 	active: false
-		// },
-		// {
-		// 	title: 'Charts',
-		// 	description:
-		// 		'Interactive charts to visualize data over time. Everything from node uptime to income events.',
-		// 	learnHref: '/charts',
-		// 	imgSrc: accountancy,
-		// 	active: false
-		// },
-		// {
-		// 	title: 'Exports',
-		// 	description:
-		// 		'Export data with a single click for upload to tax services such as Koinly and Quickbooks.',
-		// 	learnHref: '/exports',
-		// 	imgSrc: accountancy,
-		// 	active: false
-		// }
-		// {
-		// 	title: 'Contacts',
-		// 	description:
-		// 		'Address book for effortless management and execution of recurring transactions with friends, customers, or merchants.',
-		// 	learnHref: '/contacts',
-		// 	imgSrc: contacts,
-		// 	active: false
-		// },
-		// {
-		// 	title: 'Backups',
-		// 	description:
-		// 		'Export password-encrypted data to device. Simple synchronization to multiple devices.',
-		// 	learnHref: '/backups',
-		// 	imgSrc: backup,
-		// 	active: false
-		// }
 	]
 
 	const whys = [
@@ -205,11 +146,15 @@
 <section class=" flex items-center justify-center w-full h-screen">
 	<div class="flex justify-center w-full max-w-xl">
 		<div class="flex flex-col items-center w-full gap-10 text-center">
-			<h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1>
+			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
+			<h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin</h1>
+			<!-- <h1 class="text-6xl font-bold">Financial Management For Your Bitcoin.</h1> -->
 			<!-- <h2 class="text-4xl">{$t('app.hero.tagline')}</h2> -->
-			<h2 class="text-4xl text-purple-500">
+			<!-- <h2 class="text-4xl text-purple-500">
 				Financial Management and Reporting Across All Your Wallets.
-			</h2>
+			</h2> -->
+			<!-- <h2 class="text-4xl text-purple-500">Simplified Financial Management For Your Bitcoin.</h2> -->
+			<h2 class="text-4xl text-purple-500">Financial Management For Lightning Node Operators.</h2>
 			<div class="flex">
 				<a class="mr-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
 					<Button text="Start now" primary />
@@ -225,56 +170,42 @@
 <section class="flex items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
 		<h1 class="text-4xl text-purple-500">Background</h1>
-		<h2 class="text-2xl">
+		<!-- <h2 class="text-2xl">
 			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
 			lightning nodes, exchanges, mobile apps and more.
-		</h2>
+		</h2> -->
 		<h2 class="text-2xl">
+			Managing your finances as a lightning node operator can be a complex and daunting task.
+		</h2>
+		<!-- <h2 class="text-2xl">
 			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
 			visualize your sats flow and streamline reporting with a single click.
-		</h2>
+		</h2> -->
 		<h2 class="text-2xl">
+			Clams simplifies this process by offering an intuitive interface that surfaces the best
+			features from your node. Get started to visualize your sats flow.
+		</h2>
+		<!-- <h2 class="text-2xl">
 			Our mission is to make it effortless for anyone to access and leverage critical financial and
 			transaction data, empowering them to embrace the Bitcoin Standard.
-		</h2>
+		</h2> -->
 	</div>
 </section>
 <!-- Features -->
 <section class="mt-16 md:mt-28 flex items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
 		<h1 class="text-4xl text-purple-500">Features</h1>
-		<div class="flex gap-8 flex-wrap">
-			<!-- Buttons -->
-			<div class="flex-1 flex flex-wrap gap-4 min-w-[300px] w-full">
-				{#each features as { title, active }, i}
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<!-- svelte-ignore a11y-mouse-events-have-key-events -->
-					<div
-						class={`flex flex-col gap-4 border max-w-sm rounded-lg cursor-pointer p-2 ${
-							active ? 'bg-white text-black' : ''
-						}`}
-						on:click={() => {
-							activeFeatureIndex = i
-						}}
-					>
-						<h1 class="text-2xl">{title}</h1>
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+			{#each features as { icon, title, description, route }}
+				<a class="border p-4 rounded-lg flex flex-col gap-2" href={route}>
+					<div class="w-10 xs:w-12">
+						{@html icon}
 					</div>
-				{/each}
-			</div>
-			<!-- Active feature -->
-			<div class="flex-1">
-				{#each features as { title, description, learnHref, imgSrc, active }, i}
-					{#if active}
-						<div class="flex flex-col gap-4 min-w-[300px] w-full">
-							<img src={imgSrc} alt={title} />
-							<h2 class="text-2xl">{description}</h2>
-							<a href={learnHref}>
-								<Button text="Learn more" />
-							</a>
-						</div>
-					{/if}
-				{/each}
-			</div>
+					<h3 class="text-2xl font-bold ">{title}</h3>
+					<p>{description}</p>
+					<p>Learn More</p>
+				</a>
+			{/each}
 		</div>
 	</div>
 </section>
@@ -282,13 +213,11 @@
 <section class="mt-16 md:mt-28 flex flex-col items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
 		<h1 class="text-4xl text-purple-500">Why Choose Clams?</h1>
-		<div class="flex gap-10 flex-wrap">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each whys as { title, description }}
-				<div class="grid gap-5 p-5 border rounded-lg max-w-sm bg-white">
-					<h2 class="text-2xl">
-						{title}
-					</h2>
-					<p class="">{description}</p>
+				<div class="border p-4 rounded-lg flex flex-col gap-2">
+					<h3 class="text-2xl font-bold ">{title}</h3>
+					<p>{description}</p>
 				</div>
 			{/each}
 		</div>

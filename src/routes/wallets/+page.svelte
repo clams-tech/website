@@ -1,9 +1,9 @@
 <section class="flex flex-col items-center">
 	<div class="w-full max-w-4xl pt-20 pb-20">
-		<h1 class="text-6xl">Connections</h1>
+		<h1 class="text-6xl">Wallets</h1>
 		<section class="mt-10">
 			<p class="text-2xl">
-				The Connections page serves as the hub for establishing and overseeing connections to your
+				The Wallets page serves as the hub for establishing and overseeing connections to your
 				nodes. Once a connection is established, the process of data synchronization commences. This
 				feature is especially beneficial for power users who manage multiple nodes, enabling them to
 				seamlessly synchronize data from various sources. As an example, you might operate one node
