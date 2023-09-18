@@ -15,9 +15,6 @@ module.exports = {
 					800: '#2200dd',
 					900: '#0000d8'
 				},
-				bitcoin: {
-					orange: '#f2a900'
-				},
 				utility: {
 					success: '#05F063',
 					// success: '#04d759',
@@ -27,9 +24,10 @@ module.exports = {
 					// pending: '#ffc540'
 					pending: '#ff9000'
 				},
-				black: '#121212',
+				black: '#1E1E1E',
 				white: '#ffffff',
-				transparent: 'transparent'
+				transparent: 'transparent',
+				bitcoin: '#F7931A'
 			}
 		}
 	},

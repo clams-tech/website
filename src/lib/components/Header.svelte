@@ -1,37 +1,45 @@
 <script lang="ts">
 	import ClamsAltLogo from '$lib/icons/clams-alt'
 	import DiscordIcon from '$lib/icons/discord'
-	import TwitterIcon from '$lib/icons/twitter'
+	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
 	import { scrollto } from 'svelte-scrollto'
 
-	let links = [
+	let internalLinks = [
 		{ href: '#features', title: 'Features', elementId: '#features' },
-		// { href: '', title: 'Pricing' },
-		{ href: '', title: 'FAQ' },
+		{ href: '#faq', title: 'FAQ' }
+	]
 
-		{ icon: DiscordIcon, title: 'Discord', href: 'https://discord.gg/eWfHuJZVaB' },
+	let externalLinks = [
 		{ icon: GithubIcon, title: 'GitHub', href: 'https://github.com/clams-tech' },
-		{ icon: TwitterIcon, title: 'X', href: 'https://twitter.com/clamstech' }
+		{ icon: XIcon, title: 'Twitter', href: 'https://twitter.com/clamstech' },
+		{ icon: DiscordIcon, title: 'Discord', href: 'https://discord.gg/eWfHuJZVaB' }
 	]
 </script>
 
-<div class="fixed top-0 left-0 bg-white p-4 w-full flex justify-between shadow-md">
-	<div class="w-10">
+<div class="w-full flex justify-between py-3 px-[72px]">
+	<div class="flex items-center gap-10">
 		<a href="/">
-			<div class="w-10 xs:w-12">
+			<div class="w-10">
 				{@html ClamsAltLogo}
 			</div>
 		</a>
+		{#each internalLinks as { href, title }}
+			<a class="flex items-center" {href} target="_blank" rel="noopener noreferrer">
+				{#if title}
+					{title}
+				{/if}
+			</a>
+		{/each}
 	</div>
-	<div class="flex items-center">
-		{#each links as { href, title, icon }}
-			<a class="ml-10 flex items-center" {href} target="_blank" rel="noopener noreferrer">
+	<div class="flex items-center gap-10">
+		{#each externalLinks as { href, title, icon }}
+			<a class="flex items-center" {href} target="_blank" rel="noopener noreferrer">
 				{#if title}
 					{title}
 				{/if}
 				{#if icon}
-					<div class="w-6 mx-2 xs:w-12">
+					<div class="w-6 mx-2">
 						{@html icon}
 					</div>
 				{/if}

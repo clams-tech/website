@@ -5,6 +5,12 @@
 	import FAQ from '$lib/components/FAQ.svelte'
 	import * as animateScroll from 'svelte-scrollto'
 	import { FEATURE_ICONS } from '$lib/constants'
+	import NetworkImg from '$lib/images/network.png'
+	import BitcoinIcon from '$lib/icons/bitcoin'
+	import chevronRightIcon from '$lib/icons/chevron-right'
+	import CheckIcon from '$lib/icons/check'
+	import BlocksImage from '$lib/images/blocks.png'
+	import Footer from '$lib/components/Footer.svelte'
 
 	let activeFeatureIndex = 0
 
@@ -67,33 +73,28 @@
 
 	const whys = [
 		{
-			title: 'Reliable and Secure',
+			title: 'Non-custodial',
 			description: 'Enjoy a futuristic payment experience and keep full control of your sats.'
 		},
 		{
 			title: 'Bitcoin Only',
 			description:
-				'Built by Bitcoiners that are focused on improving the user-experience of Bitcoin.'
+				'Built by Bitcoiners who are passionate about improving the usability of Bitcoin.'
 		},
 		{
-			title: 'Privacy-Focused Approach',
+			title: 'Privacy-Focused',
 			description:
 				'Privacy is a priority, with no logging, tracking, or Google scripts utilized within the app.'
 		},
 		{
-			title: 'Localized Data Storage',
+			title: 'Local Data Storage',
 			description:
 				'All data is stored locally on your device and never leaves unless you want it to.'
 		},
 		{
-			title: 'Non-custodial',
+			title: 'Fully Open-Source',
 			description:
-				'keep control of your keys. App permissions range from read-only to admin access.'
-		},
-		{
-			title: 'Fully Open-Source Software',
-			description:
-				'All client-side application code is public. Anyone can verify and we welcome feedback.'
+				'All client-side application code is public. Anyone can verify it and we welcome feedback.'
 		}
 	]
 
@@ -104,19 +105,15 @@
 		},
 		{
 			q: 'Can I back up my data?',
-			a: "Yes, you can. Navigate to the app's settings section to download your data."
+			a: 'Not yet, but we have plans to add this feature soon.'
 		},
 		{
 			q: 'How do app permissions work?',
-			a: 'When you make a connection, you will be prompted to grant permissions to the app for that specific connection. The app requires read-only access at a minimum to calculate your sats flow. You can update or revoke permissions at any time.'
+			a: 'When you make a wallet connection, the app will ask you to grant permissions. The app requires read-only access at a minimum to calculate your sats flow. You can update or revoke permissions at any time.'
 		},
 		{
 			q: 'Which lightning implementations do you support?',
-			a: 'Currently, we support LND and CLN.'
-		},
-		{
-			q: 'Can I connect my own Electrum Server?',
-			a: 'Not at the moment, but we plan to offer this as an option in the future. For now, there are multiple public Electrum Servers available, and users can choose which one they want to use.'
+			a: 'CLN only, but we are investigating adding LND support.'
 		},
 		{
 			q: 'Can I sync my data across multiple devices?',
@@ -124,7 +121,7 @@
 		},
 		{
 			q: 'How do you decide which wallet connections to support?',
-			a: "We started with the connections that we needed. If you don't see an option you want, please join our Discord server and let us know."
+			a: "If you don't see an option you want, please join our Discord server and let us know."
 		}
 	]
 
@@ -143,33 +140,37 @@
 </svelte:head>
 
 <!-- Hero -->
-<section class=" flex items-center justify-center w-full h-screen">
-	<div class="flex justify-center w-full max-w-xl">
-		<div class="flex flex-col items-center w-full gap-10 text-center">
+<section class="flex flex-col items-center w-full h-screen border border-red-500">
+	<div class="flex justify-center w-full max-w-[600px] mt-[80px]">
+		<div class="flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
-			<h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin</h1>
+			<h1 class="text-6xl font-bold mb-4">
+				One Platform to Unify Your <span class="text-bitcoin">Bitcoin</span>.
+			</h1>
 			<!-- <h1 class="text-6xl font-bold">Financial Management For Your Bitcoin.</h1> -->
 			<!-- <h2 class="text-4xl">{$t('app.hero.tagline')}</h2> -->
 			<!-- <h2 class="text-4xl text-purple-500">
 				Financial Management and Reporting Across All Your Wallets.
 			</h2> -->
 			<!-- <h2 class="text-4xl text-purple-500">Simplified Financial Management For Your Bitcoin.</h2> -->
-			<h2 class="text-4xl text-purple-500">Financial Management For Lightning Node Operators.</h2>
-			<div class="flex">
-				<a class="mr-4" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
-					<Button text="Start now" primary />
-				</a>
+			<h2 class="text-2xl mb-8">Financial Management For Node Operators.</h2>
+			<div class="flex gap-6">
 				<a href="https://docs.clams.tech" target="_blank" rel="noopener noreferrer">
 					<Button text="Learn more" />
+				</a>
+				<a class="" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+					<Button text="Start now" primary />
 				</a>
 			</div>
 		</div>
 	</div>
+	<!-- <div class="border m-[-250px]">
+		<img src={NetworkImg} alt="network" />
+	</div> -->
 </section>
 <!-- What -->
-<section class="flex items-center justify-center w-full">
-	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-purple-500">Background</h1>
+<section class="flex items-center justify-center w-full gap-4 border border-red-500">
+	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
 		<!-- <h2 class="text-2xl">
 			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
 			lightning nodes, exchanges, mobile apps and more.
@@ -177,46 +178,65 @@
 		<h2 class="text-2xl">
 			Managing your finances as a lightning node operator can be a complex and daunting task.
 		</h2>
+		<h2 class="text-2xl">
+			Clams simplifies the effort by providing an intuitive interface that showcases the most
+			powerful features of your node.
+		</h2>
+		<h2 class="text-3xl text-bold">
+			Get started to <span class="text-bitcoin">visualize</span> your
+			<span class="text-bitcoin">sats flow</span>.
+		</h2>
 		<!-- <h2 class="text-2xl">
 			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
 			visualize your sats flow and streamline reporting with a single click.
 		</h2> -->
-		<h2 class="text-2xl">
-			Clams simplifies this process by offering an intuitive interface that surfaces the best
-			features from your node. Get started to visualize your sats flow.
-		</h2>
-		<!-- <h2 class="text-2xl">
-			Our mission is to make it effortless for anyone to access and leverage critical financial and
-			transaction data, empowering them to embrace the Bitcoin Standard.
-		</h2> -->
+	</div>
+	<div class="w-[204px]">
+		{@html BitcoinIcon}
 	</div>
 </section>
 <!-- Features -->
-<section class="mt-16 md:mt-28 flex items-center justify-center w-full">
+<section
+	class="mt-16 md:mt-28 py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] border border-red-500"
+>
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-purple-500">Features</h1>
+		<h1 class="text-4xl text-center"><span class="text-bitcoin">Key</span> Features</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each features as { icon, title, description, route }}
-				<a class="border p-4 rounded-lg flex flex-col gap-2" href={route}>
-					<div class="w-10 xs:w-12">
-						{@html icon}
+				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white" href={route}>
+					<div class="flex items-center gap-1">
+						<div class="w-10 xs:w-12">
+							{@html icon}
+						</div>
+						<h3 class="text-2xl font-bold">{title}</h3>
 					</div>
-					<h3 class="text-2xl font-bold ">{title}</h3>
 					<p>{description}</p>
-					<p>Learn More</p>
+					<div class="flex justify-end">
+						<p class="text-purple-500 font-bold">Learn More</p>
+						<div class="w-8">
+							{@html chevronRightIcon}
+						</div>
+					</div>
 				</a>
 			{/each}
 		</div>
 	</div>
 </section>
 <!-- Why -->
-<section class="mt-16 md:mt-28 flex flex-col items-center justify-center w-full">
-	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-purple-500">Why Choose Clams?</h1>
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<section
+	class="mt-16 md:mt-28 flex flex-col items-center justify-center w-full border border-red-500"
+>
+	<div class="flex flex-col items-center w-full gap-10">
+		<h1 class="text-4xl text-center"><span class="text-bitcoin">Why</span> Choose Clams?</h1>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[640px]">
 			{#each whys as { title, description }}
-				<div class="border p-4 rounded-lg flex flex-col gap-2">
-					<h3 class="text-2xl font-bold ">{title}</h3>
+				<div class="flex flex-col gap-1 max-w-[280px]">
+					<div class="flex items-center">
+						<div class="w-8">
+							{@html CheckIcon}
+						</div>
+						<h3 class="text-2xl font-bold">{title}</h3>
+					</div>
 					<p>{description}</p>
 				</div>
 			{/each}
@@ -224,23 +244,41 @@
 	</div>
 </section>
 <!-- FAQ -->
-<section class="mt-16 md:mt-28 flex flex-col items-center justify-center w-full">
-	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-purple-500">FAQ</h1>
+<section class="mt-16 md:mt-28 flex flex-col items-center w-full border border-red-500">
+	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
+		<h1 class="text-4xl">
+			Frequently asked <span class="text-bitcoin">questions</span>
+		</h1>
 		<FAQ {faqs} />
 	</div>
 </section>
 <!-- Get Started -->
-<section class="mt-16 md:mt-28 pb-16 md:pb-20 flex flex-col items-center justify-center w-full">
-	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-purple-500">Get started</h1>
+<section
+	class="mt-16 md:mt-28 pb-16 md:pb-20 flex flex-col items-center justify-center w-full gap-10 border border-red-500"
+>
+	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
+		<h1 class="text-4xl font-bold">
+			<span class="text-bitcoin">Unleash</span> the full potential of your Bitcoin holdings with Clams.
+		</h1>
 		<p class="text-2xl">
-			Unleash the full potential of your Bitcoin holdings with Clams. Experience the convenience of
-			a single app that does it all and discover the new era of Bitcoin management.
+			Experience the convenience of a single app that does it all and discover the new era of
+			Bitcoin management.
 		</p>
-		<p class="text-2xl">
-			Got ideas on how to improve Clams? Want to contribute? Join us in our Discord server.
-		</p>
+		<div class="mt-4 flex justify-center">
+			<a href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+				<Button text="Get Started" primary />
+			</a>
+		</div>
+	</div>
+	<div class="grid grid-cols-2 gap-4">
+		<div class=""><img src={BlocksImage} alt="blocks" /></div>
+		<div class="flex flex-col gap-2 max-w-[544px] justify-center">
+			<h2 class="text-2xl">Want to contribute or have ideas on how to improve Clams?</h2>
+			<p>
+				Join us in our <a class="text-purple-500 font-bold underline" href="/">Discord</a> server
+			</p>
+		</div>
 	</div>
 </section>
 <a on:click={() => animateScroll.scrollToTop()}> Scroll to top </a>
+<Footer />
