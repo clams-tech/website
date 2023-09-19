@@ -11,6 +11,7 @@
 	import CheckIcon from '$lib/icons/check'
 	import BlocksImage from '$lib/images/blocks.png'
 	import Footer from '$lib/components/Footer.svelte'
+	import ArrowUpIcon from '$lib/icons/arrow-up'
 
 	let activeFeatureIndex = 0
 
@@ -140,8 +141,8 @@
 </svelte:head>
 
 <!-- Hero -->
-<section class="flex flex-col items-center w-full h-screen border border-red-500">
-	<div class="flex justify-center w-full max-w-[600px] mt-[80px]">
+<section class="px-6 flex flex-col items-center w-full h-screen border border-red-500">
+	<div class="flex justify-center w-full max-w-[600px] mt-[120px]">
 		<div class="flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
 			<h1 class="text-6xl font-bold mb-4">
@@ -164,12 +165,12 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="border m-[-250px]">
+	<!-- <div class="border">
 		<img src={NetworkImg} alt="network" />
 	</div> -->
 </section>
 <!-- What -->
-<section class="flex items-center justify-center w-full gap-4 border border-red-500">
+<section class="px-6 py-[96px] flex items-center justify-center w-full gap-4 border border-red-500">
 	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
 		<!-- <h2 class="text-2xl">
 			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
@@ -182,25 +183,31 @@
 			Clams simplifies the effort by providing an intuitive interface that showcases the most
 			powerful features of your node.
 		</h2>
-		<h2 class="text-3xl text-bold">
-			Get started to <span class="text-bitcoin">visualize</span> your
-			<span class="text-bitcoin">sats flow</span>.
-		</h2>
+		<div class="flex items-center gap-2">
+			<h2 class="text-3xl text-bold">
+				Get started to <span class="text-bitcoin">visualize</span> your
+				<span class="text-bitcoin">sats flow</span>.
+			</h2>
+			<div class="md:hidden max-w-[100px]">
+				{@html BitcoinIcon}
+			</div>
+		</div>
+
 		<!-- <h2 class="text-2xl">
 			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
 			visualize your sats flow and streamline reporting with a single click.
 		</h2> -->
 	</div>
-	<div class="w-[204px]">
+	<div class="hidden md:block w-[204px]">
 		{@html BitcoinIcon}
 	</div>
 </section>
 <!-- Features -->
 <section
-	class="mt-16 md:mt-28 py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] border border-red-500"
+	class="px-6 py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] border border-red-500"
 >
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-center"><span class="text-bitcoin">Key</span> Features</h1>
+		<h1 class="text-4xl text-center">Key <span class="text-bitcoin">Features</span></h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each features as { icon, title, description, route }}
 				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white" href={route}>
@@ -224,7 +231,7 @@
 </section>
 <!-- Why -->
 <section
-	class="mt-16 md:mt-28 flex flex-col items-center justify-center w-full border border-red-500"
+	class="px-6 py-[96px] flex flex-col items-center justify-center w-full border border-red-500"
 >
 	<div class="flex flex-col items-center w-full gap-10">
 		<h1 class="text-4xl text-center"><span class="text-bitcoin">Why</span> Choose Clams?</h1>
@@ -244,7 +251,9 @@
 	</div>
 </section>
 <!-- FAQ -->
-<section class="mt-16 md:mt-28 flex flex-col items-center w-full border border-red-500">
+<section
+	class="px-6 py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] border border-red-500"
+>
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
 		<h1 class="text-4xl">
 			Frequently asked <span class="text-bitcoin">questions</span>
@@ -254,7 +263,7 @@
 </section>
 <!-- Get Started -->
 <section
-	class="mt-16 md:mt-28 pb-16 md:pb-20 flex flex-col items-center justify-center w-full gap-10 border border-red-500"
+	class="px-6 py-[96px] flex flex-col items-center justify-center w-full gap-10 border border-red-500"
 >
 	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
 		<h1 class="text-4xl font-bold">
@@ -280,5 +289,16 @@
 		</div>
 	</div>
 </section>
-<a on:click={() => animateScroll.scrollToTop()}> Scroll to top </a>
+<section
+	class="px-6 py-[96px] flex flex-col items-center justify-center w-full border border-red-500"
+>
+	<a
+		class="text-bold flex items-center gap-2"
+		href="/"
+		on:click={() => animateScroll.scrollToTop()}
+	>
+		Scroll to top {@html ArrowUpIcon}</a
+	>
+</section>
+
 <Footer />

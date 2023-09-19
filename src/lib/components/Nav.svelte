@@ -17,7 +17,7 @@
 	]
 </script>
 
-<div class="w-full flex justify-between py-3 px-[72px]">
+<div class="absolute top-0 hidden md:flex justify-between w-full py-3 px-[72px]">
 	<div class="flex items-center gap-10">
 		<a href="/">
 			<div class="w-10">
