@@ -143,17 +143,17 @@
 <!-- Hero -->
 <section class="px-6 flex flex-col items-center w-full h-screen border border-red-500">
 	<div class="flex justify-center w-full max-w-[600px] mt-[120px]">
-		<div class="flex flex-col items-center w-full text-center">
+		<div class="z-10 flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
 			<h1 class="text-6xl font-bold mb-4">
-				One Platform to Unify Your <span class="text-bitcoin">Bitcoin</span>.
+				One Platform to Unify Your <span class="text-light-orange">Bitcoin</span>.
 			</h1>
 			<!-- <h1 class="text-6xl font-bold">Financial Management For Your Bitcoin.</h1> -->
 			<!-- <h2 class="text-4xl">{$t('app.hero.tagline')}</h2> -->
-			<!-- <h2 class="text-4xl text-purple-500">
+			<!-- <h2 class="text-4xl text-light-purple">
 				Financial Management and Reporting Across All Your Wallets.
 			</h2> -->
-			<!-- <h2 class="text-4xl text-purple-500">Simplified Financial Management For Your Bitcoin.</h2> -->
+			<!-- <h2 class="text-4xl text-light-purple">Simplified Financial Management For Your Bitcoin.</h2> -->
 			<h2 class="text-2xl mb-8">Financial Management For Node Operators.</h2>
 			<div class="flex gap-6">
 				<a href="https://docs.clams.tech" target="_blank" rel="noopener noreferrer">
@@ -165,9 +165,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="border">
-		<img src={NetworkImg} alt="network" />
-	</div> -->
+	<div class="mt-[-150px] h-full w-full bg-[url('$lib/images/network.png')]" />
 </section>
 <!-- What -->
 <section class="px-6 py-[96px] flex items-center justify-center w-full gap-4 border border-red-500">
@@ -185,14 +183,13 @@
 		</h2>
 		<div class="flex items-center gap-2">
 			<h2 class="text-3xl text-bold">
-				Get started to <span class="text-bitcoin">visualize</span> your
-				<span class="text-bitcoin">sats flow</span>.
+				Get started to <span class="text-light-orange">visualize</span> your
+				<span class="text-light-orange">sats flow</span>.
 			</h2>
 			<div class="md:hidden max-w-[100px]">
 				{@html BitcoinIcon}
 			</div>
 		</div>
-
 		<!-- <h2 class="text-2xl">
 			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
 			visualize your sats flow and streamline reporting with a single click.
@@ -207,7 +204,7 @@
 	class="px-6 py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] border border-red-500"
 >
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
-		<h1 class="text-4xl text-center">Key <span class="text-bitcoin">Features</span></h1>
+		<h1 class="text-4xl text-center">Key <span class="text-light-orange">Features</span></h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each features as { icon, title, description, route }}
 				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white" href={route}>
@@ -219,7 +216,7 @@
 					</div>
 					<p>{description}</p>
 					<div class="flex justify-end">
-						<p class="text-purple-500 font-bold">Learn More</p>
+						<p class="text-light-purple font-bold">Learn More</p>
 						<div class="w-8">
 							{@html chevronRightIcon}
 						</div>
@@ -234,10 +231,10 @@
 	class="px-6 py-[96px] flex flex-col items-center justify-center w-full border border-red-500"
 >
 	<div class="flex flex-col items-center w-full gap-10">
-		<h1 class="text-4xl text-center"><span class="text-bitcoin">Why</span> Choose Clams?</h1>
+		<h1 class="text-4xl text-center"><span class="text-light-orange">Why</span> Choose Clams?</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[640px]">
 			{#each whys as { title, description }}
-				<div class="flex flex-col gap-1 max-w-[280px]">
+				<div class="flex flex-col gap-1 md:max-w-[280px]">
 					<div class="flex items-center">
 						<div class="w-8">
 							{@html CheckIcon}
@@ -256,7 +253,7 @@
 >
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
 		<h1 class="text-4xl">
-			Frequently asked <span class="text-bitcoin">questions</span>
+			Frequently asked <span class="text-light-orange">questions</span>
 		</h1>
 		<FAQ {faqs} />
 	</div>
@@ -267,7 +264,8 @@
 >
 	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
 		<h1 class="text-4xl font-bold">
-			<span class="text-bitcoin">Unleash</span> the full potential of your Bitcoin holdings with Clams.
+			<span class="text-light-orange">Unleash</span> the full potential of your Bitcoin holdings with
+			Clams.
 		</h1>
 		<p class="text-2xl">
 			Experience the convenience of a single app that does it all and discover the new era of
@@ -279,12 +277,12 @@
 			</a>
 		</div>
 	</div>
-	<div class="grid grid-cols-2 gap-4">
+	<div class="grid grid-cols1 md:grid-cols-2 gap-4">
 		<div class=""><img src={BlocksImage} alt="blocks" /></div>
 		<div class="flex flex-col gap-2 max-w-[544px] justify-center">
 			<h2 class="text-2xl">Want to contribute or have ideas on how to improve Clams?</h2>
 			<p>
-				Join us in our <a class="text-purple-500 font-bold underline" href="/">Discord</a> server
+				Join us in our <a class="text-light-purple font-bold underline" href="/">Discord</a> server
 			</p>
 		</div>
 	</div>

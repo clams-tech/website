@@ -3,17 +3,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				purple: {
-					50: '#efe5fd',
-					100: '#d5c0fa',
-					200: '#b995f7',
-					300: '#9a67f6',
-					400: '#8040f4',
-					500: '#6305f0',
-					600: '#5600ea',
-					700: '#4000e2',
-					800: '#2200dd',
-					900: '#0000d8'
+				light: {
+					purple: '#6305F0',
+					orange: '#F7931A'
 				},
 				utility: {
 					success: '#05F063',
