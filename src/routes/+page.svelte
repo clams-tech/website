@@ -156,10 +156,20 @@
 			<!-- <h2 class="text-4xl text-light-purple">Simplified Financial Management For Your Bitcoin.</h2> -->
 			<h2 class="text-2xl mb-8">Financial Management For Node Operators.</h2>
 			<div class="flex gap-6">
-				<a href="https://docs.clams.tech" target="_blank" rel="noopener noreferrer">
+				<a
+					href="https://docs.clams.tech"
+					target="_blank"
+					rel="noopener noreferrer"
+					class={'w-[134px]'}
+				>
 					<Button text="Learn more" />
 				</a>
-				<a class="" href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+				<a
+					class={'w-[134px]'}
+					href="https://app.clams.tech"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<Button text="Start now" primary />
 				</a>
 			</div>
@@ -182,7 +192,7 @@
 			powerful features of your node.
 		</h2>
 		<div class="flex items-center gap-2">
-			<h2 class="text-3xl text-bold">
+			<h2 class="text-4xl text-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_25%)]">
 				Get started to <span class="text-light-orange">visualize</span> your
 				<span class="text-light-orange">sats flow</span>.
 			</h2>
@@ -232,16 +242,18 @@
 >
 	<div class="flex flex-col items-center w-full gap-10">
 		<h1 class="text-4xl text-center"><span class="text-light-orange">Why</span> Choose Clams?</h1>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[640px]">
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px]">
 			{#each whys as { title, description }}
-				<div class="flex flex-col gap-1 md:max-w-[280px]">
-					<div class="flex items-center">
-						<div class="w-8">
-							{@html CheckIcon}
-						</div>
-						<h3 class="text-2xl font-bold">{title}</h3>
+				<div class="flex">
+					<div class="w-8">
+						{@html CheckIcon}
 					</div>
-					<p>{description}</p>
+					<div class="flex flex-col gap-1 md:max-w-[280px]">
+						<div class="flex items-center">
+							<h3 class="font-bold">{title}</h3>
+						</div>
+						<p>{description}</p>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -272,7 +284,12 @@
 			Bitcoin management.
 		</p>
 		<div class="mt-4 flex justify-center">
-			<a href="https://app.clams.tech" target="_blank" rel="noopener noreferrer">
+			<a
+				class={'w-[134px]'}
+				href="https://app.clams.tech"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<Button text="Get Started" primary />
 			</a>
 		</div>
