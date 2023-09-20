@@ -9,11 +9,7 @@ module.exports = {
 				},
 				utility: {
 					success: '#05F063',
-					// success: '#04d759',
-					// success: '#92f005',
 					error: '#f0051d',
-					// error: '#f00592',
-					// pending: '#ffc540'
 					pending: '#ff9000'
 				},
 				black: '#1E1E1E',
