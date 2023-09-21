@@ -141,7 +141,7 @@
 </svelte:head>
 
 <!-- Hero -->
-<section class="px-6 flex flex-col items-center w-full h-screen border border-red-500">
+<section class="px-6 flex flex-col items-center w-full h-screen">
 	<div class="flex justify-center w-full max-w-[600px] mt-[120px]">
 		<div class="z-10 flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
@@ -178,7 +178,7 @@
 	<div class="mt-[-150px] h-full w-full bg-[url('$lib/images/network.png')]" />
 </section>
 <!-- What -->
-<section class="px-6 py-[96px] flex items-center justify-center w-full gap-4 border border-red-500">
+<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full gap-4">
 	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
 		<!-- <h2 class="text-2xl">
 			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
@@ -210,22 +210,30 @@
 	</div>
 </section>
 <!-- Features -->
-<section
-	class="px-6 py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] border border-red-500"
->
+<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8]">
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
 		<h1 class="text-4xl text-center">Key <span class="text-light-orange">Features</span></h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each features as { icon, title, description, route }}
 				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white" href={route}>
-					<div class="flex items-center gap-1">
-						<div class="w-10 xs:w-12">
-							{@html icon}
+					<div class="flex items-center justify-between gap-2">
+						<div class="flex items-center gap-1">
+							<div class="w-10 xs:w-12">
+								{@html icon}
+							</div>
+							<h3 class="md:text-2xl font-bold">{title}</h3>
 						</div>
-						<h3 class="text-2xl font-bold">{title}</h3>
+						<div class="flex md:hidden">
+							<p class="text-light-purple font-bold">Learn More</p>
+							<div class="w-8">
+								{@html chevronRightIcon}
+							</div>
+						</div>
 					</div>
-					<p>{description}</p>
-					<div class="flex justify-end">
+					<!-- hide on mobile -->
+					<p class="hidden md:block">{description}</p>
+					<!-- hide on mobile -->
+					<div class="hidden md:flex justify-end">
 						<p class="text-light-purple font-bold">Learn More</p>
 						<div class="w-8">
 							{@html chevronRightIcon}
@@ -237,9 +245,7 @@
 	</div>
 </section>
 <!-- Why -->
-<section
-	class="px-6 py-[96px] flex flex-col items-center justify-center w-full border border-red-500"
->
+<section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full">
 	<div class="flex flex-col items-center w-full gap-10">
 		<h1 class="text-4xl text-center"><span class="text-light-orange">Why</span> Choose Clams?</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px]">
@@ -260,9 +266,7 @@
 	</div>
 </section>
 <!-- FAQ -->
-<section
-	class="px-6 py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] border border-red-500"
->
+<section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8]">
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
 		<h1 class="text-4xl">
 			Frequently asked <span class="text-light-orange">questions</span>
@@ -272,7 +276,7 @@
 </section>
 <!-- Get Started -->
 <section
-	class="px-6 py-[96px] flex flex-col items-center justify-center w-full gap-10 border border-red-500"
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full gap-10"
 >
 	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
 		<h1 class="text-4xl font-bold">
@@ -304,9 +308,8 @@
 		</div>
 	</div>
 </section>
-<section
-	class="px-6 py-[96px] flex flex-col items-center justify-center w-full border border-red-500"
->
+<!-- Scroll to top -->
+<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
 	<a
 		class="text-bold flex items-center gap-2"
 		href="/"

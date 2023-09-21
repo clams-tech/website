@@ -1,26 +1,11 @@
 <script lang="ts">
 	import ClamsIcon from '$lib/icons/clams'
+	import Socials from './Socials.svelte'
 </script>
 
-<section class="bg-black flex text-white flex gap-20 px-10 py-5">
+<section class="bg-black flex flex-col items-center text-white px-5 py-10 gap-10">
 	<div class="w-40">
 		{@html ClamsIcon}
 	</div>
-	<div class="flex flex-wrap gap-20">
-		<ul class="flex flex-col gap-2">
-			<li class="text-2xl text-bold">What we offer</li>
-			<li>bla</li>
-			<li>bla</li>
-		</ul>
-		<ul class="flex flex-col gap-2">
-			<li class="text-2xl text-bold">Documentation</li>
-			<li>bla</li>
-			<li>bla</li>
-		</ul>
-		<ul class="flex flex-col gap-2">
-			<li class="text-2xl text-bold">Support</li>
-			<li>bla</li>
-			<li>bla</li>
-		</ul>
-	</div>
+	<Socials />
 </section>
