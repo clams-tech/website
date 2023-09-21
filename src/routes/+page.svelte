@@ -141,8 +141,8 @@
 </svelte:head>
 
 <!-- Hero -->
-<section class="px-6 flex flex-col items-center w-full h-screen">
-	<div class="flex justify-center w-full max-w-[600px] mt-[120px]">
+<section class="flex flex-col items-center w-full h-screen">
+	<div class="px-6 flex justify-center w-full max-w-[600px] mt-[120px]">
 		<div class="z-10 flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
 			<h1 class="text-6xl font-bold mb-4">
