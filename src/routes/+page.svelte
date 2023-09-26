@@ -5,7 +5,6 @@
 	import FAQ from '$lib/components/FAQ.svelte'
 	import * as animateScroll from 'svelte-scrollto'
 	import { FEATURE_ICONS } from '$lib/constants'
-	import NetworkImg from '$lib/images/network.png'
 	import BitcoinIcon from '$lib/icons/bitcoin'
 	import chevronRightIcon from '$lib/icons/chevron-right'
 	import CheckIcon from '$lib/icons/check'
@@ -142,7 +141,7 @@
 
 <!-- Hero -->
 <section class="flex flex-col items-center w-full h-screen">
-	<div class="px-6 flex justify-center w-full max-w-[600px] mt-[120px]">
+	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
 		<div class="z-10 flex flex-col items-center w-full text-center">
 			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
 			<h1 class="text-6xl font-bold mb-4">
@@ -318,5 +317,3 @@
 		Scroll to top {@html ArrowUpIcon}</a
 	>
 </section>
-
-<Footer />
