@@ -1,30 +1,38 @@
-<section class="flex flex-col items-center">
-	<div class="w-full max-w-4xl pt-40 pb-20">
-		<h1 class="text-6xl">Transactions</h1>
-		<section class="mt-10">
-			<p class="text-2xl">
-				The Transactions feature provides a comprehensive overview of all balance changes across
-				your wallets, spanning a specific time frame. Using advanced filtering options, you can
-				precisely isolate particular updates for in-depth analysis. For example, if you want to
-				review on-chain balance adjustments resulting from channel closures within the past month,
-				it's a straightforward process. Likewise, investigating lightning payments received by a
-				specific node in the last week is effortless. By clicking on a transaction entry, you'll be
-				directed to a dedicated page with more detailed information.
-			</p>
-			<ul class="mt-10 text-2xl list-disc list-inside grid gap-2">
-				A change of balance can include any of the following types:
-				<li>On-chain debit/deposit</li>
-				<li>Off-chain debit/deposit</li>
-				<li>Channel open/close</li>
-				<li>Lightning routing debit/deposit</li>
-			</ul>
-			<ul class="mt-10 text-2xl list-disc list-inside grid gap-2">
-				Take advantage of the following filter options:
-				<li>Date</li>
-				<li>Amount</li>
-				<li>Type</li>
-				<li>Source (on-chain vs off-chain)</li>
-			</ul>
-		</section>
-	</div>
-</section>
+<script lang="ts">
+	import FeaturePage from '$lib/components/FeaturePage.svelte'
+
+	const header = {
+		title: 'Transactions',
+		subtitle:
+			'A comprehensive overview of all balance changes across your wallets, spanning any time frame'
+	}
+
+	const overview = [
+		'Using advanced filtering options, you can precisely isolate particular updates for in-depth analysis.',
+		"For example, if you want to review on-chain balance adjustments resulting from channel closures within the past month, it's a straightforward process.",
+		'Likewise, investigating lightning payments received by a specific node in the last week is effortless.',
+		"By clicking on a transaction entry, you'll be directed to a dedicated page with more detailed information."
+	]
+
+	const features = [
+		{
+			title: 'Detailed Descriptions',
+			description: 'On-chain debit/deposit, Channel open/close etc'
+		},
+		{
+			title: 'Filters',
+			description: 'Date, amount, type, source and more.'
+		}
+	]
+
+	const comingSoon = [
+		{
+			title: 'TBD'
+		},
+		{
+			title: 'TBD'
+		}
+	]
+</script>
+
+<FeaturePage {header} {overview} {features} {comingSoon} />

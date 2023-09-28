@@ -9,7 +9,6 @@
 	import chevronRightIcon from '$lib/icons/chevron-right'
 	import CheckIcon from '$lib/icons/check'
 	import BlocksImage from '$lib/images/blocks.png'
-	import Footer from '$lib/components/Footer.svelte'
 	import ArrowUpIcon from '$lib/icons/arrow-up'
 
 	let activeFeatureIndex = 0
