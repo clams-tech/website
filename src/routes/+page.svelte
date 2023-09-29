@@ -7,7 +7,7 @@
 	import { FEATURE_ICONS } from '$lib/constants'
 	import BitcoinIcon from '$lib/icons/bitcoin'
 	import chevronRightIcon from '$lib/icons/chevron-right'
-	import CheckIcon from '$lib/icons/check'
+	import CheckIcon from '$lib/icons/check.svelte'
 	import BlocksImage from '$lib/images/blocks.png'
 	import ArrowUpIcon from '$lib/icons/arrow-up'
 	import { darkMode } from '$lib/stores'
@@ -265,7 +265,7 @@
 			{#each whys as { title, description }}
 				<div class="flex">
 					<div class="w-8">
-						{@html CheckIcon}
+						<CheckIcon />
 					</div>
 					<div class="flex flex-col gap-1 md:max-w-[280px]">
 						<div class="flex items-center">

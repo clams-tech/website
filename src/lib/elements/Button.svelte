@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { darkMode } from '$lib/stores'
 	import Spinner from './Spinner.svelte'
 
 	export let text = ''
@@ -7,11 +6,6 @@
 	export let requesting = false
 	export let small = false
 	export let primary = false
-	let isDarkMode = true
-
-	darkMode.subscribe((value) => {
-		isDarkMode = value
-	})
 
 	export const click = () => {
 		button && button.click()
@@ -33,13 +27,15 @@
 	bind:this={button}
 	on:click
 	style={`opacity: ${disabled ? '0.4' : '1'}`}
-	class="{primary ? 'bg-light-purple' : 'bg-white'} {primary
-		? 'text-white'
-		: 'text-black'} no-underline text-{small
+	class="{primary ? 'bg-light-purple dark:bg-white' : 'bg-white dark:bg-black'} {primary
+		? 'text-white dark:text-black'
+		: 'text-black dark:text-white'} no-underline text-{small
 		? 'xs'
 		: 'base'} active:shadow-sm shadow-sm hover:shadow-lg disabled:bg-disabled disabled:border-disabled w-full flex items-center justify-center rounded-md py-3 px-{small
 		? '2'
-		: '4'} border-2 border-solid border-{primary ? 'light-purple' : 'current'} font-semibold"
+		: '4'} border-2 border-solid {primary
+		? 'border-light-purple dark:border-white'
+		: 'border-black dark:border-white'} font-semibold"
 	disabled={disabled || requesting}
 >
 	{#if requesting}
