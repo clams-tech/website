@@ -1,11 +1,7 @@
 <script lang="ts">
 	import ClamsAltLogo from '$lib/icons/clams-alt'
-	import DiscordIcon from '$lib/icons/discord'
-	import XIcon from '$lib/icons/x'
-	import GithubIcon from '$lib/icons/github'
 	import { scrollto } from 'svelte-scrollto'
 	import Socials from './Socials.svelte'
-	import ThemeToggle from './ThemeToggle.svelte'
 
 	let links = [
 		{ href: '#features', title: 'Features', elementId: '#features' },

@@ -191,16 +191,20 @@
 <!-- What -->
 <section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full gap-4">
 	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
-		<!-- <h2 class="text-2xl">
+		<h2 class="text-2xl">
 			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
 			lightning nodes, exchanges, mobile apps and more.
-		</h2> -->
-		<h2 class="text-2xl">
-			Managing your finances as a lightning node operator can be a complex and daunting task.
 		</h2>
-		<h2 class="text-2xl">
+		<!-- <h2 class="text-2xl">
+			Managing your finances as a lightning node operator can be a complex and daunting task.
+		</h2> -->
+		<!-- <h2 class="text-2xl">
 			Clams simplifies the effort by providing an intuitive interface that showcases the most
 			powerful features of your node.
+		</h2> -->
+		<h2 class="text-2xl">
+			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
+			streamline reporting with a single click.
 		</h2>
 		<div class="flex items-center gap-2">
 			<h2 class="text-4xl text-bold">
@@ -211,10 +215,6 @@
 				{@html BitcoinIcon}
 			</div>
 		</div>
-		<!-- <h2 class="text-2xl">
-			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
-			visualize your sats flow and streamline reporting with a single click.
-		</h2> -->
 	</div>
 	<div class="hidden md:block w-[204px]">
 		{@html BitcoinIcon}

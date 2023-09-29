@@ -7,5 +7,5 @@
 	<div class="w-40">
 		{@html ClamsIcon}
 	</div>
-	<Socials />
+	<Socials showThemeToggle={false} />
 </section>

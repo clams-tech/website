@@ -9,6 +9,8 @@
 		{ icon: XIcon, title: 'Twitter', href: 'https://twitter.com/clamstech' },
 		{ icon: DiscordIcon, title: 'Discord', href: 'https://discord.gg/eWfHuJZVaB' }
 	]
+
+	export let showThemeToggle = true
 </script>
 
 <div class="flex items-center gap-2 md:gap-10">
@@ -22,5 +24,7 @@
 			</div>
 		</a>
 	{/each}
-	<ThemeToggle />
+	{#if showThemeToggle}
+		<ThemeToggle />
+	{/if}
 </div>
