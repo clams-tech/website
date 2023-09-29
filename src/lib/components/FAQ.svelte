@@ -1,16 +1,23 @@
 <script lang="ts">
+	import { darkMode } from '$lib/stores'
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton'
+
+	let isDarkMode = true
+
+	darkMode.subscribe((value) => {
+		isDarkMode = value
+	})
 
 	export let faqs: { q: string; a: string }[]
 </script>
 
 <Accordion
 	regionControl={'flex justify-between gap-2'}
-	regionCaret={'w-5'}
+	regionCaret={'w-5 text-black'}
 	caretOpen={'rotate-180'}
 >
 	{#each faqs as { q, a }, i}
-		<AccordionItem open={i === 0} class="text-left border rounded mb-2 bg-white">
+		<AccordionItem open={i === 0} class="text-left border rounded mb-2 bg-white text-black">
 			<svelte:fragment slot="summary"
 				><div class="font-bold mt-3 mb-3">
 					<p>{q}</p>

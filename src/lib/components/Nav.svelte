@@ -5,6 +5,7 @@
 	import GithubIcon from '$lib/icons/github'
 	import { scrollto } from 'svelte-scrollto'
 	import Socials from './Socials.svelte'
+	import ThemeToggle from './ThemeToggle.svelte'
 
 	let links = [
 		{ href: '#features', title: 'Features', elementId: '#features' },
@@ -28,4 +29,5 @@
 		</div>
 	</div>
 	<Socials />
+	<ThemeToggle />
 </div>

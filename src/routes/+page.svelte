@@ -10,6 +10,13 @@
 	import CheckIcon from '$lib/icons/check'
 	import BlocksImage from '$lib/images/blocks.png'
 	import ArrowUpIcon from '$lib/icons/arrow-up'
+	import { darkMode } from '$lib/stores'
+
+	let isDarkMode = true
+
+	darkMode.subscribe((value) => {
+		isDarkMode = value
+	})
 
 	let activeFeatureIndex = 0
 
@@ -173,7 +180,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="mt-[-150px] h-full w-full bg-[url('$lib/images/network.png')]" />
+	<div
+		class={`mt-[-150px] h-full w-full ${
+			isDarkMode
+				? "bg-[url('$lib/images/network--dark.png')]"
+				: "bg-[url('$lib/images/network--light.png')]"
+		}`}
+	/>
 </section>
 <!-- What -->
 <section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full gap-4">
@@ -190,7 +203,7 @@
 			powerful features of your node.
 		</h2>
 		<div class="flex items-center gap-2">
-			<h2 class="text-4xl text-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_25%)]">
+			<h2 class="text-4xl text-bold">
 				Get started to <span class="text-light-orange">visualize</span> your
 				<span class="text-light-orange">sats flow</span>.
 			</h2>
@@ -208,12 +221,14 @@
 	</div>
 </section>
 <!-- Features -->
-<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8]">
+<section
+	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
 		<h1 class="text-4xl text-center">Key <span class="text-light-orange">Features</span></h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 			{#each features as { icon, title, description, route }}
-				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white" href={route}>
+				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white text-black" href={route}>
 					<div class="flex items-center justify-between gap-2">
 						<div class="flex items-center gap-1">
 							<div class="w-10 xs:w-12">
@@ -264,7 +279,9 @@
 	</div>
 </section>
 <!-- FAQ -->
-<section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8]">
+<section
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
 		<h1 class="text-4xl">
 			Frequently asked <span class="text-light-orange">questions</span>
@@ -301,7 +318,9 @@
 		<div class="flex flex-col gap-2 max-w-[544px] justify-center">
 			<h2 class="text-2xl">Want to contribute or have ideas on how to improve Clams?</h2>
 			<p>
-				Join us in our <a class="text-light-purple font-bold underline" href="/">Discord</a> server
+				Join us in our <a class="text-light-purple dark:text-bitcoin font-bold underline" href="/"
+					>Discord</a
+				> server
 			</p>
 		</div>
 	</div>

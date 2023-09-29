@@ -1,5 +1,6 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
@@ -12,7 +13,7 @@ module.exports = {
 					error: '#f0051d',
 					pending: '#ff9000'
 				},
-				black: '#1E1E1E',
+				black: '#000000',
 				white: '#ffffff',
 				transparent: 'transparent',
 				bitcoin: '#F7931A'

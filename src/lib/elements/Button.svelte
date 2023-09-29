@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { darkMode } from '$lib/stores'
 	import Spinner from './Spinner.svelte'
 
 	export let text = ''
@@ -6,6 +7,11 @@
 	export let requesting = false
 	export let small = false
 	export let primary = false
+	let isDarkMode = true
+
+	darkMode.subscribe((value) => {
+		isDarkMode = value
+	})
 
 	export const click = () => {
 		button && button.click()
