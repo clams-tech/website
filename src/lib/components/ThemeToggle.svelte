@@ -32,7 +32,7 @@
 	}
 </script>
 
-<div>
+<div class="flex items-center ">
 	<input checked={isDarkMode} on:click={handleSwitchDarkMode} type="checkbox" id="theme-toggle" />
 	<label for="theme-toggle" />
 </div>
@@ -43,15 +43,15 @@
 	}
 
 	#theme-toggle + label {
-		@apply inline-block cursor-pointer h-12 w-12 absolute top-6 right-24 rounded-full duration-300 content-[''];
+		@apply cursor-pointer h-6 w-6 rounded-full duration-300 content-[''];
 	}
 
 	#theme-toggle:not(:checked) + label {
-		@apply bg-amber-400;
+		@apply bg-bitcoin;
 	}
 
 	#theme-toggle:checked + label {
 		@apply bg-transparent;
-		box-shadow: inset -18px -16px 1px 1px #ddd;
+		box-shadow: inset -8px -6px 1px 1px #fff;
 	}
 </style>

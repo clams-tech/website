@@ -2,6 +2,7 @@
 	import DiscordIcon from '$lib/icons/discord'
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
+	import ThemeToggle from './ThemeToggle.svelte'
 
 	let socials = [
 		{ icon: GithubIcon, title: 'GitHub', href: 'https://github.com/clams-tech' },
@@ -21,4 +22,5 @@
 			</div>
 		</a>
 	{/each}
+	<ThemeToggle />
 </div>

@@ -29,5 +29,4 @@
 		</div>
 	</div>
 	<Socials />
-	<ThemeToggle />
 </div>
