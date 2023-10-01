@@ -18,8 +18,6 @@
 		isDarkMode = value
 	})
 
-	let activeFeatureIndex = 0
-
 	let features = [
 		{
 			title: 'Wallets',
@@ -106,39 +104,22 @@
 
 	const faqs = [
 		{
-			q: 'Where is my Bitcoin data stored?',
-			a: 'All data is stored locally on your device and encrypted with a password of your choice.'
-		},
-		{
-			q: 'Can I back up my data?',
-			a: 'Not yet, but we have plans to add this feature soon.'
-		},
-		{
 			q: 'How do app permissions work?',
 			a: 'When you make a wallet connection, the app will ask you to grant permissions. The app requires read-only access at a minimum to calculate your sats flow. You can update or revoke permissions at any time.'
 		},
 		{
-			q: 'Which lightning implementations do you support?',
-			a: 'CLN only, but we are investigating adding LND support.'
+			q: 'Where is my Bitcoin data stored?',
+			a: 'All data is stored locally on your device and encrypted with a password of your choice.'
 		},
 		{
-			q: 'Can I sync my data across multiple devices?',
-			a: 'This feature is on our roadmap and will be prioritized when there is sufficient demand for it.'
+			q: 'Which lightning implementations do you support?',
+			a: 'CLN for now, but we are investigating adding support for LND.'
 		},
 		{
 			q: 'How do you decide which wallet connections to support?',
-			a: "If you don't see an option you want, please join our Discord server and let us know."
+			a: "We started with CLN. If you don't see an option you want, please join our Discord server and let us know."
 		}
 	]
-
-	$: {
-		features = features.map((feature, index) => {
-			return {
-				...feature,
-				active: index === activeFeatureIndex ? true : false
-			}
-		})
-	}
 </script>
 
 <svelte:head>
@@ -215,6 +196,7 @@
 </section>
 <!-- Features -->
 <section
+	id="features"
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
@@ -273,6 +255,7 @@
 </section>
 <!-- FAQ -->
 <section
+	id="faq"
 	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
