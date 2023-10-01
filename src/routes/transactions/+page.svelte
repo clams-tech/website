@@ -8,10 +8,10 @@
 	}
 
 	const overview = [
-		'Using advanced filtering options, you can precisely isolate particular updates for in-depth analysis.',
-		"For example, if you want to review on-chain balance adjustments resulting from channel closures within the past month, it's a straightforward process.",
-		'Likewise, investigating lightning payments received by a specific node in the last week is effortless.',
-		"By clicking on a transaction entry, you'll be directed to a dedicated page with more detailed information."
+		"With this feature, you'll discover a comprehensive record of all your transactions. With advanced filtering options, you can pinpoint specific updates for in-depth analysis.",
+		'For instance, you might want to review on-chain balance adjustments resulting from recent channel closures on your Core Lightning node within the past month.',
+		'Similarly, if you wish to examine all lightning payments received across all your nodes in the last week, you can do so effortlessly.',
+		'Clicking on a transaction will open a dedicated page with even more detailed information. On-chain transactions will conveniently link out to a Block Explorer for further exploration.'
 	]
 
 	const features = [
@@ -20,17 +20,17 @@
 			description: 'On-chain debit/deposit, Channel open/close etc'
 		},
 		{
-			title: 'Filters',
-			description: 'Date, amount, type, source and more.'
+			title: 'Flexible Filter and Sorting',
+			description: 'Options include type, source, date, amount and more.'
 		}
 	]
 
 	const comingSoon = [
 		{
-			title: 'TBD'
+			title: 'Advanced transaction alerts'
 		},
 		{
-			title: 'TBD'
+			title: 'Transaction tagging'
 		}
 	]
 </script>

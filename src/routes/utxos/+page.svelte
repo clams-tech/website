@@ -7,43 +7,36 @@
 	}
 
 	const overview = [
-		'This dashboard provides a comprehensive snapshot of your held Unspent Transaction Outputs (UTXOs), encompassing those stored in cold storage as well as those residing in your lightning wallet.',
-		'The user-friendly interface facilitates visualizes the count and size of the UTXOs.',
-		'Accompanying filters permit personalized sorting according to your preferences.',
-		'For example, you might choose to exclusively display UTXOs stemming from your CLN node confirmed within the previous quarter.',
-		'Furthermore, akin to all data within Clams, you have the ability to tag your UTXOs, thereby enhancing your accounting practices'
+		'With this feature, you can gain a comprehensive view of all your Unspent Transaction Outputs (UTXOs) across your connected wallets.',
+		'The intuitive interface visualizes the number and size of your UTXOs, making it easy to gain insights at a glance.',
+		"You'll also have the flexibility to apply personalized filters, allowing you to sort UTXOs according to your preferences. For example, you can choose to display UTXOs confirmed within a specific timeframe or those in the process of being spent."
 	]
 
 	const features = [
 		{
 			title: 'Coin selection',
-			description: 'Pick and choose the UTXOs you want to spend.'
+			description: 'Choose the UTXOs you want to spend with precision.'
 		},
 		{
 			title: 'Address Generation',
-			description:
-				'Generate on-chain receive addresses for multiple cold storage and lightning wallets.'
+			description: 'Easily generate on-chain receive addresses.'
 		},
 		{
 			title: 'Lightning Conversion',
 			description: 'Convert one or multiple UTXOs to lightning Bitcoin.'
 		},
 		{
-			title: 'Filters',
-			description: 'Sort UTXOs by various attributes for easy management.'
-		},
-		{
-			title: 'Tags',
-			description: 'Tagging functionality to help with record keeping and accounting.'
+			title: 'Filter / Sort Options',
+			description: 'Sort UTXOs by various attributes for seamless management.'
 		}
 	]
 
 	const comingSoon = [
 		{
-			title: "Confirmation alerts via nostr dm's or email."
+			title: 'Confirmation alerts.'
 		},
 		{
-			title: 'Integration with hardware devices for signing transactions.'
+			title: 'UTXO tagging.'
 		}
 	]
 </script>

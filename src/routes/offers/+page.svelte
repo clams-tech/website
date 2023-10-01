@@ -8,10 +8,9 @@
 	}
 
 	const overview = [
-		'A dedicated dashboard allows node operators to effortlessly create and manage offers, generating static invoices for seamless payment acceptance and convenient withdrawals.',
-		'There are a whole host of potential use cases for offers, from reusable QR codes on your coffee shop tip jar to allowing customers to receive a refund from your online store.',
-		"It's worth noting that this feature is presently available exclusively for Core Lightning nodes.",
-		'However, as the adoption of BOLT12 gains momentum within the ecosystem, Clams eagerly anticipates integrating support for a wider array of implementations.'
+		'Effortlessly create and manage offers, also known as static invoices, for seamless payment acceptance and convenient withdrawals.',
+		'From reusable QR codes on your coffee shop tip jar to enabling customers to receive refunds from your online store, the possibilities for using offers are diverse.',
+		'Presently, this feature is exclusively available for Core Lightning nodes. However, as BOLT12 adoption continues to grow within the ecosystem, Clams is eagerly looking forward to expanding support for a wider range of implementations.'
 	]
 
 	const features = [
@@ -22,10 +21,6 @@
 		{
 			title: 'QR support',
 			description: 'pay to BOLT12 offers by scanning a QR code or pasting the offer string.'
-		},
-		{
-			title: 'Fee Management',
-			description: 'Options to update channel fee settings'
 		},
 		{
 			title: 'History',

@@ -22,7 +22,7 @@
 		{
 			title: 'Wallets',
 			description:
-				'Establish connections to multiple Lightning nodes to synchronize data and manage funds.',
+				'Establish connections to multiple wallets to synchronize data and manage funds.',
 			route: '/wallets',
 			icon: FEATURE_ICONS['wallets'],
 			active: true
@@ -64,15 +64,15 @@
 			route: '/forwards',
 			icon: FEATURE_ICONS['forwards'],
 			active: false
-		},
-		{
-			title: 'Metadata',
-			description:
-				'Transactions get tagged with intelligent defaults. Enhance your local dataset with custom tags.',
-			route: '/metadata',
-			icon: FEATURE_ICONS['metadata'],
-			active: false
 		}
+		// {
+		// 	title: 'Metadata',
+		// 	description:
+		// 		'Transactions get tagged with intelligent defaults. Enhance your local dataset with custom tags.',
+		// 	route: '/metadata',
+		// 	icon: FEATURE_ICONS['metadata'],
+		// 	active: false
+		// }
 	]
 
 	const whys = [
@@ -99,6 +99,11 @@
 			title: 'Fully Open-Source',
 			description:
 				'All client-side application code is public. Anyone can verify it and we welcome feedback.'
+		},
+		{
+			title: 'Flexible Access',
+			description:
+				"A native desktop app for your home devices and a browser-based app for when you're on the move."
 		}
 	]
 
@@ -324,11 +329,11 @@
 </section>
 <!-- Scroll to top -->
 <section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
-	<a
-		class="text-bold flex items-center gap-2"
-		href="/"
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<span
+		class="text-bold flex items-center gap-2 cursor-pointer"
 		on:click={() => animateScroll.scrollToTop()}
 	>
-		Scroll to top {@html ArrowUpIcon}</a
+		Scroll to top {@html ArrowUpIcon}</span
 	>
 </section>

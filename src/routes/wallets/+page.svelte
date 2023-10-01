@@ -3,41 +3,47 @@
 
 	const header = {
 		title: 'Wallets',
-		subtitle: 'The Wallets feature acts as a central hub for managing connections to your nodes.'
+		subtitle: 'The place for managing wallet connections and synchronizing data.'
 	}
 
 	const overview = [
-		'Once a connection is established, data synchronization begins.',
-		'Power users that manage multiple nodes can connect them all, allowing them to seamlessly sync data from different sources.',
-		'For example, you might have one node for personal matters and another for business transactions. With Clams, you can gain insights and control over both once both nodes are connected.',
-		'Node operators always maintain full control through customizable permissions, ranging from read-only to full administrative control. Access to nodes is available for as long as needed, secured by a strong password of your choice.'
+		"When you launch Clams for the first time, you'll be prompted to establish a wallet connection, enabling data synchronization to begin.",
+		'The real power of Clams emerges when multiple wallets are connected, consolidating data from various sources into a comprehensive transaction history.',
+		'For instance, an individual might operate separate lightning nodes for personal and business use. By connecting both, they can gain a more holistic view of their finances in one central location.',
+		'With customizable permissions, you retain full control, ranging from read-only access to complete administrative control. You can grant access for as long as necessary and revoke it at any time.'
 	]
+
+	// @TODO where should this go.
+	// {
+	// 	title: 'Payments',
+	// 	description:
+	// 		'BOLT11 Invoices, KeySend, LNURL, Lightning Address (pay only) and BOLT12 offers.'
+	// },
 
 	const features = [
 		{
-			title: 'CLN support',
-			description: 'Establish connections using commando.'
+			title: 'CLN Support',
+			description: 'Encrypted connections using Commando.'
 		},
 		{
-			title: 'Payments',
-			description:
-				'BOLT11 Invoices, KeySend, LNURL, Lightning Address (pay only) and BOLT12 offers.'
+			title: 'Custom Labels',
+			description: 'Personalize your wallets for easy tracking.'
 		},
 		{
-			title: 'Monitoring',
-			description: 'Real-time updates for connection status.'
+			title: 'Real-Time Monitoring',
+			description: 'Stay informed with real-time updates on your connections.'
 		},
 		{
-			title: 'Easy Connections',
-			description: 'Disconnect and reconnect to nodes at anytime.'
+			title: 'Effortless Management',
+			description: 'Disconnect and reconnect wallets at your convenience.'
 		},
 		{
-			title: 'Logs',
-			description: 'Node logs for monitoring and troubleshooting.'
+			title: 'Lightning Node Logs',
+			description: 'Logs for comprehensive monitoring and troubleshooting.'
 		},
 		{
-			title: 'Error Tracking',
-			description: 'Clean, precise error messaging for prompt issue resolution.'
+			title: 'Error Handling',
+			description: 'Clean and precise error messaging for swift issue resolution.'
 		}
 	]
 
@@ -46,7 +52,7 @@
 			title: 'LND support'
 		},
 		{
-			title: 'XPub Connection'
+			title: 'XPub Connections'
 		},
 		{
 			title: 'Advanced Notications'
