@@ -149,17 +149,13 @@
 <section class="flex flex-col items-center w-full h-screen">
 	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
 		<div class="z-10 flex flex-col items-center w-full text-center">
-			<!-- <h1 class="text-6xl font-bold">One Platform to Unify Your Bitcoin.</h1> -->
 			<h1 class="text-6xl font-bold mb-4">
 				One Platform to Unify Your <span class="text-light-orange">Bitcoin</span>.
 			</h1>
-			<!-- <h1 class="text-6xl font-bold">Financial Management For Your Bitcoin.</h1> -->
-			<!-- <h2 class="text-4xl">{$t('app.hero.tagline')}</h2> -->
-			<!-- <h2 class="text-4xl text-light-purple">
-				Financial Management and Reporting Across All Your Wallets.
-			</h2> -->
-			<!-- <h2 class="text-4xl text-light-purple">Simplified Financial Management For Your Bitcoin.</h2> -->
-			<h2 class="text-2xl mb-8">Financial Management For Node Operators.</h2>
+			<h2 class="text-2xl mb-8">
+				Helping Businesses and Individuals Operate on a Bitcoin Standard
+			</h2>
+
 			<div class="flex gap-6">
 				<a
 					href="https://docs.clams.tech"
@@ -192,19 +188,16 @@
 <section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full gap-4">
 	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
 		<h2 class="text-2xl">
-			Managing your finances can be a complex task when your Bitcoin is spread across cold storage,
-			lightning nodes, exchanges, mobile apps and more.
+			With transactions spread across cold storage, lightning nodes, exchanges, mobile apps, and
+			more, managing your finances can be a daunting task for Bitcoiners.
 		</h2>
-		<!-- <h2 class="text-2xl">
-			Managing your finances as a lightning node operator can be a complex and daunting task.
-		</h2> -->
-		<!-- <h2 class="text-2xl">
-			Clams simplifies the effort by providing an intuitive interface that showcases the most
-			powerful features of your node.
-		</h2> -->
 		<h2 class="text-2xl">
-			Clams simplifies this process by consolidating all your wallets in one place, allowing you to
-			streamline reporting with a single click.
+			Clams simplifies this process by consolidating your wallets into one secure hub. Effortlessly
+			manage, track, and report on your transactions with a single click.
+		</h2>
+		<h2 class="text-2xl">
+			Our mission is to solve the accountancy problem for Bitcoiners, enabling them to kickstart
+			circular economies.
 		</h2>
 		<div class="flex items-center gap-2">
 			<h2 class="text-4xl text-bold">
@@ -323,6 +316,27 @@
 				> server
 			</p>
 		</div>
+	</div>
+</section>
+<!-- Who? -->
+<section
+	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
+	<div class="flex flex-col justify-between w-full gap-5 max-w-4xl">
+		<h1 class="text-4xl text-center">A <span class="text-light-orange">Note</span> from Us</h1>
+		<h2 class="text-2xl">Hey!</h2>
+		<h2 class="text-2xl">
+			We're Aaron and John, a couple of musicians who took the orange pill, and like so many others,
+			we couldn't think of anything else. Thanks to Bitcoin, we're not just excited about the future
+			– we're on a mission to shape it.
+		</h2>
+		<h2 class="text-2xl">
+			Inspired by the optimism and talent found in this community, we decided to use our skills to
+			build Clams. Why stop at having the best money? We also need the best tools to help Bitcoiners
+			manage their finances in a self-sovereign way.
+		</h2>
+		<h2 class="text-2xl">We are our first customers, and we hope you will join us.</h2>
+		<h2 class="text-2xl">Cheers, Aaron & John</h2>
 	</div>
 </section>
 <!-- Scroll to top -->
