@@ -300,16 +300,13 @@
 			</a>
 		</div>
 	</div>
-	<div class="grid grid-cols1 md:grid-cols-2 gap-4">
-		<div class=""><img src={BlocksImage} alt="blocks" /></div>
-		<div class="flex flex-col gap-2 max-w-[544px] justify-center">
-			<h2 class="text-2xl">Want to contribute or have ideas on how to improve Clams?</h2>
-			<p>
-				Join us in our <a class="text-light-purple dark:text-bitcoin font-bold underline" href="/"
-					>Discord</a
-				> server
-			</p>
-		</div>
+	<div class="flex flex-col gap-2 text-center">
+		<h2 class="text-2xl">Want to contribute or have ideas on how to improve Clams?</h2>
+		<p class="text-2xl">
+			Join us in our <a class="text-light-purple dark:text-bitcoin font-bold underline" href="/"
+				>Discord</a
+			> server
+		</p>
 	</div>
 </section>
 <!-- Who? -->
@@ -320,9 +317,9 @@
 		<h1 class="text-4xl text-center">A <span class="text-light-orange">Note</span> from Us</h1>
 		<h2 class="text-2xl">Hey!</h2>
 		<h2 class="text-2xl">
-			We're Aaron and John, a couple of musicians who took the orange pill, and like so many others,
-			we couldn't think of anything else. Thanks to Bitcoin, we're not just excited about the future
-			– we're on a mission to shape it.
+			We're Aaron and John, a couple of musicians turned software engineers who took the orange
+			pill, and like so many others, we couldn't think of anything else. Thanks to Bitcoin, we're
+			not just excited about the future – we're on a mission to shape it.
 		</h2>
 		<h2 class="text-2xl">
 			Inspired by the optimism and talent found in this community, we decided to use our skills to

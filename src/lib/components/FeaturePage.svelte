@@ -17,15 +17,15 @@
 			</h2>
 		</div>
 		<!-- Overview -->
-		<div class="mt-8 grid gap-3">
-			<h2 class="text-2xl font-bold text-light-purple dark:text-bitcoin">OVERVIEW</h2>
+		<div class="mt-12 grid gap-3">
+			<h2 class="text-2xl font-bold text-light-purple dark:text-dark-purple">OVERVIEW</h2>
 			{#each overview as paragraph}
 				<p>{paragraph}</p>
 			{/each}
 		</div>
 		<!-- Features -->
-		<div class="mt-8 grid gap-3">
-			<h2 class="text-2xl font-bold text-light-purple dark:text-bitcoin">FEATURES</h2>
+		<div class="mt-12 grid gap-3">
+			<h2 class="text-2xl font-bold text-light-purple dark:text-dark-purple">FEATURES</h2>
 			<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
 				{#each features as { title, description }}
 					<div class="flex">
@@ -43,8 +43,8 @@
 			</div>
 		</div>
 		<!-- Coming Soon -->
-		<div class="mt-8 grid gap-3">
-			<h2 class="text-2xl font-bold text-light-purple dark:text-bitcoin">COMING SOON!</h2>
+		<div class="mt-12 grid gap-3">
+			<h2 class="text-2xl font-bold text-light-purple dark:text-dark-purple">COMING SOON!</h2>
 			<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
 				{#each comingSoon as { title }}
 					<div class="flex">
