@@ -13,11 +13,14 @@
 
 <Accordion
 	regionControl={'flex justify-between gap-2'}
-	regionCaret={'w-5 text-black'}
+	regionCaret={'w-5 dark:fill-white'}
 	caretOpen={'rotate-180'}
 >
 	{#each faqs as { q, a }, i}
-		<AccordionItem open={i === 0} class="text-left border rounded mb-2 bg-white text-black">
+		<AccordionItem
+			open={i === 0}
+			class="text-left border dark:border-dark-border rounded mb-2 bg-white dark:bg-black"
+		>
 			<svelte:fragment slot="summary"
 				><div class="font-bold mt-3 mb-3">
 					<p>{q}</p>

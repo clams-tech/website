@@ -18,6 +18,9 @@
 		isDarkMode = value
 	})
 
+	let iconColor: string
+	$: isDarkMode ? (iconColor = '#B182F8') : (iconColor = '#6305F0')
+
 	let features = [
 		{
 			title: 'Wallets',
@@ -204,22 +207,25 @@
 	id="features"
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
-	<div class="flex flex-col justify-between w-full max-w-4xl gap-10">
+	<div class="flex flex-col justify-between w-full max-w-5xl gap-10">
 		<h1 class="text-4xl text-center">Key <span class="text-light-orange">Features</span></h1>
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
 			{#each features as { icon, title, description, route }}
-				<a class="border p-4 rounded-lg flex flex-col gap-2 bg-white text-black" href={route}>
+				<a
+					class="h-30 border dark:border-dark-border p-4 rounded-lg flex flex-col justify-between gap-3 bg-white dark:bg-black"
+					href={route}
+				>
 					<div class="flex items-center justify-between gap-2">
 						<div class="flex items-center gap-1">
 							<div class="w-10 xs:w-12">
-								{@html icon}
+								{@html `<div style="stroke: ${iconColor}">${icon}</div>`}
 							</div>
 							<h3 class="md:text-2xl font-bold">{title}</h3>
 						</div>
 						<div class="flex md:hidden">
-							<p class="text-light-purple font-bold">Learn More</p>
+							<p class="text-light-purple dark:text-dark-purple font-bold">Learn More</p>
 							<div class="w-8">
-								{@html chevronRightIcon}
+								{@html `<div style="fill: ${iconColor}">${chevronRightIcon}</div>`}
 							</div>
 						</div>
 					</div>
@@ -227,9 +233,9 @@
 					<p class="hidden md:block">{description}</p>
 					<!-- hide on mobile -->
 					<div class="hidden md:flex justify-end">
-						<p class="text-light-purple font-bold">Learn More</p>
+						<p class="text-light-purple dark:text-dark-purple font-bold">Learn More</p>
 						<div class="w-8">
-							{@html chevronRightIcon}
+							{@html `<div style="fill: ${iconColor}">${chevronRightIcon}</div>`}
 						</div>
 					</div>
 				</a>

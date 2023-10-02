@@ -8,6 +8,10 @@ module.exports = {
 					purple: '#6305F0',
 					orange: '#F7931A'
 				},
+				dark: {
+					purple: '#9870f9',
+					border: '#2e2e2f'
+				},
 				utility: {
 					success: '#05F063',
 					error: '#f0051d',
