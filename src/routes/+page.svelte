@@ -209,7 +209,9 @@
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full max-w-5xl gap-10">
-		<h1 class="text-4xl text-center">Key <span class="text-light-orange">Features</span></h1>
+		<h1 class="text-4xl text-center font-bold">
+			Key <span class="text-light-orange">Features</span>
+		</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
 			{#each features as { icon, title, description, route }}
 				<a
@@ -244,28 +246,12 @@
 		</div>
 	</div>
 </section>
-<!-- Pricing -->
-<section
-	id="pricing"
-	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e] border"
->
-	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
-		<h1 class="text-4xl text-center">
-			<span class="text-light-orange">Pricing</span>
-		</h1>
-		<p>
-			The community version will always be free. For most people this will be enough. To ensure we
-			can build Clams through hyperbitcoinization and beyond we will have a premium version. It will
-			be a bundle of special features geared towards those ready to live full time on a Bitcoin
-			standard. Payment will be in Bitcoin only.
-		</p>
-		<Pricing />
-	</div>
-</section>
 <!-- Why -->
 <section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full">
 	<div class="flex flex-col items-center w-full gap-10">
-		<h1 class="text-4xl text-center"><span class="text-light-orange">Why</span> Choose Clams?</h1>
+		<h1 class="text-4xl text-center font-bold">
+			<span class="text-light-orange">Why</span> Choose Clams?
+		</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px]">
 			{#each whys as { title, description }}
 				<div class="flex">
@@ -283,13 +269,44 @@
 		</div>
 	</div>
 </section>
+<!-- Pricing -->
+<section
+	id="pricing"
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
+	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
+		<h1 class="text-4xl text-center font-bold">
+			<span class="text-light-orange">Pricing</span>
+		</h1>
+		<p>
+			The Community Version will always remain free, ensuring that everyone can access the core
+			features of Clams. For those seeking an enhanced Clams experience, we will offer a Premium
+			Version. With a focus on features to help solve the accountancy problem, it's your gateway to
+			life on a Bitcoin Standard. To align with our mission, payment will be in Bitcoin only.
+		</p>
+		<Pricing />
+	</div>
+</section>
+<!-- Get Started -->
+<section
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full gap-10"
+>
+	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
+		<h1 class="text-4xl font-bold">
+			<span class="text-light-orange">Roadmap</span>
+		</h1>
+		<p class="text-2xl">
+			This is our roadmap. You can follow progress on our public board on GitHub.
+		</p>
+	</div>
+</section>
 <!-- FAQ -->
 <section
 	id="faq"
 	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
-		<h1 class="text-4xl">
+		<h1 class="text-4xl font-bold">
 			Frequently asked <span class="text-light-orange">questions</span>
 		</h1>
 		<FAQ {faqs} />
@@ -333,7 +350,9 @@
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full gap-5 max-w-4xl">
-		<h1 class="text-4xl text-center">A <span class="text-light-orange">Note</span> from Us</h1>
+		<h1 class="text-4xl text-center font-bold">
+			A <span class="text-light-orange">Note</span> from Us
+		</h1>
 		<h2 class="text-2xl">Hey!</h2>
 		<h2 class="text-2xl">
 			We're Aaron and John, a couple of musicians turned software engineers who took the orange
