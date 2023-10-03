@@ -5,6 +5,7 @@
 
 	let links = [
 		{ elementId: '#features', title: 'Features' },
+		{ elementId: '#pricing', title: 'Pricing' },
 		{ elementId: '#faq', title: 'FAQ' }
 	]
 </script>

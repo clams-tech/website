@@ -11,6 +11,7 @@
 	import BlocksImage from '$lib/images/blocks.png'
 	import ArrowUpIcon from '$lib/icons/arrow-up'
 	import { darkMode } from '$lib/stores'
+	import Pricing from '$lib/components/Pricing.svelte'
 
 	let isDarkMode = true
 
@@ -241,6 +242,24 @@
 				</a>
 			{/each}
 		</div>
+	</div>
+</section>
+<!-- Pricing -->
+<section
+	id="pricing"
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e] border"
+>
+	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
+		<h1 class="text-4xl text-center">
+			<span class="text-light-orange">Pricing</span>
+		</h1>
+		<p>
+			The community version will always be free. For most people this will be enough. To ensure we
+			can build Clams through hyperbitcoinization and beyond we will have a premium version. It will
+			be a bundle of special features geared towards those ready to live full time on a Bitcoin
+			standard. Payment will be in Bitcoin only.
+		</p>
+		<Pricing />
 	</div>
 </section>
 <!-- Why -->
