@@ -8,10 +8,9 @@
 	import BitcoinIcon from '$lib/icons/bitcoin'
 	import chevronRightIcon from '$lib/icons/chevron-right'
 	import CheckIcon from '$lib/icons/check.svelte'
-	import BlocksImage from '$lib/images/blocks.png'
 	import ArrowUpIcon from '$lib/icons/arrow-up'
 	import { darkMode } from '$lib/stores'
-	import Pricing from '$lib/components/Pricing.svelte'
+	import Roadmap from '$lib/components/Roadmap.svelte'
 
 	let isDarkMode = true
 
@@ -69,14 +68,6 @@
 			icon: FEATURE_ICONS['forwards'],
 			active: false
 		}
-		// {
-		// 	title: 'Metadata',
-		// 	description:
-		// 		'Transactions get tagged with intelligent defaults. Enhance your local dataset with custom tags.',
-		// 	route: '/metadata',
-		// 	icon: FEATURE_ICONS['metadata'],
-		// 	active: false
-		// }
 	]
 
 	const whys = [
@@ -269,37 +260,6 @@
 		</div>
 	</div>
 </section>
-<!-- Pricing -->
-<section
-	id="pricing"
-	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
->
-	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
-		<h1 class="text-4xl text-center font-bold">
-			<span class="text-light-orange">Pricing</span>
-		</h1>
-		<p>
-			The Community Version will always remain free, ensuring that everyone can access the core
-			features of Clams. For those seeking an enhanced Clams experience, we will offer a Premium
-			Version. With a focus on features to help solve the accountancy problem, it's your gateway to
-			life on a Bitcoin Standard. To align with our mission, payment will be in Bitcoin only.
-		</p>
-		<Pricing />
-	</div>
-</section>
-<!-- Get Started -->
-<section
-	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full gap-10"
->
-	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
-		<h1 class="text-4xl font-bold">
-			<span class="text-light-orange">Roadmap</span>
-		</h1>
-		<p class="text-2xl">
-			This is our roadmap. You can follow progress on our public board on GitHub.
-		</p>
-	</div>
-</section>
 <!-- FAQ -->
 <section
 	id="faq"
@@ -345,10 +305,32 @@
 		</p>
 	</div>
 </section>
-<!-- Who? -->
+<!-- Roadmap -->
 <section
-	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+	id="roadmap"
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full gap-10 bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
+	<div class="max-w-4xl flex flex-col gap-10">
+		<div class="flex flex-col w-full text-center gap-2">
+			<h1 class="text-4xl font-bold">
+				<span class="text-light-orange">Roadmap</span>
+			</h1>
+			<p class="text-2xl">
+				Here are some of the features either in planning or actively being developed. Our priorities
+				may adjust to accommodate user requests. You can follow progress more closely by monitoring
+				our <a
+					class="underline"
+					href="https://github.com/orgs/clams-tech/projects/1"
+					target="_blank"
+					rel="noopener noreferrer">public task board on GitHub.</a
+				>
+			</p>
+		</div>
+		<Roadmap />
+	</div>
+</section>
+<!-- Note -->
+<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full gap-5 max-w-4xl">
 		<h1 class="text-4xl text-center font-bold">
 			A <span class="text-light-orange">Note</span> from Us
@@ -363,6 +345,13 @@
 			Inspired by the optimism and talent found in this community, we decided to use our skills to
 			build Clams. Why stop at having the best money? We also need the best tools to help Bitcoiners
 			manage their finances in a self-sovereign way.
+		</h2>
+		<h2 class="text-2xl">
+			We are committed to keeping the app accessible to as many people as possible, which is why our
+			core features will always be free. To ensure the long-term sustainability and continuous
+			improvement of Clams, we're exploring options for paid add-on services. By choosing these
+			premium offerings, you'll not only support the project but also unlock even more powerful
+			tools to bring you closer to life on a Bitcoin Standard. More details on that soon.
 		</h2>
 		<h2 class="text-2xl">We are our first customers, and we hope you will join us.</h2>
 		<h2 class="text-2xl">Cheers, Aaron & John</h2>
