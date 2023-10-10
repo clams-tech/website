@@ -8,31 +8,58 @@
 		isDarkMode = value
 	})
 
-	export let faqs: { q: string; a: string }[]
+	const faqs = [
+		{
+			q: 'How do app permissions work?',
+			a: 'When you make a wallet connection, the app will ask you to grant permissions. The app requires read-only access at a minimum to calculate your sats flow. You can update or revoke permissions at any time.'
+		},
+		{
+			q: 'Where is my Bitcoin data stored?',
+			a: 'All data is stored locally on your device and encrypted with a password of your choice.'
+		},
+		{
+			q: 'Which lightning implementations do you support?',
+			a: 'CLN for now, but we are investigating adding support for LND.'
+		},
+		{
+			q: 'How do you decide which wallet connections to support?',
+			a: "We started with CLN. If you don't see an option you want, please join our Discord server and let us know."
+		}
+	]
 </script>
 
-<Accordion
-	regionControl={'flex justify-between gap-2'}
-	regionCaret={'w-5 dark:fill-white'}
-	caretOpen={'rotate-180'}
+<section
+	id="faq"
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
-	{#each faqs as { q, a }, i}
-		<AccordionItem
-			open={i === 0}
-			class="text-left border dark:border-dark-border rounded mb-2 bg-white dark:bg-black"
+	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
+		<h1 class="text-4xl font-bold">
+			Frequently asked <span class="text-light-orange">questions</span>
+		</h1>
+		<Accordion
+			regionControl={'flex justify-between gap-2'}
+			regionCaret={'w-5 dark:fill-white'}
+			caretOpen={'rotate-180'}
 		>
-			<svelte:fragment slot="summary"
-				><div class="font-bold mt-3 mb-3">
-					<p>{q}</p>
-				</div></svelte:fragment
-			>
-			<svelte:fragment slot="content">
-				<div class="pb-3">
-					<p>
-						{a}
-					</p>
-				</div></svelte:fragment
-			>
-		</AccordionItem>
-	{/each}
-</Accordion>
+			{#each faqs as { q, a }, i}
+				<AccordionItem
+					open={i === 0}
+					class="text-left border dark:border-dark-border rounded mb-2 bg-white dark:bg-black"
+				>
+					<svelte:fragment slot="summary"
+						><div class="font-bold mt-3 mb-3">
+							<p>{q}</p>
+						</div></svelte:fragment
+					>
+					<svelte:fragment slot="content">
+						<div class="pb-3">
+							<p>
+								{a}
+							</p>
+						</div></svelte:fragment
+					>
+				</AccordionItem>
+			{/each}
+		</Accordion>
+	</div>
+</section>

@@ -43,27 +43,46 @@
 	]
 </script>
 
-<div class="flex flex-col gap-4">
-	<h2 class="font-bold text-light-purple dark:text-dark-purple">IN PROGRESS</h2>
-	<div class="grid md:grid-cols-2 gap-4">
-		{#each roadMap as { title, description, status }}
-			{#if status === 'inProgress'}
-				<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
-					<p class="font-bold text-[18px]">{title}</p>
-					<p class="text-[15px]">{description}</p>
-				</div>
-			{/if}
-		{/each}
+<section id="roadmap" class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full gap-10">
+	<div class="max-w-4xl flex flex-col gap-10">
+		<div class="flex flex-col w-full gap-2">
+			<h1 class="text-4xl font-bold">
+				<span class="text-light-orange">Roadmap</span>
+			</h1>
+			<p class="text-2xl text-left">
+				Here are some of the features either in planning or actively being developed. Our priorities
+				may adjust to accommodate user requests. You can follow progress more closely by monitoring
+				our <a
+					class="underline"
+					href="https://github.com/orgs/clams-tech/projects/1"
+					target="_blank"
+					rel="noopener noreferrer">public task board on GitHub.</a
+				>
+			</p>
+		</div>
+		<div class="flex flex-col gap-4">
+			<h2 class="font-bold text-light-purple dark:text-dark-purple">IN PROGRESS</h2>
+			<div class="grid md:grid-cols-2 gap-4">
+				{#each roadMap as { title, description, status }}
+					{#if status === 'inProgress'}
+						<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
+							<p class="font-bold text-[18px]">{title}</p>
+							<p class="">{description}</p>
+						</div>
+					{/if}
+				{/each}
+			</div>
+			<h2 class="mt-4 font-bold text-light-purple dark:text-dark-purple">PLANNED</h2>
+			<div class="grid md:grid-cols-2 gap-4">
+				{#each roadMap as { title, description, status }}
+					{#if status === 'planned'}
+						<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
+							<p class="font-bold text-[18px]">{title}</p>
+							<p>{description}</p>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		</div>
 	</div>
-	<h2 class="mt-4 font-bold text-light-purple dark:text-dark-purple">PLANNED</h2>
-	<div class="grid md:grid-cols-2 gap-4">
-		{#each roadMap as { title, description, status }}
-			{#if status === 'planned'}
-				<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
-					<p class="font-bold text-[18px]">{title}</p>
-					<p class="text-[15px]">{description}</p>
-				</div>
-			{/if}
-		{/each}
-	</div>
-</div>
+</section>
