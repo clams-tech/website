@@ -33,7 +33,7 @@
 	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full max-w-[850px] gap-10">
-		<h1 class="text-4xl font-bold">
+		<h1 class="text-[40px] font-bold">
 			Frequently asked <span class="text-light-orange">questions</span>
 		</h1>
 		<Accordion

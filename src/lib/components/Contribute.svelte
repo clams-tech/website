@@ -5,7 +5,7 @@
 </script>
 
 <section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center gap-20">
-	<div class="flex items-center gap-6 w-full max-w-4xl">
+	<div class="flex items-center gap-6 w-full max-w-3xl">
 		<div class="">
 			{@html ClamsGradientIcon}
 		</div>

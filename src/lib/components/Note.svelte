@@ -6,7 +6,7 @@
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col justify-between w-full gap-5 max-w-3xl">
-		<h1 class="text-4xl text-center font-bold">
+		<h1 class="text-[40px] text-center font-bold">
 			A <span class="text-light-orange">Note</span> from Us
 		</h1>
 		<div class="flex flex-wrap md:flex-nowrap gap-10">

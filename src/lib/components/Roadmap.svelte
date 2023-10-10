@@ -46,10 +46,10 @@
 <section id="roadmap" class="px-6 py-[72px] md:py-[96px] flex flex-col items-center w-full gap-10">
 	<div class="max-w-4xl flex flex-col gap-10">
 		<div class="flex flex-col w-full gap-2">
-			<h1 class="text-4xl font-bold">
+			<h1 class="text-[40px] font-bold">
 				<span class="text-light-orange">Roadmap</span>
 			</h1>
-			<p class="text-2xl text-left">
+			<p class="text-[20px] text-left">
 				Here are some of the features either in planning or actively being developed. Our priorities
 				may adjust to accommodate user requests. You can follow progress more closely by monitoring
 				our <a
@@ -61,7 +61,7 @@
 			</p>
 		</div>
 		<div class="flex flex-col gap-4">
-			<h2 class="font-bold text-light-purple dark:text-dark-purple">IN PROGRESS</h2>
+			<h2 class="font-[20px] font-bold text-light-purple dark:text-dark-purple">IN PROGRESS</h2>
 			<div class="grid md:grid-cols-2 gap-4">
 				{#each roadMap as { title, description, status }}
 					{#if status === 'inProgress'}
@@ -72,7 +72,7 @@
 					{/if}
 				{/each}
 			</div>
-			<h2 class="mt-4 font-bold text-light-purple dark:text-dark-purple">PLANNED</h2>
+			<h2 class="font-[20px] mt-4 font-bold text-light-purple dark:text-dark-purple">PLANNED</h2>
 			<div class="grid md:grid-cols-2 gap-4">
 				{#each roadMap as { title, description, status }}
 					{#if status === 'planned'}
