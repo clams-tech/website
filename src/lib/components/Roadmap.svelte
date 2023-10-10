@@ -43,25 +43,25 @@
 	]
 </script>
 
-<div class="grid md:grid-cols-2 gap-5">
-	<div class="flex flex-col gap-3">
-		<h2 class="font-bold">Planned</h2>
+<div class="flex flex-col gap-4">
+	<h2 class="font-bold text-light-purple dark:text-dark-purple">IN PROGRESS</h2>
+	<div class="grid md:grid-cols-2 gap-4">
 		{#each roadMap as { title, description, status }}
-			{#if status === 'planned'}
-				<div class="w-full">
-					<p class="font-bold">{title}</p>
-					<p>{description}</p>
+			{#if status === 'inProgress'}
+				<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
+					<p class="font-bold text-[18px]">{title}</p>
+					<p class="text-[15px]">{description}</p>
 				</div>
 			{/if}
 		{/each}
 	</div>
-	<div class="flex flex-col gap-3">
-		<h2 class="font-bold">In Progress</h2>
+	<h2 class="mt-4 font-bold text-light-purple dark:text-dark-purple">PLANNED</h2>
+	<div class="grid md:grid-cols-2 gap-4">
 		{#each roadMap as { title, description, status }}
-			{#if status === 'inProgress'}
-				<div class="w-full">
-					<p class="font-bold">{title}</p>
-					<p>{description}</p>
+			{#if status === 'planned'}
+				<div class="w-full p-5 bg-[#F4F6F8] dark:bg-[#1e1e1e] rounded-sm">
+					<p class="font-bold text-[18px]">{title}</p>
+					<p class="text-[15px]">{description}</p>
 				</div>
 			{/if}
 		{/each}
