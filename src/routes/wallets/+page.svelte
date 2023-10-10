@@ -13,13 +13,6 @@
 		'With customizable permissions, you retain full control, ranging from read-only access to complete administrative control. You can grant access for as long as necessary and revoke it at any time.'
 	]
 
-	// @TODO where should this go.
-	// {
-	// 	title: 'Payments',
-	// 	description:
-	// 		'BOLT11 Invoices, KeySend, LNURL, Lightning Address (pay only) and BOLT12 offers.'
-	// },
-
 	const features = [
 		{
 			title: 'CLN Support',
