@@ -8,7 +8,7 @@ import tag from '$lib/icons/tag'
 
 export const FEATURE_ICONS = {
 	wallets: wallet,
-	transactions: list,
+	payments: list,
 	utxos: keys,
 	channels: channels,
 	offers: lightningOutline,

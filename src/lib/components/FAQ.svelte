@@ -20,10 +20,6 @@
 		{
 			q: 'Which lightning implementations do you support?',
 			a: 'CLN for now, but we are investigating adding support for LND.'
-		},
-		{
-			q: 'How do you decide which wallet connections to support?',
-			a: "We started with CLN. If you don't see an option you want, please join our Discord server and let us know."
 		}
 	]
 </script>

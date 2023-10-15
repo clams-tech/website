@@ -2,15 +2,24 @@
 	type Status = 'planned' | 'inProgress'
 
 	const roadMap: { title: string; description: string; status: Status }[] = [
+		// In Progress
 		{
 			title: 'Transaction Tagging',
 			description: 'Giver users option to tag transactions for enhanced accounting insights.',
 			status: 'inProgress'
 		},
 		{
-			title: 'LND Integration',
-			description: 'Integrate LND lightning implementation support to improve accessibility.',
+			title: 'Historical Pricing Server',
+			description:
+				'Implement a dedicated server infrastructure for precise cost-basis calculations.',
 			status: 'inProgress'
+		},
+		// Planned
+		{
+			title: 'Capital Gains Algorithms',
+			description:
+				'Comprehensive algorithms for calculating cost basis, profit, and loss across all connected wallets.',
+			status: 'planned'
 		},
 		{
 			title: 'Interactive Charts',
@@ -29,15 +38,8 @@
 			status: 'planned'
 		},
 		{
-			title: 'Historical Pricing Server',
-			description:
-				'Implement a dedicated server infrastructure for precise cost-basis calculations.',
-			status: 'planned'
-		},
-		{
-			title: 'Capital Gains Algorithms',
-			description:
-				'Comprehensive algorithms for calculating cost basis, profit, and loss across all connected wallets.',
+			title: 'LND Integration',
+			description: 'Integrate LND lightning implementation support to improve accessibility.',
 			status: 'planned'
 		}
 	]

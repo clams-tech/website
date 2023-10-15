@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import CheckIcon from '$lib/icons/check.svelte'
 	import BitcoinSymbolIcon from '$lib/icons/bitcoin-symbol'
 	import PlusIcon from '$lib/icons/plus'
@@ -86,4 +86,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->

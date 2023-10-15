@@ -33,9 +33,9 @@
 				<h2 class="">We are our first customers, and we hope you will join us.</h2>
 				<h2 class="">Cheers, Aaron & John</h2>
 			</div>
-			<div class="flex flex-col justify-around gap-5 w-full">
+			<div class="flex md:flex-col justify-around gap-5 w-full">
 				<div class="flex flex-col items-center gap-2">
-					<div class="w-[200px] h-[200px] rounded-full overflow-hidden">
+					<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
 						<img
 							class="w-full h-full object-cover"
 							src={'https://avatars.githubusercontent.com/u/29873495?v=4'}
@@ -45,7 +45,7 @@
 					<p class="font-bold text-[14px] text-light-purple dark:text-dark-purple">AARON</p>
 				</div>
 				<div class="flex flex-col items-center gap-2">
-					<div class="w-[200px] h-[200px] rounded-full overflow-hidden">
+					<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
 						<img
 							class="w-full h-full object-cover"
 							src={'https://avatars.githubusercontent.com/u/30157175?v=4'}

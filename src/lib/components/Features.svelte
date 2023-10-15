@@ -22,11 +22,11 @@
 			active: true
 		},
 		{
-			title: 'Transactions',
+			title: 'Payments',
 			description:
 				'A comprehensive history of all updates to your combined on-chain and off-chain balance.',
-			route: '/transactions',
-			icon: FEATURE_ICONS['transactions'],
+			route: '/payments',
+			icon: FEATURE_ICONS['payments'],
 			active: false
 		},
 		{
