@@ -1,7 +1,3 @@
-<script lang="ts">
-	import JohnImage from '$lib/images/john.jpeg'
-</script>
-
 <section
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
