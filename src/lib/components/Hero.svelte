@@ -39,11 +39,11 @@
 			</div>
 		</div>
 	</div>
-	<div
+	<!-- <div
 		class={`mt-[-150px] h-full w-full ${
 			isDarkMode
 				? "bg-[url('$lib/images/network--dark.png')]"
 				: "bg-[url('$lib/images/network--light.png')]"
 		}`}
-	/>
+	/> -->
 </section>
