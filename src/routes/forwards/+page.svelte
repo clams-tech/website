@@ -7,31 +7,19 @@
 	}
 
 	const overview = [
-		'This feature is geared for the routing node runners out there',
-		'Browse all of your forwards, including the ones that failed to complete.',
-		'This dashboard will be super useful to help surface insights that could inform your strategies to increase routing.',
-		'As an example. You notice that for the last month you have had a lot of failed forwards associated with a specific channel on one of your nodes. After some investigation, you might want to consider allocating your capital to elsewhere on the Lightning network.'
+		'This feature is designed for individuals and businesses operating routing nodes. It allows you to review all of your forwards, including those that were unsuccessful.',
+		'The primary objective of this dashboard is to provide valuable insights that can guide routing strategies.',
+		'For instance, a node operator may observe a high number of failed forwards associated with a specific channel on one of their nodes over the past month. Following further investigation, they might consider reallocating their capital within the Lightning network.'
 	]
 
 	const features = [
 		{
-			title: 'tbd',
-			description: 'bla'
-		},
-		{
 			title: 'Filter / Sort Options',
-			description: 'Date, type, fee amount and more'
+			description: 'Status, wallet, date, fee, direction and more'
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Charts to visualize forwards'
-		},
-		{
-			title: 'Alerts'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} />

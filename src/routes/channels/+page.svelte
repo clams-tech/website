@@ -7,10 +7,9 @@
 	}
 
 	const overview = [
-		'The dedicated channels dashboard offers an array of monitoring capabilities, enabling you to oversee each channel that is opened across all of your connected lightning node wallets.',
-		'The visual representation of your inbound and outbound liquidity will help you to swiftly determine the health of your channels. The filter options will help you gain deeper insights.',
-		'To take an example, lets say you have encountered challenges in receiving payments through one of your CLN nodes. To diagnose and address any issues, you can organize your channels based on nodes, and then focus on assessing your inbound liquidity. ',
-		'Throughout this process, you might uncover that your inbound liquidity is adequate, but certain channels are in a state of failure. Identifying these types of issues allows you to promptly take appropriate corrective actions.'
+		'The dedicated channels dashboard offers a range of monitoring capabilities, allowing you to supervise each channel opened across all your connected Lightning node wallets.',
+		'Visual representations of your inbound and outbound liquidity make it easy to assess the health of your channels at a glance. The available filter options provide a means to gain deeper insights.',
+		'For example, if you encounter difficulties in receiving payments through one of your CLN nodes, you can diagnose and address issues by filtering your channels by wallet and focusing on assessing your inbound liquidity. During this process, you might discover that your inbound liquidity is sufficient, but certain channels are experiencing failures. Identifying such issues enables you to promptly take appropriate corrective actions.'
 	]
 
 	const features = [
@@ -35,20 +34,15 @@
 		{
 			title: 'Channel Status',
 			description: 'Easily check the status of each channel with a quick glance.'
-		},
-		{
-			title: 'Logs',
-			description:
-				'Access detailed channel-specific logs for in-depth information and troubleshooting.'
 		}
 	]
 
 	const comingSoon = [
 		{
-			title: 'More advanced channel mangement'
+			title: 'Channel specific logs'
 		},
 		{
-			title: 'Liquidity Ads dashboard'
+			title: 'Advanced alerts on per channel basis.'
 		}
 	]
 </script>

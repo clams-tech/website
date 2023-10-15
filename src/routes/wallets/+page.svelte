@@ -7,10 +7,10 @@
 	}
 
 	const overview = [
-		"When you launch Clams for the first time, you'll be prompted to establish a wallet connection, enabling data synchronization to begin.",
-		'The real power of Clams emerges when multiple wallets are connected, consolidating data from various sources into a comprehensive transaction history.',
-		'For instance, an individual might operate separate lightning nodes for personal and business use. By connecting both, they can gain a more holistic view of their finances in one central location.',
-		'With customizable permissions, you retain full control, ranging from read-only access to complete administrative control. You can grant access for as long as necessary and revoke it at any time.'
+		"When you launch Clams for the first time, you'll be prompted to establish a wallet connection, which initiates data synchronization. Once this process is complete, this section of the app will be your hub for actions such as syncing connections and retrieving connection details to facilitate the opening of channels for your Lightning node.",
+		'The true power of Clams becomes evident when multiple wallets are connected, consolidating data from various sources into a comprehensive transaction history.',
+		'Some Bitcoiners may opt to run separate Lightning nodes for personal and business purposes. By connecting both to Clams, they can gain a more holistic financial perspective in one central location.',
+		'With customizable permissions, you maintain full control, ranging from read-only access to complete administrative control. You can grant access for as long as necessary and revoke it at any time.'
 	]
 
 	const features = [
@@ -42,7 +42,7 @@
 
 	const comingSoon = [
 		{
-			title: 'LND support'
+			title: 'Exchange Connections'
 		},
 		{
 			title: 'XPub Connections'

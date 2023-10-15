@@ -7,33 +7,25 @@
 	}
 
 	const overview = [
-		'With this feature, you can gain a comprehensive view of all your Unspent Transaction Outputs (UTXOs) across your connected wallets.',
-		'The intuitive interface visualizes the number and size of your UTXOs, making it easy to gain insights at a glance.',
-		"You'll also have the flexibility to apply personalized filters, allowing you to sort UTXOs according to your preferences. For example, you can choose to display UTXOs confirmed within a specific timeframe or those in the process of being spent."
+		'With this feature, you can access a comprehensive overview of all your Unspent Transaction Outputs (UTXOs) across your connected wallets.',
+		'The user-friendly interface visually represents the number, size, and status of your UTXOs, allowing for quick and easy insights at a glance.',
+		"Moreover, you'll enjoy the flexibility to apply personalized filters, enabling you to categorize UTXOs according to your preferences. For example, you can opt to display UTXOs confirmed within a specific timeframe or those currently in the process of being spent."
 	]
 
 	const features = [
 		{
-			title: 'Coin selection',
-			description: 'Choose the UTXOs you want to spend with precision.'
-		},
-		{
-			title: 'Address Generation',
-			description: 'Easily generate on-chain receive addresses.'
-		},
-		{
-			title: 'Lightning Conversion',
-			description: 'Convert one or multiple UTXOs to lightning Bitcoin.'
+			title: 'Full Onchain Support',
+			description: 'Send from and receive to your lightning node.'
 		},
 		{
 			title: 'Filter / Sort Options',
-			description: 'Sort UTXOs by various attributes for seamless management.'
+			description: 'Status, wallet, date, amount.'
 		}
 	]
 
 	const comingSoon = [
 		{
-			title: 'Confirmation alerts.'
+			title: 'Coin selection'
 		},
 		{
 			title: 'UTXO tagging.'

@@ -2,16 +2,16 @@
 	import FeaturePage from '$lib/components/FeaturePage.svelte'
 
 	const header = {
-		title: 'Transactions',
+		title: 'Payments',
 		subtitle:
 			'A comprehensive overview of all balance changes across your wallets, spanning any time frame'
 	}
 
 	const overview = [
-		"With this feature, you'll discover a comprehensive record of all your transactions. With advanced filtering options, you can pinpoint specific updates for in-depth analysis.",
-		'For instance, you might want to review on-chain balance adjustments resulting from recent channel closures on your Core Lightning node within the past month.',
-		'Similarly, if you wish to examine all lightning payments received across all your nodes in the last week, you can do so effortlessly.',
-		'Clicking on a transaction will open a dedicated page with even more detailed information. On-chain transactions will conveniently link out to a Block Explorer for further exploration.'
+		'This feature offers a comprehensive transaction record, allowing you to access a complete history of your financial activities. With advanced filtering options, you can easily isolate specific transactions for in-depth analysis.',
+		'For example, you may need to examine on-chain balance adjustments resulting from recent channel closures on your Core Lightning node in the past month.',
+		'Likewise, if you want to review all Lightning payments received across your nodes over the last week, this can be accomplished effortlessly.',
+		'Clicking on a payment will open a dedicated page with even more detailed information. On-chain transactions will conveniently link to a Block Explorer for further exploration.'
 	]
 
 	const features = [
@@ -20,19 +20,12 @@
 			description: 'On-chain debit/deposit, Channel open/close etc'
 		},
 		{
-			title: 'Flexible Filter and Sorting',
-			description: 'Options include type, source, date, amount and more.'
+			title: 'Filter / Sort Options',
+			description: 'Status, type, wallet, network, date and more.'
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Advanced transaction alerts'
-		},
-		{
-			title: 'Transaction tagging'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} />

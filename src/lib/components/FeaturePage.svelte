@@ -2,7 +2,7 @@
 	export let header: { title: string; subtitle: string }
 	export let overview: string[] = []
 	export let features: { title: string; description: string }[] = []
-	export let comingSoon: { title: string }[]
+	export let comingSoon: { title: string }[] | null
 
 	import CheckIcon from '$lib/icons/check.svelte'
 </script>
@@ -43,22 +43,24 @@
 			</div>
 		</div>
 		<!-- Coming Soon -->
-		<div class="mt-12 grid gap-3">
-			<h2 class="text-2xl font-bold text-light-purple dark:text-dark-purple">COMING SOON!</h2>
-			<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-				{#each comingSoon as { title }}
-					<div class="flex">
-						<div class="w-8 mr-1">
-							<CheckIcon />
-						</div>
-						<div class="flex flex-col gap-1 md:max-w-[280px]">
-							<div class="flex items-center">
-								<h3 class="text-[18px] font-bold">{title}</h3>
+		{#if comingSoon}
+			<div class="mt-12 grid gap-3">
+				<h2 class="text-2xl font-bold text-light-purple dark:text-dark-purple">COMING SOON!</h2>
+				<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{#each comingSoon as { title }}
+						<div class="flex">
+							<div class="w-8 mr-1">
+								<CheckIcon />
+							</div>
+							<div class="flex flex-col gap-1 md:max-w-[280px]">
+								<div class="flex items-center">
+									<h3 class="text-[18px] font-bold">{title}</h3>
+								</div>
 							</div>
 						</div>
-					</div>
-				{/each}
+					{/each}
+				</div>
 			</div>
-		</div>
+		{/if}
 	</div>
 </section>

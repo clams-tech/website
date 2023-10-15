@@ -8,14 +8,14 @@
 	}
 
 	const overview = [
-		'Effortlessly create and manage offers, also known as static invoices, for seamless payment acceptance and convenient withdrawals.',
-		'From reusable QR codes on your coffee shop tip jar to enabling customers to receive refunds from your online store, the possibilities for using offers are diverse.',
-		'Presently, this feature is exclusively available for Core Lightning nodes. However, as BOLT12 adoption continues to grow within the ecosystem, Clams is eagerly looking forward to expanding support for a wider range of implementations.'
+		'Effortlessly create and manage offers, also referred to as static invoices, for seamless payment acceptance and convenient withdrawals.',
+		"Whether it's through reusable QR codes on your coffee shop's tip jar or enabling online store customers to receive refunds, the applications for using offers are versatile.",
+		'Currently, this feature is exclusively available for Core Lightning nodes. However, with the continued growth of BOLT12 adoption in the ecosystem, Clams is eager to expand support for a wider range of implementations in the future.'
 	]
 
 	const features = [
 		{
-			title: 'Pay/Withdraw',
+			title: 'Pay / Withdraw',
 			description: 'Create static QR code offers for both payment and withdrawal flows.'
 		},
 		{
