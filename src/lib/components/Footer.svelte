@@ -3,7 +3,9 @@
 	import Socials from './Socials.svelte'
 </script>
 
-<section class="bg-white dark:bg-black flex flex-col items-center text-white px-5 py-10 gap-10">
+<section
+	class="bg-white dark:bg-black flex flex-col items-center dark:text-white px-5 py-10 gap-10"
+>
 	<div class="w-40">
 		{@html ClamsIcon}
 	</div>
