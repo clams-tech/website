@@ -1,7 +1,8 @@
 <script lang="ts">
 	import FeaturePage from '$lib/components/FeaturePage.svelte'
+	import type { FEATURE } from '$lib/constants'
 
-	const header = {
+	const header: { title: FEATURE; subtitle: string } = {
 		title: 'Wallets',
 		subtitle: 'The place for managing wallet connections and synchronizing data.'
 	}
@@ -53,4 +54,4 @@
 	]
 </script>
 
-<FeaturePage {header} {overview} {features} {comingSoon} />
+<FeaturePage {header} {overview} {features} {comingSoon} deepDive={true} />

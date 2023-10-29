@@ -18,7 +18,7 @@
 			description:
 				'Establish connections to multiple wallets to synchronize data and manage funds.',
 			route: '/wallets',
-			icon: FEATURE_ICONS['wallets'],
+			icon: FEATURE_ICONS['Wallets'],
 			active: true
 		},
 		{
@@ -26,14 +26,14 @@
 			description:
 				'A comprehensive history of all updates to your combined on-chain and off-chain balance.',
 			route: '/payments',
-			icon: FEATURE_ICONS['payments'],
+			icon: FEATURE_ICONS['Payments'],
 			active: false
 		},
 		{
 			title: 'UTXOs',
 			description: 'Manage your UTXOs via a customizable and interactive dashboard.',
 			route: '/utxos',
-			icon: FEATURE_ICONS['utxos'],
+			icon: FEATURE_ICONS['UTXOs'],
 			active: false
 		},
 		{
@@ -41,7 +41,7 @@
 			description:
 				'Track the status and liquidity profile of your lightning channels. Adjust fee settings to your needs.',
 			route: '/channels',
-			icon: FEATURE_ICONS['channels'],
+			icon: FEATURE_ICONS['Channels'],
 			active: false
 		},
 		{
@@ -49,14 +49,14 @@
 			description:
 				'Create and manage BOLT12 reusable static invoices for payments and withdrawals.',
 			route: '/offers',
-			icon: FEATURE_ICONS['offers'],
+			icon: FEATURE_ICONS['Offers'],
 			active: false
 		},
 		{
 			title: 'Forwards',
 			description: 'Analyze the cumulative income generated over time from routing payments.',
 			route: '/forwards',
-			icon: FEATURE_ICONS['forwards'],
+			icon: FEATURE_ICONS['Forwards'],
 			active: false
 		}
 	]

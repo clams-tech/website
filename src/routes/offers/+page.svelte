@@ -1,7 +1,8 @@
 <script lang="ts">
 	import FeaturePage from '$lib/components/FeaturePage.svelte'
+	import type { FEATURE } from '$lib/constants'
 
-	const header = {
+	const header: { title: FEATURE; subtitle: string } = {
 		title: 'Offers',
 		subtitle:
 			'Clams is at the forefront of BOLT12 adoption, a groundbreaking payment format for Lightning.'

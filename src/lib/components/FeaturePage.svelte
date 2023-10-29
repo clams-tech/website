@@ -1,10 +1,26 @@
 <script lang="ts">
-	export let header: { title: string; subtitle: string }
+	import { DOCS_URL, FEATURE_ICONS, type FEATURE } from '$lib/constants'
+	export let header: {
+		title: FEATURE
+		subtitle: string
+	}
 	export let overview: string[] = []
 	export let features: { title: string; description: string }[] = []
 	export let comingSoon: { title: string }[] | null
+	export let deepDive: boolean = false
 
+	import Button from '$lib/elements/Button.svelte'
 	import CheckIcon from '$lib/icons/check.svelte'
+	import { darkMode } from '$lib/stores'
+
+	let isDarkMode = true
+
+	darkMode.subscribe((value) => {
+		isDarkMode = value
+	})
+
+	let iconColor: string
+	$: isDarkMode ? (iconColor = '#6305F0') : (iconColor = 'white')
 </script>
 
 <section class="flex flex-col items-center px-6 pt-28 pb-20">
@@ -60,6 +76,21 @@
 						</div>
 					{/each}
 				</div>
+			</div>
+		{/if}
+		{#if deepDive}
+			<div class="mt-[48px] flex justify-center">
+				<a
+					href={`${DOCS_URL}/${header.title.toLocaleLowerCase()}`}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Button primary text={`Dive deeper into ${header.title}`}>
+						<div slot="iconLeft" class="w-10 xs:w-12">
+							{@html `<div style="stroke: ${iconColor}">${FEATURE_ICONS[header.title]}</div>`}
+						</div>
+					</Button>
+				</a>
 			</div>
 		{/if}
 	</div>

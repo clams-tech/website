@@ -1,7 +1,8 @@
 <script lang="ts">
 	import FeaturePage from '$lib/components/FeaturePage.svelte'
+	import type { FEATURE } from '$lib/constants'
 
-	const header = {
+	const header: { title: FEATURE; subtitle: string } = {
 		title: 'Channels',
 		subtitle: 'All of your Lightning channels, all in one place.'
 	}

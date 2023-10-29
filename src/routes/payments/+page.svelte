@@ -1,7 +1,8 @@
 <script lang="ts">
 	import FeaturePage from '$lib/components/FeaturePage.svelte'
+	import type { FEATURE } from '$lib/constants'
 
-	const header = {
+	const header: { title: FEATURE; subtitle: string } = {
 		title: 'Payments',
 		subtitle:
 			'A comprehensive overview of all balance changes across your wallets, spanning any time frame'

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 	import { darkMode } from '$lib/stores'
 
@@ -20,12 +21,7 @@
 			</h2>
 
 			<div class="flex gap-6">
-				<a
-					href="https://docs.clams.tech"
-					target="_blank"
-					rel="noopener noreferrer"
-					class={'w-[134px]'}
-				>
+				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
 					<Button text="Learn more" />
 				</a>
 				<a
