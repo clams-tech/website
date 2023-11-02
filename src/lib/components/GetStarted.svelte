@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { APP_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 </script>
 
@@ -15,12 +16,7 @@
 			Bitcoin management.
 		</p>
 		<div class="mt-4 flex justify-center">
-			<a
-				class={'w-[134px]'}
-				href="https://app.clams.tech"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
+			<a class={'w-[134px]'} href="/get-started">
 				<Button text="Get Started" primary />
 			</a>
 		</div>

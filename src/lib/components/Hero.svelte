@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { DOCS_URL } from '$lib/constants'
+	import { APP_URL, DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
-	import { darkMode } from '$lib/stores'
+	// import { darkMode } from '$lib/stores'
 
-	let isDarkMode = true
+	// let isDarkMode = true
 
-	darkMode.subscribe((value) => {
-		isDarkMode = value
-	})
+	// darkMode.subscribe((value) => {
+	// 	isDarkMode = value
+	// })
 </script>
 
 <section class="flex flex-col items-center w-full h-screen">
@@ -24,12 +24,7 @@
 				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
 					<Button text="Learn more" />
 				</a>
-				<a
-					class={'w-[134px]'}
-					href="https://app.clams.tech"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<a class={'w-[134px]'} href="/get-started">
 					<Button text="Start now" primary />
 				</a>
 			</div>

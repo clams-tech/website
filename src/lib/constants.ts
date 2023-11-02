@@ -27,4 +27,6 @@ export const FEATURE_ICONS: {
 	Metadata: tag
 }
 
-export const DOCS_URL = 'http://localhost:8000'
+export const APP_URL = 'https://beta.clams.tech/'
+// export const DOCS_URL = 'http://localhost:8000'
+export const DOCS_URL = 'http://docs.clams.tech'
