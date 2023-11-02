@@ -14,7 +14,8 @@
 		<h1 class="text-6xl font-bold">Get Started</h1>
 		<!-- Desktop app -->
 		<div class="flex flex-col items-center">
-			<p class="text-[20px]">
+			<h2 class="text-[20px] font-bold text-light-purple dark:text-dark-purple">DESKTOP DEVICES</h2>
+			<p class="mt-4 text-[20px]">
 				For the optimal experience, we recommend downloading the Native Desktop App. Please select
 				the option that corresponds to your operating system:
 			</p>
@@ -60,7 +61,8 @@
 		</div>
 		<!-- PWA -->
 		<div class="flex flex-col items-center">
-			<p class="text-[20px]">
+			<h2 class="text-[20px] font-bold text-light-purple dark:text-dark-purple">MOBILE DEVICES</h2>
+			<p class="mt-4 text-[20px]">
 				If you'd like to use Clams on your mobile device, you can use the Progressive Web App:
 			</p>
 			<div class="mt-8 flex gap-6">
