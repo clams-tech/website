@@ -17,27 +17,27 @@
 	const features = [
 		{
 			title: 'CLN Support',
-			description: 'Encrypted connections using Commando.'
+			description: 'Encrypted connections using Commando'
 		},
 		{
 			title: 'Custom Labels',
-			description: 'Personalize your wallets for easy tracking.'
+			description: 'Personalize your wallets for easy tracking'
 		},
 		{
 			title: 'Real-Time Monitoring',
-			description: 'Stay informed with real-time updates on your connections.'
+			description: 'Stay informed with real-time updates on your connections'
 		},
 		{
 			title: 'Effortless Management',
-			description: 'Disconnect and reconnect wallets at your convenience.'
+			description: 'Disconnect and reconnect wallets at your convenience'
 		},
 		{
 			title: 'Lightning Node Logs',
-			description: 'Logs for comprehensive monitoring and troubleshooting.'
+			description: 'Logs for comprehensive monitoring and troubleshooting'
 		},
 		{
 			title: 'Error Handling',
-			description: 'Clean and precise error messaging for swift issue resolution.'
+			description: 'Clean and precise error messaging for swift issue resolution'
 		}
 	]
 

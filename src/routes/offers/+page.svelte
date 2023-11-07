@@ -17,28 +17,28 @@
 	const features = [
 		{
 			title: 'Pay / Withdraw',
-			description: 'Create static QR code offers for both payment and withdrawal flows.'
+			description: 'Create static QR code offers for both payment and withdrawal flows'
 		},
 		{
 			title: 'QR support',
-			description: 'pay to BOLT12 offers by scanning a QR code or pasting the offer string.'
+			description: 'pay to BOLT12 offers by scanning a QR code or pasting the offer string'
 		},
 		{
 			title: 'History',
-			description: 'Comprehensive payment history per offer.'
+			description: 'Comprehensive payment history per offer'
 		},
 		{
 			title: 'Management',
 			description:
-				'Manage your offers with ease, including the flexibility to disable them as needed.'
+				'Manage your offers with ease, including the flexibility to disable them as needed'
 		}
 	]
 
 	const comingSoon = [
 		{
-			title: 'Recurring payments for added convenience.'
+			title: 'Recurring payments for added convenience'
 		}
 	]
 </script>
 
-<FeaturePage {header} {overview} {features} {comingSoon} />
+<FeaturePage {header} {overview} {features} {comingSoon} deepDive={true} />

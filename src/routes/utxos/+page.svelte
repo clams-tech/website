@@ -16,11 +16,11 @@
 	const features = [
 		{
 			title: 'Full Onchain Support',
-			description: 'Send from and receive to your lightning node.'
+			description: 'Send from and receive to your lightning node'
 		},
 		{
 			title: 'Filter / Sort Options',
-			description: 'Status, wallet, date, amount.'
+			description: 'Status, wallet, date, amount etc'
 		}
 	]
 
@@ -29,7 +29,7 @@
 			title: 'Coin selection'
 		},
 		{
-			title: 'UTXO tagging.'
+			title: 'UTXO tagging'
 		}
 	]
 </script>

@@ -17,16 +17,16 @@
 		{
 			title: 'Clean UI',
 			description:
-				'Get a clear view of your inbound and outbound liquidity for every channel with our intuitive visual representation.'
+				'Get a clear view of your inbound and outbound liquidity for every channel with our intuitive visual representation'
 		},
 		{
 			title: 'Open Channels',
-			description: 'Either scan the connection details or paste them.'
+			description: 'Either scan the connection details or paste them'
 		},
 		{
 			title: 'Filter / Sort Options',
 			description:
-				'Toggle between viewing node-specific channels or see them all at once for flexible management.'
+				'Toggle between viewing node-specific channels or see them all at once for flexible management'
 		},
 		{
 			title: 'Fee Management',
@@ -34,7 +34,7 @@
 		},
 		{
 			title: 'Channel Status',
-			description: 'Easily check the status of each channel with a quick glance.'
+			description: 'Easily check the status of each channel with a quick glance'
 		}
 	]
 
@@ -43,7 +43,7 @@
 			title: 'Channel specific logs'
 		},
 		{
-			title: 'Advanced alerts on per channel basis.'
+			title: 'Advanced alerts on per channel basis'
 		}
 	]
 </script>

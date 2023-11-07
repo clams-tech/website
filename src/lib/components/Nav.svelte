@@ -3,7 +3,6 @@
 	import ClamsAltLogo from '$lib/icons/clams-alt'
 	import Socials from './Socials.svelte'
 	import { page } from '$app/stores'
-	console.log(`pagename = `, $page.url.pathname)
 
 	let links = [
 		{ elementId: '#features', title: 'Features' },
