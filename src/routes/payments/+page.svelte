@@ -22,7 +22,7 @@
 		},
 		{
 			title: 'Filter / Sort Options',
-			description: 'Status, type, wallet, network, date and more'
+			description: 'Status, type, wallet, amount, date and more'
 		}
 	]
 

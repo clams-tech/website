@@ -16,7 +16,7 @@
 	const features = [
 		{
 			title: 'Filter / Sort Options',
-			description: 'Status, wallet, date, fee, direction and more'
+			description: 'Status, wallet, date, fee and more'
 		}
 	]
 

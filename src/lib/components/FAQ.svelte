@@ -19,7 +19,7 @@
 		},
 		{
 			q: 'Which lightning implementations do you support?',
-			a: 'CLN for now, but we are investigating adding support for LND.'
+			a: 'CLN for now, but we are investigating adding support for others.'
 		}
 	]
 </script>

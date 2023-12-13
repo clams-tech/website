@@ -40,9 +40,6 @@
 
 	const comingSoon = [
 		{
-			title: 'Channel specific logs'
-		},
-		{
 			title: 'Advanced alerts on per channel basis'
 		}
 	]

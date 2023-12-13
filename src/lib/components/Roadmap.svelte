@@ -36,12 +36,12 @@
 			title: 'xPUB Wallet Support',
 			description: 'Expand wallet feature with extended public key (xPUB) connection support.',
 			status: 'planned'
-		},
-		{
-			title: 'LND Integration',
-			description: 'Integrate LND lightning implementation support to improve accessibility.',
-			status: 'planned'
 		}
+		// {
+		// 	title: 'LND Integration',
+		// 	description: 'Integrate LND lightning implementation support to improve accessibility.',
+		// 	status: 'planned'
+		// }
 	]
 </script>
 
@@ -53,13 +53,14 @@
 			</h1>
 			<p class="text-[20px] text-left">
 				Here are some of the features either in planning or actively being developed. Our priorities
-				may adjust to accommodate user requests. You can follow progress more closely by monitoring
+				may adjust to accommodate user requests.
+				<!-- You can follow progress more closely by monitoring
 				our <a
 					class="underline"
 					href="https://github.com/orgs/clams-tech/projects/1"
 					target="_blank"
 					rel="noopener noreferrer">public task board on GitHub.</a
-				>
+				> -->
 			</p>
 		</div>
 		<div class="flex flex-col gap-4">

@@ -26,9 +26,6 @@
 
 	const comingSoon = [
 		{
-			title: 'Coin selection'
-		},
-		{
 			title: 'UTXO tagging'
 		}
 	]
