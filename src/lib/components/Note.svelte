@@ -42,18 +42,17 @@
 							alt="john"
 						/>
 					</div>
-					<p
+					<a
 						class="font-bold text-[14px] text-light-purple dark:text-dark-purple flex items-center"
+						href="https://njump.me/nprofile1qqstz6qhucarrd9dhf04klcp3ewfesr2a2h05jaz5j7gc9kps2x7m6scpu9hy"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						AARON
-						<a
-							href="https://njump.me/nprofile1qqstz6qhucarrd9dhf04klcp3ewfesr2a2h05jaz5j7gc9kps2x7m6scpu9hy"
-						>
-							<div class="w-6 mx-2">
-								{@html NostrIcon}
-							</div></a
-						>
-					</p>
+						<div class="w-6 mx-2">
+							{@html NostrIcon}
+						</div>
+					</a>
 				</div>
 				<div class="flex flex-col items-center gap-3">
 					<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
@@ -63,16 +62,17 @@
 							alt="john"
 						/>
 					</div>
-					<p
+					<a
 						class="font-bold text-[14px] text-light-purple dark:text-dark-purple flex items-center"
+						href="https://njump.me/nprofile1qqs9zfzdczszd6amf8d8lnxq92kpqx8hulucfwtmfxmyg7ma4dv422stjxth3"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
-						JOHN <a
-							href="https://njump.me/nprofile1qqs9zfzdczszd6amf8d8lnxq92kpqx8hulucfwtmfxmyg7ma4dv422stjxth3"
-							><div class="w-6 mx-2">
-								{@html NostrIcon}
-							</div></a
-						>
-					</p>
+						JOHN
+						<div class="w-6 mx-2">
+							{@html NostrIcon}
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
