@@ -11,7 +11,7 @@
 	const faqs = [
 		{
 			q: 'How do app permissions work?',
-			a: 'When you make a wallet connection, the app will ask you to grant permissions. The app requires read-only access at a minimum to calculate your sats flow. You can update or revoke permissions at any time.'
+			a: 'When you make a node connection, the app will ask you to grant permissions. The app requires read-only access at a minimum. You can update or revoke permissions at any time.'
 		},
 		{
 			q: 'Where is my Bitcoin data stored?',
@@ -19,7 +19,7 @@
 		},
 		{
 			q: 'Which lightning implementations do you support?',
-			a: 'CLN for now, but we are investigating adding support for others.'
+			a: 'CLN only.'
 		}
 	]
 </script>

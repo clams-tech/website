@@ -41,17 +41,7 @@
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Exchange Connections'
-		},
-		{
-			title: 'XPub Connections'
-		},
-		{
-			title: 'Advanced Notications'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} deepDive={true} />

@@ -4,7 +4,7 @@
 	import Hero from '$lib/components/Hero.svelte'
 	import Mission from '$lib/components/Mission.svelte'
 	import Features from '$lib/components/Features.svelte'
-	import Roadmap from '$lib/components/Roadmap.svelte'
+	// import Roadmap from '$lib/components/Roadmap.svelte'
 	import WhyClams from '$lib/components/WhyClams.svelte'
 	import FAQ from '$lib/components/FAQ.svelte'
 	import GetStarted from '$lib/components/GetStarted.svelte'
@@ -19,7 +19,7 @@
 <Hero />
 <Mission />
 <Features />
-<Roadmap />
+<!-- <Roadmap /> -->
 <WhyClams />
 <FAQ />
 <GetStarted />

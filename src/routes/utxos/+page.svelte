@@ -24,11 +24,7 @@
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'UTXO tagging'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} />

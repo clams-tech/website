@@ -13,11 +13,9 @@
 <section class="flex flex-col items-center w-full h-screen">
 	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
 		<div class="z-10 flex flex-col items-center w-full text-center">
-			<h1 class="text-6xl font-bold mb-4">
-				One Platform to Unify Your <span class="text-light-orange">Bitcoin</span>.
-			</h1>
+			<h1 class="text-6xl font-bold mb-4">Secure. Private. Fast.</h1>
 			<h2 class="text-2xl mb-8">
-				Helping Businesses and Individuals Operate on a Bitcoin Standard
+				Your interface to the <span class="text-light-orange">Bitcoin</span> Lightning Network.
 			</h2>
 
 			<div class="flex gap-6">

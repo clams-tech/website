@@ -3,10 +3,11 @@
 	import WindowsIcon from '$lib/icons/windows'
 	import AppleIcon from '$lib/icons/apple'
 	import LinuxIcon from '$lib/icons/linux'
+	import UbuntuIcon from '$lib/icons/ubuntu'
 	import Button from '$lib/elements/Button.svelte'
 
 	export let data
-	console.log(`data = `, data)
+	// @TODO = use the data from github to dynamically update the download links for each OS
 </script>
 
 <section class="flex flex-col items-center px-6 pt-32 pb-20">
@@ -19,10 +20,10 @@
 				For the optimal experience, we recommend downloading the Native Desktop App. Please select
 				the option that corresponds to your operating system:
 			</p>
-			<div class="mt-8 flex gap-8">
+			<div class="mt-8 flex gap-8 flex-wrap">
 				<a
 					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/archive/refs/tags/1.8.4.zip"
+					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/Clams_2.0.0_x64-setup.exe"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -30,12 +31,12 @@
 						{@html WindowsIcon}
 					</div>
 					<p>Windows</p>
-					<p>v2.0</p></a
+					<p>Clams_2.0.0_x64-setup.exe</p></a
 				>
 
 				<a
 					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/archive/refs/tags/1.8.4.zip"
+					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/Clams_2.0.0_x64.dmg"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -43,11 +44,11 @@
 						{@html AppleIcon}
 					</div>
 					<p>MacOS</p>
-					<p>v2.0</p></a
+					<p>Clams_2.0.0_x64.dmg</p></a
 				>
 				<a
 					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/archive/refs/tags/1.8.4.zip"
+					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/clams_2.0.0_amd64.AppImage"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -55,7 +56,19 @@
 						{@html LinuxIcon}
 					</div>
 					<p>Linux</p>
-					<p>v2.0</p></a
+					<p>clams_2.0.0_amd64.AppImage</p></a
+				>
+				<a
+					class="flex flex-col items-center underline"
+					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/clams_2.0.0_amd64.deb"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="w-10 xs:w-12">
+						{@html UbuntuIcon}
+					</div>
+					<p>Ubuntu</p>
+					<p>clams_2.0.0_amd64.deb</p></a
 				>
 			</div>
 		</div>

@@ -26,14 +26,7 @@
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Tags by contacts in your address book'
-		},
-		{
-			title: 'Charts to help visualize metadata'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} />

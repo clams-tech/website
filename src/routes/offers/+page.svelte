@@ -10,8 +10,7 @@
 
 	const overview = [
 		'Effortlessly create and manage offers, also referred to as static invoices, for seamless payment acceptance and convenient withdrawals.',
-		"Whether it's through reusable QR codes on your coffee shop's tip jar or enabling online store customers to receive refunds, the applications for using offers are versatile.",
-		'Currently, this feature is exclusively available for Core Lightning nodes. However, with the continued growth of BOLT12 adoption in the ecosystem, Clams is eager to expand support for a wider range of implementations in the future.'
+		"Whether it's through reusable QR codes on your coffee shop's tip jar or enabling online store customers to receive refunds, the applications for using offers are versatile."
 	]
 
 	const features = [
@@ -34,11 +33,7 @@
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Recurring payments for added convenience'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} deepDive={true} />

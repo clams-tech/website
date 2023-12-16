@@ -8,7 +8,7 @@
 	}
 
 	const overview = [
-		'The dedicated channels dashboard offers a range of monitoring capabilities, allowing you to supervise each channel opened across all your connected Lightning node wallets.',
+		'The dedicated channels dashboard offers a range of monitoring capabilities, allowing you to supervise each channel opened across all your connected lightning nodes.',
 		'Visual representations of your inbound and outbound liquidity make it easy to assess the health of your channels at a glance. The available filter options provide a means to gain deeper insights.',
 		'For example, if you encounter difficulties in receiving payments through one of your CLN nodes, you can diagnose and address issues by filtering your channels by wallet and focusing on assessing your inbound liquidity. During this process, you might discover that your inbound liquidity is sufficient, but certain channels are experiencing failures. Identifying such issues enables you to promptly take appropriate corrective actions.'
 	]
@@ -38,11 +38,7 @@
 		}
 	]
 
-	const comingSoon = [
-		{
-			title: 'Advanced alerts on per channel basis'
-		}
-	]
+	const comingSoon = null
 </script>
 
 <FeaturePage {header} {overview} {features} {comingSoon} />

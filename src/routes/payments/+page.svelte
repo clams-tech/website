@@ -10,7 +10,7 @@
 
 	const overview = [
 		'This feature offers a comprehensive transaction record, allowing you to access a complete history of your financial activities. With advanced filtering options, you can easily isolate specific transactions for in-depth analysis.',
-		'For example, you may need to examine on-chain balance adjustments resulting from recent channel closures on your Core Lightning node in the past month.',
+		'For example, you may need to examine on-chain balance adjustments resulting from recent channel closures on your lightning node in the past month.',
 		'Likewise, if you want to review all Lightning payments received across your nodes over the last week, this can be accomplished effortlessly.',
 		'Clicking on a payment will open a dedicated page with even more detailed information. On-chain transactions will conveniently link to a Block Explorer for further exploration.'
 	]
