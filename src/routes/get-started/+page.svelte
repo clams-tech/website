@@ -87,7 +87,7 @@
 				>
 					<Button text="Guide" />
 				</a>
-				<a class={'w-[134px]'} href="https://app.clams.tech">
+				<a class={'w-[134px]'} href={APP_URL}>
 					<Button text="App" primary />
 				</a>
 			</div>

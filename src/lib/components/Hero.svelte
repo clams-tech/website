@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { APP_URL, DOCS_URL } from '$lib/constants'
+	import { DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
+	import ClamsIcon from '$lib/icons/clams'
 	// import { darkMode } from '$lib/stores'
 
 	// let isDarkMode = true
@@ -12,12 +13,14 @@
 
 <section class="flex flex-col items-center w-full h-screen">
 	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
-		<div class="z-10 flex flex-col items-center w-full text-center">
-			<h1 class="text-6xl font-bold mb-4">Secure. Private. Fast.</h1>
-			<h2 class="text-2xl mb-8">
-				Your interface to the <span class="text-light-orange">Bitcoin</span> Lightning Network.
+		<div class="z-10 flex flex-col gap-8 items-center w-full text-center">
+			<h1 class="text-6xl font-bold">Secure. Private. Fast.</h1>
+			<div class="w-80">
+				{@html ClamsIcon}
+			</div>
+			<h2 class="text-2xl">
+				An interface for your Core <span class="text-light-orange">Lightning</span> Node.
 			</h2>
-
 			<div class="flex gap-6">
 				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
 					<Button text="Learn more" />
