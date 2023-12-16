@@ -2,6 +2,7 @@
 	import { DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 	import ClamsIcon from '$lib/icons/clams'
+	// import ClamsMask from '$lib/icons/clams-mask'
 	// import { darkMode } from '$lib/stores'
 
 	// let isDarkMode = true
@@ -11,7 +12,7 @@
 	// })
 </script>
 
-<section class="flex flex-col items-center w-full h-screen">
+<section class="flex flex-col items-center w-full md:h-screen">
 	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
 		<div class="z-10 flex flex-col gap-8 items-center w-full text-center">
 			<h1 class="text-6xl font-bold">Secure. Private. Fast.</h1>
@@ -19,7 +20,7 @@
 				{@html ClamsIcon}
 			</div>
 			<h2 class="text-2xl">
-				An interface for your Core <span class="text-light-orange">Lightning</span> Node.
+				The essential interface for your <span class="text-light-orange">Lightning</span> Node.
 			</h2>
 			<div class="flex gap-6">
 				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>

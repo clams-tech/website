@@ -1,3 +1,7 @@
+<script lang="ts">
+	import NostrIcon from '$lib/icons/nostr'
+</script>
+
 <section
 	class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
@@ -30,7 +34,7 @@
 				<h2 class="">Cheers, Aaron & John</h2>
 			</div>
 			<div class="flex md:flex-col justify-around gap-5 w-full">
-				<div class="flex flex-col items-center gap-2">
+				<div class="flex flex-col items-center gap-3">
 					<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
 						<img
 							class="w-full h-full object-cover"
@@ -38,9 +42,20 @@
 							alt="john"
 						/>
 					</div>
-					<p class="font-bold text-[14px] text-light-purple dark:text-dark-purple">AARON</p>
+					<p
+						class="font-bold text-[14px] text-light-purple dark:text-dark-purple flex items-center"
+					>
+						AARON
+						<a
+							href="https://njump.me/nprofile1qqstz6qhucarrd9dhf04klcp3ewfesr2a2h05jaz5j7gc9kps2x7m6scpu9hy"
+						>
+							<div class="w-6 mx-2">
+								{@html NostrIcon}
+							</div></a
+						>
+					</p>
 				</div>
-				<div class="flex flex-col items-center gap-2">
+				<div class="flex flex-col items-center gap-3">
 					<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
 						<img
 							class="w-full h-full object-cover"
@@ -48,7 +63,16 @@
 							alt="john"
 						/>
 					</div>
-					<p class="font-bold text-[14px] text-light-purple dark:text-dark-purple">JOHN</p>
+					<p
+						class="font-bold text-[14px] text-light-purple dark:text-dark-purple flex items-center"
+					>
+						JOHN <a
+							href="https://njump.me/nprofile1qqs9zfzdczszd6amf8d8lnxq92kpqx8hulucfwtmfxmyg7ma4dv422stjxth3"
+							><div class="w-6 mx-2">
+								{@html NostrIcon}
+							</div></a
+						>
+					</p>
 				</div>
 			</div>
 		</div>
