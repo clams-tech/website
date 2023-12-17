@@ -28,5 +28,5 @@ export const FEATURE_ICONS: {
 }
 
 export const APP_URL = 'https://app.clams.tech/'
-export const DOCS_URL = 'http://localhost:8000'
-// export const DOCS_URL = 'http://docs.clams.tech'
+// export const DOCS_URL = 'http://localhost:8000'
+export const DOCS_URL = 'http://docs.clams.tech'
