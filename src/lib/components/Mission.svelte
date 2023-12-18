@@ -4,17 +4,18 @@
 
 <section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full gap-4">
 	<div class="flex flex-col justify-between w-full max-w-[704px] gap-5">
-		<h2 class="text-[24px]">
+		<!-- <h2 class="text-[24px]">
 			Our mission is to present the most valuable features of <a
 				class="underline"
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://corelightning.org/">Core Lightning</a
 			> through considerate and user-friendly interfaces.
-		</h2>
+		</h2> -->
 		<h2 class="text-[24px]">
-			With Clams, you can seamlessly oversee both onchain and lightning transactions, keep a
-			vigilant eye on your lightning channels, and create BOLT12 offers with ease.
+			Connect to your node securely via the lightning network, send and receive lightning and
+			onchain transactions, create BOLT12 offers and view the status of your channels remotely on
+			your phone or desktop devices.
 		</h2>
 		<div class="flex items-center gap-2">
 			<h2 class="text-4xl text-[32px]">

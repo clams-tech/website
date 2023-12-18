@@ -13,14 +13,14 @@
 </script>
 
 <section class="flex flex-col items-center w-full md:h-screen">
-	<div class="px-6 flex justify-center w-full max-w-[610px] mt-[120px]">
+	<div class="px-6 flex justify-center w-full max-w-[650px] mt-[120px]">
 		<div class="z-10 flex flex-col gap-8 items-center w-full text-center">
 			<h1 class="text-6xl font-bold">Secure. Private. Fast.</h1>
 			<div class="w-80">
 				{@html ClamsIcon}
 			</div>
 			<h2 class="text-2xl">
-				The essential interface for your <span class="text-light-orange">Lightning</span> Node.
+				The essential interface for your Core <span class="text-light-orange">Lightning</span> Node.
 			</h2>
 			<div class="flex gap-6">
 				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
