@@ -4,14 +4,16 @@
 	import ArrowUpIcon from '$lib/icons/arrow-up'
 </script>
 
-<section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center gap-20">
+<section
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center gap-20 bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
 	<div class="flex items-center gap-6 w-full max-w-3xl">
 		<div class="">
 			{@html ClamsGradientIcon}
 		</div>
 		<div class="flex flex-col gap-2">
 			<h2 class="text-2xl text-[20px]">
-				Want to contribute or have ideas on how to improve Clams?
+				Want to contribute or have ideas on how we can do better?
 			</h2>
 			<p>
 				Join us in our <a class="text-light-purple dark:text-bitcoin font-bold underline" href="/"

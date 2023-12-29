@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { APP_URL } from '$lib/constants'
+	import { REMOTE_APP_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 </script>
 

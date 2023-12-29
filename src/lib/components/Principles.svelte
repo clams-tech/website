@@ -4,7 +4,8 @@
 	const whys = [
 		{
 			title: 'Non-custodial',
-			description: 'Enjoy a futuristic payment experience and keep full control of your sats.'
+			description:
+				'We build technology to improve your Bitcoin experience while you keep full control of your sats.'
 		},
 		{
 			title: 'Bitcoin Only',
@@ -14,12 +15,12 @@
 		{
 			title: 'Privacy-Focused',
 			description:
-				'Privacy is a priority, with no logging, tracking, or Google scripts utilized within the app.'
+				'Privacy is a priority, with no logging, tracking, or Google scripts utilized anywhere in our tech stack.'
 		},
 		{
 			title: 'Local Data Storage',
 			description:
-				'All data is stored locally on your device and never leaves unless you want it to.'
+				'All transaction data is stored locally on your device and never leaves unless you want it to.'
 		},
 		{
 			title: 'Fully Open-Source',
@@ -29,16 +30,16 @@
 		{
 			title: 'Flexible Access',
 			description:
-				"A native desktop app for your home devices and a browser-based app for when you're on the move."
+				"Native desktop apps for your home devices and browser-based app for when you're on the move."
 		}
 	]
 </script>
 
-<section class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full">
+<section
+	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
+>
 	<div class="flex flex-col items-center w-full gap-10">
-		<h1 class="text-[40px] text-center font-bold">
-			<span class="text-light-orange">Why</span> Choose Clams?
-		</h1>
+		<h1 class="text-[40px] text-center font-bold">Principles</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px]">
 			{#each whys as { title, description }}
 				<div class="flex">

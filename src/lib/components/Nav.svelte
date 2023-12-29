@@ -1,14 +1,8 @@
 <script lang="ts">
-	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltLogo from '$lib/icons/clams-alt'
 	import Socials from './Socials.svelte'
-	import { page } from '$app/stores'
 
-	let links = [
-		{ elementId: '#features', title: 'Features' },
-		// { elementId: '#roadmap', title: 'Roadmap' },
-		{ elementId: '#faq', title: 'FAQ' }
-	]
+	let links = [{ href: '/remote', title: 'Remote' }]
 </script>
 
 <div
@@ -21,16 +15,10 @@
 			</div>
 		</a>
 		<div class="flex hidden md:flex gap-10">
-			{#each links as { elementId, title }}
-				{#if $page.url.pathname === '/'}
-					<span class="flex cursor-pointer" use:scrollto={elementId}>
-						{title}
-					</span>
-				{:else}
-					<a href={`/${elementId}`}>
-						{title}
-					</a>
-				{/if}
+			{#each links as { title, href }}
+				<a class="underline" href={`${href}`}>
+					{title}
+				</a>
 			{/each}
 		</div>
 	</div>

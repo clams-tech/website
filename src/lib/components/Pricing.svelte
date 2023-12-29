@@ -3,7 +3,7 @@
 	import BitcoinSymbolIcon from '$lib/icons/bitcoin-symbol'
 	import PlusIcon from '$lib/icons/plus'
 	import Button from '$lib/elements/Button.svelte'
-	import { APP_URL } from '$lib/constants'
+	import { REMOTE_APP_URL } from '$lib/constants'
 
 	const communityFeatures = [
 		'Unlimited Wallet Connections',
@@ -55,7 +55,7 @@
 					<span>{feature}</span>
 				</div>
 			{/each}
-			<a class="flex mt-3" href={APP_URL} target="_blank" rel="noopener noreferrer">
+			<a class="flex mt-3" href={REMOTE_APP_URL} target="_blank" rel="noopener noreferrer">
 				<Button primary text="LFG!" />
 			</a>
 		</div>

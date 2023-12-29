@@ -1,5 +1,5 @@
 <script>
-	import { APP_URL, DOCS_URL } from '$lib/constants'
+	import { REMOTE_APP_URL, DOCS_URL } from '$lib/constants'
 	import WindowsIcon from '$lib/icons/windows'
 	import AppleIcon from '$lib/icons/apple'
 	import LinuxIcon from '$lib/icons/linux'
@@ -33,7 +33,6 @@
 					<p>Windows</p>
 					<p>Clams_2.0.0_x64-setup.exe</p></a
 				>
-
 				<a
 					class="flex flex-col items-center underline"
 					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/Clams_2.0.0_x64.dmg"
@@ -87,7 +86,7 @@
 				>
 					<Button text="Guide" />
 				</a>
-				<a class={'w-[134px]'} href={APP_URL}>
+				<a class={'w-[134px]'} href={REMOTE_APP_URL}>
 					<Button text="App" primary />
 				</a>
 			</div>
