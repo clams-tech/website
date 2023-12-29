@@ -2,14 +2,6 @@
 	import { DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 	import ClamsIcon from '$lib/icons/clams'
-	// import ClamsMask from '$lib/icons/clams-mask'
-	// import { darkMode } from '$lib/stores'
-
-	// let isDarkMode = true
-
-	// darkMode.subscribe((value) => {
-	// 	isDarkMode = value
-	// })
 </script>
 
 <section class="flex flex-col items-center w-full md:h-screen">
@@ -24,19 +16,12 @@
 			</h2>
 			<div class="flex gap-6">
 				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
-					<Button text="Learn more" />
+					<Button text="Learn More" />
 				</a>
-				<a class={'w-[134px]'} href="/get-started">
-					<Button text="Start now" primary />
+				<a class={'w-[134px]'} href="/remote/get-started">
+					<Button text="Start Now" primary />
 				</a>
 			</div>
 		</div>
 	</div>
-	<!-- <div
-		class={`mt-[-150px] h-full w-full ${
-			isDarkMode
-				? "bg-[url('$lib/images/network--dark.png')]"
-				: "bg-[url('$lib/images/network--light.png')]"
-		}`}
-	/> -->
 </section>

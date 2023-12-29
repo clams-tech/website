@@ -39,7 +39,7 @@
 	class="px-6 py-[72px] md:py-[96px] flex flex-col items-center justify-center w-full bg-[#F4F6F8] dark:bg-[#1e1e1e]"
 >
 	<div class="flex flex-col items-center w-full gap-10">
-		<h1 class="text-[40px] text-center font-bold">Principles</h1>
+		<h1 class="text-[40px] text-center font-bold">Guiding Principles</h1>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px]">
 			{#each whys as { title, description }}
 				<div class="flex">

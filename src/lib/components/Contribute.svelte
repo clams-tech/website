@@ -13,7 +13,7 @@
 		</div>
 		<div class="flex flex-col gap-2">
 			<h2 class="text-2xl text-[20px]">
-				Want to contribute or have ideas on how we can do better?
+				Want to contribute or have ideas on how to improve our apps?
 			</h2>
 			<p>
 				Join us in our <a class="text-light-purple dark:text-bitcoin font-bold underline" href="/"

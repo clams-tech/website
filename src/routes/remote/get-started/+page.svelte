@@ -12,7 +12,7 @@
 
 <section class="flex flex-col items-center px-6 pt-32 pb-20">
 	<div class="flex flex-col w-full max-w-2xl text-center gap-16">
-		<h1 class="text-6xl font-bold">Get Started</h1>
+		<h1 class="text-6xl font-bold"><span class="text-light-orange">Remote</span> Downloads</h1>
 		<!-- Desktop app -->
 		<div class="flex flex-col items-center">
 			<h2 class="text-[20px] font-bold text-light-purple dark:text-dark-purple">DESKTOP DEVICES</h2>

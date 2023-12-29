@@ -33,7 +33,7 @@
 						{description}
 					</h2>
 					<a class="w-[145px] m-auto mt-5" {href}>
-						<Button text={href ? 'Learn More' : 'Coming Soon'} disabled={!href} />
+						<Button text={href ? 'Learn More' : 'Coming soon'} disabled={!href} />
 					</a>
 				</div>
 			{/each}

@@ -15,5 +15,5 @@
 <Hero />
 <Mission />
 <Features />
-<GetStarted />
 <FAQ />
+<GetStarted />
