@@ -12,7 +12,11 @@
 		</h1>
 		<p class="text-[20px]">Discover the new era of node management.</p>
 		<div class="mt-4 flex justify-center">
-			<a class={'w-[134px]'} href="/remote/get-started">
+			<a
+				class={'w-[134px]'}
+				href="/remote/downloads
+			"
+			>
 				<Button text="Get Started" primary />
 			</a>
 		</div>

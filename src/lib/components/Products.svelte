@@ -11,7 +11,7 @@
 		},
 		{
 			icon: BitcoinIcon,
-			title: 'ABACUS',
+			title: 'BOOKKEEPER',
 			description: 'The accountancy suite for Bitcoin financial management.',
 			href: null
 		}
@@ -23,7 +23,7 @@
 		<div class="flex flex-wrap justify-between gap-10">
 			{#each products as { icon, title, description, href }}
 				<div
-					class="grid gap-5 w-full max-w-[400px] py-10 px-6 rounded-2xl border border-slate-300 dark:border-slate-700 shadow-lg dark:shadow-slate-600"
+					class="m-auto grid gap-5 w-full max-w-[400px] py-10 px-6 rounded-2xl border border-slate-300 dark:border-slate-700 shadow-lg dark:shadow-slate-600"
 				>
 					<div class="max-w-[300px] m-auto">
 						{@html icon}

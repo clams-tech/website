@@ -15,10 +15,15 @@
 				The essential interface for your Core <span class="text-light-orange">Lightning</span> Node.
 			</h2>
 			<div class="flex gap-6">
-				<a href={DOCS_URL} target="_blank" rel="noopener noreferrer" class={'w-[134px]'}>
+				<a
+					href={`${DOCS_URL}/remote`}
+					target="_blank"
+					rel="noopener noreferrer"
+					class={'w-[134px]'}
+				>
 					<Button text="Learn More" />
 				</a>
-				<a class={'w-[134px]'} href="/remote/get-started">
+				<a class={'w-[134px]'} href="/remote/downloads">
 					<Button text="Start Now" primary />
 				</a>
 			</div>
