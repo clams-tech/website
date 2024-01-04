@@ -79,7 +79,7 @@
 			</p>
 			<div class="mt-8 flex gap-6">
 				<a
-					href={`${DOCS_URL}/installation/`}
+					href={`${DOCS_URL}/remote/#installation`}
 					target="_blank"
 					rel="noopener noreferrer"
 					class={'w-[134px]'}

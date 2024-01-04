@@ -2,6 +2,7 @@
 	import Button from '$lib/elements/Button.svelte'
 	import BitcoinIcon from '$lib/icons/bitcoin'
 	import RemoteIcon from '$lib/icons/remote'
+	import AbacusIcon from '$lib/icons/abacus'
 
 	const products = [
 		{
@@ -11,7 +12,7 @@
 			href: '/remote'
 		},
 		{
-			icon: BitcoinIcon,
+			icon: AbacusIcon,
 			title: 'ABACUS',
 			description: 'The accountancy suite for Bitcoin financial management.',
 			href: null
@@ -26,7 +27,7 @@
 				<div
 					class="m-auto grid gap-5 w-full max-w-[400px] py-10 px-6 rounded-2xl border border-slate-300 dark:border-slate-700 shadow-lg dark:shadow-slate-600"
 				>
-					<div class="max-w-[300px] m-auto bg-red">
+					<div class="max-w-[120px] m-auto">
 						{@html icon}
 					</div>
 					<h2 class="text-3xl font-bold">{title}</h2>
