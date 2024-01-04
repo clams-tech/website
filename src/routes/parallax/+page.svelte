@@ -1,8 +1,14 @@
 <script lang="ts">
+	import { goto } from '$app/navigation'
+	import { onMount } from 'svelte'
 	import { Parallax, ParallaxLayer } from 'svelte-parallax'
 
 	let parallax: Parallax
 	let disabled = false
+
+	onMount(() => {
+		goto('/')
+	})
 </script>
 
 <button class="disable" on:click={() => (disabled = !disabled)}>disable</button>

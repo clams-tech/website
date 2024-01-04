@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Button from '$lib/elements/Button.svelte'
-	import BitcoinIcon from '$lib/icons/bitcoin'
 	import RemoteIcon from '$lib/icons/remote'
 	import AbacusIcon from '$lib/icons/abacus'
 
@@ -25,12 +24,12 @@
 		<div class="flex flex-wrap justify-between gap-10">
 			{#each products as { icon, title, description, href }}
 				<div
-					class="m-auto grid gap-5 w-full max-w-[400px] py-10 px-6 rounded-2xl border border-slate-300 dark:border-slate-700 shadow-lg dark:shadow-slate-600"
+					class="m-auto grid gap-5 w-full max-w-[400px] py-10 px-6 rounded-2xl border border-slate-300 dark:border-dark-border hover:shadow-lg hover:dark:shadow-slate-900"
 				>
-					<div class="max-w-[120px] m-auto">
+					<div class="max-w-[150px] m-auto">
 						{@html icon}
 					</div>
-					<h2 class="text-3xl font-bold">{title}</h2>
+					<h2 class="text-3xl font-bold text-light-orange">{title}</h2>
 					<h2 class="text-2xl">
 						{description}
 					</h2>

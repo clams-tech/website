@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { DOCS_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
-	import ClamsIcon from '$lib/icons/clams'
+	import RemoteIcon from '$lib/icons/remote'
 </script>
 
 <section class="flex flex-col items-center w-full md:h-screen">
@@ -9,7 +9,7 @@
 		<div class="z-10 flex flex-col gap-8 items-center w-full text-center">
 			<h1 class="text-6xl font-bold">Secure. Private. Fast.</h1>
 			<div class="w-80">
-				{@html ClamsIcon}
+				{@html RemoteIcon}
 			</div>
 			<h2 class="text-2xl">
 				The essential interface for your Core <span class="text-light-orange">Lightning</span> Node.
