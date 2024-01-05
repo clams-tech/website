@@ -7,7 +7,7 @@
 		{
 			icon: RemoteIcon,
 			title: 'REMOTE',
-			description: 'The essential interface for your Core Lightning Node.',
+			description: 'The essential interface for your Core Lightning node.',
 			href: '/remote'
 		},
 		{

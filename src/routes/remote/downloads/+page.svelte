@@ -75,7 +75,7 @@
 		<div class="flex flex-col items-center">
 			<h2 class="text-[20px] font-bold text-light-purple dark:text-dark-purple">MOBILE DEVICES</h2>
 			<p class="mt-4 text-[20px]">
-				If you'd like to use Clams on your mobile device, you can use the Progressive Web App:
+				If you'd like to use Remote on your mobile device, you can use the Progressive Web App:
 			</p>
 			<div class="mt-8 flex gap-6">
 				<a

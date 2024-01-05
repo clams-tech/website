@@ -8,7 +8,7 @@
 >
 	<div class="flex flex-col w-full max-w-[680px] text-center gap-2">
 		<h1 class="text-[40px] font-bold">
-			<span class="text-light-orange">Unleash</span> the full potential of your Lightning Node with Clams.
+			<span class="text-light-orange">Unleash</span> the full potential of your Lightning Node with Remote.
 		</h1>
 		<p class="text-[20px]">Discover the new era of node management.</p>
 		<div class="mt-4 flex justify-center">
