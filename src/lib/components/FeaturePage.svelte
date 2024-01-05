@@ -7,7 +7,7 @@
 	export let overview: string[] = []
 	export let features: { title: string; description: string }[] = []
 	export let comingSoon: { title: string }[] | null
-	export let deepDive: boolean = false
+	export let deepDive = ''
 
 	import Button from '$lib/elements/Button.svelte'
 	import CheckIcon from '$lib/icons/check.svelte'
@@ -80,11 +80,7 @@
 		{/if}
 		{#if deepDive}
 			<div class="mt-[48px] flex justify-center">
-				<a
-					href={`${DOCS_URL}/${header.title.toLocaleLowerCase()}`}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<a href={`${DOCS_URL}${deepDive}`} target="_blank" rel="noopener noreferrer">
 					<Button primary text={`Dive deeper into ${header.title}`}>
 						<div slot="iconLeft" class="w-10 xs:w-12">
 							{@html `<div style="stroke: ${iconColor}">${FEATURE_ICONS[header.title]}</div>`}

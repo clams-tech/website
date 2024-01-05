@@ -44,4 +44,4 @@
 	const comingSoon = null
 </script>
 
-<FeaturePage {header} {overview} {features} {comingSoon} deepDive={true} />
+<FeaturePage {header} {overview} {features} {comingSoon} deepDive={'/remote/#wallets'} />
