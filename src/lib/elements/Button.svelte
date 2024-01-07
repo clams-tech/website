@@ -16,10 +16,10 @@
 	// ==== 👇 comments are need to prevent styles from being stripped from build when used dynamically 👇 ==== //
 	// px-2
 	// px-4
-	// hover:shadow-purple-500
+	// hover:shadow-light-purple
 	// hover:shadow-md
 	// hover:shadow-current
-	// border-purple-500
+	// border-light-purple
 	// border-current
 </script>
 
@@ -27,11 +27,15 @@
 	bind:this={button}
 	on:click
 	style={`opacity: ${disabled ? '0.4' : '1'}`}
-	class="text-current no-underline text-{small ? 'xs' : 'base'} hover:shadow-{primary
-		? 'purple-500'
-		: 'current'} active:shadow-sm shadow-sm hover:shadow-md disabled:bg-disabled disabled:border-disabled w-full flex items-center justify-center rounded-md py-3 px-{small
+	class="{primary ? 'bg-light-purple dark:bg-white' : 'bg-white dark:bg-black'} {primary
+		? 'text-white dark:text-black'
+		: 'text-black dark:text-white'} no-underline text-{small
+		? 'xs'
+		: 'base'} active:shadow-sm shadow-sm hover:shadow-lg disabled:bg-disabled disabled:border-disabled w-full flex items-center justify-center rounded-md py-3 px-{small
 		? '2'
-		: '4'} border-2 border-solid border-{primary ? 'purple-500' : 'current'} font-semibold"
+		: '4'} border-2 border-solid {primary
+		? 'border-light-purple dark:border-white'
+		: 'border-black dark:border-white'} font-semibold"
 	disabled={disabled || requesting}
 >
 	{#if requesting}

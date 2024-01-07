@@ -32,5 +32,10 @@
 		"vite": "^3.0.4"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"@skeletonlabs/skeleton": "^2.0.0",
+		"svelte-parallax": "^0.6.0",
+		"svelte-scrollto": "^0.2.0",
+		"sveltekit-i18n": "^2.2.2"
+	}
 }
