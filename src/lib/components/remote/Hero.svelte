@@ -5,7 +5,7 @@
 </script>
 
 <section class="flex justify-center items-center w-full md:h-screen">
-	<div class="px-6 flex justify-center w-full max-w-[1000px]">
+	<div class="px-6 flex justify-center w-full max-w-[1000px] mt-28 md:mt-0">
 		<div class="flex flex-col text-center gap-8">
 			<div class="w-80 m-auto">
 				{@html RemoteIcon}

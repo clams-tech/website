@@ -6,8 +6,49 @@
 	import UbuntuIcon from '$lib/icons/ubuntu'
 	import Button from '$lib/elements/Button.svelte'
 
-	export let data
-	// @TODO = use the data from github to dynamically update the download links for each OS
+	export let data // Fetch "latest" Remote release from Clams github
+
+	const { assets } = data
+
+	/**
+	 * @param {{name: string, browser_download_url: string}[]} assets
+	 * @param {string} extension
+	 */
+	function findAssetByExtension(assets, extension) {
+		return assets.find((asset) => asset.name.includes(extension))
+	}
+
+	const macOSAssets = findAssetByExtension(assets, '.dmg')
+	const linuxAssets = findAssetByExtension(assets, '.AppImage')
+	const ubuntuAssets = findAssetByExtension(assets, '.deb')
+	const windowsAssets = findAssetByExtension(assets, '.exe')
+
+	const downloads = [
+		{
+			icon: AppleIcon,
+			os: 'MacOS',
+			name: macOSAssets?.name,
+			href: macOSAssets?.browser_download_url
+		},
+		{
+			icon: LinuxIcon,
+			os: 'Linux',
+			name: linuxAssets?.name,
+			href: linuxAssets?.browser_download_url
+		},
+		{
+			icon: UbuntuIcon,
+			os: 'Ubunutu',
+			name: ubuntuAssets?.name,
+			href: ubuntuAssets?.browser_download_url
+		},
+		{
+			icon: WindowsIcon,
+			os: 'Windows',
+			name: windowsAssets?.name,
+			href: windowsAssets?.browser_download_url
+		}
+	]
 </script>
 
 <section class="flex flex-col items-center px-6 pt-32 pb-20">
@@ -20,55 +61,21 @@
 				For the optimal experience, we recommend downloading the Native Desktop App. Please select
 				the option that corresponds to your operating system:
 			</p>
-			<div class="mt-8 flex gap-8 flex-wrap">
-				<a
-					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/Clams_2.0.0_x64-setup.exe"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="w-10 xs:w-12">
-						{@html WindowsIcon}
-					</div>
-					<p>Windows</p>
-					<p>Clams_2.0.0_x64-setup.exe</p></a
-				>
-				<a
-					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/Clams_2.0.0_x64.dmg"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="w-10 xs:w-12">
-						{@html AppleIcon}
-					</div>
-					<p>MacOS</p>
-					<p>Clams_2.0.0_x64.dmg</p></a
-				>
-				<a
-					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/clams_2.0.0_amd64.AppImage"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="w-10 xs:w-12">
-						{@html LinuxIcon}
-					</div>
-					<p>Linux</p>
-					<p>clams_2.0.0_amd64.AppImage</p></a
-				>
-				<a
-					class="flex flex-col items-center underline"
-					href="https://github.com/clams-tech/App/releases/download/clams-2.0.0-beta.4/clams_2.0.0_amd64.deb"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<div class="w-10 xs:w-12">
-						{@html UbuntuIcon}
-					</div>
-					<p>Ubuntu</p>
-					<p>clams_2.0.0_amd64.deb</p></a
-				>
+			<div class="mt-8 flex gap-8 flex-wrap justify-center">
+				{#each downloads as { icon, os, name, href }}
+					<a
+						class="flex flex-col items-center underline"
+						{href}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div class="w-10 xs:w-12">
+							{@html icon}
+						</div>
+						<p>{os}</p>
+						<p>{name}</p></a
+					>
+				{/each}
 			</div>
 		</div>
 		<!-- PWA -->
