@@ -1,0 +1,76 @@
+import{S as E,i as I,s as D,k as g,a as M,l as p,m as _,c as H,h as u,n as d,b as V,F as m,G as K,B as x,f as w,g as O,t as L,d as R,H as j,w as Z,x as b,y as T,z as y,q as U,r as W,I as X,J as Q,K as Y,L as e1}from"../../chunks/index-071863ef.js";import{N as t1,C as l1,l as r1,a as s1}from"../../chunks/translations-b5ee5982.js";import{d as A}from"../../chunks/stores-1772e5fa.js";const a1=`<svg width="100%" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g clip-path="url(#clip0)">
+		<path
+			d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"
+			fill="currentColor"
+		/>
+	</g>
+	<defs>
+		<clipPath id="clip0">
+			<rect width="71" height="55" fill="white" />
+		</clipPath>
+	</defs>
+</svg>`,n1=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.672 10.6218L20.2289 3H18.6751L12.9818 9.61788L8.43461 3H3.18994L10.0662 13.0074L3.18994 21H4.74379L10.756 14.0113L15.5582 21H20.8029L13.6717 10.6218H13.672ZM11.5438 13.0956L10.8471 12.0991L5.30366 4.16971H7.69027L12.1639 10.5689L12.8606 11.5655L18.6758 19.8835H16.2892L11.5438 13.096V13.0956Z" fill="currentColor"/>
+</svg>
+`,o1=`<svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79" fill="none"
+	><g id="Layer_2" data-name="Layer 2"
+		><g id="Layer_1-2" data-name="Layer 1"
+			><path
+				d="M60.39,0A60.39,60.39,0,0,0,41.3,117.69c3,.56,4.12-1.31,4.12-2.91,0-1.44-.05-6.19-.08-11.24C28.54,107.19,25,96.42,25,96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67,6.07.43,9.26,6.22,9.26,6.22,5.39,9.23,14.13,6.57,17.57,5,.55-3.9,2.11-6.56,3.84-8.07C36,85.55,21.85,80.37,21.85,57.23A23.35,23.35,0,0,1,28.08,41c-.63-1.52-2.7-7.66.58-16,0,0,5.07-1.62,16.61,6.19a57.36,57.36,0,0,1,30.25,0C87,23.42,92.11,25,92.11,25c3.28,8.32,1.22,14.46.59,16a23.34,23.34,0,0,1,6.21,16.21c0,23.2-14.12,28.3-27.57,29.8,2.16,1.87,4.09,5.55,4.09,11.18,0,8.08-.06,14.59-.06,16.57,0,1.61,1.08,3.49,4.14,2.9A60.39,60.39,0,0,0,60.39,0Z"
+				fill="currentColor"
+				fill-rule="evenodd"
+			/><path
+				d="M22.87,86.7c-.13.3-.6.39-1,.19s-.69-.61-.55-.91.61-.39,1-.19.69.61.54.91Z"
+				fill="currentColor"
+			/><path
+				d="M25.32,89.43c-.29.27-.85.14-1.24-.28a.92.92,0,0,1-.17-1.25c.3-.27.84-.14,1.24.28s.47,1,.17,1.25Z"
+				fill="currentColor"
+			/><path
+				d="M27.7,92.91c-.37.26-1,0-1.35-.52s-.37-1.18,0-1.44,1,0,1.35.51.37,1.19,0,1.45Z"
+				fill="currentColor"
+			/><path
+				d="M31,96.27A1.13,1.13,0,0,1,29.41,96c-.53-.49-.68-1.18-.34-1.54s1-.27,1.56.23.68,1.18.33,1.54Z"
+				fill="currentColor"
+			/><path
+				d="M35.46,98.22c-.15.47-.82.69-1.51.49s-1.13-.76-1-1.24.82-.7,1.51-.49,1.13.76,1,1.24Z"
+				fill="currentColor"
+			/><path
+				d="M40.4,98.58c0,.5-.56.91-1.28.92s-1.3-.38-1.31-.88.56-.91,1.29-.92,1.3.39,1.3.88Z"
+				fill="currentColor"
+			/><path
+				d="M45,97.8c.09.49-.41,1-1.12,1.12s-1.35-.17-1.44-.66.42-1,1.12-1.12,1.35.17,1.44.66Z"
+				fill="currentColor"
+			/></g
+		></g
+	></svg
+>`;function c1(c){let e,t,r,a,o,s;return{c(){e=g("div"),t=g("input"),r=M(),a=g("label"),this.h()},l(n){e=p(n,"DIV",{class:!0});var l=_(e);t=p(l,"INPUT",{type:!0,id:!0,class:!0}),r=H(l),a=p(l,"LABEL",{for:!0,class:!0}),_(a).forEach(u),l.forEach(u),this.h()},h(){t.checked=c[0],d(t,"type","checkbox"),d(t,"id","theme-toggle"),d(t,"class","svelte-1qwhy3w"),d(a,"for","theme-toggle"),d(a,"class","svelte-1qwhy3w"),d(e,"class","flex items-center ")},m(n,l){V(n,e,l),m(e,t),m(e,r),m(e,a),o||(s=K(t,"click",c[1]),o=!0)},p(n,[l]){l&1&&(t.checked=n[0])},i:x,o:x,d(n){n&&u(e),o=!1,s()}}}function i1(c,e,t){let r=!0;A.subscribe(o=>{t(0,r=o)});function a(){A.set(!r),localStorage.setItem("theme",r?"dark":"light"),r?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}return localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?(document.documentElement.classList.add("dark"),A.set(!0)):(document.documentElement.classList.remove("dark"),A.set(!1)),[r,a]}class f1 extends E{constructor(e){super(),I(this,e,i1,c1,D,{})}}function N(c,e,t){const r=c.slice();return r[2]=e[t].href,r[3]=e[t].title,r[4]=e[t].icon,r}function q(c){let e,t,r=c[4]+"";return{c(){e=g("a"),t=g("div"),this.h()},l(a){e=p(a,"A",{class:!0,href:!0,target:!0,rel:!0});var o=_(e);t=p(o,"DIV",{class:!0});var s=_(t);s.forEach(u),o.forEach(u),this.h()},h(){d(t,"class","w-6 mx-2"),d(e,"class","flex items-center"),d(e,"href",c[2]),d(e,"target","_blank"),d(e,"rel","noopener noreferrer")},m(a,o){V(a,e,o),m(e,t),t.innerHTML=r},p:x,d(a){a&&u(e)}}}function z(c){let e,t;return e=new f1({}),{c(){Z(e.$$.fragment)},l(r){b(e.$$.fragment,r)},m(r,a){T(e,r,a),t=!0},i(r){t||(w(e.$$.fragment,r),t=!0)},o(r){L(e.$$.fragment,r),t=!1},d(r){y(e,r)}}}function h1(c){let e,t,r,a=c[1],o=[];for(let n=0;n<a.length;n+=1)o[n]=q(N(c,a,n));let s=c[0]&&z();return{c(){e=g("div");for(let n=0;n<o.length;n+=1)o[n].c();t=M(),s&&s.c(),this.h()},l(n){e=p(n,"DIV",{class:!0});var l=_(e);for(let i=0;i<o.length;i+=1)o[i].l(l);t=H(l),s&&s.l(l),l.forEach(u),this.h()},h(){d(e,"class","flex items-center gap-2 md:gap-10")},m(n,l){V(n,e,l);for(let i=0;i<o.length;i+=1)o[i].m(e,null);m(e,t),s&&s.m(e,null),r=!0},p(n,[l]){if(l&2){a=n[1];let i;for(i=0;i<a.length;i+=1){const v=N(n,a,i);o[i]?o[i].p(v,l):(o[i]=q(v),o[i].c(),o[i].m(e,t))}for(;i<o.length;i+=1)o[i].d(1);o.length=a.length}n[0]?s?l&1&&w(s,1):(s=z(),s.c(),w(s,1),s.m(e,null)):s&&(O(),L(s,1,1,()=>{s=null}),R())},i(n){r||(w(s),r=!0)},o(n){L(s),r=!1},d(n){n&&u(e),j(o,n),s&&s.d()}}}function u1(c,e,t){let r=[{icon:t1,title:"Nostr",href:"https://nostr.at/npub136hk9wu6xnrz64kfaapsvgc5rfnylz4djlx4w30w66h6cy48vhws3gth6q"},{icon:a1,title:"Discord",href:"https://discord.gg/eWfHuJZVaB"},{icon:o1,title:"GitHub",href:"https://github.com/clams-tech"},{icon:n1,title:"Twitter",href:"https://twitter.com/clamstech"}],{showThemeToggle:a=!0}=e;return c.$$set=o=>{"showThemeToggle"in o&&t(0,a=o.showThemeToggle)},[a,r]}class F extends E{constructor(e){super(),I(this,e,u1,h1,D,{showThemeToggle:0})}}function d1(c){let e,t,r,a,o;return a=new F({props:{showThemeToggle:!1}}),{c(){e=g("section"),t=g("div"),r=M(),Z(a.$$.fragment),this.h()},l(s){e=p(s,"SECTION",{class:!0});var n=_(e);t=p(n,"DIV",{class:!0});var l=_(t);l.forEach(u),r=H(n),b(a.$$.fragment,n),n.forEach(u),this.h()},h(){d(t,"class","w-40"),d(e,"class","bg-white dark:bg-black flex flex-col items-center dark:text-white px-5 py-10 gap-10")},m(s,n){V(s,e,n),m(e,t),t.innerHTML=l1,m(e,r),T(a,e,null),o=!0},p:x,i(s){o||(w(a.$$.fragment,s),o=!0)},o(s){L(a.$$.fragment,s),o=!1},d(s){s&&u(e),y(a)}}}class C1 extends E{constructor(e){super(),I(this,e,null,d1,D,{})}}const m1=`<svg width="100%" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path
+		d="M418.53 393.525H407.814V122.642H418.53C434.605 122.642 447.107 109.544 447.107 94.065C447.107 78.5859 434.01 65.4883 418.53 65.4883C403.051 65.4883 389.954 78.5859 389.954 94.065V104.781H119.07V94.065C119.07 77.9905 105.972 65.4883 90.4932 65.4883C75.0142 65.4883 61.9164 78.5859 61.9164 94.065C61.9164 109.544 75.0142 122.642 90.4932 122.642H101.209V393.525H89.8978C73.8234 393.525 61.3212 406.623 61.3212 422.102C61.3212 437.581 74.4188 450.679 89.8978 450.679C105.377 450.679 118.475 437.581 118.475 422.102V411.386H389.358V422.102C389.358 438.177 402.456 450.679 417.935 450.679C433.414 450.679 446.512 437.581 446.512 422.102C446.512 406.623 434.01 393.525 418.53 393.525ZM89.8978 83.3487C95.8513 83.3487 100.614 88.1115 100.614 94.065V104.781H89.8978C83.9443 104.781 79.1816 100.018 79.1816 94.065C79.1816 88.1115 83.9443 83.3487 89.8978 83.3487ZM101.209 422.102C101.209 428.056 96.4467 432.818 90.4932 432.818C84.5397 432.818 79.7768 428.056 79.7768 422.102C79.7768 416.149 84.5397 411.386 90.4932 411.386H101.209V422.102ZM389.358 122.642V187.535C375.07 159.553 351.851 136.93 324.465 122.642H389.358ZM389.358 328.632V393.525H324.465C352.447 379.237 375.07 356.018 389.358 328.632ZM119.07 188.13V123.237H183.963C156.577 137.525 133.358 160.149 119.07 188.13ZM388.763 258.381C388.763 332.8 328.633 392.93 254.214 392.93C179.795 392.93 119.665 332.205 119.665 258.381C119.665 184.558 179.795 123.832 254.214 123.832C328.633 123.832 388.763 183.963 388.763 258.381ZM183.963 393.525H119.07V328.632C133.358 356.018 156.577 379.237 183.963 393.525ZM418.53 433.414C412.577 433.414 407.814 428.651 407.814 422.698V411.981H418.53C424.484 411.981 429.247 416.744 429.247 422.698C429.247 428.651 424.484 433.414 418.53 433.414ZM407.219 94.065C407.219 88.1115 411.981 83.3487 417.935 83.3487C423.888 83.3487 428.651 88.1115 428.651 94.065C428.651 100.018 423.888 104.781 417.935 104.781H407.219V94.065Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M438.177 159.552C433.415 159.552 429.247 163.719 429.247 168.482V346.491C429.247 351.254 433.415 355.421 438.177 355.421C442.94 355.421 447.108 351.254 447.108 346.491V168.482C447.108 163.719 442.94 159.552 438.177 159.552Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M79.1816 347.087V169.078C79.1816 164.315 75.0142 160.148 70.2514 160.148C65.4886 160.148 61.3212 164.315 61.3212 169.078V347.087C61.3212 351.85 65.4886 356.018 70.2514 356.018C75.0142 356.018 79.1816 351.85 79.1816 347.087Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M343.516 432.817H165.507C160.744 432.817 156.577 436.984 156.577 441.747C156.577 446.51 160.744 450.677 165.507 450.677H343.516C348.279 450.677 352.446 446.51 352.446 441.747C352.446 436.984 348.279 432.817 343.516 432.817Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M164.911 82.7526H342.921C347.684 82.7526 351.851 78.5851 351.851 73.8223C351.851 69.0595 347.684 64.8921 342.921 64.8921H164.911C160.149 64.8921 155.981 69.0595 155.981 73.8223C155.981 78.5851 160.149 82.7526 164.911 82.7526Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M165.507 233.375C162.53 243.496 161.935 252.426 161.935 258.38C161.935 269.691 163.721 278.622 165.507 283.384C166.698 287.552 175.033 316.129 203.014 334.584C205.991 336.37 208.372 338.157 210.158 338.752V176.817C207.777 178.008 204.8 179.794 200.632 182.77C174.437 201.822 166.698 228.612 165.507 233.375Z"
+		fill="currentColor"
+	/>
+	<path
+		d="M290.53 303.626C286.958 307.198 286.958 312.556 290.53 316.128L294.697 320.295C282.79 328.63 269.097 332.202 253.618 332.202C250.641 332.202 247.664 332.202 244.688 331.607V183.96C247.664 183.365 250.641 183.365 253.618 183.365C269.097 183.365 282.79 187.532 294.697 195.272L289.934 200.035C286.362 203.607 286.362 208.965 289.934 212.537C293.506 216.109 298.865 216.109 302.437 212.537L320.892 194.081C318.511 191.7 315.534 188.723 311.962 185.746C301.841 177.412 292.316 173.244 289.339 172.053C278.623 167.291 266.12 164.909 253.618 164.909C244.092 164.909 235.162 166.1 226.827 169.077V345.895H225.636C234.567 348.872 243.497 350.063 253.618 350.063C266.12 350.063 278.027 347.681 289.339 343.514C292.911 342.323 301.841 338.156 311.962 329.821C316.129 326.844 319.106 323.867 320.892 321.486L302.437 303.03C300.055 300.053 294.102 300.053 290.53 303.626Z"
+		fill="currentColor"
+	/>
+</svg>`;function G(c,e,t){const r=c.slice();return r[1]=e[t].title,r[2]=e[t].href,r}function P(c){let e,t=c[1]+"",r,a;return{c(){e=g("a"),r=U(t),a=M(),this.h()},l(o){e=p(o,"A",{class:!0,href:!0});var s=_(e);r=W(s,t),a=H(s),s.forEach(u),this.h()},h(){d(e,"class","underline"),d(e,"href",`${c[2]}`)},m(o,s){V(o,e,s),m(e,r),m(e,a)},p:x,d(o){o&&u(e)}}}function g1(c){let e,t,r,a,o,s,n,l,i,v=c[0],C=[];for(let f=0;f<v.length;f+=1)C[f]=P(G(c,v,f));return l=new F({}),{c(){e=g("div"),t=g("div"),r=g("a"),a=g("div"),o=M(),s=g("div");for(let f=0;f<C.length;f+=1)C[f].c();n=M(),Z(l.$$.fragment),this.h()},l(f){e=p(f,"DIV",{class:!0});var $=_(e);t=p($,"DIV",{class:!0});var h=_(t);r=p(h,"A",{href:!0});var k=_(r);a=p(k,"DIV",{class:!0});var J=_(a);J.forEach(u),k.forEach(u),o=H(h),s=p(h,"DIV",{class:!0});var B=_(s);for(let S=0;S<C.length;S+=1)C[S].l(B);B.forEach(u),h.forEach(u),n=H($),b(l.$$.fragment,$),$.forEach(u),this.h()},h(){d(a,"class","w-10"),d(r,"href","/"),d(s,"class","flex hidden md:flex gap-10"),d(t,"class","flex items-center gap-10"),d(e,"class","absolute left-1/2 transform -translate-x-1/2 flex justify-between py-3 px-5 gap-10 w-full max-w-6xl")},m(f,$){V(f,e,$),m(e,t),m(t,r),m(r,a),a.innerHTML=m1,m(t,o),m(t,s);for(let h=0;h<C.length;h+=1)C[h].m(s,null);m(e,n),T(l,e,null),i=!0},p(f,[$]){if($&1){v=f[0];let h;for(h=0;h<v.length;h+=1){const k=G(f,v,h);C[h]?C[h].p(k,$):(C[h]=P(k),C[h].c(),C[h].m(s,null))}for(;h<C.length;h+=1)C[h].d(1);C.length=v.length}},i(f){i||(w(l.$$.fragment,f),i=!0)},o(f){L(l.$$.fragment,f),i=!1},d(f){f&&u(e),j(C,f),y(l)}}}function p1(c){return[[{href:"/remote",title:"Remote"}]]}class _1 extends E{constructor(e){super(),I(this,e,p1,g1,D,{})}}function v1(c){let e,t,r,a,o;e=new _1({});const s=c[1].default,n=X(s,c,c[0],null);return a=new C1({}),{c(){Z(e.$$.fragment),t=M(),n&&n.c(),r=M(),Z(a.$$.fragment)},l(l){b(e.$$.fragment,l),t=H(l),n&&n.l(l),r=H(l),b(a.$$.fragment,l)},m(l,i){T(e,l,i),V(l,t,i),n&&n.m(l,i),V(l,r,i),T(a,l,i),o=!0},p(l,[i]){n&&n.p&&(!o||i&1)&&Q(n,s,l,l[0],o?e1(s,l[0],i,null):Y(l[0]),null)},i(l){o||(w(e.$$.fragment,l),w(n,l),w(a.$$.fragment,l),o=!0)},o(l){L(e.$$.fragment,l),L(n,l),L(a.$$.fragment,l),o=!1},d(l){y(e,l),l&&u(t),n&&n.d(l),l&&u(r),y(a,l)}}}function $1(c,e,t){let{$$slots:r={},$$scope:a}=e;o();async function o(){const s="en",n=r1.get()||s;await s1(n)}return c.$$set=s=>{"$$scope"in s&&t(0,a=s.$$scope)},[a,r]}class H1 extends E{constructor(e){super(),I(this,e,$1,v1,D,{})}}export{H1 as default};
