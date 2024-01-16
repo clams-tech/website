@@ -14,7 +14,7 @@
 			icon: AbacusIcon,
 			title: 'ABACUS',
 			description: 'The accountancy suite for Bitcoin financial management.',
-			href: null
+			href: '/abacus'
 		}
 	]
 </script>

@@ -2,7 +2,10 @@
 	import ClamsAltLogo from '$lib/icons/clams-alt'
 	import Socials from './Socials.svelte'
 
-	let links = [{ href: '/remote', title: 'Remote' }]
+	let links = [
+		{ href: '/remote', title: 'Remote' },
+		{ href: '/abacus', title: 'Abacus' }
+	]
 </script>
 
 <div
