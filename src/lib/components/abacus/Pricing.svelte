@@ -1,10 +1,8 @@
 <div class="bg-white py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl sm:text-center">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Pricing</h2>
-			<p class="mt-6 text-lg leading-8 text-gray-600">
-				Our pricing is simple. You pay for each report that you generate.
-			</p>
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple Pricing</h2>
+			<p class="mt-6 text-lg leading-8 text-gray-600">You pay for each report that you generate.</p>
 		</div>
 		<div
 			class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"

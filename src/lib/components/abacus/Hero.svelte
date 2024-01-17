@@ -1,4 +1,7 @@
 <script lang="ts">
+	import ClamsAltIcon from '$lib/icons/clams-alt'
+
+	let showMobileMenu = false
 </script>
 
 <div class="bg-white">
@@ -6,16 +9,15 @@
 		<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
 				<a href="#" class="-m-1.5 p-1.5">
-					<span class="sr-only">Your Company</span>
-					<img
-						class="h-8 w-auto"
-						src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-						alt=""
-					/>
+					<span class="sr-only">Clams</span>
+					<div class="w-10">
+						{@html ClamsAltIcon}
+					</div>
 				</a>
 			</div>
 			<div class="flex lg:hidden">
 				<button
+					on:click={() => (showMobileMenu = true)}
 					type="button"
 					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
 				>
@@ -47,7 +49,7 @@
 			</div>
 		</nav>
 		<!-- Mobile menu, show/hide based on menu open state. -->
-		<div class="lg:hidden" role="dialog" aria-modal="true">
+		<div class:hidden={!showMobileMenu} role="dialog" aria-modal="true">
 			<!-- Background backdrop, show/hide based on slide-over state. -->
 			<div class="fixed inset-0 z-50" />
 			<div
@@ -56,13 +58,15 @@
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
 						<span class="sr-only">Clams</span>
-						<img
-							class="h-8 w-auto"
-							src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-							alt=""
-						/>
+						<div class="w-10">
+							{@html ClamsAltIcon}
+						</div>
 					</a>
-					<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+					<button
+						on:click={() => (showMobileMenu = false)}
+						type="button"
+						class="-m-2.5 rounded-md p-2.5 text-gray-700"
+					>
 						<span class="sr-only">Close menu</span>
 						<svg
 							class="h-6 w-6"
@@ -129,7 +133,7 @@
 					Bitcoin Accounting Simplified
 				</h1>
 				<p class="mt-6 text-lg leading-8 text-gray-600">
-					Create a capital gains/losses report in minutes.
+					Create cap gains/losses reports in minutes.
 				</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a

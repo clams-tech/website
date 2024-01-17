@@ -30,10 +30,7 @@
 								</svg>
 								Cost basic calculations.
 							</dt>
-							<dd class="inline">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-							</dd>
+							<dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -51,10 +48,7 @@
 								</svg>
 								Capital gains/losses reports.
 							</dt>
-							<dd class="inline">
-								Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-								commodo.
-							</dd>
+							<dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt.</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -75,10 +69,7 @@
 								</svg>
 								Profit and loss statements.
 							</dt>
-							<dd class="inline">
-								Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
-								lobortis.
-							</dd>
+							<dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
 						</div>
 					</dl>
 				</div>
