@@ -5,13 +5,13 @@
 		>
 			<div class="lg:pr-8 lg:pt-4">
 				<div class="lg:max-w-lg">
-					<h2 class="text-base font-semibold leading-7 text-indigo-400">Report faster</h2>
+					<h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2>
 					<p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
 						A superior experience.
 					</p>
 					<p class="mt-6 text-lg leading-8 text-gray-300">
-						We are focused solely on providing the best possible service to Bitcoin holders. Because
-						of this you can enjoy a tailor made experience.
+						We are focused on solving the accountancy problem solely for Bitcoiners. Automatically
+						sync or manually import your transaction data to get started.
 					</p>
 					<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
 						<div class="relative pl-9">
@@ -28,9 +28,9 @@
 										clip-rule="evenodd"
 									/>
 								</svg>
-								Cost basic calculations.
+								Automated calulations
 							</dt>
-							<dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</dd>
+							<dd class="inline">Cost basis and capital gains/losses</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -46,9 +46,12 @@
 										clip-rule="evenodd"
 									/>
 								</svg>
-								Capital gains/losses reports.
+								Private.
 							</dt>
-							<dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt.</dd>
+							<dd class="inline">
+								All transaction data never leaves your device unless you want it to. No tracking, no
+								google scripts.
+							</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -67,9 +70,9 @@
 										clip-rule="evenodd"
 									/>
 								</svg>
-								Profit and loss statements.
+								Unlimited
 							</dt>
-							<dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
+							<dd class="inline">Wallet connections and transactions.</dd>
 						</div>
 					</dl>
 				</div>

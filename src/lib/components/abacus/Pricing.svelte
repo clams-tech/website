@@ -8,10 +8,9 @@
 			class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
 		>
 			<div class="p-8 sm:p-10 lg:flex-auto">
-				<h3 class="text-2xl font-bold tracking-tight text-gray-900">Report Generation</h3>
+				<h3 class="text-2xl font-bold tracking-tight text-gray-900">Cap Gains/Loss Report</h3>
 				<p class="mt-6 text-base leading-7 text-gray-600">
-					Import data by connecting your wallets or manually upload. With one click we provide you
-					with everything you need.
+					Generate a cap gains/loss report for any timeframe.
 				</p>
 				<div class="mt-10 flex items-center gap-x-4">
 					<h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">Includes</h4>
@@ -49,7 +48,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						Capital gains / losses for given tax year
+						Capital gains / losses for any timeframe
 					</li>
 					<li class="flex gap-x-3">
 						<svg
@@ -64,7 +63,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						Profit and loss for any timeframe
+						TBD
 					</li>
 					<li class="flex gap-x-3">
 						<svg

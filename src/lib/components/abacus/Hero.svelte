@@ -132,9 +132,7 @@
 				<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 					Bitcoin Accounting Simplified
 				</h1>
-				<p class="mt-6 text-lg leading-8 text-gray-600">
-					Create cap gains/losses reports in minutes.
-				</p>
+				<p class="mt-6 text-lg leading-8 text-gray-600">All the reports you need, in minutes.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
 						href={'https://abacus.clams.tech'}

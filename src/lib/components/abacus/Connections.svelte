@@ -8,8 +8,9 @@
 			<div class="mx-auto w-full max-w-xl lg:mx-0">
 				<h2 class="text-3xl font-bold tracking-tight text-white">Fully integrated wallets</h2>
 				<p class="mt-6 text-lg leading-8 text-gray-300">
-					If your wallet isn't listed, inform us, and we'll strive to prioritize its inclusion.
-					Alternatively, utilize our custom uploader to manually input your transaction history.
+					All wallets listed here are fully integrated into our system to streamline the data
+					import. If your wallet isn't listed, let us know and we'll strive to prioritize its
+					inclusion.
 				</p>
 				<div class="mt-8 flex items-center gap-x-6">
 					<a
