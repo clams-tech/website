@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { DISCORD_URL } from '$lib/constants'
 	import CoreLightningIcon from '$lib/icons/core-lightning'
 </script>
 
@@ -14,7 +15,7 @@
 				</p>
 				<div class="mt-8 flex items-center gap-x-6">
 					<a
-						href="https://discord.gg/eWfHuJZVaB"
+						href={DISCORD_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"

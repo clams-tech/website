@@ -4,6 +4,7 @@
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
 	import ThemeToggle from './ThemeToggle.svelte'
+	import { DISCORD_URL } from '$lib/constants'
 
 	let socials = [
 		{
@@ -11,7 +12,7 @@
 			title: 'Nostr',
 			href: 'https://nostr.at/npub136hk9wu6xnrz64kfaapsvgc5rfnylz4djlx4w30w66h6cy48vhws3gth6q'
 		},
-		{ icon: DiscordIcon, title: 'Discord', href: 'https://discord.gg/eWfHuJZVaB' },
+		{ icon: DiscordIcon, title: 'Discord', href: DISCORD_URL },
 		{ icon: GithubIcon, title: 'GitHub', href: 'https://github.com/clams-tech' },
 		{ icon: XIcon, title: 'Twitter', href: 'https://twitter.com/clamstech' }
 	]

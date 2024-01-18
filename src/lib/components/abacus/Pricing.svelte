@@ -48,7 +48,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						Capital gains / losses for any timeframe
+						Any timeframe
 					</li>
 					<li class="flex gap-x-3">
 						<svg
@@ -63,7 +63,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						TBD
+						US jurisdiction support
 					</li>
 					<li class="flex gap-x-3">
 						<svg
