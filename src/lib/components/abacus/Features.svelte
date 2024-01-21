@@ -7,7 +7,7 @@
 				<div class="lg:max-w-lg">
 					<h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2>
 					<p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-						A superior experience.
+						It's time for a superior experience.
 					</p>
 					<p class="mt-6 text-lg leading-8 text-gray-300">
 						We are focused on solving the accountancy problem solely for Bitcoiners. Automatically
