@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
 	import AbacusIcon from '$lib/icons/abacus'
 
@@ -40,8 +41,14 @@
 				</button>
 			</div>
 			<div class="hidden lg:flex lg:gap-x-12">
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+				<span
+					use:scrollto={'#features'}
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900">Features</span
+				>
+				<span
+					use:scrollto={'#pricing'}
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900">Pricing</span
+				>
 			</div>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 				<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
