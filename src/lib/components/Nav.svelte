@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ClamsAltLogo from '$lib/icons/clams-alt'
-	import Socials from './Socials.svelte'
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
 
 	let links = [
 		{ href: '/remote', title: 'Remote' },
@@ -25,5 +25,5 @@
 			{/each}
 		</div>
 	</div>
-	<Socials />
+	<ThemeToggle />
 </div>

@@ -2,7 +2,7 @@
 	import NostrIcon from '$lib/icons/nostr'
 </script>
 
-<section class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
+<section id="note" class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
 	<div class="flex flex-col justify-between w-full gap-5 max-w-3xl">
 		<h1 class="text-[40px] text-center font-bold">
 			A <span class="text-light-orange">Note</span> from Us
