@@ -3,24 +3,32 @@
 
 	const faqs = [
 		{
-			q: 'Why does the app ask for jurisdiction?',
-			a: 'Under the hood, each jurisdiction is tied to a fiat currency and an algorithim - both of which are used for calculations.'
+			q: 'How is Bitcoin taxed?',
+			a: 'Jurisdictions may differ, but in general - any gain or loss from the sale or exchange of Bitcoin is treated as a capital gain or loss.'
 		},
 		{
-			q: 'When will you support my jurisdiction?',
-			a: 'We are always working to add more. Join our discord server if you want to propose yours for inclusion.'
+			q: 'I got paid in Bitcoin. How do I report this?',
+			a: 'By calculating the cost basis of the Bitcoin you received at time of payment, then reporting this as income.'
+		},
+		{
+			q: 'TBD Q',
+			a: 'TBD A'
+		},
+		{
+			q: 'TBD Q',
+			a: 'TBD A'
+		},
+		{
+			q: 'TBD Q',
+			a: 'TBD A'
+		},
+		{
+			q: 'What personal information do I need to provide to use this service?',
+			a: "None. No sign up is required. We don't ask for or obtain personally identifiable information."
 		},
 		{
 			q: "Can I still use this service if I don't see my wallet on the integration list?",
 			a: 'Yes. All wallet types are supported via the custom import tool. We extend the integration list via user requests.'
-		},
-		{
-			q: 'Why Bitcoin only?',
-			a: 'We believe Bitcoin is the best money and as such want to provide the best possible service for the Bitcoin community.'
-		},
-		{
-			q: 'What personal information do I need to provide to use this service?',
-			a: 'None. No sign up required. We do not track users. All user data remains on their device.'
 		}
 	]
 </script>

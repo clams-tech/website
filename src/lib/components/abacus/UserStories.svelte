@@ -1,13 +1,13 @@
 <script lang="ts">
 	const users = [
 		{
-			quote: '“I made so many payments to myself recently. What now?”',
+			quote: '“I forwarded a lot of payments this year. How do I report this?”',
 			img: 'https://www.kindpng.com/picc/m/296-2964757_wojak-png-7-png-image-know-that.png',
 			name: 'Anon',
 			title: 'Lightning node operator'
 		},
 		{
-			quote: '“Damn I sold a lot of raw milk for sats this year. Did I profit?”',
+			quote: '“Damn I sold a lot of raw milk for sats this year. How do taxes work for Bitcoin?”',
 			img: 'https://ih1.redbubble.net/image.2343882018.2162/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
 			name: 'Mary',
 			title: 'Based Farms'

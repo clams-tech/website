@@ -63,7 +63,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						US jurisdiction support
+						Bitcoin & Lightning
 					</li>
 				</ul>
 			</div>

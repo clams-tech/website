@@ -16,7 +16,7 @@
 						It's time for a superior experience.
 					</p>
 					<p class="mt-6 text-lg leading-8 text-gray-300">
-						We're dedicated to exclusively addressing the accounting needs of Bitcoiners.
+						We're dedicated to exclusively addressing the tax reporting needs of Bitcoiners.
 						Automatically sync or manually import your transaction data to get started.
 					</p>
 					<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
@@ -25,7 +25,7 @@
 								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
 									{@html MagicWandIcon}
 								</div>
-								Automated calulations
+								Automated calulations.
 							</dt>
 							<dd class="inline">Cost basis and capital gains/losses.</dd>
 						</div>
@@ -45,9 +45,18 @@
 								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
 									{@html TransactionsIcon}
 								</div>
-								Unlimited
+								Unlimited.
 							</dt>
 							<dd class="inline">Wallet connections and transactions.</dd>
+						</div>
+						<div class="relative pl-9">
+							<dt class="inline font-semibold text-white">
+								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
+									{@html TransactionsIcon}
+								</div>
+								Specialised.
+							</dt>
+							<dd class="inline">Lightning and onchain transactions.</dd>
 						</div>
 					</dl>
 				</div>
