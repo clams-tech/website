@@ -25,9 +25,11 @@
 								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
 									{@html MagicWandIcon}
 								</div>
-								Automated calulations.
+								Automated.
 							</dt>
-							<dd class="inline">Cost basis and capital gains/losses.</dd>
+							<dd class="inline">
+								Calculation of cost basis and capital gains/losses. Exclusion of wallet transfers.
+							</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -36,9 +38,7 @@
 								</div>
 								Private.
 							</dt>
-							<dd class="inline">
-								Data never leaves your device unless you want it to. No tracking, no google scripts.
-							</dd>
+							<dd class="inline">No tracking, no google scripts. No personal data harvesting.</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -47,7 +47,9 @@
 								</div>
 								Unlimited.
 							</dt>
-							<dd class="inline">Wallet connections and transactions.</dd>
+							<dd class="inline">
+								As many wallet connections and transaction imports as you need.
+							</dd>
 						</div>
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-white">
@@ -56,7 +58,16 @@
 								</div>
 								Specialised.
 							</dt>
-							<dd class="inline">Lightning and onchain transactions.</dd>
+							<dd class="inline">Lightning and onchain support.</dd>
+						</div>
+						<div class="relative pl-9">
+							<dt class="inline font-semibold text-white">
+								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
+									{@html TransactionsIcon}
+								</div>
+								Labelling.
+							</dt>
+							<dd class="inline">Wallet and transaction tagging to improve on record keeping.</dd>
 						</div>
 					</dl>
 				</div>

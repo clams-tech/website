@@ -11,24 +11,24 @@
 			a: 'By calculating the cost basis of the Bitcoin you received at time of payment, then reporting this as income.'
 		},
 		{
-			q: 'TBD Q',
-			a: 'TBD A'
+			q: 'How are transaction fees treated?',
+			a: 'Technically, those are considered a spend. So cap gains or losses must be calculated and reported.'
 		},
 		{
-			q: 'TBD Q',
-			a: 'TBD A'
+			q: 'How is Bitcoin that I send between my wallets treated?',
+			a: 'Transfers are not considered taxable events. It is good practice to label transfers so you remember come tax season.'
 		},
 		{
-			q: 'TBD Q',
-			a: 'TBD A'
-		},
-		{
-			q: 'What personal information do I need to provide to use this service?',
+			q: 'What personal information do I need to provide to use Abacus?',
 			a: "None. No sign up is required. We don't ask for or obtain personally identifiable information."
 		},
 		{
-			q: "Can I still use this service if I don't see my wallet on the integration list?",
+			q: "Can I still use Abacus if I don't see my wallet on the integration list?",
 			a: 'Yes. All wallet types are supported via the custom import tool. We extend the integration list via user requests.'
+		},
+		{
+			q: 'How do you justify charging for reports?',
+			a: "We have given considerable time creating & maintaining algorithims that will mean you don't have to manually do it. How much is your time worth?"
 		}
 	]
 </script>
