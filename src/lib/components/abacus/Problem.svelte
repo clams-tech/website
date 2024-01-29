@@ -10,20 +10,20 @@
 				rel="noopener noreferrer"
 				href="https://www.investopedia.com/articles/investing/040515/are-there-taxes-bitcoins.asp"
 				>categorized as an asset</a
-			>, akin to property, and is taxed accordingly.
+			>, akin to property, and is taxed accordingly. Reporting on Bitcoin transactions manually will
+			involve the following steps:
 		</p>
 		<p class="mt-6 text-xl leading-8">
-			Reporting on Bitcoin transactions manually will involve the following steps: 1. List all your
-			taxable crypto transactions for the year. 2. Determine whether each is taxed as income or
-			capital gains. 3. Find the original cost of each crypto transaction (cost basis). 4. Calculate
-			your gains, losses, and income. 5. Report all this to the IRS.
+			1. List all your taxable crypto transactions for the year. 2. Determine whether each is taxed
+			as income or capital gains. 3. Find the original cost of each crypto transaction (cost basis).
+			4. Calculate your gains, losses, and income. 5. Report all this to the IRS.
 		</p>
 		<p class="mt-6 text-xl leading-8">
 			Alternatively, you can use Abacus and reclaim your weekend. How much do you value your time?
 		</p>
 		<p class="mt-6 text-xl leading-8">
 			As a Bitcoin-only business, committed to building tools that support life on a Bitcoin
-			Standard, we recognize that tax reporting is a concern for many. Numerous individuals hesitate
+			Standard, we recognize that tax reporting is a concern for many. We believe that many hesitate
 			to use Bitcoin due to the associated reporting hassles, posing a challenge to circular
 			economies. Our goal is to make life easier for those who want to remain compliant, addressing
 			the problem in a privacy-preserving manner, with all transaction data staying on your device.
