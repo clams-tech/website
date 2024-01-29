@@ -134,8 +134,9 @@
 					Bitcoin Taxes Simplified
 				</h1>
 				<p class="mt-6 text-lg leading-8 text-gray-600">
-					Calculate capital gains/losses for Bitcoin & Lightning holdings in minutes.
+					Calculate capital gains/losses in minutes.
 				</p>
+				<p class="mt-6 text-lg leading-8 text-gray-600">Bitcoin & Lightning.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
 						href={'https://abacus.clams.tech'}

@@ -85,7 +85,7 @@
 							>Get Started</a
 						>
 						<p class="mt-6 text-xs leading-5 text-gray-600">
-							We are a bitcoin-only business. We accept onchain and lightning for payment.
+							We are a bitcoin-only business. We accept lightning for payment.
 						</p>
 					</div>
 				</div>

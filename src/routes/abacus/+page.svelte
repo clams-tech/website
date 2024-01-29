@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/components/abacus/Hero.svelte'
 	import UserStories from '$lib/components/abacus/UserStories.svelte'
+	import Problem from '$lib/components/abacus/Problem.svelte'
 	import Features from '$lib/components/abacus/Features.svelte'
 	import Connections from '$lib/components/abacus/Connections.svelte'
 	import Pricing from '$lib/components/abacus/Pricing.svelte'
@@ -9,6 +10,7 @@
 
 <Hero />
 <UserStories />
+<Problem />
 <Features />
 <Pricing />
 <Connections />

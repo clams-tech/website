@@ -19,6 +19,10 @@
 			a: 'Transfers are not considered taxable events. It is good practice to label transfers so you remember come tax season.'
 		},
 		{
+			q: 'Any other transactions tax free?',
+			a: 'Yes. Gifts, up to a certain limit (16K at time of writing). Some donations can also reduce your tax burden.'
+		},
+		{
 			q: 'What personal information do I need to provide to use Abacus?',
 			a: "None. No sign up is required. We don't ask for or obtain personally identifiable information."
 		},
