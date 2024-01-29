@@ -20,7 +20,7 @@
 		},
 		{
 			q: 'Any other transactions tax free?',
-			a: 'Yes. Gifts, up to a certain limit (16K at time of writing). Some donations can also reduce your tax burden.'
+			a: 'Yes. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider Opensats.'
 		},
 		{
 			q: 'What personal information do I need to provide to use Abacus?',
@@ -32,7 +32,7 @@
 		},
 		{
 			q: 'How do you justify charging for reports?',
-			a: "We have given considerable time creating & maintaining algorithims that will mean you don't have to manually do it. How much is your time worth?"
+			a: "We spent considerable time creating & maintaining algorithims that mean you don't have to manually do it. How much is your time worth?"
 		}
 	]
 </script>

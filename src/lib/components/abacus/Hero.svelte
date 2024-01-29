@@ -133,10 +133,10 @@
 				<h1 class="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 					Bitcoin Taxes Simplified
 				</h1>
-				<p class="mt-6 text-lg leading-8 text-gray-600">
+				<p class="mt-6 text-xl leading-8 text-gray-600">
 					Calculate capital gains/losses in minutes.
 				</p>
-				<p class="mt-6 text-lg leading-8 text-gray-600">Bitcoin & Lightning.</p>
+				<p class="mt-6 text-xl leading-8 text-gray-600">Bitcoin & Lightning.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
 						href={'https://abacus.clams.tech'}

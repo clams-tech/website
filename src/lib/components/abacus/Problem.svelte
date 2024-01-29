@@ -1,32 +1,41 @@
 <div class="bg-white px-6 py-32 lg:px-8">
 	<div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-		<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-			Who Can Benefit from Abacus?
-		</h1>
+		<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bitcoin and Taxes</h1>
 		<p class="mt-6 text-xl leading-8">
-			Jurisdictions may differ, but in the United States, Bitcoin is <a
+			While regulations may differ, in the United States, <a
 				class="underline"
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://www.investopedia.com/articles/investing/040515/are-there-taxes-bitcoins.asp"
-				>categorized as an asset</a
-			>, akin to property, and is taxed accordingly. Reporting on Bitcoin transactions manually will
-			involve the following steps:
+				>Bitcoin is categorized similar to property</a
+			>, and is taxed accordingly. If you choose to manually manage the reporting process, your
+			weekend will likely involve these steps:
+		</p>
+		<ul class="mt-6 text-lg font-bold leading-8 list-decimal list-inside flex flex-col gap-3">
+			<li>Document all your taxable cryptocurrency transactions for the year.</li>
+			<li>
+				Classify each transaction to ascertain whether it falls under income or capital gains
+				taxation.
+			</li>
+			<li>Identify the initial cost of each cryptocurrency transaction (cost basis).</li>
+			<li>Compute your gains, losses, and overall income.</li>
+			<li>Communicate these details in your reporting.</li>
+		</ul>
+		<h1 class="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+			Who is Abacus for?
+		</h1>
+		<p class="mt-6 text-xl leading-8">
+			As a Bitcoin-only business, we recognize the challenges associated with tax reporting and
+			consider reporting requirements a significant obstacle to the growth of circular economies.
 		</p>
 		<p class="mt-6 text-xl leading-8">
-			1. List all your taxable crypto transactions for the year. 2. Determine whether each is taxed
-			as income or capital gains. 3. Find the original cost of each crypto transaction (cost basis).
-			4. Calculate your gains, losses, and income. 5. Report all this to the IRS.
+			Abacus aims to streamline tax reporting for both individuals and businesses by providing a
+			specialized tool designed exclusively for Bitcoin transactions, all while prioritizing
+			privacy. We envision Abacus making it easier for Bitcoin enthusiasts to spend and live on a
+			Bitcoin standard.
 		</p>
 		<p class="mt-6 text-xl leading-8">
-			Alternatively, you can use Abacus and reclaim your weekend. How much do you value your time?
-		</p>
-		<p class="mt-6 text-xl leading-8">
-			As a Bitcoin-only business, committed to building tools that support life on a Bitcoin
-			Standard, we recognize that tax reporting is a concern for many. We believe that many hesitate
-			to use Bitcoin due to the associated reporting hassles, posing a challenge to circular
-			economies. Our goal is to make life easier for those who want to remain compliant, addressing
-			the problem in a privacy-preserving manner, with all transaction data staying on your device.
+			When tax season arrives, choose Abacus and reclaim your weekend.
 		</p>
 	</div>
 </div>
