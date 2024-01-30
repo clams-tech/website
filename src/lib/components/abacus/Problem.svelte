@@ -22,17 +22,16 @@
 			<li>Communicate these details in your reporting.</li>
 		</ul>
 		<h1 class="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-			Who is Abacus for?
+			How can Abacus help?
 		</h1>
 		<p class="mt-6 text-xl leading-8">
 			As a Bitcoin-only business, we recognize the challenges associated with tax reporting and
-			consider reporting requirements a significant obstacle to the growth of circular economies.
+			consider them a significant obstacle to the growth of circular economies.
 		</p>
 		<p class="mt-6 text-xl leading-8">
-			Abacus aims to streamline tax reporting for both individuals and businesses by providing a
-			specialized tool designed exclusively for Bitcoin transactions, all while prioritizing
-			privacy. We envision Abacus making it easier for Bitcoin enthusiasts to spend and live on a
-			Bitcoin standard.
+			With Abacus we hope to streamline tax reporting by providing a tool designed exclusively for
+			Bitcoin transactions, all while prioritizing your privacy. Our goal is to remove most of the
+			hassle of reporting to make it easier for Bitcoiners to spend some sats.
 		</p>
 		<p class="mt-6 text-xl leading-8">
 			When tax season arrives, choose Abacus and reclaim your weekend.

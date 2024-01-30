@@ -2,6 +2,8 @@
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
 	import AbacusIcon from '$lib/icons/abacus'
+	import BitcoinIcon from '$lib/icons/bitcoin-symbol'
+	import LightningIcon from '$lib/icons/lightning-circle'
 
 	let showMobileMenu = false
 </script>
@@ -134,9 +136,18 @@
 					Bitcoin Taxes Simplified
 				</h1>
 				<p class="mt-6 text-xl leading-8 text-gray-600">
-					Calculate capital gains/losses in minutes.
+					Calculate capital gains or losses in minutes.
 				</p>
-				<p class="mt-6 text-xl leading-8 text-gray-600">Bitcoin & Lightning.</p>
+				<div class="mt-6 flex justify-center items-center gap-2">
+					<div class="w-14">
+						{@html BitcoinIcon}
+					</div>
+					<p class="text-xl leading-8 text-gray-600">Bitcoin & Lightning</p>
+					<div class="w-14">
+						{@html LightningIcon}
+					</div>
+				</div>
+
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
 						href={'https://abacus.clams.tech'}

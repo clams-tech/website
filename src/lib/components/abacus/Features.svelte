@@ -2,6 +2,37 @@
 	import MagicWandIcon from '$lib/icons/magic-wand'
 	import HiddenIcon from '$lib/icons/hidden'
 	import TransactionsIcon from '$lib/icons/transactions'
+	import lightningCircleIcon from '$lib/icons/lightning-circle'
+	import TagIcon from '$lib/icons/tag'
+
+	const features = [
+		{
+			icon: MagicWandIcon,
+			title: 'Automated.',
+			description:
+				'Calculation of cost basis and capital gains/losses. Exclusion of wallet transfers.'
+		},
+		{
+			icon: HiddenIcon,
+			title: 'Private.',
+			description: 'No tracking, no Google scripts. No personal data harvesting.'
+		},
+		{
+			icon: TransactionsIcon,
+			title: 'Unlimited.',
+			description: 'As many wallet connections and transaction imports as you need.'
+		},
+		{
+			icon: lightningCircleIcon,
+			title: 'Specialized.',
+			description: 'Lightning and on-chain support.'
+		},
+		{
+			icon: TagIcon,
+			title: 'Labeling.',
+			description: 'Wallet and transaction tagging to improve record keeping.'
+		}
+	]
 </script>
 
 <div id="features" class="features overflow-hidden bg-gray-900 py-24 sm:py-32">
@@ -20,55 +51,19 @@
 						Automatically sync or manually import your transaction data to get started.
 					</p>
 					<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
-						<div class="relative pl-9">
-							<dt class="inline font-semibold text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
-									{@html MagicWandIcon}
-								</div>
-								Automated.
-							</dt>
-							<dd class="inline">
-								Calculation of cost basis and capital gains/losses. Exclusion of wallet transfers.
-							</dd>
-						</div>
-						<div class="relative pl-9">
-							<dt class="inline font-semibold text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
-									{@html HiddenIcon}
-								</div>
-								Private.
-							</dt>
-							<dd class="inline">No tracking, no google scripts. No personal data harvesting.</dd>
-						</div>
-						<div class="relative pl-9">
-							<dt class="inline font-semibold text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
-									{@html TransactionsIcon}
-								</div>
-								Unlimited.
-							</dt>
-							<dd class="inline">
-								As many wallet connections and transaction imports as you need.
-							</dd>
-						</div>
-						<div class="relative pl-9">
-							<dt class="inline font-semibold text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
-									{@html TransactionsIcon}
-								</div>
-								Specialised.
-							</dt>
-							<dd class="inline">Lightning and onchain support.</dd>
-						</div>
-						<div class="relative pl-9">
-							<dt class="inline font-semibold text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
-									{@html TransactionsIcon}
-								</div>
-								Labelling.
-							</dt>
-							<dd class="inline">Wallet and transaction tagging to improve on record keeping.</dd>
-						</div>
+						{#each features as { icon, title, description }}
+							<div class="relative pl-9">
+								<dt class="inline font-semibold text-white">
+									<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
+										{@html icon}
+									</div>
+									{title}
+								</dt>
+								<dd class="inline">
+									{description}
+								</dd>
+							</div>
+						{/each}
 					</dl>
 				</div>
 			</div>
