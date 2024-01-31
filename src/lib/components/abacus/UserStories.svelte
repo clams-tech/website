@@ -8,13 +8,13 @@
 		},
 		{
 			quote: '“Damn I sold a lot of raw milk for sats this year. How do taxes work for Bitcoin?”',
-			img: 'https://ih1.redbubble.net/image.2343882018.2162/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
+			img: 'https://i.kym-cdn.com/photos/images/newsfeed/001/682/115/749.jpg',
 			name: 'Mary',
 			title: 'Based Farms'
 		},
 		{
 			quote: '“All that stacking, zapping and boosting. How do I explain this to my accountant?”',
-			img: 'https://i.imgflip.com/qiev6.jpg',
+			img: 'https://i.kym-cdn.com/photos/images/newsfeed/000/993/875/084.png',
 			name: 'Pleb',
 			title: 'Memelord'
 		},

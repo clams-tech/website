@@ -25,13 +25,19 @@
 			How can Abacus help?
 		</h1>
 		<p class="mt-6 text-xl leading-8">
-			As a Bitcoin-only business, we recognize the challenges associated with tax reporting and
-			consider them a significant obstacle to the growth of circular economies.
+			As a Bitcoin-only business, we acknowledge the challenges associated with tax reporting. We
+			see them as a significant hurdle to the growth of circular economies.
 		</p>
 		<p class="mt-6 text-xl leading-8">
-			With Abacus we hope to streamline tax reporting by providing a tool designed exclusively for
-			Bitcoin transactions, all while prioritizing your privacy. Our goal is to remove most of the
-			hassle of reporting to make it easier for Bitcoiners to spend some sats.
+			With Abacus, our aim is to streamline tax reporting by offering a tool exclusively designed
+			for Bitcoin transactions, all while prioritizing your privacy. We aspire to eliminate much of
+			the hassle involved in reporting, making it easier for Bitcoiners to spend some sats.
+		</p>
+		<p class="mt-6 text-xl leading-8">
+			Data can be imported into the app in two ways: through automatic sync or manual import.
+			Currently, our first integration for auto-sync is Core Lightning, and we plan to support many
+			more wallets very soon. In the meantime, if you're not a CLN user, please take advantage of
+			the manual import tool.
 		</p>
 		<p class="mt-6 text-xl leading-8">
 			When tax season arrives, choose Abacus and reclaim your weekend.
