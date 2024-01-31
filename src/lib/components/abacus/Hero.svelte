@@ -8,7 +8,7 @@
 	let showMobileMenu = false
 </script>
 
-<div class="bg-white">
+<div class="bg-white dark:bg-gray-900">
 	<header class="absolute inset-x-0 top-0 z-50">
 		<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
@@ -45,15 +45,17 @@
 			<div class="hidden lg:flex lg:gap-x-12">
 				<span
 					use:scrollto={'#features'}
-					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900">Features</span
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+					>Features</span
 				>
 				<span
 					use:scrollto={'#pricing'}
-					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900">Pricing</span
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+					>Pricing</span
 				>
 			</div>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
 					>Get Started<span aria-hidden="true">&rarr;</span></a
 				>
 			</div>
@@ -132,17 +134,19 @@
 				<div class="max-w-[200px] m-auto">
 					{@html AbacusIcon}
 				</div>
-				<h1 class="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+				<h1
+					class="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl"
+				>
 					Bitcoin Taxes Simplified
 				</h1>
-				<p class="mt-6 text-xl leading-8 text-gray-600">
+				<p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">
 					Calculate capital gains or losses in minutes.
 				</p>
 				<div class="mt-6 flex justify-center items-center gap-2">
 					<div class="w-14">
 						{@html BitcoinIcon}
 					</div>
-					<p class="text-xl leading-8 text-gray-600">Bitcoin & Lightning</p>
+					<p class="text-xl leading-8 text-gray-600 dark:text-gray-300">Bitcoin & Lightning</p>
 					<div class="w-14">
 						{@html LightningIcon}
 					</div>

@@ -37,13 +37,13 @@
 	]
 </script>
 
-<div class="bg-white">
+<div class="bg-white dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
 		<div class="mx-auto max-w-2xl text-center">
-			<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+			<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">
 				Frequently asked questions
 			</h2>
-			<p class="mt-6 text-base leading-7 text-gray-600">
+			<p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">
 				Can’t find the answer you’re looking for? Reach out to us on <a
 					href={DISCORD_URL}
 					target="_blank"
@@ -58,10 +58,10 @@
 			>
 				{#each faqs as { q, a }}
 					<div>
-						<dt class="text-base font-semibold leading-7 text-gray-900">
+						<dt class="text-base font-semibold leading-7 text-gray-900 dark:text-white">
 							{q}
 						</dt>
-						<dd class="mt-2 text-base leading-7 text-gray-600">
+						<dd class="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
 							{a}
 						</dd>
 					</div>

@@ -3,12 +3,14 @@
 	import CoreLightningIcon from '$lib/icons/core-lightning'
 </script>
 
-<div class="bg-gray-900 py-24 sm:py-32">
+<div class="bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
 			<div class="mx-auto w-full max-w-xl lg:mx-0">
-				<h2 class="text-3xl font-bold tracking-tight text-white">Fully integrated wallets</h2>
-				<p class="mt-6 text-lg leading-8 text-gray-300">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+					Fully integrated wallets
+				</h2>
+				<p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
 					Some wallets are fully integrated into our system to streamline the data import. If your
 					wallet isn't listed, let us know and we'll strive to prioritize its inclusion.
 				</p>

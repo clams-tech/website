@@ -19,7 +19,7 @@
 	]
 </script>
 
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
+<footer class="bg-gray-100 dark:bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -27,12 +27,14 @@
 				<div class="w-6">
 					{@html ClamsAltIcon}
 				</div>
-				<p class="text-sm leading-6 text-gray-300">Building for a Bitcoin Standard.</p>
+				<p class="text-sm leading-6 text-gray-600 dark:text-gray-300">
+					Building for a Bitcoin Standard.
+				</p>
 				<div class="flex items-center space-x-6">
 					{#each socials as { href, title, icon }}
 						<a
 							{href}
-							class="text-gray-500 hover:text-gray-400"
+							class="text-gray-600 dark:text-gray-300 hover:text-gray-400"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -47,25 +49,31 @@
 			<div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 				<div class="md:grid md:grid-cols-2 md:gap-8">
 					<div>
-						<h3 class="text-sm font-semibold leading-6 text-white">Apps</h3>
+						<h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Apps</h3>
 						<ul class="mt-6 space-y-4">
 							<li>
-								<a href="/remote" class="text-sm leading-6 text-gray-300 hover:text-white">Remote</a
+								<a
+									href="/remote"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
+									>Remote</a
 								>
 							</li>
 							<li>
-								<a href="/abacus" class="text-sm leading-6 text-gray-300 hover:text-white">Abacus</a
+								<a
+									href="/abacus"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
+									>Abacus</a
 								>
 							</li>
 						</ul>
 					</div>
 					<div class="mt-10 md:mt-0">
-						<h3 class="text-sm font-semibold leading-6 text-white">Resources</h3>
+						<h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Resources</h3>
 						<ul class="mt-6 space-y-4">
 							<li>
 								<a
 									href={DOCS_URL}
-									class="text-sm leading-6 text-gray-300 hover:text-white"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
 									target="_blank"
 									rel="noopener noreferrer">Documentation</a
 								>
@@ -75,28 +83,38 @@
 				</div>
 				<div class="md:grid md:grid-cols-2 md:gap-8">
 					<div>
-						<h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+						<h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Company</h3>
 						<ul class="mt-6 space-y-4">
 							<li>
-								<a href="/#note" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+								<a
+									href="/#note"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
+									>About</a
+								>
 							</li>
 						</ul>
 					</div>
 					<div class="mt-10 md:mt-0">
-						<h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+						<h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Legal</h3>
 						<ul class="mt-6 space-y-4">
 							<li>
-								<a href="/privacy" class="text-sm leading-6 text-gray-300 hover:text-white"
+								<a
+									href="/privacy"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
 									>Privacy Policy</a
 								>
 							</li>
 							<li>
-								<a href="/terms" class="text-sm leading-6 text-gray-300 hover:text-white"
+								<a
+									href="/terms"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
 									>Terms of Service</a
 								>
 							</li>
 							<li>
-								<a href="/disclaimer" class="text-sm leading-6 text-gray-300 hover:text-white"
+								<a
+									href="/disclaimer"
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
 									>Disclaimer</a
 								>
 							</li>
@@ -105,8 +123,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-			<p class="text-xs leading-5 text-gray-400">&copy; 2024 Clams, LLC. All rights reserved.</p>
+		<div class="mt-16 border-t border-gray-200 dark:border-gray-600 pt-8 sm:mt-20 lg:mt-24">
+			<p class="text-xs leading-5 text-gray-600 dark:text-gray-300">
+				&copy; 2024 Clams, LLC. All rights reserved.
+			</p>
 		</div>
 	</div>
 </footer>

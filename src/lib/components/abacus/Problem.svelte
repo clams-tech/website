@@ -1,6 +1,8 @@
-<div class="bg-white px-6 py-32 lg:px-8">
-	<div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-		<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bitcoin and Taxes</h1>
+<div class="bg-white dark:bg-gray-900 px-6 py-32 lg:px-8">
+	<div class="mx-auto max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300">
+		<h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+			Bitcoin and Taxes
+		</h1>
 		<p class="mt-6 text-xl leading-8">
 			While regulations may differ, in the United States, <a
 				class="underline"
@@ -21,7 +23,7 @@
 			<li>Compute your gains, losses, and overall income.</li>
 			<li>Communicate these details in your reporting.</li>
 		</ul>
-		<h1 class="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+		<h1 class="mt-12 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 			How can Abacus help?
 		</h1>
 		<p class="mt-6 text-xl leading-8">
