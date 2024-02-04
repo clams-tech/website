@@ -1,3 +1,7 @@
+<script>
+	import { ACCOUNTING_APP_URL } from '$lib/constants'
+</script>
+
 <div id="pricing" class="bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl sm:text-center">
@@ -85,7 +89,7 @@
 							>
 						</p>
 						<a
-							href={'https://accounting.clams.tech'}
+							href={ACCOUNTING_APP_URL}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

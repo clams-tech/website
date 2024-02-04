@@ -38,7 +38,7 @@
 		<div class="mx-auto max-w-xl text-center">
 			<!-- <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">We get it</h2> -->
 			<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-				We hear you Bitcoiners
+				We've heard you Bitcoiners
 			</p>
 		</div>
 		<div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">

@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
+	import ClamsIcon from '$lib/icons/clams'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
 	import AbacusIcon from '$lib/icons/abacus'
 	import BitcoinIcon from '$lib/icons/bitcoin-symbol'
 	import LightningIcon from '$lib/icons/lightning-circle'
+	import { ACCOUNTING_APP_URL } from '$lib/constants'
 
 	let showMobileMenu = false
 </script>
@@ -12,7 +14,7 @@
 	<header class="absolute inset-x-0 top-0 z-50">
 		<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
-				<a href="#" class="-m-1.5 p-1.5">
+				<a href="/" class="-m-1.5 p-1.5">
 					<span class="sr-only">Clams</span>
 					<div class="w-10">
 						{@html ClamsAltIcon}
@@ -23,7 +25,7 @@
 				<button
 					on:click={() => (showMobileMenu = true)}
 					type="button"
-					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white"
 				>
 					<span class="sr-only">Open main menu</span>
 					<svg
@@ -45,17 +47,21 @@
 			<div class="hidden lg:flex lg:gap-x-12">
 				<span
 					use:scrollto={'#features'}
-					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>Features</span
 				>
 				<span
 					use:scrollto={'#pricing'}
-					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>Pricing</span
 				>
 			</div>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+				<a
+					target="_blank"
+					rel="noopener noreferrer"
+					href={ACCOUNTING_APP_URL}
+					class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>Get Started<span aria-hidden="true">&rarr;</span></a
 				>
 			</div>
@@ -65,10 +71,10 @@
 			<!-- Background backdrop, show/hide based on slide-over state. -->
 			<div class="fixed inset-0 z-50" />
 			<div
-				class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+				class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
 			>
 				<div class="flex items-center justify-between">
-					<a href="#" class="-m-1.5 p-1.5">
+					<a href="/" class="-m-1.5 p-1.5">
 						<span class="sr-only">Clams</span>
 						<div class="w-10">
 							{@html ClamsAltIcon}
@@ -95,21 +101,23 @@
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
-							<a
-								href="#"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>Features</a
+							<span
+								use:scrollto={'#features'}
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Features</span
 							>
-							<a
-								href="#"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>Pricing</a
+							<span
+								use:scrollto={'#pricing'}
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Pricing</span
 							>
 						</div>
 						<div class="py-6">
 							<a
-								href="#"
-								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+								target="_blank"
+								rel="noopener noreferrer"
+								href={ACCOUNTING_APP_URL}
+								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 								>Get Started</a
 							>
 						</div>
@@ -119,7 +127,7 @@
 		</div>
 	</header>
 
-	<div class="relative isolate px-6 pt-14 lg:px-8">
+	<div class="relative isolate px-6 lg:px-8">
 		<div
 			class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
 			aria-hidden="true"
@@ -131,36 +139,46 @@
 		</div>
 		<div class="mx-auto max-w-2xl py-32">
 			<div class="text-center">
-				<div class="max-w-[200px] m-auto">
-					{@html AbacusIcon}
+				<div class="w-80 m-auto">
+					{@html ClamsIcon}
 				</div>
-				<h1
-					class="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl"
-				>
-					Clams Accounting
-				</h1>
-				<p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">
-					Visualize your sats flow.
-				</p>
-				<div class="mt-6 flex justify-center items-center gap-2">
-					<div class="w-14">
+				<div class="mt-8 flex items-center justify-center gap-4">
+					<div class="w-10">
+						{@html AbacusIcon}
+					</div>
+					<h2
+						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white sm:text-3xl md:text-5xl"
+					>
+						Accounting
+					</h2>
+				</div>
+				<div class="mt-8 flex justify-center items-center gap-2">
+					<!-- <div class="w-10">
 						{@html BitcoinIcon}
+					</div> -->
+					<div>
+						<p
+							class="sm:text-2xl md:text-4xl leading-8 text-gray-600 dark:text-gray-300 font-bold italic"
+						>
+							Visualize Your Sats Flow.
+						</p>
 					</div>
-					<p class="text-xl leading-8 text-gray-600 dark:text-gray-300">Bitcoin & Lightning</p>
-					<div class="w-14">
+					<!-- <div class="w-10">
 						{@html LightningIcon}
-					</div>
+					</div> -->
 				</div>
 
-				<div class="mt-10 flex items-center justify-center gap-x-6">
+				<div class="mt-8 flex items-center justify-center gap-x-6">
 					<a
-						href={'https://accounting.clams.tech'}
+						href={ACCOUNTING_APP_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-						>Get started</a
+						class="rounded-md bg-indigo-600 px-7 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+						>App</a
 					>
-					<a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+					<a
+						href="#"
+						class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 						>Video <span aria-hidden="true">→</span></a
 					>
 				</div>
