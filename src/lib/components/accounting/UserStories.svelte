@@ -19,7 +19,7 @@
 			title: 'Memelord'
 		},
 		{
-			quote: '“I have 12 wallets on the go right now. How do I calculate cost basis?”',
+			quote: '“I have 12 wallets on the go right now. How do I calculate my sats flow?”',
 			img: 'https://i.redd.it/k3yz0qleztq71.jpg',
 			name: 'Dave',
 			title: 'Humble sat stacker'

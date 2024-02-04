@@ -37,8 +37,13 @@
 
 <div id="features" class="features overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
+		<div class="mx-auto max-w-2xl sm:text-center">
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+				Features
+			</h2>
+		</div>
 		<div
-			class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+			class="mt-16 mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
 		>
 			<div class="lg:pr-8 lg:pt-4">
 				<div class="lg:max-w-lg">
@@ -46,10 +51,9 @@
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 					>
-						It's time for a superior experience.
+						The best money deserves superior accounting tools.
 					</p>
 					<p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-						We're dedicated to exclusively addressing the tax reporting needs of Bitcoiners.
 						Automatically sync or manually import your transaction data to get started.
 					</p>
 					<dl

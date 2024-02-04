@@ -4,7 +4,7 @@
 
 	let links = [
 		{ href: '/remote', title: 'Remote' },
-		{ href: '/abacus', title: 'Abacus' }
+		{ href: '/accounting', title: 'Accounting' }
 	]
 </script>
 

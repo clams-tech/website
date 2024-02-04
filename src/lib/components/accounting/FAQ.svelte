@@ -23,16 +23,16 @@
 			a: 'Yes. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider Opensats.'
 		},
 		{
-			q: 'What personal information do I need to provide to use Abacus?',
+			q: 'What personal information do I need to provide to use Clams?',
 			a: "None. No sign up is required. We don't ask for or obtain personally identifiable information."
 		},
 		{
-			q: "Can I still use Abacus if I don't see my wallet on the integration list?",
+			q: "Can I still use Clams if I don't see my wallet on the integration list?",
 			a: 'Yes. All wallet types are supported via the custom import tool. We extend the integration list via user requests.'
 		},
 		{
-			q: 'How do you justify charging for reports?',
-			a: "We spent considerable time creating & maintaining algorithims that mean you don't have to manually do it. How much is your time worth?"
+			q: 'How do you justify charging?',
+			a: 'We spend considerable time creating & maintaining accounting algorithims that provide detailed reports. How much is your time worth?'
 		}
 	]
 </script>
