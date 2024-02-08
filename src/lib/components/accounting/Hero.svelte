@@ -139,15 +139,15 @@
 		</div>
 		<div class="mx-auto max-w-2xl py-32">
 			<div class="text-center">
-				<div class="w-80 m-auto">
+				<div class="w-64 m-auto">
 					{@html ClamsIcon}
 				</div>
 				<div class="mt-8 flex items-center justify-center gap-4">
-					<div class="w-10">
+					<div class="w-12">
 						{@html AbacusIcon}
 					</div>
 					<h2
-						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white sm:text-3xl md:text-5xl"
+						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-6xl"
 					>
 						Accounting
 					</h2>
@@ -157,9 +157,7 @@
 						{@html BitcoinIcon}
 					</div> -->
 					<div>
-						<p
-							class="sm:text-2xl md:text-4xl leading-8 text-gray-600 dark:text-gray-300 font-bold italic"
-						>
+						<p class="text-4xl leading-8 text-gray-600 dark:text-gray-300 font-bold italic">
 							Visualize Your Sats Flow.
 						</p>
 					</div>

@@ -3,34 +3,27 @@
 	import HiddenIcon from '$lib/icons/hidden'
 	import TransactionsIcon from '$lib/icons/transactions'
 	import lightningCircleIcon from '$lib/icons/lightning-circle'
+	import WalletIcon from '$lib/icons/wallet'
 	import TagIcon from '$lib/icons/tag'
 
 	const features = [
 		{
 			icon: MagicWandIcon,
-			title: 'Automated.',
+			title: 'Connections.',
 			description:
-				'Calculation of cost basis and capital gains/losses. Exclusion of wallet transfers.'
-		},
-		{
-			icon: HiddenIcon,
-			title: 'Private.',
-			description: 'No tracking, no Google scripts. No personal data harvesting.'
+				'Auto-sync of transactions. Identification of transfers. Lightning and Bitcoin support. Unlimited connections and transaction imports. Smart transfer matching. Koinly uses AI to detect transfers within your own wallets and excludes them from tax reports.'
 		},
 		{
 			icon: TransactionsIcon,
-			title: 'Unlimited.',
-			description: 'As many wallet connections and transaction imports as you need.'
+			title: 'Dashboard.',
+			description:
+				'View realized and unrealized capital gains. Visualize your sats flow. Wallet and transaction tagging to enhance insights. View your total holdings and portfolio growth over time, across all your wallets and accounts.'
 		},
 		{
-			icon: lightningCircleIcon,
-			title: 'Specialized.',
-			description: 'Lightning and on-chain support.'
-		},
-		{
-			icon: TagIcon,
-			title: 'Labeling.',
-			description: 'Wallet and transaction tagging to improve record keeping.'
+			icon: TransactionsIcon,
+			title: 'Reports.',
+			description:
+				'Export cost basis and cap gains reports for each wallet or your entire stack. Error reconciliation. '
 		}
 	]
 </script>
@@ -51,10 +44,7 @@
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 					>
-						The best money deserves superior accounting tools.
-					</p>
-					<p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-						Automatically sync or manually import your transaction data to get started.
+						The best money deserves a dedicated accountancy suite.
 					</p>
 					<dl
 						class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none"

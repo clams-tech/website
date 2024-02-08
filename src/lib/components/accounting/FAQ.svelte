@@ -31,6 +31,10 @@
 			a: 'Yes. All wallet types are supported via the custom import tool. We extend the integration list via user requests.'
 		},
 		{
+			q: 'Where is my data stored?',
+			a: 'Your data never leaves your device unless you want it to. '
+		},
+		{
 			q: 'How do you justify charging?',
 			a: 'We spend considerable time creating & maintaining accounting algorithims that provide detailed reports. How much is your time worth?'
 		}
@@ -48,7 +52,8 @@
 					href={DISCORD_URL}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="font-semibold text-indigo-600 hover:text-indigo-500">discord</a
+					class="font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500"
+					>discord</a
 				>.
 			</p>
 		</div>
