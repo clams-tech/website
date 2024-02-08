@@ -180,7 +180,8 @@
 								</svg>
 								<span>
 									Team members
-									<span class="text-sm leading-6 text-gray-500">(Up to 20 users)</span>
+									<span class="text-sm leading-6 text-gray-500 dark:text-400">(Up to 20 users)</span
+									>
 								</span>
 							</li>
 						</ul>
@@ -277,7 +278,9 @@
 			<div class="relative -mx-8">
 				<div class="absolute inset-x-4 inset-y-0 -z-10 flex">
 					<div class="flex w-1/3 px-4" style="margin-left: 65%" aria-hidden="true">
-						<div class="w-full rounded-t-xl border-x border-t border-gray-900/10 bg-gray-400/5" />
+						<div
+							class="w-full rounded-t-xl border-x border-t border-gray-900/10 dark:border-white/10 bg-gray-400/5 dark:bg-white/5"
+						/>
 					</div>
 				</div>
 				<table class="w-full table-fixed border-separate border-spacing-x-8 text-left">
@@ -311,9 +314,11 @@
 									<span class="text-sm font-semibold leading-6">/month</span>
 								</div>
 								<a
-									href="#"
+									target="_blank"
+									rel="noopener noreferrer"
+									href={ACCOUNTING_APP_URL}
 									class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300"
-									>Buy plan</a
+									>Get Started</a
 								>
 							</td>
 							<td class="px-6 pt-2 xl:px-8">
@@ -335,7 +340,8 @@
 								class="pb-4 text-sm font-semibold leading-6 text-gray-900 dark:text-white pt-8"
 							>
 								Features
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10" />
+
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10 dark:bg-white/10" />
 							</th>
 						</tr>
 						<tr>
@@ -344,7 +350,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Integrations
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -383,7 +389,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Shared links
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -422,7 +428,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Importing and exporting
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -461,7 +467,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Team members
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -479,7 +485,9 @@
 								<span class="sr-only">Not included in Basic</span>
 							</td>
 							<td class="px-6 py-4 xl:px-8">
-								<div class="text-center text-sm leading-6 text-gray-500">Up to 20 users</div>
+								<div class="text-center text-sm leading-6 text-gray-500 dark:text-gray-400">
+									Up to 20 users
+								</div>
 							</td>
 						</tr>
 
@@ -490,7 +498,7 @@
 								class="pb-4 text-sm font-semibold leading-6 text-gray-900 dark:text-white pt-16"
 							>
 								Reporting
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10 dark:bg-white/10" />
 							</th>
 						</tr>
 						<tr>
@@ -499,7 +507,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Advanced analytics
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -538,7 +546,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Basic reports
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -577,7 +585,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Professional reports
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -616,7 +624,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Custom report builder
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -657,7 +665,7 @@
 								class="pb-4 text-sm font-semibold leading-6 text-gray-900 dark:text-white pt-16"
 							>
 								Support
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10 dark:bg-white/10" />
 							</th>
 						</tr>
 						<tr>
@@ -666,7 +674,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								24/7 online support
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -705,7 +713,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Quarterly product workshops
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -744,7 +752,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								Priority phone support
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
@@ -783,7 +791,7 @@
 								class="py-4 text-sm font-normal leading-6 text-gray-900 dark:text-white"
 							>
 								1:1 onboarding tour
-								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
+								<div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5 dark:bg-white/5" />
 							</th>
 							<td class="px-6 py-4 xl:px-8">
 								<svg
