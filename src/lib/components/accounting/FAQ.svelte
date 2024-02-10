@@ -33,11 +33,11 @@
 		{
 			q: 'Where is my data stored?',
 			a: 'Your data never leaves your device unless you want it to. '
-		},
-		{
-			q: 'How do you justify charging?',
-			a: 'We spend considerable time creating & maintaining accounting algorithims that provide detailed reports. How much is your time worth?'
 		}
+		// {
+		// 	q: 'How do you justify charging?',
+		// 	a: 'We spend considerable time creating & maintaining accounting algorithims that provide detailed reports. How much is your time worth?'
+		// }
 	]
 </script>
 
