@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-436f67c1.js",
+    "file": "_app/immutable/start-3482fed9.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_singletons-617c8bca.js",
+      "_singletons-d2d9436c.js",
       "_preload-helper-b21cceae.js"
     ],
     "dynamicImports": [
@@ -46,7 +46,7 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-2dd9b9bd.js",
+    "file": "_app/immutable/components/pages/_page.svelte-6b4a414c.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -60,12 +60,12 @@
     ]
   },
   "src/routes/parallax/+page.svelte": {
-    "file": "_app/immutable/components/pages/parallax/_page.svelte-21d01dd9.js",
+    "file": "_app/immutable/components/pages/parallax/_page.svelte-56e3c56d.js",
     "src": "src/routes/parallax/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_navigation-b98fa899.js",
+      "_navigation-5c721c57.js",
       "_index-7ae11b53.js",
       "_index-00e5c70a.js",
       "_StickyLayer.svelte_svelte_type_style_lang-bad6b39b.js"
@@ -102,12 +102,12 @@
     ]
   },
   "src/routes/remote/features/+page.svelte": {
-    "file": "_app/immutable/components/pages/remote/features/_page.svelte-85dd0798.js",
+    "file": "_app/immutable/components/pages/remote/features/_page.svelte-287b9da4.js",
     "src": "src/routes/remote/features/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_navigation-b98fa899.js"
+      "_navigation-5c721c57.js"
     ]
   },
   "src/routes/remote/features/channels/+page.svelte": {
@@ -180,8 +180,8 @@
       "__page-6212236f.js"
     ]
   },
-  "_singletons-617c8bca.js": {
-    "file": "_app/immutable/chunks/singletons-617c8bca.js",
+  "_singletons-d2d9436c.js": {
+    "file": "_app/immutable/chunks/singletons-d2d9436c.js",
     "imports": [
       "_index-7ae11b53.js"
     ]
@@ -250,10 +250,10 @@
       "_index-071863ef.js"
     ]
   },
-  "_navigation-b98fa899.js": {
-    "file": "_app/immutable/chunks/navigation-b98fa899.js",
+  "_navigation-5c721c57.js": {
+    "file": "_app/immutable/chunks/navigation-5c721c57.js",
     "imports": [
-      "_singletons-617c8bca.js"
+      "_singletons-d2d9436c.js"
     ]
   },
   "_constants-8955e3ef.js": {
@@ -290,7 +290,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-663c80a6.js",
+    "file": "_app/immutable/chunks/2-dc4aeb84.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -298,7 +298,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-aa1b8ec3.js",
+    "file": "_app/immutable/chunks/3-393d6f8c.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -323,7 +323,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-22deccba.js",
+    "file": "_app/immutable/chunks/6-0cc7e07f.js",
     "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
@@ -388,21 +388,21 @@
     "src": "src/lib/i18n/es.json",
     "isDynamicEntry": true
   },
-  "src/routes/parallax/+page.css": {
-    "file": "_app/immutable/assets/_page-2391ebb6.css",
-    "src": "src/routes/parallax/+page.css"
-  },
   "StickyLayer.css": {
     "file": "_app/immutable/assets/StickyLayer-cd85f8ec.css",
     "src": "StickyLayer.css"
   },
-  "Button.css": {
-    "file": "_app/immutable/assets/Button-b0246fd5.css",
-    "src": "Button.css"
-  },
   "src/routes/remote/+page.css": {
     "file": "_app/immutable/assets/_page-4f1e9ba5.css",
     "src": "src/routes/remote/+page.css"
+  },
+  "src/routes/parallax/+page.css": {
+    "file": "_app/immutable/assets/_page-2391ebb6.css",
+    "src": "src/routes/parallax/+page.css"
+  },
+  "Button.css": {
+    "file": "_app/immutable/assets/Button-b0246fd5.css",
+    "src": "Button.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-82f8fbdd.css",
