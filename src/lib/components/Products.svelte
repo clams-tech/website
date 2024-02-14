@@ -12,7 +12,7 @@
 		},
 		{
 			icon: AbacusIcon,
-			title: 'ABACUS',
+			title: 'ACCOUNTING',
 			description: 'The accountancy suite for Bitcoin financial management.',
 			href: null
 		}
