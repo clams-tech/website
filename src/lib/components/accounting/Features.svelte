@@ -44,7 +44,7 @@
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 					>
-						The best money deserves a dedicated accountancy suite.
+						The best money deserves a superior accountancy suite.
 					</p>
 					<dl
 						class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none"

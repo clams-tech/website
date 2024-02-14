@@ -27,7 +27,12 @@
 		},
 		{
 			category: 'Operational',
-			features: ['Secure data sharing', 'Multiple accounts', 'Encrypted data backups']
+			features: [
+				'Secure data sharing',
+				'Multi-user access',
+				'Cross-device sync',
+				'Encrypted data backups'
+			]
 		}
 	]
 </script>
@@ -35,9 +40,9 @@
 <div class="bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-4xl text-center">
-			<p class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 				Pricing
-			</p>
+			</h2>
 		</div>
 		<div class="mx-auto mt-12 max-w-4xl mt-16 flex gap-4 justify-between flex-wrap">
 			<section class="p-8 w-full md:flex-1">
