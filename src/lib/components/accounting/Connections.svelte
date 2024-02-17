@@ -11,7 +11,7 @@
 					Fully integrated wallets
 				</h2>
 				<p class="mt-16 text-lg leading-8 text-gray-600 dark:text-gray-300">
-					Some wallets are fully integrated into our system to streamline the data import. If your
+					These wallets are fully integrated into our system to streamline the data import. If your
 					wallet isn't listed, let us know and we'll strive to prioritize its inclusion.
 				</p>
 				<div class="mt-8 flex items-center gap-x-6">

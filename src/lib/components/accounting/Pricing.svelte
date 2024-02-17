@@ -3,8 +3,8 @@
 
 	const basic = [
 		{
-			category: 'Wallets',
-			features: ['Unlimited connections']
+			category: 'Connections',
+			features: ['Unlimited']
 		},
 		{
 			category: 'Dashboard',
@@ -14,8 +14,8 @@
 
 	const pro = [
 		{
-			category: 'Wallets',
-			features: ['Unlimited connections']
+			category: 'Connections',
+			features: ['Unlimited']
 		},
 		{
 			category: 'Dashboard',
