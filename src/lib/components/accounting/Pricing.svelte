@@ -58,7 +58,7 @@
 					rel="noopener noreferrer"
 					target="_blank"
 					aria-describedby="tier-basic"
-					class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300"
+					class="mt-8 block rounded-md py-2 px-3 text-center text-md font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300"
 					>Get Started</a
 				>
 				<ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900 dark:text-white">
@@ -104,7 +104,7 @@
 				<a
 					href="#"
 					aria-describedby="tier-pro"
-					class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500"
+					class="mt-8 block rounded-md py-2 px-3 text-center text-md font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500"
 					>Coming Soon...</a
 				>
 				<ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900 dark:text-white">

@@ -143,9 +143,9 @@
 					{@html ClamsIcon}
 				</div>
 				<div class="mt-8 flex items-center justify-center gap-4">
-					<div class="w-12">
+					<!-- <div class="w-12">
 						{@html AbacusIcon}
-					</div>
+					</div> -->
 					<h2
 						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-6xl"
 					>
@@ -171,12 +171,16 @@
 						href={ACCOUNTING_APP_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="rounded-md bg-indigo-600 px-7 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-						>App</a
+						class="flex gap-2 rounded-md bg-indigo-600 px-7 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					>
+						<div class="w-6">
+							{@html AbacusIcon}
+						</div>
+						App</a
 					>
 					<a
 						href="#"
-						class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+						class="text-md font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 						>Video <span aria-hidden="true">→</span></a
 					>
 				</div>

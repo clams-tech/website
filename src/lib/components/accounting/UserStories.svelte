@@ -1,12 +1,6 @@
 <script lang="ts">
 	const users = [
 		{
-			quote: '“I forwarded a lot of payments this year. How do I report this?”',
-			img: 'https://www.kindpng.com/picc/m/296-2964757_wojak-png-7-png-image-know-that.png',
-			name: 'Anon',
-			title: 'Lightning node operator'
-		},
-		{
 			quote: '“Damn I sold a lot of raw milk for sats this year. How do taxes work for Bitcoin?”',
 			img: 'https://i.kym-cdn.com/photos/images/newsfeed/001/682/115/749.jpg',
 			name: 'Mary',
@@ -17,12 +11,6 @@
 			img: 'https://i.kym-cdn.com/photos/images/newsfeed/000/993/875/084.png',
 			name: 'Pleb',
 			title: 'Memelord'
-		},
-		{
-			quote: '“I have 12 wallets on the go right now. How do I calculate my sats flow?”',
-			img: 'https://i.redd.it/k3yz0qleztq71.jpg',
-			name: 'Dave',
-			title: 'Humble sat stacker'
 		},
 		{
 			quote: '“Some of my clients are now getting paid in Bitcoin! What is a UTXO?!”',
@@ -36,7 +24,6 @@
 <div class="bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-xl text-center">
-			<!-- <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">We get it</h2> -->
 			<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 				We've heard you Bitcoiners
 			</p>
