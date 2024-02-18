@@ -6,24 +6,72 @@
 	import WalletIcon from '$lib/icons/wallet'
 	import TagIcon from '$lib/icons/tag'
 
+	// const features = [
+	// 	{
+	// 		icon: MagicWandIcon,
+	// 		title: 'SYNC.',
+	// 		description:
+	// 			'Unlimited Wallets and Transactions. Automated Transaction Syncing. Private Local Data Store. Full Lightning and Bitcoin Support.'
+	// 	},
+	// 	{
+	// 		icon: TagIcon,
+	// 		title: 'ENHANCE.',
+	// 		description:
+	// 			'Streamlined Double Entry Accounting. Smart Transfer Matching. Efficient Wallet and Transaction Tagging. Error Detection and Reconciliation.'
+	// 	},
+	// 	{
+	// 		icon: TransactionsIcon,
+	// 		title: 'VISUALIZE.',
+	// 		description:
+	// 			'Dynamic Sats Flow Dashboard. Comprehensive Balance Tracking. Interactive Charts for Insights. Precise Cost Basis Tracker.'
+	// 	},
+	// 	{
+	// 		icon: TransactionsIcon,
+	// 		title: 'REPORTS.',
+	// 		description:
+	// 			'Detailed Cost Basis Analysis. Capital Gains Reporting. Profit and Loss Statements Generation.'
+	// 	}
+	// ]
+
 	const features = [
 		{
 			icon: MagicWandIcon,
-			title: 'Connections.',
-			description:
-				'Auto-sync of transactions. Identification of transfers. Lightning and Bitcoin support. Unlimited connections and transaction imports. Smart transfer matching. Koinly uses AI to detect transfers within your own wallets and excludes them from tax reports.'
+			title: 'SYNC.',
+			highlights: [
+				'Unlimited Wallets and Transactions.',
+				'Automated Transaction Syncing.',
+				'Private Local Data Store.',
+				'Full Lightning and Bitcoin Support.'
+			]
+		},
+		{
+			icon: TagIcon,
+			title: 'ENHANCE.',
+			highlights: [
+				'Streamlined Double Entry Accounting.',
+				'Smart Transfer Matching.',
+				'Efficient Wallet and Transaction Tagging.',
+				'Error Detection and Reconciliation.'
+			]
 		},
 		{
 			icon: TransactionsIcon,
-			title: 'Dashboard.',
-			description:
-				'View realized and unrealized capital gains. Visualize your sats flow. Wallet and transaction tagging to enhance insights. View your total holdings and portfolio growth over time, across all your wallets and accounts.'
+			title: 'VISUALIZE.',
+			highlights: [
+				'Dynamic Sats Flow Dashboard.',
+				'Comprehensive Balance Tracking.',
+				'Interactive Charts for Insights.',
+				'Precise Cost Basis Tracker.'
+			]
 		},
 		{
 			icon: TransactionsIcon,
-			title: 'Reports.',
-			description:
-				'Export cost basis and cap gains reports for each wallet or your entire stack. Error reconciliation. '
+			title: 'REPORTS.',
+			highlights: [
+				'Detailed Cost Basis Analysis.',
+				'Capital Gains Reporting.',
+				'Profit and Loss Statements Generation.'
+			]
 		}
 	]
 </script>
@@ -40,16 +88,16 @@
 		>
 			<div class="lg:pr-8 lg:pt-4">
 				<div class="lg:max-w-lg">
-					<!-- <h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2> -->
+					<h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2>
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 					>
-						The best money deserves a superior accountancy suite.
+						The best money deserves superior features.
 					</p>
 					<dl
-						class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none"
+						class="mt-10 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none grid sm:grid-cols-1 md:grid-cols-2 gap-8"
 					>
-						{#each features as { icon, title, description }}
+						{#each features as { icon, title, highlights }}
 							<div class="relative pl-9">
 								<dt class="inline font-semibold text-gray-900 dark:text-white">
 									<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
@@ -57,8 +105,12 @@
 									</div>
 									{title}
 								</dt>
-								<dd class="inline">
-									{description}
+								<dd>
+									<ul class="list-disc list-inside leading-6">
+										{#each highlights as highlight}
+											<li>{highlight}</li>
+										{/each}
+									</ul>
 								</dd>
 							</div>
 						{/each}

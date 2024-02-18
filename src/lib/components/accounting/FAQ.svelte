@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { DISCORD_URL } from '$lib/constants'
 
 	const faqs = [
@@ -44,7 +44,7 @@
 		}
 	]
 
-	function toggleFaq(index) {
+	function toggleFaq(index: number) {
 		faqs[index].selected = !faqs[index].selected
 	}
 </script>
