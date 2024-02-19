@@ -41,7 +41,7 @@
 				{#each tiles as { title, description, icon }}
 					<div class="w-full border rounded-lg shadow-xl p-4 m-auto flex flex-col gap-2">
 						<h3 class="inline font-semibold text-gray-900 dark:text-white">{title}</h3>
-						<p>{description}</p>
+						<p class="text-gray-900 dark:text-white">{description}</p>
 						<div class="mt-4 m-auto sm:w-40 md:w-60 flex justify-center">
 							{@html icon}
 						</div>
