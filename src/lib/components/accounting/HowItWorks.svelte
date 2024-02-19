@@ -7,22 +7,22 @@
 
 	const tiles = [
 		{
-			title: 'SYNC',
+			title: 'Sync',
 			description: 'Import all transaction data to a local, private hub.',
 			icon: SyncIcon
 		},
 		{
-			title: 'ENHANCE',
+			title: 'Enhance',
 			description: 'Conversion of data for double-entry bookkeeping.',
 			icon: EnhanceIcon
 		},
 		{
-			title: 'VISUALIZE',
+			title: 'Visualize',
 			description: 'Derive meaning via sats flow dashboard.',
 			icon: VisualizeIcon
 		},
 		{
-			title: 'REPORT',
+			title: 'Report',
 			description: 'Download reports to share with third parties.',
 			icon: ReportIcon
 		}
@@ -40,7 +40,7 @@
 			<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
 				{#each tiles as { title, description, icon }}
 					<div class="w-full border rounded-lg shadow-xl p-4 m-auto flex flex-col gap-2">
-						<h3 class="inline font-semibold text-gray-900 dark:text-white">{title}</h3>
+						<h3 class="text-2xl inline font-semibold text-gray-900 dark:text-white">{title}</h3>
 						<p class="text-gray-900 dark:text-white">{description}</p>
 						<div class="mt-4 m-auto sm:w-40 md:w-60 flex justify-center">
 							{@html icon}

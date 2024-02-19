@@ -3,8 +3,6 @@
 	import ClamsIcon from '$lib/icons/clams'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
 	import AbacusIcon from '$lib/icons/abacus'
-	import BitcoinIcon from '$lib/icons/bitcoin-symbol'
-	import LightningIcon from '$lib/icons/lightning-circle'
 	import { ACCOUNTING_APP_URL } from '$lib/constants'
 
 	let showMobileMenu = false
@@ -142,28 +140,19 @@
 				<div class="w-64 m-auto">
 					{@html ClamsIcon}
 				</div>
-				<div class="mt-8 flex items-center justify-center gap-4">
-					<!-- <div class="w-12">
-						{@html AbacusIcon}
-					</div> -->
+				<div class="mt-8 flex items-center justify-center">
 					<h2
 						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-6xl"
 					>
 						Accounting
 					</h2>
 				</div>
-				<div class="mt-8 flex justify-center items-center gap-2">
-					<!-- <div class="w-10">
-						{@html BitcoinIcon}
-					</div> -->
+				<div class="mt-2 flex justify-center items-center">
 					<div>
-						<p class="text-4xl leading-8 text-gray-600 dark:text-gray-300 font-bold italic">
-							Visualize Your Sats Flow.
+						<p class="text-2xl leading-8 text-gray-600 dark:text-gray-300">
+							Visualize your Sats Flow.
 						</p>
 					</div>
-					<!-- <div class="w-10">
-						{@html LightningIcon}
-					</div> -->
 				</div>
 
 				<div class="mt-8 flex items-center justify-center gap-x-6">
