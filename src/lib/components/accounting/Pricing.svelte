@@ -44,7 +44,7 @@
 				Pricing
 			</h2>
 		</div>
-		<div class="mx-auto mt-12 max-w-4xl mt-16 flex gap-4 justify-between flex-wrap">
+		<div class="mt-8 md:mt-16 mx-auto mt-6 max-w-4xl mt-16 flex gap-4 justify-between flex-wrap">
 			<section class="p-8 w-full md:flex-1">
 				<h3 id="tier-basic" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
 					Basic

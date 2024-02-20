@@ -28,7 +28,7 @@
 				We've heard you Bitcoiners
 			</p>
 		</div>
-		<div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+		<div class="mx-auto mt-8 md:mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
 			<div class="grid sm:grid-cols-1 md:grid-cols-3 -mt-8 sm:-mx-4 lg:-mx-4">
 				{#each users as { quote, img, name, title }}
 					<div class="pt-8 sm:inline-block sm:w-full sm:px-4">

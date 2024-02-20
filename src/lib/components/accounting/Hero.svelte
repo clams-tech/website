@@ -168,10 +168,18 @@
 						App</a
 					>
 					<a
+						href={ACCOUNTING_APP_URL}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex gap-2 rounded-md ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 px-7 py-2.5 text-md font-semibold text-indigo-600 dark:text-indigo-400 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					>
+						Play <span aria-hidden="true">→</span></a
+					>
+					<!-- <a
 						href="#"
 						class="text-md font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 						>Video <span aria-hidden="true">→</span></a
-					>
+					> -->
 				</div>
 			</div>
 		</div>

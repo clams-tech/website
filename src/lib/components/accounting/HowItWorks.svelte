@@ -8,22 +8,25 @@
 	const tiles = [
 		{
 			title: 'Sync',
-			description: 'Import all transaction data to a local, private hub.',
+			description:
+				'Connect unlimited wallets to import all transaction data to a private local hub.',
 			icon: SyncIcon
 		},
 		{
 			title: 'Enhance',
-			description: 'Conversion of data for double-entry bookkeeping.',
+			description:
+				'Auto-convert data to double-entry standards; customize with metadata for categorization.',
 			icon: EnhanceIcon
 		},
 		{
 			title: 'Visualize',
-			description: 'Derive meaning via sats flow dashboard.',
+			description:
+				'Derive insights from the sats flow dashboard; customize charts to suit your needs.',
 			icon: VisualizeIcon
 		},
 		{
 			title: 'Report',
-			description: 'Download reports to share with third parties.',
+			description: 'Download reports for easy sharing with third parties; simplify tax season.',
 			icon: ReportIcon
 		}
 	]
@@ -37,7 +40,7 @@
 			>
 				How it works
 			</h2>
-			<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
 				{#each tiles as { title, description, icon }}
 					<div class="w-full border rounded-lg shadow-xl p-4 m-auto flex flex-col gap-2">
 						<h3 class="text-2xl inline font-semibold text-gray-900 dark:text-white">{title}</h3>
@@ -61,8 +64,8 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					href={DOCS_URL}
-					class="text-md font-semibold leading-6 text-gray-900 dark:text-white"
-					>Learn More <span aria-hidden="true">→</span></a
+					class="flex gap-2 rounded-md ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 px-7 py-2.5 text-md font-semibold text-indigo-600 dark:text-indigo-400 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					>Learn More</a
 				>
 			</div>
 		</div>
