@@ -5,6 +5,7 @@
 	import lightningCircleIcon from '$lib/icons/lightning-circle'
 	import WalletIcon from '$lib/icons/wallet'
 	import TagIcon from '$lib/icons/tag'
+	import ScreenshotImage from '$lib/images/accounting-screenshot-1.png'
 
 	const features = [
 		{
@@ -45,7 +46,7 @@
 	]
 </script>
 
-<div id="features" class="features overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
+<div id="features" class="features overflow-hidden bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl sm:text-center">
 			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -87,9 +88,9 @@
 				</div>
 			</div>
 			<img
-				src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+				src={ScreenshotImage}
 				alt="Product screenshot"
-				class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+				class="w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem] md:-ml-4 lg:-ml-0"
 				width="2432"
 				height="1442"
 			/>

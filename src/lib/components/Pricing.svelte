@@ -28,7 +28,9 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 	<!-- Community -->
-	<div class="w-full p-8 bg-white dark:bg-black text-center rounded-3xl shadow-xl">
+	<div
+		class="w-full p-8 bg-white dark:bg-black text-center rounded-3xl shadow-xl dark:shadow-indigo-500/50"
+	>
 		<h1 class="font-semibold text-2xl">Community</h1>
 		<div class="pt-2 tracking-wide flex justify-center gap-1">
 			<span class="flex justify-center text-3xl font-semibold">
@@ -61,7 +63,9 @@
 		</div>
 	</div>
 	<!-- Premium -->
-	<div class="w-full p-8 bg-white dark:bg-black text-center rounded-3xl shadow-xl">
+	<div
+		class="w-full p-8 bg-white dark:bg-black text-center rounded-3xl shadow-xl dark:shadow-indigo-500/50"
+	>
 		<h1 class="font-semibold text-2xl">Premium</h1>
 		<div class="pt-2 tracking-wide flex justify-center gap-1">
 			<span class="flex justify-center text-3xl font-semibold">
