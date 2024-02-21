@@ -1,7 +1,7 @@
 <script lang="ts">
 	const users = [
 		{
-			quote: '“ milk for sats this year. How do taxes work for Bitcoin?”',
+			quote: '“Damn I sold a lot of raw milk for sats this year. How do taxes work for Bitcoin?”',
 			img: 'https://i.kym-cdn.com/photos/images/newsfeed/001/682/115/749.jpg',
 			name: 'Mary',
 			title: 'Based Farms'
