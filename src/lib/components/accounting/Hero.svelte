@@ -175,11 +175,6 @@
 					>
 						Play <span aria-hidden="true">→</span></a
 					>
-					<!-- <a
-						href="#"
-						class="text-md font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-						>Video <span aria-hidden="true">→</span></a
-					> -->
 				</div>
 			</div>
 		</div>

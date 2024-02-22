@@ -1,20 +1,24 @@
 <script lang="ts">
+	import PersonaOne from '$lib/images/persona-1.jpg'
+	import PersonaTwo from '$lib/images/persona-2.png'
+	import PersonaThree from '$lib/images/persona-3.jpg'
+
 	const users = [
 		{
 			quote: '“Damn I sold a lot of raw milk for sats this year. How do taxes work for Bitcoin?”',
-			img: 'https://i.kym-cdn.com/photos/images/newsfeed/001/682/115/749.jpg',
+			img: PersonaOne,
 			name: 'Mary',
 			title: 'Based Farms'
 		},
 		{
 			quote: '“All that stacking, zapping and boosting. How do I explain this to my accountant?”',
-			img: 'https://i.kym-cdn.com/photos/images/newsfeed/000/993/875/084.png',
+			img: PersonaTwo,
 			name: 'Pleb',
 			title: 'Memelord'
 		},
 		{
 			quote: '“Some of my clients are now getting paid in Bitcoin! What is a UTXO?!”',
-			img: 'https://i.imgflip.com/1oyfyy.jpg',
+			img: PersonaThree,
 			name: 'Mike',
 			title: 'Accountant'
 		}
