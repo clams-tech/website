@@ -42,9 +42,7 @@
 			</h2>
 			<div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
 				{#each tiles as { title, description, icon }}
-					<div
-						class="w-full border rounded-lg shadow-xl dark:shadow-indigo-500/50 p-4 m-auto flex flex-col gap-2"
-					>
+					<div class="w-full border rounded-lg   p-4 m-auto flex flex-col gap-2">
 						<h3 class="text-2xl inline font-semibold text-gray-900 dark:text-white">{title}</h3>
 						<p class="text-gray-900 dark:text-white">{description}</p>
 						<div class="mt-4 m-auto sm:w-40 md:w-60 flex justify-center">
