@@ -58,13 +58,6 @@
 									>Remote</a
 								>
 							</li>
-							<li>
-								<a
-									href="/accounting"
-									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
-									>Accounting</a
-								>
-							</li>
 						</ul>
 					</div>
 					<div class="mt-10 md:mt-0">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ClamsAltLogo from '$lib/icons/clams-alt'
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
+	import ThemeToggle from '$lib/components/legacy/ThemeToggle.svelte'
 
 	let links = [
 		{ href: '/remote', title: 'Remote' },

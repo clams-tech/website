@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FeaturePage from '$lib/components/FeaturePage.svelte'
+	import FeaturePage from '$lib/components/remote/FeaturePage.svelte'
 	import type { FEATURE } from '$lib/constants'
 
 	const header: { title: FEATURE; subtitle: string } = {
