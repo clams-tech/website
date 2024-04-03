@@ -7,6 +7,7 @@
 	import Pricing from '$lib/components/Pricing.svelte'
 	import FAQ from '$lib/components/FAQ.svelte'
 	import Note from '$lib/components/Note.svelte'
+	import OpenSource from '$lib/components/OpenSource.svelte'
 </script>
 
 <svelte:head>
@@ -21,3 +22,4 @@
 <UserStories />
 <FAQ />
 <Note />
+<OpenSource />

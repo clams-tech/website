@@ -2,10 +2,15 @@
 	import NostrIcon from '$lib/icons/nostr'
 </script>
 
-<section id="note" class="px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full">
+<section
+	id="note"
+	class="bg-gray-100 dark:bg-gray-900 px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full"
+>
 	<div class="flex flex-col justify-between w-full gap-5 max-w-3xl">
-		<h1 class="text-[40px] text-center font-bold">
-			A <span class="text-light-orange">Note</span> from Us
+		<h1
+			class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center"
+		>
+			A note from us
 		</h1>
 		<div class="flex flex-wrap md:flex-nowrap gap-10">
 			<div class="flex flex-col gap-5">

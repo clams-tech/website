@@ -142,17 +142,10 @@
 				</div>
 				<div class="mt-8 flex items-center justify-center">
 					<h2
-						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-6xl"
+						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl"
 					>
-						Accounting
+						Visualize your Sats Flow.
 					</h2>
-				</div>
-				<div class="mt-2 flex justify-center items-center">
-					<div>
-						<p class="text-2xl leading-8 text-gray-600 dark:text-gray-300">
-							Visualize your Sats Flow.
-						</p>
-					</div>
 				</div>
 
 				<div class="mt-8 flex items-center justify-center gap-x-6">
@@ -165,7 +158,7 @@
 						<div class="w-6">
 							{@html AbacusIcon}
 						</div>
-						App</a
+						Download</a
 					>
 					<a
 						href={ACCOUNTING_APP_URL}

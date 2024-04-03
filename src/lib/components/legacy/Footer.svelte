@@ -5,7 +5,7 @@
 	import DiscordIcon from '$lib/icons/discord'
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
-	import { DISCORD_URL, DOCS_URL } from '$lib/constants'
+	import { DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
 
 	let socials = [
 		{
@@ -14,7 +14,7 @@
 			href: 'https://nostr.at/npub136hk9wu6xnrz64kfaapsvgc5rfnylz4djlx4w30w66h6cy48vhws3gth6q'
 		},
 		{ icon: DiscordIcon, title: 'Discord', href: DISCORD_URL },
-		{ icon: GithubIcon, title: 'GitHub', href: 'https://github.com/clams-tech' },
+		{ icon: GithubIcon, title: 'GitHub', href: GITHUB_URL },
 		{ icon: XIcon, title: 'Twitter', href: 'https://twitter.com/clamstech' }
 	]
 </script>

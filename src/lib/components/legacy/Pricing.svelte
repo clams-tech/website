@@ -70,7 +70,7 @@
 		<div class="pt-2 tracking-wide flex justify-center gap-1">
 			<span class="flex justify-center text-3xl font-semibold">
 				<div class="w-6">
-					{@html BitcoinSymbolIcon}
+					{@html mbolIcon}
 				</div>
 				TBD
 			</span>
