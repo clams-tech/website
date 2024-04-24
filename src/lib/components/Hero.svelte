@@ -8,7 +8,7 @@
 	let showMobileMenu = false
 </script>
 
-<div class="bg-white dark:bg-gray-900">
+<div class="bg-white dark:bg-gray-900 h-screen flex items-center justify-center">
 	<header class="absolute inset-x-0 top-0 z-50">
 		<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
@@ -150,23 +150,13 @@
 
 				<div class="mt-8 flex items-center justify-center gap-x-6">
 					<a
-						href={ACCOUNTING_APP_URL}
-						target="_blank"
-						rel="noopener noreferrer"
+						href="/downloads"
 						class="flex gap-2 rounded-md bg-indigo-600 px-7 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 					>
 						<div class="w-6">
 							{@html AbacusIcon}
 						</div>
-						Download</a
-					>
-					<a
-						href={ACCOUNTING_APP_URL}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex gap-2 rounded-md ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 px-7 py-2.5 text-md font-semibold text-indigo-600 dark:text-indigo-400 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-					>
-						Play <span aria-hidden="true">→</span></a
+						Get Started</a
 					>
 				</div>
 			</div>

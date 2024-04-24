@@ -13,7 +13,7 @@
 		{
 			quote: '“All that stacking, zapping and boosting. How do I explain this to my accountant?”',
 			img: PersonaTwo,
-			name: 'Pleb',
+			name: 'Anon',
 			title: 'Memelord'
 		},
 		{
