@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment'
+	import Navigation from '$lib/components/Navigation.svelte'
 	import Footer from '$lib/components/legacy/Footer.svelte'
 	import { loadTranslations, locale } from '$lib/i18n/translations'
 	import '../app.css'
@@ -15,5 +16,6 @@
 	}
 </script>
 
+<Navigation />
 <slot />
 <Footer />

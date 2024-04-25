@@ -103,21 +103,19 @@
 	</div>
 </div> -->
 
-<section class="flex flex-col items-center bg-white dark:bg-gray-900">
-	<div class="flex flex-col w-full max-w-4xl">
+<section class="h-full bg-white dark:bg-gray-900 py-24 sm:py-32">
+	<div class="h-screen flex-col w-full max-w-3xl px-6 lg:px-8 m-auto">
 		<h2
 			class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 		>
 			Downloads
 		</h2>
-
-		<!-- Desktop app -->
 		<div class="mt-12 flex flex-col">
 			<div class="lg:pr-8">
-				<div>
-					<h2 class="text-base font-semibold leading-7 text-indigo-400">Desktop App</h2>
+				<div class="">
 					<p class="text-gray-900 dark:text-white">
-						Please select the option that corresponds to your operating system:
+						Clams is available as a Desktop app. Please select the option that corresponds to your
+						operating system:
 					</p>
 				</div>
 			</div>

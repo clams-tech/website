@@ -56,16 +56,9 @@
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					href={ACCOUNTING_APP_URL}
+					href="/downloads"
 					class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 					>Get Started</a
-				>
-				<a
-					target="_blank"
-					rel="noopener noreferrer"
-					href={DOCS_URL}
-					class="flex gap-2 rounded-md ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 px-7 py-2.5 text-md font-semibold text-indigo-600 dark:text-indigo-400 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-					>Learn More</a
 				>
 			</div>
 		</div>

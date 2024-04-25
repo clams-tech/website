@@ -1,6 +1,18 @@
 <script lang="ts">
 	import { DISCORD_URL } from '$lib/constants'
-	import CoreLightningIcon from '$lib/icons/core-lightning'
+	import CoreLightningIcon from '$lib/icons/connections/core-lightning'
+	import LndIcon from '$lib/icons/connections/lnd'
+
+	const connections = [
+		{
+			icon: CoreLightningIcon,
+			link: 'https://corelightning.org/'
+		},
+		{
+			icon: LndIcon,
+			link: 'https://lightning.engineering/'
+		}
+	]
 </script>
 
 <div class="bg-white dark:bg-gray-900 py-24 sm:py-32">
@@ -10,10 +22,14 @@
 				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Fully integrated wallets
 				</h2>
-				<div class="mt-8 md:mt-16">
-					<div class="w-40 m-auto p-3 bg-black rounded-md">
-						{@html CoreLightningIcon}
-					</div>
+				<div class="flex items-center gap-8 justify-center mt-8 md:mt-16">
+					{#each connections as { icon, link }}
+						<a href={link} target="_blank" rel="noopener noreferrer">
+							<div class="w-32 m-auto p-3 bg-black rounded-md">
+								{@html icon}
+							</div>
+						</a>
+					{/each}
 				</div>
 				<p class="mt-8 text-lg leading-8 text-gray-600 dark:text-gray-300">
 					These wallets are fully integrated into our system to streamline the data import. If your
