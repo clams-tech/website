@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
-	import { ACCOUNTING_APP_URL } from '$lib/constants'
 
 	let showMobileMenu = false
 </script>
@@ -55,7 +54,7 @@
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
-				href={ACCOUNTING_APP_URL}
+				href="/downloads"
 				class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 				>Get Started<span aria-hidden="true">&rarr;</span></a
 			>
@@ -111,7 +110,7 @@
 						<a
 							target="_blank"
 							rel="noopener noreferrer"
-							href={ACCOUNTING_APP_URL}
+							href="/downloads"
 							class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 							>Get Started</a
 						>

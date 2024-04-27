@@ -1,5 +1,4 @@
 <script>
-	import { ACCOUNTING_APP_URL, DOCS_URL } from '$lib/constants'
 	import SyncIcon from '$lib/icons/sync'
 	import EnhanceIcon from '$lib/icons/enhance'
 	import VisualizeIcon from '$lib/icons/visualize'
@@ -40,7 +39,7 @@
 			>
 				How it works
 			</h2>
-			<div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="mt-12 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
 				{#each tiles as { title, description, icon }}
 					<div class="w-full border rounded-lg   p-4 m-auto flex flex-col gap-2">
 						<h3 class="text-2xl inline font-semibold text-gray-900 dark:text-white">{title}</h3>
@@ -52,7 +51,7 @@
 				{/each}
 			</div>
 
-			<div class="mt-16 flex items-center justify-center gap-x-6">
+			<div class="mt-12 flex items-center justify-center gap-x-6">
 				<a
 					target="_blank"
 					rel="noopener noreferrer"

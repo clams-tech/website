@@ -56,7 +56,7 @@
 				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Frequently asked questions
 				</h2>
-				<p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">
+				<p class="mt-12 text-base leading-7 text-gray-600 dark:text-gray-300">
 					Can’t find the answer you’re looking for? Reach out to us on <a
 						href={DISCORD_URL}
 						target="_blank"
