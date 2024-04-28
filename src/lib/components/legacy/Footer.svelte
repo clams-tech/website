@@ -24,12 +24,10 @@
 	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 			<div class="space-y-8">
-				<div class="w-6">
+				<div class="w-12">
 					{@html ClamsAltIcon}
 				</div>
-				<p class="text-sm leading-6 text-gray-600 dark:text-gray-300">
-					Building for a Bitcoin Standard.
-				</p>
+				<p class="leading-6 text-gray-600 dark:text-gray-300">Building for a Bitcoin Standard.</p>
 				<div class="flex items-center space-x-6">
 					{#each socials as { href, title, icon }}
 						<a
@@ -39,7 +37,7 @@
 							rel="noopener noreferrer"
 						>
 							<span class="sr-only">{title}</span>
-							<div class="w-6 mx-2">
+							<div class="w-8 mx-2">
 								{@html icon}
 							</div>
 						</a>

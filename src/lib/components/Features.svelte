@@ -1,16 +1,14 @@
 <script lang="ts">
-	import MagicWandIcon from '$lib/icons/magic-wand'
-	import HiddenIcon from '$lib/icons/hidden'
-	import TransactionsIcon from '$lib/icons/transactions'
-	import lightningCircleIcon from '$lib/icons/lightning-circle'
-	import WalletIcon from '$lib/icons/wallet'
-	import TagIcon from '$lib/icons/tag'
 	import ScreenshotImage from '$lib/images/accounting-screenshot-1.png'
+	import SyncIcon from '$lib/icons/features/sync'
+	import EnhanceIcon from '$lib/icons/features/enhance'
+	import VisualizeIcon from '$lib/icons/features/visualize'
+	import ReportsIcon from '$lib/icons/features/reports'
 
 	// @TODO update icons to the same ones used in How It Works component
 	const features = [
 		{
-			icon: MagicWandIcon,
+			icon: SyncIcon,
 			title: 'SYNC',
 			highlights: [
 				'Unlimited Wallets and Transactions.',
@@ -20,7 +18,7 @@
 			]
 		},
 		{
-			icon: TagIcon,
+			icon: EnhanceIcon,
 			title: 'ENHANCE',
 			highlights: [
 				'Streamlined Double Entry Accounting.',
@@ -30,7 +28,7 @@
 			]
 		},
 		{
-			icon: TransactionsIcon,
+			icon: VisualizeIcon,
 			title: 'VISUALIZE',
 			highlights: [
 				'Dynamic Sats Flow Dashboard.',
@@ -40,7 +38,7 @@
 			]
 		},
 		{
-			icon: TransactionsIcon,
+			icon: ReportsIcon,
 			title: 'REPORTS',
 			highlights: ['Cost Basis Analysis.', 'Capital Gains.', 'Profit and Loss Statements.']
 		}
@@ -68,13 +66,13 @@
 					<dl
 						class="mt-10 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none grid sm:grid-cols-1 md:grid-cols-2 gap-8"
 					>
-						{#each features as { icon, title, highlights }}
+						{#each features as { icon, title, highlights }, i}
 							<div class="relative pl-9">
 								<dt class="inline font-semibold text-gray-900 dark:text-white">
 									<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
 										{@html icon}
 									</div>
-									{title}
+									{title}{i === 3 ? ` (coming soon)` : ''}
 								</dt>
 								<dd>
 									<ul class="list-disc list-inside leading-6">

@@ -64,9 +64,11 @@
 
 <div class="bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<div class="flex flex-col items-center gap-x-8 gap-y-16 text-center max-w-3xl m-auto">
+		<div class="flex flex-col items-center gap-x-8 gap-y-16 max-w-3xl m-auto">
 			<div class="mx-auto w-full lg:mx-0">
-				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+				<h2
+					class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+				>
 					Fully integrated wallets
 				</h2>
 				<p class="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
@@ -86,15 +88,14 @@
 							>
 								{@html icon}
 							</div>
-							<p class="mt-2s">{name}</p>
+							<p class="text-center">{name}</p>
 						</a>
 					{/each}
 				</div>
-				<h2
-					class="mt-8 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-2xl"
-				>
-					Coming soon
-				</h2>
+				<p class="text-left mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
+					These wallets are on our roadmap for integration. Let us know and we'll strive to
+					prioritize your favorite wallet.
+				</p>
 				<div class="flex flex-wrap gap-8 justify-center mt-8">
 					{#each comingSoon as { name, icon, link }}
 						<a
@@ -106,7 +107,7 @@
 							<div class="w-16 m-auto p-3">
 								{@html icon}
 							</div>
-							<p>{name}</p>
+							<p class="text-center">{name}</p>
 						</a>
 					{/each}
 				</div>
