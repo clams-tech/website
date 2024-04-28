@@ -53,8 +53,6 @@
 				</p>
 				<a
 					href="/downloads"
-					rel="noopener noreferrer"
-					target="_blank"
 					aria-describedby="tier-basic"
 					class="mt-8 block rounded-md py-2 px-3 text-center text-md font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300"
 					>Get Started</a
