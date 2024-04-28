@@ -25,7 +25,7 @@
 	]
 </script>
 
-<div class="bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
+<div class="bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="mx-auto px-6 lg:px-8 max-w-5xl ">
 		<div class="mx-auto max-w-5xl text-center">
 			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">

@@ -31,7 +31,7 @@
 	]
 </script>
 
-<div class="bg-gray-100 dark:bg-gray-900">
+<div class="bg-white dark:bg-gray-900">
 	<div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
 		<div class="mx-auto max-w-5xl">
 			<h2

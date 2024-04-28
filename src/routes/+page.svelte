@@ -15,8 +15,8 @@
 </svelte:head>
 
 <Hero />
-<HowItWorks />
 <Features />
+<HowItWorks />
 <Pricing />
 <Connections />
 <UserStories />

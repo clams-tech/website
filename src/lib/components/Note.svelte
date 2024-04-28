@@ -4,7 +4,7 @@
 
 <section
 	id="note"
-	class="bg-gray-100 dark:bg-gray-900 px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full"
+	class="bg-white dark:bg-gray-900 px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full"
 >
 	<div class="flex flex-col justify-between w-full max-w-5xl">
 		<h1

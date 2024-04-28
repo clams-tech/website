@@ -61,7 +61,7 @@
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 					>
-						The best money deserves a superior experience.
+						The best money deserves a dedicated accounting platform.
 					</p>
 					<dl
 						class="mt-10 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none grid sm:grid-cols-1 md:grid-cols-2 gap-8"

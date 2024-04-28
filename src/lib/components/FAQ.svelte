@@ -49,7 +49,7 @@
 	}
 </script>
 
-<div class="bg-white dark:bg-gray-900">
+<div id="faq" class="bg-white dark:bg-gray-900">
 	<div class="mx-auto max-w-5xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
 		<div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
 			<div class="mx-auto text-center">
