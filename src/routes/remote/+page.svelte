@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Nav from '$lib/components/legacy/Nav.svelte'
 	import Hero from '$lib/components/remote/Hero.svelte'
 	import Mission from '$lib/components/remote/Mission.svelte'
 	import Features from '$lib/components/remote/Features.svelte'
@@ -11,7 +10,6 @@
 	<title>Clams</title>
 </svelte:head>
 
-<Nav />
 <Hero />
 <Mission />
 <Features />

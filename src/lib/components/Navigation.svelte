@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
+	import { page } from '$app/stores'
 
 	let showMobileMenu = false
+
+	$: isRemoteRoute = $page.url.pathname.includes('remote')
+
+	$: downloadHref = isRemoteRoute ? '/remote/downloads' : '/downloads'
 </script>
 
 <header class="absolute inset-x-0 top-0 z-50">
@@ -44,15 +49,17 @@
 				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 				>Features</span
 			>
-			<span
-				use:scrollto={'#pricing'}
-				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-				>Pricing</span
-			>
+			{#if !isRemoteRoute}
+				<span
+					use:scrollto={'#pricing'}
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+					>Pricing</span
+				>
+			{/if}
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a
-				href="/downloads"
+				href={downloadHref}
 				class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 				>Get Started<span aria-hidden="true">&rarr;</span></a
 			>
@@ -98,15 +105,17 @@
 							class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 							>Features</span
 						>
-						<span
-							use:scrollto={'#pricing'}
-							class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-							>Pricing</span
-						>
+						{#if !isRemoteRoute}
+							<span
+								use:scrollto={'#pricing'}
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Pricing</span
+							>
+						{/if}
 					</div>
 					<div class="py-6">
 						<a
-							href="/downloads"
+							href={downloadHref}
 							class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 							>Get Started</a
 						>

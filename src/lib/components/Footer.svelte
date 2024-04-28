@@ -1,11 +1,11 @@
 <script lang="ts">
-	import ClamsIcon from '$lib/icons/clams'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
 	import NostrIcon from '$lib/icons/nostr'
 	import DiscordIcon from '$lib/icons/discord'
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
 	import { DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
 
 	let socials = [
 		{
@@ -115,7 +115,8 @@
 			</div>
 		</div>
 		<div class="mt-16 border-t border-gray-200 dark:border-gray-600 pt-8 sm:mt-20 lg:mt-24">
-			<p class="text-xs leading-5 text-gray-600 dark:text-gray-300">
+			<ThemeToggle />
+			<p class="mt-6 text-xs leading-5 text-gray-600 dark:text-gray-300">
 				&copy; 2024 Clams, LLC. All rights reserved.
 			</p>
 		</div>
