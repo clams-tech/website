@@ -26,16 +26,16 @@
 </script>
 
 <div class="bg-gray-100 dark:bg-gray-900 py-24 sm:py-32">
-	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<div class="mx-auto max-w-xl text-center">
-			<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+	<div class="mx-auto px-6 lg:px-8 max-w-5xl ">
+		<div class="mx-auto max-w-5xl text-center">
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 				We've heard you Bitcoiners
-			</p>
+			</h2>
 		</div>
-		<div class="mx-auto mt-8 md:mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-			<div class="grid sm:grid-cols-1 md:grid-cols-3 -mt-8 sm:-mx-4 lg:-mx-4">
+		<div class="m-auto flow-root mt-8 md:mt-12 lg:mx-0">
+			<div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
 				{#each users as { quote, img, name, title }}
-					<div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+					<div class="sm:inline-block sm:w-full">
 						<figure class="rounded-2xl bg-gray-50 dark:bg-gray-800 p-8 text-sm leading-6">
 							<blockquote class="text-lg leading-8 text-gray-900 dark:text-white">
 								<p>

@@ -6,13 +6,13 @@
 	id="note"
 	class="bg-gray-100 dark:bg-gray-900 px-6 py-[72px] md:py-[96px] flex items-center justify-center w-full"
 >
-	<div class="flex flex-col justify-between w-full max-w-3xl">
+	<div class="flex flex-col justify-between w-full max-w-5xl">
 		<h1
-			class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center"
+			class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center"
 		>
 			A note from us
 		</h1>
-		<div class="mt-12 flex flex-wrap md:flex-nowrap gap-10">
+		<div class="mt-8 md:mt-12 flex flex-wrap md:flex-nowrap gap-10">
 			<div class="flex flex-col gap-5">
 				<h2 class="">Hey!</h2>
 				<h2 class="">

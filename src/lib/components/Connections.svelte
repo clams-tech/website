@@ -63,17 +63,14 @@
 </script>
 
 <div class="bg-white dark:bg-gray-900 py-24 sm:py-32">
-	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<div class="flex flex-col items-center gap-x-8 gap-y-16 max-w-3xl m-auto">
-			<div class="mx-auto w-full lg:mx-0">
-				<h2
-					class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
-				>
+	<div class="mx-auto max-w-5xl px-6 lg:px-8">
+		<div class="flex flex-col items-center max-w-5xl m-auto">
+			<div class="text-center mx-auto w-full lg:mx-0">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Fully integrated wallets
 				</h2>
-				<p class="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
-					These wallets are fully integrated into our system to streamline the data import. If your
-					wallet isn't listed, let us know and we'll strive to prioritize its inclusion.
+				<p class="mt-8 md:mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
+					These wallets are fully integrated into our system to streamline the data import.
 				</p>
 				<div class="flex gap-8 justify-center mt-8">
 					{#each connections as { name, icon, link }}
@@ -92,9 +89,8 @@
 						</a>
 					{/each}
 				</div>
-				<p class="text-left mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
-					These wallets are on our roadmap for integration. Let us know and we'll strive to
-					prioritize your favorite wallet.
+				<p class="mt-8 md:mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
+					These wallets are coming soon. Let us know and we'll prioritize your favorite.
 				</p>
 				<div class="flex flex-wrap gap-8 justify-center mt-8">
 					{#each comingSoon as { name, icon, link }}

@@ -50,13 +50,13 @@
 </script>
 
 <div class="bg-white dark:bg-gray-900">
-	<div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-		<div class="mx-auto max-w-4xl divide-y divide-gray-900/10 dark:divide-gray-100/10">
-			<div class="mx-auto max-w-2xl text-center">
+	<div class="mx-auto max-w-5xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+		<div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
+			<div class="mx-auto text-center">
 				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Frequently asked questions
 				</h2>
-				<p class="mt-12 text-base leading-7 text-gray-600 dark:text-gray-300">
+				<p class="mt-8 md:mt-12 text-base leading-7 text-gray-600 dark:text-gray-300">
 					Can’t find the answer you’re looking for? Reach out to us on <a
 						href={DISCORD_URL}
 						target="_blank"
@@ -66,7 +66,7 @@
 					>.
 				</p>
 			</div>
-			<dl class="mt-16 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
+			<dl class="mt-8 md:mt-12 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
 				{#each faqs as { q, a, selected }, i}
 					<div class="pt-6">
 						<dt on:click={() => toggleFaq(i)}>

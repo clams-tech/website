@@ -33,13 +33,13 @@
 
 <div class="bg-gray-100 dark:bg-gray-900">
 	<div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-		<div class="mx-auto max-w-4xl">
+		<div class="mx-auto max-w-5xl">
 			<h2
 				class="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
 			>
 				How it works
 			</h2>
-			<div class="mt-12 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
 				{#each tiles as { title, description, icon }}
 					<div class="w-full border rounded-lg   p-4 m-auto flex flex-col gap-2">
 						<h3 class="text-2xl inline font-semibold text-gray-900 dark:text-white">{title}</h3>
