@@ -5,7 +5,7 @@
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
 	import { DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte'
+	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte'
 
 	let socials = [
 		{
@@ -21,7 +21,7 @@
 
 <footer class="bg-white dark:bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
-	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+	<div class="mx-auto max-w-5xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 			<div class="space-y-8">
 				<div class="w-12">

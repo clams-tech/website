@@ -11,6 +11,7 @@
 </script>
 
 <header class="absolute inset-x-0 top-0 z-50">
+	<!-- Desktop menu -->
 	<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 		<div class="flex lg:flex-1">
 			<a href="/" class="-m-1.5 p-1.5">
@@ -49,11 +50,6 @@
 				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 				>Features</span
 			>
-			<span
-				use:scrollto={'#faq'}
-				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-				>FAQ</span
-			>
 			{#if !isRemoteRoute}
 				<span
 					use:scrollto={'#pricing'}
@@ -61,6 +57,11 @@
 					>Pricing</span
 				>
 			{/if}
+			<span
+				use:scrollto={'#faq'}
+				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+				>FAQ</span
+			>
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a
@@ -78,7 +79,7 @@
 			class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
 		>
 			<div class="flex items-center justify-between">
-				<a href="/" class="-m-1.5 p-1.5">
+				<a on:click={() => (showMobileMenu = false)} href="/" class="-m-1.5 p-1.5">
 					<span class="sr-only">Clams</span>
 					<div class="w-10">
 						{@html ClamsAltIcon}
@@ -104,27 +105,31 @@
 			</div>
 			<div class="mt-6 flow-root">
 				<div class="-my-6 divide-y divide-gray-500/10">
-					<div class="space-y-2 py-6">
-						<span
-							use:scrollto={'#features'}
-							class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-							>Features</span
-						>
-						<span
-							use:scrollto={'#faq'}
-							class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-							>FAQ</span
-						>
-						{#if !isRemoteRoute}
+					{#if !isRemoteRoute}
+						<div class="space-y-2 py-6">
 							<span
+								on:click={() => (showMobileMenu = false)}
+								use:scrollto={'#features'}
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Features</span
+							>
+							<span
+								on:click={() => (showMobileMenu = false)}
 								use:scrollto={'#pricing'}
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 								>Pricing</span
 							>
-						{/if}
-					</div>
+							<span
+								on:click={() => (showMobileMenu = false)}
+								use:scrollto={'#faq'}
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>FAQ</span
+							>
+						</div>
+					{/if}
 					<div class="py-6">
 						<a
+							on:click={() => (showMobileMenu = false)}
 							href={downloadHref}
 							class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 							>Get Started</a
