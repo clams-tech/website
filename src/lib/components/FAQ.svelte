@@ -24,8 +24,8 @@
 			selected: false
 		},
 		{
-			q: 'Any other transactions tax free?',
-			a: 'Yes. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider <a class="underline" target="_blank" rel="noopener noreferrer" href="https://opensats.org/">Opensats</a>.',
+			q: 'Are some transactions tax free?',
+			a: 'Yes. Examples include gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider <a class="underline" target="_blank" rel="noopener noreferrer" href="https://opensats.org/">Opensats</a>.',
 			selected: false
 		},
 		{
