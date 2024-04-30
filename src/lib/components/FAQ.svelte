@@ -25,7 +25,7 @@
 		},
 		{
 			q: 'Any other transactions tax free?',
-			a: 'Yes. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider Opensats.',
+			a: 'Yes. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider <a class="underline" target="_blank" rel="noopener noreferrer" href="https://opensats.org/">Opensats</a>.',
 			selected: false
 		},
 		{
@@ -35,7 +35,7 @@
 		},
 		{
 			q: "Can I still use Clams if I don't see my wallet on the integration list?",
-			a: 'Yes. All wallet types are supported via the custom import tool. We extend the integration list via user requests.',
+			a: 'Yes. All wallet types will be supported via the custom import tool (coming soon). We extend the integration list via user requests.',
 			selected: false
 		},
 		{
@@ -106,7 +106,7 @@
 					{#if selected}
 						<dd class="mt-2 pr-12" id="faq-0">
 							<p class="text-base leading-7 text-gray-600 dark:text-gray-300">
-								{a}
+								{@html a}
 							</p>
 						</dd>
 					{/if}
