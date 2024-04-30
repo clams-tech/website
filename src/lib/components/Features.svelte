@@ -82,7 +82,7 @@
 		<img
 			src={ScreenshotImage}
 			alt="Product screenshot"
-			class="w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+			class="overflow-hidden w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem] md:-ml-4 lg:-ml-0"
 			width="2432"
 			height="1442"
 		/>
