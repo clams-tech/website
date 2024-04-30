@@ -48,7 +48,7 @@
 
 <ContentContainer title="Features" scrollTo="features">
 	<div
-		class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+		class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
 	>
 		<div class="lg:pr-8">
 			<div class="lg:max-w-lg">
@@ -57,7 +57,7 @@
 					Everything you need to live on a Bitcoin Standard.
 				</p>
 				<dl
-					class="mt-10 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none grid sm:grid-cols-1 md:grid-cols-2 gap-8"
+					class="mt-10 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none grid sm:grid-cols-1 md:grid-cols-2 gap-8"
 				>
 					{#each features as { icon, title, highlights }, i}
 						<div class="relative pl-9">
@@ -82,7 +82,7 @@
 		<img
 			src={ScreenshotImage}
 			alt="Product screenshot"
-			class="overflow-hidden w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+			class="overflow-hidden w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem]"
 			width="2432"
 			height="1442"
 		/>
