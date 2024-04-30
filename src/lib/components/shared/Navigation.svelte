@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
-	import { page } from '$app/stores'
 
-	let showMobileMenu = false
-
-	$: isRemoteRoute = $page.url.pathname.includes('remote')
-
+	export let isRemoteRoute = false
 	$: downloadHref = isRemoteRoute ? '/remote/downloads' : '/downloads'
+	let showMobileMenu = false
 </script>
 
 <header class="absolute inset-x-0 top-0 z-50">
@@ -90,7 +87,7 @@
 				<button
 					on:click={() => (showMobileMenu = false)}
 					type="button"
-					class="-m-2.5 rounded-md p-2.5 text-gray-700"
+					class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-white"
 				>
 					<span class="sr-only">Close menu</span>
 					<svg

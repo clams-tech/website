@@ -7,6 +7,9 @@
 	import { DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
 	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte'
 
+	export let isRemoteRoute = false
+	$: backgroundStyles = isRemoteRoute ? 'bg-white dark:bg-black' : 'bg-white dark:bg-gray-900'
+
 	let socials = [
 		{
 			icon: NostrIcon,
@@ -17,9 +20,12 @@
 		{ icon: GithubIcon, title: 'GitHub', href: GITHUB_URL },
 		{ icon: XIcon, title: 'Twitter', href: 'https://twitter.com/clamstech' }
 	]
+
+	const currentDate = new Date()
+	const currentYear = currentDate.getFullYear()
 </script>
 
-<footer class="bg-white dark:bg-gray-900" aria-labelledby="footer-heading">
+<footer class={backgroundStyles} aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-5xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -116,9 +122,10 @@
 		</div>
 		<div class="mt-16 border-t border-gray-200 dark:border-gray-600 pt-8 sm:mt-20 lg:mt-24">
 			<ThemeToggle />
-			<p class="mt-6 text-xs leading-5 text-gray-600 dark:text-gray-300">
-				&copy; 2024 Clams, LLC. All rights reserved.
-			</p>
+			<div class="flex gap-1 mt-6 text-xs leading-5 text-gray-600 dark:text-gray-300">
+				<p>&copy;</p>
+				<p>{`${currentYear} Clams, LLC. All rights reserved.`}</p>
+			</div>
 		</div>
 	</div>
 </footer>

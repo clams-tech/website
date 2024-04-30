@@ -7,7 +7,7 @@ export default `<svg width="100%" viewBox="0 0 71 55" fill="none" xmlns="http://
 	</g>
 	<defs>
 		<clipPath id="clip0">
-			<rect width="71" height="55" fill="white" />
+			<rect width="71" height="55" fill="currentColor" />
 		</clipPath>
 	</defs>
 </svg>`

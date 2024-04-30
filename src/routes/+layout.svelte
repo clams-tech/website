@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment'
+	import { page } from '$app/stores'
 	import Navigation from '$lib/components/shared/Navigation.svelte'
 	import Footer from '$lib/components/shared/Footer.svelte'
 	import { loadTranslations, locale } from '$lib/i18n/translations'
@@ -14,8 +15,10 @@
 		const initLocale = locale.get() || defaultLocale
 		await loadTranslations(initLocale)
 	}
+
+	$: isRemoteRoute = $page.url.pathname.includes('remote')
 </script>
 
-<Navigation />
+<Navigation {isRemoteRoute} />
 <slot />
-<Footer />
+<Footer {isRemoteRoute} />
