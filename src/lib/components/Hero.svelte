@@ -15,19 +15,17 @@
 			/>
 		</div>
 		<div class="mx-auto max-w-2xl py-32">
-			<div class="text-center">
+			<div class="flex flex-col text-center gap-8">
 				<div class="w-64 m-auto">
 					{@html ClamsIcon}
 				</div>
-				<div class="mt-8 flex items-center justify-center">
-					<h2
-						class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl"
-					>
-						Visualize your Sats Flow.
-					</h2>
-				</div>
-
-				<div class="mt-8 flex items-center justify-center gap-x-6">
+				<h2 class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl">
+					Visualize your Sats Flow.
+				</h2>
+				<p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+					The best money deserves a dedicated accounting platform.
+				</p>
+				<div class="flex justify-center">
 					<a
 						href="/downloads"
 						class="flex gap-2 rounded-md bg-indigo-600 px-7 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

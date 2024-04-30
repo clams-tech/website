@@ -44,25 +44,27 @@
 				</svg>
 			</button>
 		</div>
-		<div class="hidden lg:flex lg:gap-x-12">
-			<span
-				use:scrollto={'#features'}
-				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-				>Features</span
-			>
-			{#if !isRemoteRoute}
+		{#if !isRemoteRoute}
+			<div class="hidden lg:flex lg:gap-x-12">
+				<span
+					use:scrollto={'#features'}
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+					>Features</span
+				>
+
 				<span
 					use:scrollto={'#pricing'}
 					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>Pricing</span
 				>
-			{/if}
-			<span
-				use:scrollto={'#faq'}
-				class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-				>FAQ</span
-			>
-		</div>
+
+				<span
+					use:scrollto={'#faq'}
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+					>FAQ</span
+				>
+			</div>
+		{/if}
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a
 				href={downloadHref}
