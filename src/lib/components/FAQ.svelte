@@ -14,6 +14,10 @@
 			selected: false
 		},
 		{
+			q: "What if I don't know the cost basis of my Bitcoin?",
+			a: "If you have records of your Bitcoin transactions from when you first purchased, Clams can calculate your cost basis. However, if determining the exact cost basis isn't feasible, you might need to estimate it based on available information. To ensure compliance with tax regulations or if you're uncertain about the process, consulting a tax professional for assistance is advisable."
+		},
+		{
 			q: 'How are transaction fees treated?',
 			a: 'Technically, those are considered a spend. So cap gains or losses must be calculated and reported.',
 			selected: false
@@ -25,7 +29,7 @@
 		},
 		{
 			q: 'Are some transactions tax free?',
-			a: 'Yes. Examples include gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider <a class="underline" target="_blank" rel="noopener noreferrer" href="https://opensats.org/">Opensats</a>.',
+			a: 'Yes. Transfers between wallets you control are one example. Gifts, up to a certain limit (16K in USA at time of writing). Some charitable donations can also reduce your tax burden. Consider <a class="underline" target="_blank" rel="noopener noreferrer" href="https://opensats.org/">Opensats</a>.',
 			selected: false
 		},
 		{
