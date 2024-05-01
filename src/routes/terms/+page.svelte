@@ -18,8 +18,8 @@
 		<h2 class="text-lg font-semibold mb-2">Description of Services</h2>
 		<p>
 			Clams provides services that allow bitcoin holders to manage their finances in a non-custodial
-			way, via two apps - Clams (an accounting app) and Remote (an interview for Core Lightning).
-			These services are subject to these Terms of Service.
+			way, via two apps - Clams (an accounting app) and Remote (an interface for Core Lightning
+			nodes). These services are subject to these Terms of Service.
 		</p>
 	</section>
 
