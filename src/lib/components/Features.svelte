@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ScreenshotImage from '$lib/images/accounting-screenshot-1.png'
+	import AppScreenshotImage from '$lib/images/app-screenshot.jpeg'
 	import SyncIcon from '$lib/icons/features/sync'
 	import EnhanceIcon from '$lib/icons/features/enhance'
 	import VisualizeIcon from '$lib/icons/features/visualize'
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 		<img
-			src={ScreenshotImage}
+			src={AppScreenshotImage}
 			alt="Product screenshot"
 			class="overflow-hidden w-[48rem] max-w-none rounded-xl shadow-xl dark:shadow-indigo-500/50 ring-1 ring-white/10 dark:ring-white/20 sm:w-[57rem]"
 			width="2432"
