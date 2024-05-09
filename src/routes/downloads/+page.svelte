@@ -1,12 +1,10 @@
 <script>
-	import { REMOTE_APP_URL, DOCS_URL } from '$lib/constants'
 	import WindowsIcon from '$lib/icons/windows'
 	import AppleIcon from '$lib/icons/apple'
 	import LinuxIcon from '$lib/icons/linux'
 	import UbuntuIcon from '$lib/icons/ubuntu'
-	import Button from '$lib/elements/Button.svelte'
 
-	export let data // Fetch "latest" Remote release from Clams github
+	export let data // Fetch "latest" Clams release from Clams github
 
 	const { assets } = data
 
@@ -18,35 +16,42 @@
 		return assets.find((asset) => asset.name.includes(extension))
 	}
 
-	const macOSAssets = findAssetByExtension(assets, '.dmg')
-	const linuxAssets = findAssetByExtension(assets, '.AppImage')
-	const ubuntuAssets = findAssetByExtension(assets, '.deb')
-	const windowsAssets = findAssetByExtension(assets, '.exe')
+	const macOSIntelAsset = findAssetByExtension(assets, 'x64.dmg')
+	const macOSSiliconAsset = findAssetByExtension(assets, 'aarch64.dmg')
+	const linuxAsset = findAssetByExtension(assets, '.AppImage')
+	const ubuntuAsset = findAssetByExtension(assets, '.deb')
+	const windowsAsset = findAssetByExtension(assets, '.exe')
 
 	const downloads = [
 		{
 			icon: AppleIcon,
-			os: 'MacOS',
-			name: macOSAssets?.name,
-			href: macOSAssets?.browser_download_url
+			os: 'MacOS Intel',
+			name: macOSIntelAsset?.name,
+			href: macOSIntelAsset?.browser_download_url
+		},
+		{
+			icon: AppleIcon,
+			os: 'MacOS Silicon',
+			name: macOSSiliconAsset?.name,
+			href: macOSSiliconAsset?.browser_download_url
 		},
 		{
 			icon: LinuxIcon,
 			os: 'Linux',
-			name: linuxAssets?.name,
-			href: linuxAssets?.browser_download_url
+			name: linuxAsset?.name,
+			href: linuxAsset?.browser_download_url
 		},
 		{
 			icon: UbuntuIcon,
 			os: 'Ubunutu',
-			name: ubuntuAssets?.name,
-			href: ubuntuAssets?.browser_download_url
+			name: ubuntuAsset?.name,
+			href: ubuntuAsset?.browser_download_url
 		},
 		{
 			icon: WindowsIcon,
 			os: 'Windows',
-			name: windowsAssets?.name,
-			href: windowsAssets?.browser_download_url
+			name: windowsAsset?.name,
+			href: windowsAsset?.browser_download_url
 		}
 	]
 </script>
