@@ -18,7 +18,8 @@
 		return assets.find((asset) => asset.name.includes(extension))
 	}
 
-	const macOSAssets = findAssetByExtension(assets, '.dmg')
+	const macOSIntelAsset = findAssetByExtension(assets, 'x64.dmg')
+	// const macOSSiliconAsset = findAssetByExtension(assets, 'aarch64.dmg')
 	const linuxAssets = findAssetByExtension(assets, '.AppImage')
 	const ubuntuAssets = findAssetByExtension(assets, '.deb')
 	const windowsAssets = findAssetByExtension(assets, '.exe')
@@ -26,10 +27,16 @@
 	const downloads = [
 		{
 			icon: AppleIcon,
-			os: 'MacOS',
-			name: macOSAssets?.name,
-			href: macOSAssets?.browser_download_url
+			os: 'MacOS Intel',
+			name: macOSIntelAsset?.name,
+			href: macOSIntelAsset?.browser_download_url
 		},
+		// {
+		// 	icon: AppleIcon,
+		// 	os: 'MacOS Silicon',
+		// 	name: macOSSiliconAsset?.name,
+		// 	href: macOSSiliconAsset?.browser_download_url
+		// },
 		{
 			icon: LinuxIcon,
 			os: 'Linux',
