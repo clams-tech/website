@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-3482fed9.js",
+    "file": "_app/immutable/start-fbfa7399.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_singletons-d2d9436c.js",
+      "_singletons-e9ea89b9.js",
       "_preload-helper-b21cceae.js"
     ],
     "dynamicImports": [
@@ -60,12 +60,12 @@
     ]
   },
   "src/routes/parallax/+page.svelte": {
-    "file": "_app/immutable/components/pages/parallax/_page.svelte-56e3c56d.js",
+    "file": "_app/immutable/components/pages/parallax/_page.svelte-a6bd4974.js",
     "src": "src/routes/parallax/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_navigation-5c721c57.js",
+      "_navigation-2656df57.js",
       "_index-7ae11b53.js",
       "_index-00e5c70a.js",
       "_StickyLayer.svelte_svelte_type_style_lang-bad6b39b.js"
@@ -92,7 +92,7 @@
     ]
   },
   "src/routes/remote/downloads/+page.svelte": {
-    "file": "_app/immutable/components/pages/remote/downloads/_page.svelte-5b9a7798.js",
+    "file": "_app/immutable/components/pages/remote/downloads/_page.svelte-d21debe7.js",
     "src": "src/routes/remote/downloads/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -102,12 +102,12 @@
     ]
   },
   "src/routes/remote/features/+page.svelte": {
-    "file": "_app/immutable/components/pages/remote/features/_page.svelte-287b9da4.js",
+    "file": "_app/immutable/components/pages/remote/features/_page.svelte-65c214f5.js",
     "src": "src/routes/remote/features/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-071863ef.js",
-      "_navigation-5c721c57.js"
+      "_navigation-2656df57.js"
     ]
   },
   "src/routes/remote/features/channels/+page.svelte": {
@@ -180,8 +180,8 @@
       "__page-6212236f.js"
     ]
   },
-  "_singletons-d2d9436c.js": {
-    "file": "_app/immutable/chunks/singletons-d2d9436c.js",
+  "_singletons-e9ea89b9.js": {
+    "file": "_app/immutable/chunks/singletons-e9ea89b9.js",
     "imports": [
       "_index-7ae11b53.js"
     ]
@@ -250,10 +250,10 @@
       "_index-071863ef.js"
     ]
   },
-  "_navigation-5c721c57.js": {
-    "file": "_app/immutable/chunks/navigation-5c721c57.js",
+  "_navigation-2656df57.js": {
+    "file": "_app/immutable/chunks/navigation-2656df57.js",
     "imports": [
-      "_singletons-d2d9436c.js"
+      "_singletons-e9ea89b9.js"
     ]
   },
   "_constants-8955e3ef.js": {
@@ -298,7 +298,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-393d6f8c.js",
+    "file": "_app/immutable/chunks/3-95e31c40.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -314,7 +314,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-1848bcf8.js",
+    "file": "_app/immutable/chunks/5-8b8e72b5.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -323,7 +323,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-0cc7e07f.js",
+    "file": "_app/immutable/chunks/6-61a29379.js",
     "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
@@ -388,21 +388,21 @@
     "src": "src/lib/i18n/es.json",
     "isDynamicEntry": true
   },
+  "Button.css": {
+    "file": "_app/immutable/assets/Button-b0246fd5.css",
+    "src": "Button.css"
+  },
   "StickyLayer.css": {
     "file": "_app/immutable/assets/StickyLayer-cd85f8ec.css",
     "src": "StickyLayer.css"
-  },
-  "src/routes/remote/+page.css": {
-    "file": "_app/immutable/assets/_page-4f1e9ba5.css",
-    "src": "src/routes/remote/+page.css"
   },
   "src/routes/parallax/+page.css": {
     "file": "_app/immutable/assets/_page-2391ebb6.css",
     "src": "src/routes/parallax/+page.css"
   },
-  "Button.css": {
-    "file": "_app/immutable/assets/Button-b0246fd5.css",
-    "src": "Button.css"
+  "src/routes/remote/+page.css": {
+    "file": "_app/immutable/assets/_page-4f1e9ba5.css",
+    "src": "src/routes/remote/+page.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-82f8fbdd.css",
