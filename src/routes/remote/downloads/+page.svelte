@@ -27,7 +27,7 @@
 	const downloads = [
 		{
 			icon: AppleIcon,
-			os: 'MacOS Intel',
+			os: 'MacOS Intel chip',
 			name: macOSIntelAsset?.name,
 			href: macOSIntelAsset?.browser_download_url
 		},
