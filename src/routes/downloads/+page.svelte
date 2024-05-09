@@ -25,13 +25,13 @@
 	const downloads = [
 		{
 			icon: AppleIcon,
-			os: 'MacOS Intel',
+			os: 'MacOS Intel chip',
 			name: macOSIntelAsset?.name,
 			href: macOSIntelAsset?.browser_download_url
 		},
 		{
 			icon: AppleIcon,
-			os: 'MacOS Silicon',
+			os: 'MacOS Silicon chip',
 			name: macOSSiliconAsset?.name,
 			href: macOSSiliconAsset?.browser_download_url
 		},
@@ -65,8 +65,12 @@
 			<div class="lg:pr-8">
 				<div class="">
 					<p class="text-gray-900 dark:text-white">
-						Clams is available as a Desktop app. Please select the option that corresponds to your
-						operating system:
+						Clams is available as a Desktop app. View all of the available download options <a
+							class="underline"
+							href="https://github.com/clams-tech/app-releases/releases"
+							target="_blank"
+							rel="noopener noreferrer">here</a
+						> or select one of these that corresponds to your operating system:
 					</p>
 				</div>
 			</div>
