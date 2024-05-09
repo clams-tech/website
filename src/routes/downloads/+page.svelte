@@ -70,7 +70,7 @@
 							href="https://github.com/clams-tech/app-releases/releases"
 							target="_blank"
 							rel="noopener noreferrer">here</a
-						> or select one of these that corresponds to your operating system:
+						> or choose from this list:
 					</p>
 				</div>
 			</div>
