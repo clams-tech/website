@@ -31,7 +31,9 @@
 		<div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
 			{#each users as { quote, img, name, title }}
 				<div class="sm:inline-block sm:w-full">
-					<figure class="rounded-2xl bg-gray-50 dark:bg-gray-800 p-8 text-sm leading-6">
+					<figure
+						class="flex flex-col justify-between rounded-2xl bg-gray-50 dark:bg-gray-800 p-6 text-sm leading-6 h-full"
+					>
 						<blockquote class="text-lg leading-8 text-gray-900 dark:text-white">
 							<p>
 								{quote}

@@ -20,10 +20,10 @@
 					{@html ClamsIcon}
 				</div>
 				<h2 class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl">
-					Visualize your Sats Flow.
+					Visualize your Sats Flow
 				</h2>
 				<p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
-					The best money deserves a dedicated accounting platform.
+					The best money deserves a dedicated accounting platform
 				</p>
 				<div class="flex justify-center">
 					<a

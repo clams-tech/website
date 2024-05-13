@@ -43,7 +43,7 @@
 		},
 		{
 			icon: UbuntuIcon,
-			os: 'Ubunutu',
+			os: 'Ubuntu',
 			name: ubuntuAsset?.name,
 			href: ubuntuAsset?.browser_download_url
 		},
@@ -74,10 +74,10 @@
 					</p>
 				</div>
 			</div>
-			<div class="mt-12 flex gap-8 flex-wrap justify-center">
+			<div class="mt-12 grid sm:grid-cols-1 md:grid-cols-2 gap-8">
 				{#each downloads as { icon, os, name, href }}
 					<a
-						class="flex flex-col items-center underline"
+						class="flex flex-col items-center underline border p-4 rounded-lg"
 						{href}
 						target="_blank"
 						rel="noopener noreferrer"

@@ -48,10 +48,10 @@
 
 <ContentContainer title="Features" scrollTo="features">
 	<div
-		class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+		class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5"
 	>
-		<div class="lg:pr-8">
-			<div class="lg:max-w-lg">
+		<div class="lg:col-span-4 lg:pr-8">
+			<div class="">
 				<h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2>
 				<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Everything you need to live on a Bitcoin Standard.
@@ -65,7 +65,12 @@
 								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
 									{@html icon}
 								</div>
-								{title}{i === 3 ? ` (coming soon)` : ''}
+								<div class="flex flex-wrap">
+									{title}
+									{#if i === 3}
+										<p class="text-gray-600 dark:text-gray-300 ml-2">(coming soon)</p>
+									{/if}
+								</div>
 							</dt>
 							<dd>
 								<ul class="list-disc list-inside leading-6">
