@@ -32,9 +32,9 @@
 	<section class="mb-6">
 		<h2 class="text-lg font-semibold mb-2">Links to Other Websites</h2>
 		<p>
-			Our website may contain links to third-party websites. We are not responsible for the privacy
-			practices or content of these websites. Please review the privacy policies of third-party
-			sites before providing any personal information.
+			Our website or services may contain links to third-party websites. We are not responsible for
+			the privacy practices or content of these websites. Please review the privacy policies of
+			third-party sites before providing any personal information.
 		</p>
 	</section>
 
@@ -57,6 +57,6 @@
 	</section>
 
 	<p class="text-sm">
-		By using our website, you agree to the terms outlined in this Privacy Policy.
+		By using our website or services, you agree to the terms outlined in this Privacy Policy.
 	</p>
 </ContentContainer>

@@ -28,20 +28,20 @@
 	<section class="mb-6">
 		<h2 class="text-lg font-semibold mb-2">Use at Your Own Risk</h2>
 		<p>
-			Your use of our website and reliance on the information provided is at your own risk. We shall
-			not be held responsible for any loss or damage, including but not limited to indirect or
-			consequential loss or damage, arising from your use of our website or the information
-			contained therein.
+			Your use of our website or services and reliance on the information provided is at your own
+			risk. We shall not be held responsible for any loss or damage, including but not limited to
+			indirect or consequential loss or damage, arising from your use of our website or services or
+			the information contained therein.
 		</p>
 	</section>
 
 	<section class="mb-6">
 		<h2 class="text-lg font-semibold mb-2">Third-Party Links</h2>
 		<p>
-			Our website may contain links to third-party websites. These links are provided for your
-			convenience to provide further information. We have no control over the content, nature, or
-			availability of those sites. The inclusion of any links does not necessarily imply a
-			recommendation or endorse the views expressed within them.
+			Our website or services may contain links to third-party websites. These links are provided
+			for your convenience to provide further information. We have no control over the content,
+			nature, or availability of those sites. The inclusion of any links does not necessarily imply
+			a recommendation or endorse the views expressed within them.
 		</p>
 	</section>
 
