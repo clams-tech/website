@@ -43,7 +43,7 @@
 						href={GITHUB_URL}
 						rel="noopener noreferrer"
 						target="_blank"
-						class="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400"
+						class="text-base font-semibold leading-7 text-light-purple dark:text-dark-purple"
 						>View our GitHub <span aria-hidden="true">&rarr;</span></a
 					>
 				</div>

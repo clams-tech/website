@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ClamsIcon from '$lib/icons/clams'
-	import AbacusIcon from '$lib/icons/abacus'
+	import Downloads from './shared/Downloads.svelte'
 </script>
 
 <div class="bg-white dark:bg-gray-900 h-screen flex items-center justify-center">
@@ -25,17 +25,7 @@
 				<p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
 					The best money deserves a dedicated accounting platform
 				</p>
-				<div class="flex justify-center">
-					<a
-						href="/downloads"
-						class="flex gap-2 rounded-md bg-indigo-600 px-7 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-					>
-						<div class="w-6">
-							{@html AbacusIcon}
-						</div>
-						Get Started</a
-					>
-				</div>
+				<Downloads highlightOs={true} />
 			</div>
 		</div>
 		<div

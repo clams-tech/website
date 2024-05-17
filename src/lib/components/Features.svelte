@@ -52,7 +52,9 @@
 	>
 		<div class="lg:col-span-4 lg:pr-8">
 			<div class="">
-				<h2 class="text-base font-semibold leading-7 text-indigo-400">Bitcoin only</h2>
+				<h2 class="text-base font-semibold leading-7 text-light-purple dark:text-dark-purple">
+					Bitcoin only
+				</h2>
 				<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 					Everything you need to live on a Bitcoin Standard.
 				</p>
