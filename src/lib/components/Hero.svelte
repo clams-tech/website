@@ -25,7 +25,9 @@
 				<p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
 					The best money deserves a dedicated accounting platform
 				</p>
-				<Downloads highlightOs={true} />
+				<div class="flex min-h-[90px]">
+					<Downloads highlightOs={true} />
+				</div>
 			</div>
 		</div>
 		<div
