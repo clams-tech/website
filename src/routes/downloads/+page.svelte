@@ -4,9 +4,7 @@
 
 <section class="h-full bg-white dark:bg-gray-900 py-24 sm:py-32">
 	<div class="text-center h-screen flex-col w-full max-w-5xl px-6 lg:px-8 m-auto">
-		<h2
-			class="mb-8 md:mb-12 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
-		>
+		<h2 class="mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 			Downloads
 		</h2>
 		<div class="flex flex-col">
