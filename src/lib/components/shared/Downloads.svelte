@@ -2,7 +2,7 @@
 	import WindowsIcon from '$lib/icons/windows'
 	import AppleIcon from '$lib/icons/apple'
 	import LinuxIcon from '$lib/icons/linux'
-	// import UbuntuIcon from '$lib/icons/ubuntu'
+	import UbuntuIcon from '$lib/icons/ubuntu'
 	import { onMount } from 'svelte'
 	import { CRAB_NEBULA_URL } from '$lib/constants'
 
@@ -29,9 +29,29 @@
 
 	let isLoading = true
 	let os
-	let downloads: { os: string; href: string; isFirst: boolean; icon: string }[] = []
+
+	const downloads = [
+		{
+			os: 'Intel',
+			href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
+			isFirst: os === 'macos-intel',
+			icon: AppleIcon
+		},
+		{
+			os: 'Silicon',
+			href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
+			isFirst: os === 'macos-arm',
+			icon: AppleIcon
+		}
+	]
 
 	const comingSoonDownloads = [
+		{
+			os: 'Windows',
+			href: `${CRAB_NEBULA_URL}/wix-x86_64`,
+			isFirst: os === 'windows',
+			icon: WindowsIcon
+		},
 		{
 			os: 'Linux',
 			href: `${CRAB_NEBULA_URL}/appimage-x86_64`,
@@ -39,30 +59,22 @@
 			icon: LinuxIcon
 		},
 		{
-			os: 'Windows',
-			href: `${CRAB_NEBULA_URL}/wix-x86_64`,
-			isFirst: os === 'windows',
-			icon: WindowsIcon
+			os: 'Ubuntu',
+			href: `${CRAB_NEBULA_URL}/appimage-x86_64`, // @TODO change
+			isFirst: os === 'linux',
+			icon: UbuntuIcon
 		}
 	]
 
 	onMount(() => {
+		if (!highlightOs) {
+			isLoading = false
+			return
+		}
+
 		os = getOs()
 
-		downloads = [
-			{
-				os: 'Intel',
-				href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
-				isFirst: os === 'macos-intel',
-				icon: AppleIcon
-			},
-			{
-				os: 'Silicon',
-				href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
-				isFirst: os === 'macos-arm',
-				icon: AppleIcon
-			}
-		].sort((a, b) => (a.isFirst ? -1 : 1))
+		downloads.sort((a, b) => (a.isFirst ? -1 : 1))
 
 		isLoading = false
 	})
