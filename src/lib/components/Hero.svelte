@@ -3,7 +3,7 @@
 	import Downloads from './shared/Downloads.svelte'
 </script>
 
-<div class="bg-white dark:bg-gray-900 h-screen flex items-center justify-center">
+<div class="bg-white dark:bg-gray-900 md:h-screen flex items-center justify-center">
 	<div class="relative isolate px-6 lg:px-8">
 		<div
 			class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
