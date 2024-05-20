@@ -95,7 +95,7 @@
 				<div class="w-6 xs:w-12">
 					{@html osButton.icon}
 				</div>
-				Download for {osButton.os}
+				Download beta for {osButton.os}
 			</a>
 
 			<div class="mt-4">
@@ -120,7 +120,7 @@
 					<div class="w-6 xs:w-12">
 						{@html icon}
 					</div>
-					Download for {os}
+					Download beta for {os}
 				</a>
 			{/each}
 		</div>
@@ -134,7 +134,7 @@
 						<div class="w-6 xs:w-12">
 							{@html icon}
 						</div>
-						Download for {os}
+						Download beta for {os}
 					</div>
 				</div>
 			{/each}

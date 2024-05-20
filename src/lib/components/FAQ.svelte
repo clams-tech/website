@@ -62,7 +62,7 @@
 					href={DISCORD_URL}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="font-semibold text-light-purple dark:text-dark-purple hover:text-indigo-500"
+					class="underline font-semibold text-light-purple dark:text-dark-purple hover:text-indigo-500"
 					>discord</a
 				>.
 			</p>

@@ -15,17 +15,19 @@
 			/>
 		</div>
 		<div class="mx-auto max-w-2xl py-32">
-			<div class="flex flex-col text-center gap-8">
+			<div class="flex flex-col text-center">
 				<div class="w-64 m-auto">
 					{@html ClamsIcon}
 				</div>
-				<h2 class="font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl">
+				<h2
+					class="mt-8 font-bold tracking-tight text-gray-900 dark:text-white dark:text-white text-5xl"
+				>
 					Visualize your Sats Flow
 				</h2>
-				<p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
-					The best money deserves a dedicated accounting platform
+				<p class="mt-4 tracking-tight text-gray-900 dark:text-white text-xl max-w-[600px] m-auto">
+					The best money deserves a dedicated accounting platform.
 				</p>
-				<div class="flex min-h-[90px]">
+				<div class="mt-8 flex min-h-[90px]">
 					<Downloads highlightOs={true} />
 				</div>
 			</div>
