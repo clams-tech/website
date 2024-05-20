@@ -64,7 +64,7 @@
 					{#each features as { icon, title, highlights }, i}
 						<div class="relative pl-9">
 							<dt class="inline font-semibold text-gray-900 dark:text-white">
-								<div class="absolute left-1 top-1 h-5 w-5 text-indigo-500">
+								<div class="absolute left-1 top-1 h-5 w-5 text-light-purple dark:text-dark-purple">
 									{@html icon}
 								</div>
 								<div class="flex flex-wrap">

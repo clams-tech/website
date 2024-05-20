@@ -64,7 +64,7 @@
 							{#each features as feature}
 								<li class="flex gap-x-3">
 									<svg
-										class="h-6 w-5 flex-none text-indigo-600 dark:text-indigo-400"
+										class="h-6 w-5 flex-none text-light-purple dark:text-dark-purple"
 										viewBox="0 0 20 20"
 										fill="currentColor"
 										aria-hidden="true"
@@ -108,7 +108,7 @@
 							{#each features as feature}
 								<li class="flex gap-x-3">
 									<svg
-										class="h-6 w-5 flex-none text-indigo-600 dark:text-indigo-400"
+										class="h-6 w-5 flex-none text-light-purple dark:text-dark-purple"
 										viewBox="0 0 20 20"
 										fill="currentColor"
 										aria-hidden="true"
