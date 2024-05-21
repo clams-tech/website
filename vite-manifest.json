@@ -3,25 +3,25 @@
     "file": "_app/immutable/assets/persona-1-ef81c95c.jpg",
     "src": "src/lib/images/persona-1.jpg"
   },
-  "src/lib/images/persona-3.jpg": {
-    "file": "_app/immutable/assets/persona-3-787f9adc.jpg",
-    "src": "src/lib/images/persona-3.jpg"
-  },
   "src/lib/images/persona-2.png": {
     "file": "_app/immutable/assets/persona-2-652f4db5.png",
     "src": "src/lib/images/persona-2.png"
+  },
+  "src/lib/images/persona-3.jpg": {
+    "file": "_app/immutable/assets/persona-3-787f9adc.jpg",
+    "src": "src/lib/images/persona-3.jpg"
   },
   "src/lib/images/app-screenshot.jpeg": {
     "file": "_app/immutable/assets/app-screenshot-5e8fdf40.jpeg",
     "src": "src/lib/images/app-screenshot.jpeg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-bfb432ae.js",
+    "file": "_app/immutable/start-ef0726cc.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_singletons-fc657b2f.js",
+      "_singletons-a79891c0.js",
       "_preload-helper-b21cceae.js"
     ],
     "dynamicImports": [
@@ -45,12 +45,12 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-761e653e.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-671a4b89.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_singletons-fc657b2f.js",
+      "_singletons-a79891c0.js",
       "_index-060af8bc.js",
       "_nostr-fc4d7110.js",
       "_constants-e4fcde35.js",
@@ -75,12 +75,12 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-2cf8c26c.js",
+    "file": "_app/immutable/components/pages/_page.svelte-702428c1.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_Downloads-41d66b4d.js",
+      "_Downloads-aa7c9d2b.js",
       "_ContentContainer-7800edc5.js",
       "_constants-e4fcde35.js",
       "_nostr-fc4d7110.js",
@@ -103,21 +103,21 @@
     ]
   },
   "src/routes/downloads/+page.svelte": {
-    "file": "_app/immutable/components/pages/downloads/_page.svelte-f3241545.js",
+    "file": "_app/immutable/components/pages/downloads/_page.svelte-d6f423ed.js",
     "src": "src/routes/downloads/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_Downloads-41d66b4d.js"
+      "_Downloads-aa7c9d2b.js"
     ]
   },
   "src/routes/parallax/+page.svelte": {
-    "file": "_app/immutable/components/pages/parallax/_page.svelte-a1b47bed.js",
+    "file": "_app/immutable/components/pages/parallax/_page.svelte-04952a91.js",
     "src": "src/routes/parallax/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_navigation-1bb17294.js",
+      "_navigation-287b6c43.js",
       "_index-0f2c68a6.js",
       "_index-060af8bc.js"
     ],
@@ -163,12 +163,12 @@
     ]
   },
   "src/routes/remote/features/+page.svelte": {
-    "file": "_app/immutable/components/pages/remote/features/_page.svelte-459fe15e.js",
+    "file": "_app/immutable/components/pages/remote/features/_page.svelte-642d2ca6.js",
     "src": "src/routes/remote/features/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-b03908d8.js",
-      "_navigation-1bb17294.js"
+      "_navigation-287b6c43.js"
     ]
   },
   "src/routes/remote/features/channels/+page.svelte": {
@@ -250,8 +250,8 @@
       "__page-6212236f.js"
     ]
   },
-  "_singletons-fc657b2f.js": {
-    "file": "_app/immutable/chunks/singletons-fc657b2f.js",
+  "_singletons-a79891c0.js": {
+    "file": "_app/immutable/chunks/singletons-a79891c0.js",
     "imports": [
       "_index-0f2c68a6.js"
     ]
@@ -289,8 +289,8 @@
   "__layout-1daba58d.js": {
     "file": "_app/immutable/chunks/_layout-1daba58d.js"
   },
-  "_Downloads-41d66b4d.js": {
-    "file": "_app/immutable/chunks/Downloads-41d66b4d.js",
+  "_Downloads-aa7c9d2b.js": {
+    "file": "_app/immutable/chunks/Downloads-aa7c9d2b.js",
     "imports": [
       "_index-b03908d8.js",
       "_ubuntu-a4ed0c74.js",
@@ -309,10 +309,10 @@
   "_ubuntu-a4ed0c74.js": {
     "file": "_app/immutable/chunks/ubuntu-a4ed0c74.js"
   },
-  "_navigation-1bb17294.js": {
-    "file": "_app/immutable/chunks/navigation-1bb17294.js",
+  "_navigation-287b6c43.js": {
+    "file": "_app/immutable/chunks/navigation-287b6c43.js",
     "imports": [
-      "_singletons-fc657b2f.js"
+      "_singletons-a79891c0.js"
     ]
   },
   "_Button-c202dd88.js": {
@@ -337,7 +337,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-af27de32.js",
+    "file": "_app/immutable/chunks/0-15620357.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -354,7 +354,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-ebcc46df.js",
+    "file": "_app/immutable/chunks/2-e6084ac8.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -370,7 +370,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-85465a5b.js",
+    "file": "_app/immutable/chunks/4-eb7c5595.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -378,7 +378,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-d48e6874.js",
+    "file": "_app/immutable/chunks/5-c11335cd.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -411,7 +411,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-1f41fa9c.js",
+    "file": "_app/immutable/chunks/9-825f99eb.js",
     "src": ".svelte-kit/generated/nodes/9.js",
     "isDynamicEntry": true,
     "imports": [
@@ -484,13 +484,13 @@
     "src": "src/lib/i18n/es.json",
     "isDynamicEntry": true
   },
-  "src/routes/parallax/+page.css": {
-    "file": "_app/immutable/assets/_page-b249cd93.css",
-    "src": "src/routes/parallax/+page.css"
-  },
   "src/routes/remote/+page.css": {
     "file": "_app/immutable/assets/_page-4f1e9ba5.css",
     "src": "src/routes/remote/+page.css"
+  },
+  "src/routes/parallax/+page.css": {
+    "file": "_app/immutable/assets/_page-b249cd93.css",
+    "src": "src/routes/parallax/+page.css"
   },
   "Button.css": {
     "file": "_app/immutable/assets/Button-b0246fd5.css",
