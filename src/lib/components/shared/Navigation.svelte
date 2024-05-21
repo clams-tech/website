@@ -106,23 +106,23 @@
 				<div class="-my-6 divide-y divide-gray-500/10">
 					{#if !isRemoteRoute}
 						<div class="space-y-2 py-6">
-							<span
+							<a
 								on:click={() => (showMobileMenu = false)}
-								use:scrollto={'#features'}
+								href="#features"
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-								>Features</span
+								>Features</a
 							>
-							<span
+							<a
 								on:click={() => (showMobileMenu = false)}
-								use:scrollto={'#pricing'}
+								href="#pricing"
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-								>Pricing</span
+								>Pricing</a
 							>
-							<span
+							<a
 								on:click={() => (showMobileMenu = false)}
-								use:scrollto={'#faq'}
+								href="#faq"
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-								>FAQ</span
+								>FAQ</a
 							>
 						</div>
 					{/if}
