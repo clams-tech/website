@@ -36,7 +36,20 @@
 		href: string
 		isFirst: boolean
 		icon: string
-	}[] = []
+	}[] = [
+		{
+			os: 'Silicon',
+			href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
+			isFirst: os === 'macos-arm',
+			icon: AppleIcon
+		},
+		{
+			os: 'Intel',
+			href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
+			isFirst: os === 'macos-intel',
+			icon: AppleIcon
+		}
+	]
 
 	const comingSoonDownloads = [
 		{
