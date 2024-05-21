@@ -10,6 +10,7 @@
 
 	function getOs() {
 		const ua = navigator.userAgent
+
 		if (ua.includes('Windows')) return 'windows'
 		if (ua.includes('Linux')) return 'linux'
 		if (ua.includes('Macintosh')) {
@@ -30,20 +31,12 @@
 	let isLoading = true
 	let os
 
-	const downloads = [
-		{
-			os: 'Intel',
-			href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
-			isFirst: os === 'macos-intel',
-			icon: AppleIcon
-		},
-		{
-			os: 'Silicon',
-			href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
-			isFirst: os === 'macos-arm',
-			icon: AppleIcon
-		}
-	]
+	let downloads: {
+		os: string
+		href: string
+		isFirst: boolean
+		icon: string
+	}[] = []
 
 	const comingSoonDownloads = [
 		{
@@ -74,7 +67,20 @@
 
 		os = getOs()
 
-		downloads.sort((a, b) => (a.isFirst ? -1 : 1))
+		downloads = [
+			{
+				os: 'Silicon',
+				href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
+				isFirst: os === 'macos-arm',
+				icon: AppleIcon
+			},
+			{
+				os: 'Intel',
+				href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
+				isFirst: os === 'macos-intel',
+				icon: AppleIcon
+			}
+		].sort((a, b) => (a.isFirst ? -1 : 1))
 
 		isLoading = false
 	})
@@ -83,19 +89,19 @@
 </script>
 
 {#if highlightOs}
-	{#if !isLoading}
+	{#if !isLoading && osButton}
 		<div class="m-auto">
 			<!-- Download for OS -->
 			<a
-				href={osButton.href}
+				href={osButton?.href}
 				class="flex justify-center items-center gap-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 				rel="noopener"
 				type="button"
 			>
 				<div class="w-6 xs:w-12">
-					{@html osButton.icon}
+					{@html osButton?.icon}
 				</div>
-				Download beta for {osButton.os}
+				Download beta for {osButton?.os}
 			</a>
 
 			<div class="mt-4">
