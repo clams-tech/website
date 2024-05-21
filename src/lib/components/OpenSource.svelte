@@ -5,11 +5,11 @@
 
 	const links = [
 		{
-			title: 'Remote; interface for CLN',
+			title: 'Remote: interface for CLN',
 			link: 'https://clams.tech/remote'
 		},
 		{
-			title: 'LN-message; library to help apps "speak lightning"',
+			title: 'LN-message: library to help apps "speak lightning"',
 			link: 'https://github.com/aaronbarnardsound/lnmessage'
 		},
 		{
