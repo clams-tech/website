@@ -28,8 +28,7 @@ export const FEATURE_ICONS: {
 }
 
 export const REMOTE_APP_URL = 'https://remote.clams.tech/'
-// export const DOCS_URL = 'http://localhost:8000'
-export const DOCS_URL = 'http://docs.clams.tech'
-export const DISCORD_URL = '//https://discord.gg/eWfHuJZVaB'
+export const DOCS_URL = 'https://docs.clams.tech'
+export const DISCORD_URL = 'https://discord.gg/eWfHuJZVaB'
 export const GITHUB_URL = 'https://github.com/clams-tech'
 export const CRAB_NEBULA_URL = 'https://cdn.crabnebula.app/download/clams/clams/latest/platform'
