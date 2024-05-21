@@ -32,7 +32,7 @@
 	}
 </script>
 
-<div class="flex items-center ">
+<div class="flex items-center">
 	<input checked={isDarkMode} on:click={handleSwitchDarkMode} type="checkbox" id="theme-toggle" />
 	<label for="theme-toggle" />
 </div>
@@ -40,6 +40,7 @@
 <style lang="postcss">
 	#theme-toggle {
 		@apply invisible;
+		width: 0px;
 	}
 
 	#theme-toggle + label {
