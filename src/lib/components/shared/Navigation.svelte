@@ -18,7 +18,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="flex lg:hidden">
+		<div class="flex lg:hidden fixed top-6 right-6">
 			<button
 				on:click={() => (showMobileMenu = true)}
 				type="button"
