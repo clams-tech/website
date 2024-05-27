@@ -97,26 +97,25 @@
 
 		isLoading = false
 	})
-
-	$: osButton = downloads[0]
 </script>
 
 {#if highlightOs}
-	{#if !isLoading && osButton}
+	{#if !isLoading}
 		<div class="m-auto">
-			<!-- Download for OS -->
-			<a
-				href={osButton?.href}
-				class="flex justify-center items-center gap-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-				rel="noopener"
-				type="button"
-			>
-				<div class="w-6 xs:w-12">
-					{@html osButton?.icon}
-				</div>
-				Download beta for {osButton?.os}
-			</a>
-
+			<div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 m-auto">
+				{#each downloads as { os, href, icon }}
+					<a
+						{href}
+						class="flex justify-center items-center gap-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+						type="button"
+					>
+						<div class="w-6 xs:w-12">
+							{@html icon}
+						</div>
+						Download beta for {os}
+					</a>
+				{/each}
+			</div>
 			<div class="mt-4">
 				<a
 					href="/downloads"
