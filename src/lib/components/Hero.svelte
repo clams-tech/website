@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ClamsIcon from '$lib/icons/clams'
-	import Downloads from './shared/Downloads.svelte'
 </script>
 
 <div class="bg-white dark:bg-gray-900 md:h-screen flex items-center justify-center">
@@ -27,8 +26,12 @@
 				<p class="mt-4 tracking-tight text-gray-900 dark:text-white text-xl max-w-[600px] m-auto">
 					The best money deserves a dedicated accounting platform.
 				</p>
-				<div class="mt-8 flex min-h-[90px]">
-					<Downloads highlightOs={true} />
+				<div class="mt-8 flex m-auto">
+					<a
+						href="/downloads"
+						class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+						>Get Started</a
+					>
 				</div>
 			</div>
 		</div>
