@@ -19,7 +19,7 @@
 		},
 		{
 			q: 'How are transaction fees treated?',
-			a: 'Technically, those are considered a spend. So cap gains or losses must be calculated and reported.',
+			a: 'Transaction fees can be treated as expenses, similar to trading fees or bank fees, depending on your situation.',
 			selected: false
 		},
 		{
