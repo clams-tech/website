@@ -4,7 +4,7 @@
 	import HowItWorks from '$lib/components/HowItWorks.svelte'
 	import Features from '$lib/components/Features.svelte'
 	import Connections from '$lib/components/Connections.svelte'
-	import Pricing from '$lib/components/Pricing.svelte'
+	// import Pricing from '$lib/components/Pricing.svelte'
 	import FAQ from '$lib/components/FAQ.svelte'
 	import Note from '$lib/components/Note.svelte'
 	import OpenSource from '$lib/components/OpenSource.svelte'
@@ -17,7 +17,7 @@
 <Hero />
 <Features />
 <HowItWorks />
-<Pricing />
+<!-- <Pricing /> -->
 <Connections />
 <UserStories />
 <FAQ />
