@@ -2,37 +2,39 @@
 	import WindowsIcon from '$lib/icons/windows'
 	import AppleIcon from '$lib/icons/apple'
 	import LinuxIcon from '$lib/icons/linux'
-	import UbuntuIcon from '$lib/icons/ubuntu'
+	// import UbuntuIcon from '$lib/icons/ubuntu'
 	import { CRAB_NEBULA_URL } from '$lib/constants'
 
 	let downloads = [
 		{
-			os: 'Silicon',
+			os: 'Silicon (dmg-aarch64)',
 			href: `${CRAB_NEBULA_URL}/dmg-aarch64`,
 			icon: AppleIcon
 		},
 		{
-			os: 'Intel',
+			os: 'Intel (dmg-x86_64)',
 			href: `${CRAB_NEBULA_URL}/dmg-x86_64`,
 			icon: AppleIcon
-		}
-	]
-
-	const comingSoonDownloads = [
+		},
 		{
-			os: 'Windows',
+			os: 'Windows (wix-x86_64)',
 			href: `${CRAB_NEBULA_URL}/wix-x86_64`,
 			icon: WindowsIcon
 		},
 		{
-			os: 'Linux',
+			os: 'Windows (nsis-x86_64)',
+			href: `${CRAB_NEBULA_URL}/nsis-x86_64`,
+			icon: WindowsIcon
+		},
+		{
+			os: 'Linux (appimage-x86_64)',
 			href: `${CRAB_NEBULA_URL}/appimage-x86_64`,
 			icon: LinuxIcon
 		},
 		{
-			os: 'Ubuntu',
-			href: `${CRAB_NEBULA_URL}/appimage-x86_64`, // @TODO change
-			icon: UbuntuIcon
+			os: 'Linux (debian-x86_64)',
+			href: `${CRAB_NEBULA_URL}/debian-x86_64`,
+			icon: LinuxIcon
 		}
 	]
 </script>
@@ -49,23 +51,8 @@
 				<div class="w-6 xs:w-12">
 					{@html icon}
 				</div>
-				Download beta for {os}
+				{os}
 			</a>
-		{/each}
-	</div>
-	<h2 class="mt-8 text-base font-semibold leading-7">Coming soon</h2>
-	<div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 gap-8 m-auto">
-		{#each comingSoonDownloads as { os, icon }}
-			<div>
-				<div
-					class="opacity-50 flex justify-center items-center gap-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm"
-				>
-					<div class="w-6 xs:w-12">
-						{@html icon}
-					</div>
-					Download beta for {os}
-				</div>
-			</div>
 		{/each}
 	</div>
 </div>
