@@ -12,17 +12,15 @@
 				Clams <span class="text-light-purple dark:text-dark-purple">beta</span> is available as a Desktop
 				app.
 			</p>
-			<p class="mt-2 text-gray-900 dark:text-white">
-				View all of the available download options <a
-					class="underline"
-					href="https://web.crabnebula.cloud/clams/clams/releases"
-					target="_blank"
-					rel="noopener noreferrer">here</a
-				> or choose from this list:
-			</p>
 			<div class="flex mt-8 md:mt-12">
 				<Downloads />
 			</div>
+			<a
+				class="mt-8 md:mt-12 underline"
+				href="https://web.crabnebula.cloud/clams/clams/releases"
+				target="_blank"
+				rel="noopener noreferrer">More options</a
+			>
 		</div>
 	</div>
 </section>
