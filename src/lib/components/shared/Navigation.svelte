@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
+	import { REMOTE_APP_URL } from '$lib/constants'
 
 	export let isRemoteRoute = false
-	$: downloadHref = isRemoteRoute ? '/remote/downloads' : '/downloads'
+	$: downloadHref = isRemoteRoute ? REMOTE_APP_URL : '/downloads'
 	let showMobileMenu = false
 </script>
 
@@ -48,13 +49,6 @@
 					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>Features</span
 				>
-
-				<!-- <span
-					use:scrollto={'#pricing'}
-					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
-					>Pricing</span
-				> -->
-
 				<span
 					use:scrollto={'#faq'}
 					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
@@ -65,6 +59,8 @@
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a
 				href={downloadHref}
+				target={isRemoteRoute ? '_blank' : ''}
+				rel={isRemoteRoute ? 'noopener noreferrer' : ''}
 				class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 				>Get Started<span aria-hidden="true">&rarr;</span></a
 			>
@@ -112,12 +108,6 @@
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 								>Features</a
 							>
-							<!-- <a
-								on:click={() => (showMobileMenu = false)}
-								href="#pricing"
-								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
-								>Pricing</a
-							> -->
 							<a
 								on:click={() => (showMobileMenu = false)}
 								href="#faq"
@@ -130,6 +120,8 @@
 						<a
 							on:click={() => (showMobileMenu = false)}
 							href={downloadHref}
+							target={isRemoteRoute ? '_blank' : ''}
+							rel={isRemoteRoute ? 'noopener noreferrer' : ''}
 							class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 							>Get Started</a
 						>

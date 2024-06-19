@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { DOCS_URL } from '$lib/constants'
+	import { DOCS_URL, REMOTE_APP_URL } from '$lib/constants'
 	import Button from '$lib/elements/Button.svelte'
 	import RemoteIcon from '$lib/icons/remote'
 </script>
@@ -11,7 +11,6 @@
 				{@html RemoteIcon}
 			</div>
 			<div>
-				<!-- <h2 class="font-bold text-light-orange text-left text-2xl">REMOTE</h2> -->
 				<h1 class="text-6xl font-bold">Secure. Private. Fast.</h1>
 				<div class="flex flex-col text-center mt-4">
 					<h2 class="text-2xl">
@@ -26,7 +25,7 @@
 						>
 							<Button text="Learn More" />
 						</a>
-						<a class={'w-[134px]'} href="/remote/downloads">
+						<a class={'w-[134px]'} target="_blank" rel="noopener noreferrer" href={REMOTE_APP_URL}>
 							<Button text="Get Started" primary />
 						</a>
 					</div>
