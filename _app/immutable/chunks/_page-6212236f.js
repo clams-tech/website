@@ -1,1 +1,0 @@
-async function t({fetch:e}){return await(await e("https://api.github.com/repos/clams-tech/Remote/releases/latest")).json()}const s=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{s as _,t as l};
