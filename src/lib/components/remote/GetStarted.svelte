@@ -12,11 +12,7 @@
 		</h1>
 		<p class="text-[20px]">Discover the new era of node management.</p>
 		<div class="mt-4 flex justify-center">
-			<a
-				class={'w-[134px]'}
-				href="/remote/downloads
-			"
-			>
+			<a target="_blank" rel="noopener noreferrer" class={'w-[134px]'} href={REMOTE_APP_URL}>
 				<Button text="Get Started" primary />
 			</a>
 		</div>
