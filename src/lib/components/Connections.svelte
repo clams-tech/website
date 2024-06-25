@@ -21,15 +21,15 @@
 			name: 'LND',
 			icon: LndIcon,
 			link: 'https://lightning.engineering/'
-		}
-	]
-
-	const comingSoon = [
+		},
 		{
 			name: 'Nostr Wallet Connect',
 			icon: NwcIcon,
 			link: 'https://nwc.dev/'
-		},
+		}
+	]
+
+	const comingSoon = [
 		{
 			name: 'Phoenix',
 			icon: PhoenixIcon,
