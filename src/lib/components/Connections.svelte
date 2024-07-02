@@ -68,7 +68,7 @@
 		<p class="mt-8 md:mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
 			These wallets are fully integrated into our system to streamline the data import.
 		</p>
-		<div class="flex gap-8 justify-center mt-8">
+		<div class="flex flex-wrap gap-8 justify-center mt-8">
 			{#each connections as { name, icon, link }}
 				<a class="flex-col justify-between" href={link} target="_blank" rel="noopener noreferrer">
 					<div
