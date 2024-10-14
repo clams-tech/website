@@ -13,6 +13,11 @@
 
 	const connections = [
 		{
+			name: 'Onchain',
+			icon: OnchainIcon,
+			link: 'https://bitcoin.org/en/'
+		},
+		{
 			name: 'Core Lightning',
 			icon: CoreLightningIcon,
 			link: 'https://corelightning.org/'
@@ -39,11 +44,6 @@
 			name: 'Wallet of Satoshi',
 			icon: WalletOfSatoshiIcon,
 			link: 'https://www.walletofsatoshi.com/'
-		},
-		{
-			name: 'Onchain',
-			icon: OnchainIcon,
-			link: 'https://bitcoin.org/en/'
 		},
 		{
 			name: 'Unchained',
