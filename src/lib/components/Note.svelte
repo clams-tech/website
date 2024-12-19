@@ -25,7 +25,9 @@
 				premium offerings, you'll not only support the project but also unlock even more powerful
 				tools to bring you closer to life on a Bitcoin Standard. More details on that <a
 					class="underline"
-					href={`${BLOG_URL}/hello-world`}>here</a
+					href={`${BLOG_URL}/hello-world`}
+					target="_blank"
+					rel="noopener noreferrer">here</a
 				>.
 			</h2>
 			<h2 class="">We are our first customers, and we hope you will join us.</h2>
