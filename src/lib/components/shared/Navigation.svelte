@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { scrollto } from 'svelte-scrollto'
 	import ClamsAltIcon from '$lib/icons/clams-alt'
-	import { REMOTE_APP_URL } from '$lib/constants'
+	import { BLOG_URL, REMOTE_APP_URL } from '$lib/constants'
 
 	export let isRemoteRoute = false
 	$: downloadHref = isRemoteRoute ? REMOTE_APP_URL : '/downloads'
@@ -54,6 +54,12 @@
 					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>FAQ</span
 				>
+				<a href={BLOG_URL} target="_blank" rel="noopener noreferrer">
+					<span
+						class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+						>Blog</span
+					>
+				</a>
 			</div>
 		{/if}
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -113,6 +119,14 @@
 								href="#faq"
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 								>FAQ</a
+							>
+							<a
+								on:click={() => (showMobileMenu = false)}
+								href={BLOG_URL}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Blog</a
 							>
 						</div>
 					{/if}

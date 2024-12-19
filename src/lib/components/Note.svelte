@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { BLOG_URL } from '$lib/constants'
 	import NostrIcon from '$lib/icons/nostr'
 	import ContentContainer from './shared/ContentContainer.svelte'
 </script>
@@ -22,18 +23,22 @@
 				our core features will always be free. To ensure the long-term sustainability and continuous
 				improvement of Clams, we're exploring options for paid add-on services. By choosing these
 				premium offerings, you'll not only support the project but also unlock even more powerful
-				tools to bring you closer to life on a Bitcoin Standard. More details on that soon.
+				tools to bring you closer to life on a Bitcoin Standard. More details on that <a
+					class="underline"
+					href={`${BLOG_URL}/hello-world`}>here</a
+				>.
 			</h2>
 			<h2 class="">We are our first customers, and we hope you will join us.</h2>
 			<h2 class="">Cheers, Aaron & John</h2>
 		</div>
-		<div class="flex md:flex-col justify-around gap-5 w-full">
-			<div class="flex flex-col items-center gap-3">
-				<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
+		<div class="flex flex-wrap justify-around gap-5 w-full">
+			<!-- Aaron -->
+			<div class="flex flex-col items-center gap-3 w-1/2 md:w-auto">
+				<div class="w-[200px] h-[200px] rounded-full overflow-hidden">
 					<img
 						class="w-full h-full object-cover"
-						src={'https://avatars.githubusercontent.com/u/29873495?v=4'}
-						alt="john"
+						src="https://avatars.githubusercontent.com/u/29873495?v=4"
+						alt="aaron"
 					/>
 				</div>
 				<a
@@ -48,11 +53,12 @@
 					</div>
 				</a>
 			</div>
-			<div class="flex flex-col items-center gap-3">
-				<div class="md:w-[200px] md:h-[200px] rounded-full overflow-hidden">
+			<!-- John -->
+			<div class="flex flex-col items-center gap-3 w-1/2 md:w-auto">
+				<div class="w-[200px] h-[200px] rounded-full overflow-hidden">
 					<img
 						class="w-full h-full object-cover"
-						src={'https://avatars.githubusercontent.com/u/30157175?v=4'}
+						src="https://avatars.githubusercontent.com/u/30157175?v=4"
 						alt="john"
 					/>
 				</div>

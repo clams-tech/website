@@ -4,7 +4,7 @@
 	import DiscordIcon from '$lib/icons/discord'
 	import XIcon from '$lib/icons/x'
 	import GithubIcon from '$lib/icons/github'
-	import { DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
+	import { BLOG_URL, DISCORD_URL, DOCS_URL, GITHUB_URL } from '$lib/constants'
 	import ThemeToggle from '$lib/components/shared/ThemeToggle.svelte'
 
 	export let isRemoteRoute = false
@@ -67,6 +67,14 @@
 					<div class="mt-10 md:mt-0">
 						<h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Resources</h3>
 						<ul class="mt-6 space-y-4">
+							<li>
+								<a
+									href={BLOG_URL}
+									class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:text-white"
+									target="_blank"
+									rel="noopener noreferrer">Blog</a
+								>
+							</li>
 							<li>
 								<a
 									href={DOCS_URL}
