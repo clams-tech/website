@@ -4,6 +4,7 @@
 	import { REMOTE_APP_URL } from '$lib/constants'
 
 	export let isRemoteRoute = false
+	export let isDownloadsRoute = false
 	$: downloadHref = isRemoteRoute ? REMOTE_APP_URL : '/downloads'
 	let showMobileMenu = false
 </script>
@@ -42,7 +43,8 @@
 				</svg>
 			</button>
 		</div>
-		{#if !isRemoteRoute}
+		<!-- Home route -->
+		{#if !isRemoteRoute && !isDownloadsRoute}
 			<div class="hidden lg:flex lg:gap-x-12">
 				<span
 					use:scrollto={'#features'}
@@ -53,6 +55,21 @@
 					use:scrollto={'#faq'}
 					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
 					>FAQ</span
+				>
+			</div>
+		{/if}
+		<!-- Download route -->
+		{#if isDownloadsRoute}
+			<div class="hidden lg:flex lg:gap-x-12">
+				<a
+					href="/#features"
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+					>Features</a
+				>
+				<a
+					href="/#faq"
+					class="cursor-pointer text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:text-white"
+					>FAQ</a
 				>
 			</div>
 		{/if}
@@ -100,7 +117,8 @@
 			</div>
 			<div class="mt-6 flow-root">
 				<div class="-my-6 divide-y divide-gray-500/10">
-					{#if !isRemoteRoute}
+					<!-- Home route -->
+					{#if !isRemoteRoute && !isDownloadsRoute}
 						<div class="space-y-2 py-6">
 							<a
 								on:click={() => (showMobileMenu = false)}
@@ -111,6 +129,23 @@
 							<a
 								on:click={() => (showMobileMenu = false)}
 								href="#faq"
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>FAQ</a
+							>
+						</div>
+					{/if}
+					<!-- Download route -->
+					{#if isDownloadsRoute}
+						<div class="space-y-2 py-6">
+							<a
+								on:click={() => (showMobileMenu = false)}
+								href="/#features"
+								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
+								>Features</a
+							>
+							<a
+								on:click={() => (showMobileMenu = false)}
+								href="/#faq"
 								class="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800"
 								>FAQ</a
 							>
