@@ -17,8 +17,9 @@
 	}
 
 	$: isRemoteRoute = $page.url.pathname.includes('remote')
+	$: isDownloadsRoute = $page.url.pathname.includes('downloads')
 </script>
 
-<Navigation {isRemoteRoute} />
+<Navigation {isRemoteRoute} {isDownloadsRoute} />
 <slot />
 <Footer {isRemoteRoute} />
